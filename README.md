@@ -62,6 +62,17 @@ Scientific architecture figures often look polished while silently misrepresenti
 
 ## Install
 
+Install the versioned Codex plugin from this repository marketplace:
+
+```powershell
+codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.2.0
+codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
+```
+
+Restart the Codex or ChatGPT desktop app and start a new thread. For a group rollout, send members the [bilingual trial guide](TEAM-TRIAL.md) or the `team-trial` ZIP attached to the release.
+
+Alternative Agent Skills installation:
+
 Install both skills with the open Agent Skills CLI:
 
 ```bash

@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 import sys
@@ -45,8 +46,20 @@ def main() -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     if manifest.get("name") != "codex-scientific-diagram-visio":
         fail("unexpected plugin name")
-    if manifest.get("version") != "1.1.1":
-        fail("release manifest must be version 1.1.1")
+    if manifest.get("version") != "1.2.0":
+        fail("release manifest must be version 1.2.0")
+
+    marketplace_path = ROOT / ".agents" / "plugins" / "marketplace.json"
+    marketplace = json.loads(marketplace_path.read_text(encoding="utf-8"))
+    entries = marketplace.get("plugins", [])
+    if len(entries) != 1 or entries[0].get("name") != manifest["name"]:
+        fail("marketplace must expose exactly the release plugin")
+    plugin_copy = ROOT / "plugins" / manifest["name"]
+    copied_manifest = json.loads(
+        (plugin_copy / ".codex-plugin" / "plugin.json").read_text(encoding="utf-8")
+    )
+    if copied_manifest != manifest:
+        fail("marketplace plugin manifest is out of sync")
 
     expected = {
         "scientific-model-diagram-prompting",
@@ -60,6 +73,22 @@ def main() -> int:
         found.add(metadata["name"])
     if found != expected:
         fail(f"unexpected skill set: {sorted(found)}")
+
+    for skill_name in expected:
+        canonical = ROOT / "skills" / skill_name
+        copied = plugin_copy / "skills" / skill_name
+        canonical_files = {
+            path.relative_to(canonical): hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in canonical.rglob("*")
+            if path.is_file()
+        }
+        copied_files = {
+            path.relative_to(copied): hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in copied.rglob("*")
+            if path.is_file()
+        }
+        if canonical_files != copied_files:
+            fail(f"marketplace copy is out of sync: {skill_name}")
 
     forbidden = re.compile(
         r"(?:[A-Za-z]:\\|/Users/|/home/|AppData|pythonProject|ResRMTN|OPENAI_API_KEY\s*=)",

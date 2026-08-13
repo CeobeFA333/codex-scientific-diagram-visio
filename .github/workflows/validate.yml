@@ -17,3 +17,5 @@ jobs:
           python-version: "3.11"
       - run: python scripts/validate_release.py
       - run: python skills/scientific-model-diagram-visio/scripts/inspect_vsdx.py --help
+      - shell: pwsh
+        run: ./scripts/build_release.ps1

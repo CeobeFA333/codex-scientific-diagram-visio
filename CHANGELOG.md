@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0 — 2026-08-13
+
+- Package the two skills as an installable Codex plugin and repo marketplace.
+- Add official `codex plugin marketplace add` and `codex plugin add` installation commands.
+- Add a bilingual research-group trial guide with prompts and a safe feedback template.
+- Add privacy and terms pages required for a public plugin listing.
+- Add reproducible compact-plugin and team-trial ZIP builders with SHA-256 output.
+- Extend release validation to verify the marketplace package mirrors the canonical skills.
+
 ## 1.1.1 — 2026-08-13
 
 - Force the five Transformer main-flow connectors onto one `3.97 in` baseline with straight routing and glued endpoints.

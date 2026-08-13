@@ -53,6 +53,17 @@ VSDX + PDF + 300 DPI PNG
 
 ## 安装
 
+推荐通过本仓库的版本化 Marketplace 安装 Codex Plugin：
+
+```powershell
+codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.2.0
+codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
+```
+
+安装后重启 Codex 或 ChatGPT 桌面端，并新建对话。课题组试用时，可直接分享[中英双语试用指南](TEAM-TRIAL.md)，或 Release 中的 `team-trial` 压缩包。
+
+也可以使用 Agent Skills 方式安装：
+
 通过开放 Agent Skills CLI 安装：
 
 ```bash
