@@ -1,5 +1,9 @@
 # Codex 科研模型图 Visio 工作流
 
+<p align="right">
+  <a href="README.md">English</a> | <strong>简体中文</strong>
+</p>
+
 将模型代码、论文方法描述和旧架构图转换为适合论文发表的 Microsoft Visio 原生可编辑模型图。
 
 核心流程：

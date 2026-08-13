@@ -45,8 +45,8 @@ def main() -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     if manifest.get("name") != "codex-scientific-diagram-visio":
         fail("unexpected plugin name")
-    if manifest.get("version") != "1.0.0":
-        fail("release manifest must be version 1.0.0")
+    if manifest.get("version") != "1.0.1":
+        fail("release manifest must be version 1.0.1")
 
     expected = {
         "scientific-model-diagram-prompting",

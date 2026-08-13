@@ -1,5 +1,9 @@
 # Codex Scientific Diagram Visio
 
+<p align="right">
+  <strong>English</strong> | <a href="README.zh-CN.md">简体中文</a>
+</p>
+
 Turn model code, paper descriptions, and legacy figures into publication-ready Microsoft Visio diagrams made from native editable shapes.
 
 The project separates scientific truth from visual design:
