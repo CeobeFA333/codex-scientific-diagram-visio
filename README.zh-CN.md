@@ -22,7 +22,7 @@ Microsoft Visio 原生矢量重建或局部修改
 VSDX + PDF + 300 DPI PNG
 ```
 
-生成图片只用于布局和风格探索，不能覆盖代码与公式确定的模型事实。
+生成图片只用于布局和风格探索，不覆盖代码与公式确定的实际模型。
 
 ## 完整工作流动图
 
@@ -77,7 +77,6 @@ $skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-
 
 - 模型证据核验和设计提示词可以跨平台使用。
 - 原生 VSDX 构建需要 Windows 和 Microsoft Visio。
-- v1 重点是可靠工作流、布局规范、可编辑性和 QA；确定性的 `diagram-spec.json → VSDX` 自动构建引擎计划在后续版本加入。
 
 ## 安全边界
 
