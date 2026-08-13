@@ -45,8 +45,8 @@ def main() -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     if manifest.get("name") != "codex-scientific-diagram-visio":
         fail("unexpected plugin name")
-    if manifest.get("version") != "1.0.1":
-        fail("release manifest must be version 1.0.1")
+    if manifest.get("version") != "1.1.0":
+        fail("release manifest must be version 1.1.0")
 
     expected = {
         "scientific-model-diagram-prompting",
@@ -68,6 +68,8 @@ def main() -> int:
     scan_suffixes = {".md", ".yaml", ".yml", ".json", ".py", ".ps1", ".txt"}
     for path in ROOT.rglob("*"):
         if not path.is_file() or path.suffix.lower() not in scan_suffixes:
+            continue
+        if any(part in {".git", "build", "__pycache__"} for part in path.parts):
             continue
         if path.resolve() == Path(__file__).resolve():
             continue

@@ -24,6 +24,14 @@ VSDX + PDF + 300 DPI PNG
 
 生成图片只用于布局和风格探索，不能覆盖代码与公式确定的模型事实。
 
+## 完整工作流动图
+
+下面是真实 Microsoft Visio 窗口录制式演示：Codex 先读取并冻结 Transformer Encoder 模型契约，再用生图生成风格参考，随后以 Visio 原生形状逐步重建，保存并重新打开 VSDX，最后选择独立模块和已粘合连接线验证可编辑性。
+
+![从论文和代码到可编辑 Visio 的完整流程](examples/transformer-encoder-demo/assets/workflow-demo.gif)
+
+[查看可复现示例](examples/transformer-encoder-demo/) · [下载可编辑 VSDX](examples/transformer-encoder-demo/assets/transformer-encoder-demo.vsdx) · [查看 PDF](examples/transformer-encoder-demo/assets/transformer-encoder-demo.pdf)
+
 ## 两个技能
 
 ### `scientific-model-diagram-prompting`

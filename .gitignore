@@ -4,6 +4,7 @@ __pycache__/
 *.bak
 *.autosave
 _visio_work/
+examples/**/build/
 *.vsdx
 *.vsdm
 *.vssx
@@ -11,3 +12,9 @@ _visio_work/
 *.png
 *.jpg
 *.jpeg
+
+# Curated, reproducible public demo artifacts.
+!examples/transformer-encoder-demo/assets/*.png
+!examples/transformer-encoder-demo/assets/*.gif
+!examples/transformer-encoder-demo/assets/*.pdf
+!examples/transformer-encoder-demo/assets/*.vsdx
