@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研模型图提示与优化"
+  short_description: "面向论文模型图的生成、科学化优化与矢量重建提示词编制"
+  default_prompt: "Use $scientific-model-diagram-prompting to analyze my research model and produce a publication-ready diagram prompt plus a reconstruction specification."

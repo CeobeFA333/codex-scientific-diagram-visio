@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研模型图 Visio 原生绘制"
+  short_description: "从模型核验规范到 Visio 原生重建、修改、导出与验收"
+  default_prompt: "Use $scientific-model-diagram-visio to rebuild or revise my scientific model diagram as an editable Microsoft Visio file."

@@ -1,0 +1,23 @@
+{
+  "name": "codex-scientific-diagram-visio",
+  "version": "1.0.0",
+  "description": "Turn verified model code and papers into publication-ready, native editable Microsoft Visio figures.",
+  "author": {
+    "name": "CeobeFA333"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Scientific Diagram Visio",
+    "shortDescription": "From model evidence to editable Visio figures.",
+    "longDescription": "Audit model code and manuscript descriptions, generate a visual design reference, rebuild the result with native editable Visio shapes, and verify dimensions, routing, readability, exports, and editability.",
+    "developerName": "CeobeFA333",
+    "category": "Productivity",
+    "capabilities": [
+      "Scientific model evidence audit",
+      "Diagram prompting and visual reference generation",
+      "Native Microsoft Visio reconstruction",
+      "VSDX structure and export QA"
+    ],
+    "defaultPrompt": "Analyze my model code and paper, then rebuild the verified architecture as an editable Microsoft Visio figure."
+  }
+}

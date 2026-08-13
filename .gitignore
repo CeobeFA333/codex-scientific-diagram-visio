@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.tmp
+*.bak
+*.autosave
+_visio_work/
+*.vsdx
+*.vsdm
+*.vssx
+*.pdf
+*.png
+*.jpg
+*.jpeg
