@@ -6,6 +6,8 @@ This reproducible example demonstrates the complete workflow on the original Tra
 
 [Download the editable VSDX](assets/transformer-encoder-demo.vsdx) · [Open the PDF](assets/transformer-encoder-demo.pdf) · [View the final PNG](assets/transformer-encoder-demo.png)
 
+[See the model and API-equivalent usage example](COST-EXAMPLE.md). A typical run using `gpt-5.6-terra`, one medium landscape `gpt-image-2` reference, and local Visio automation is approximately **$0.32** under the documented assumptions; local Visio drawing itself does not consume OpenAI tokens.
+
 ## Verified model contract
 
 - Token IDs: `[B × L]`

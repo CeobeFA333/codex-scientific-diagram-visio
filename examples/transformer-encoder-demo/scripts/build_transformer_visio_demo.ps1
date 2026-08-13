@@ -173,11 +173,28 @@ function Add-Cuboid {
 }
 
 function Add-ConnectionPoint {
-    param($Shape, [string]$Side)
+    param(
+        $Shape,
+        [string]$Side,
+        [double]$WorldCoordinate = [double]::NaN
+    )
     $row = $Shape.AddRow(7, -1, 0)
+    $height = $Shape.CellsU('Height').ResultIU
+    $pinY = $Shape.CellsU('PinY').ResultIU
+    $localHorizontalY = if ([double]::IsNaN($WorldCoordinate)) {
+        $null
+    } else {
+        $WorldCoordinate - $pinY + ($height / 2)
+    }
     switch ($Side) {
-        'Left'   { $Shape.CellsSRC(7, $row, 0).FormulaU = '0';       $Shape.CellsSRC(7, $row, 1).FormulaU = 'Height*0.5' }
-        'Right'  { $Shape.CellsSRC(7, $row, 0).FormulaU = 'Width';   $Shape.CellsSRC(7, $row, 1).FormulaU = 'Height*0.5' }
+        'Left'   {
+            $Shape.CellsSRC(7, $row, 0).FormulaU = '0'
+            $Shape.CellsSRC(7, $row, 1).FormulaU = if ($null -eq $localHorizontalY) { 'Height*0.5' } else { "$localHorizontalY in" }
+        }
+        'Right'  {
+            $Shape.CellsSRC(7, $row, 0).FormulaU = 'Width'
+            $Shape.CellsSRC(7, $row, 1).FormulaU = if ($null -eq $localHorizontalY) { 'Height*0.5' } else { "$localHorizontalY in" }
+        }
         'Top'    { $Shape.CellsSRC(7, $row, 0).FormulaU = 'Width*0.5'; $Shape.CellsSRC(7, $row, 1).FormulaU = 'Height' }
         'Bottom' { $Shape.CellsSRC(7, $row, 0).FormulaU = 'Width*0.5'; $Shape.CellsSRC(7, $row, 1).FormulaU = '0' }
     }
@@ -193,19 +210,20 @@ function Add-Connector {
         [string]$ToSide,
         [string]$Color = '#17212B',
         [double]$Weight = 1.6,
-        [bool]$Arrow = $true
+        [bool]$Arrow = $true,
+        [double]$HorizontalY = [double]::NaN
     )
     $connector = $script:page.Drop($script:visio.ConnectorToolDataObject, 0, 0)
     $connector.NameU = $Name
-    $fromRow = Add-ConnectionPoint $From $FromSide
-    $toRow = Add-ConnectionPoint $To $ToSide
+    $fromRow = Add-ConnectionPoint $From $FromSide $HorizontalY
+    $toRow = Add-ConnectionPoint $To $ToSide $HorizontalY
     $connector.CellsU('BeginX').GlueTo($From.CellsSRC(7, $fromRow, 0))
     $connector.CellsU('EndX').GlueTo($To.CellsSRC(7, $toRow, 0))
     Set-CellFormula $connector 'LineColor' (Convert-HexToRgbFormula $Color)
     Set-CellFormula $connector 'LineWeight' "$Weight pt"
     Set-CellFormula $connector 'EndArrow' $(if ($Arrow) { '4' } else { '0' })
     Set-CellFormula $connector 'EndArrowSize' '2'
-    Set-CellFormula $connector 'ShapeRouteStyle' '1'
+    Set-CellFormula $connector 'ShapeRouteStyle' $(if ([double]::IsNaN($HorizontalY)) { '1' } else { '2' })
     Add-ToLayer $connector 'Connectors'
     $script:shapes[$Name] = $connector
     $connector
@@ -314,7 +332,8 @@ try {
     $tokens = Add-Cuboid 'TokenIDs' 0.55 3.25 0.82 1.55 "Token IDs`n[B × L]" '#244A8F' '#B5CBEA' '#17365D' 13 '#FFFFFF'
     $embedding = Add-Cuboid 'TokenEmbedding' 2.15 4.45 1.30 1.02 "Token Embedding`n[B × L × 512]" '#4F81BD' '#C9DDF4' '#2E5C8A' 11 '#FFFFFF'
     $position = Add-Cuboid 'PositionEncoding' 2.25 2.55 1.12 1.02 "Positional Encoding`n[L × 512]" '#79A9DC' '#DDEAF7' '#3F78B4' 10 '#15202B'
-    $plus = Add-Rect 'EmbeddingPlus' 3.52 3.68 3.92 4.08 '+' '#FFFFFF' '#244A8F' 1.5 22 '#244A8F' $true $false 'Operators'
+    $mainFlowY = 3.97
+    $plus = Add-Rect 'EmbeddingPlus' 3.52 3.77 3.92 4.17 '+' '#FFFFFF' '#244A8F' 1.5 22 '#244A8F' $true $false 'Operators'
     Set-CellFormula $plus 'Rounding' '50%'
     Add-Connector 'TokensToEmbedding' $tokens 'Right' $embedding 'Left' | Out-Null
     Add-Connector 'EmbeddingToPlus' $embedding 'Right' $plus 'Left' | Out-Null
@@ -322,7 +341,7 @@ try {
     $frames += Capture-VisioFrame 'input-embedding' 'Build native token, embedding, position, and addition objects'
 
     $attention = Add-Cuboid 'Attention' 4.55 3.15 2.15 1.65 "Multi-Head`nSelf-Attention`n8 heads`nd_model = 512" '#2B9C98' '#BFE8E5' '#18706D' 13 '#FFFFFF'
-    Add-Connector 'PlusToAttention' $plus 'Right' $attention 'Left' '#17212B' 1.7 $true | Out-Null
+    Add-Connector 'PlusToAttention' $plus 'Right' $attention 'Left' '#17212B' 1.7 $true $mainFlowY | Out-Null
     Add-Text 'HeadsLabel' 4.55 2.55 6.80 2.88 '8 independent attention heads' 9 '#18706D' $true | Out-Null
     for ($head = 1; $head -le 8; $head++) {
         $headX = 4.52 + (($head - 1) * 0.28)
@@ -331,7 +350,7 @@ try {
     $frames += Capture-VisioFrame 'attention-heads' 'Create the multi-head attention module and eight editable head blocks'
 
     $norm1 = Add-Cuboid 'AddNorm1' 7.62 3.32 1.10 1.30 "Add +`nLayerNorm`n[B × L × 512]" '#7B6CCB' '#DCD7F5' '#51439A' 11 '#FFFFFF'
-    Add-Connector 'AttentionToNorm1' $attention 'Right' $norm1 'Left' '#17212B' 1.7 $true | Out-Null
+    Add-Connector 'AttentionToNorm1' $attention 'Right' $norm1 'Left' '#17212B' 1.7 $true $mainFlowY | Out-Null
     Add-ResidualConnector 'Residual1' $plus $norm1 6.40 | Out-Null
     Add-Text 'Residual1Label' 5.25 6.48 7.55 6.76 'Residual connection' 9 '#52606D' $false | Out-Null
     $frames += Capture-VisioFrame 'first-residual' 'Route the first residual path through a reserved upper lane'
@@ -341,15 +360,15 @@ try {
     $linear1 = Add-Rect 'Linear1' 9.98 4.24 11.82 4.76 'Linear  512 → 2048' '#FFF6E5' '#A96B0B' 1.0 10 '#533900' $true $false 'Modules'
     $relu = Add-Rect 'ReLU' 10.18 3.55 11.62 4.00 'ReLU' '#FFF6E5' '#A96B0B' 1.0 11 '#533900' $true $false 'Operators'
     $linear2 = Add-Rect 'Linear2' 9.98 2.94 11.82 3.42 'Linear  2048 → 512' '#FFF6E5' '#A96B0B' 1.0 10 '#533900' $true $false 'Modules'
-    Add-Connector 'Norm1ToFFN' $norm1 'Right' $ffn 'Left' '#17212B' 1.7 $true | Out-Null
+    Add-Connector 'Norm1ToFFN' $norm1 'Right' $ffn 'Left' '#17212B' 1.7 $true $mainFlowY | Out-Null
     Add-Connector 'Linear1ToReLU' $linear1 'Bottom' $relu 'Top' '#8B5A0A' 1.2 $true | Out-Null
     Add-Connector 'ReLUToLinear2' $relu 'Bottom' $linear2 'Top' '#8B5A0A' 1.2 $true | Out-Null
     $frames += Capture-VisioFrame 'feed-forward' 'Assemble the 512→2048→512 feed-forward network from independent shapes'
 
     $norm2 = Add-Cuboid 'AddNorm2' 13.08 3.32 1.10 1.30 "Add +`nLayerNorm`n[B × L × 512]" '#7B6CCB' '#DCD7F5' '#51439A' 11 '#FFFFFF'
     $output = Add-Cuboid 'EncoderOutput' 14.55 3.32 0.88 1.30 "Encoder`nOutput`n[B × L × 512]" '#244A8F' '#B5CBEA' '#17365D' 11 '#FFFFFF'
-    Add-Connector 'FFNToNorm2' $ffn 'Right' $norm2 'Left' '#17212B' 1.7 $true | Out-Null
-    Add-Connector 'Norm2ToOutput' $norm2 'Right' $output 'Left' '#17212B' 1.7 $true | Out-Null
+    Add-Connector 'FFNToNorm2' $ffn 'Right' $norm2 'Left' '#17212B' 1.7 $true $mainFlowY | Out-Null
+    Add-Connector 'Norm2ToOutput' $norm2 'Right' $output 'Left' '#17212B' 1.7 $true $mainFlowY | Out-Null
     Add-ResidualConnector 'Residual2' $norm1 $norm2 6.85 | Out-Null
     Add-Text 'Residual2Label' 9.25 6.92 12.65 7.18 'Residual connection' 9 '#52606D' $false | Out-Null
     Add-Text 'Caption' 2.0 0.18 14.0 0.55 'Transformer encoder reconstructed with native editable Microsoft Visio shapes.' 12 '#25313C' $false | Out-Null

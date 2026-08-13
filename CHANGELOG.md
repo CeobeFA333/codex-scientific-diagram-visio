@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.1 — 2026-08-13
+
+- Force the five Transformer main-flow connectors onto one `3.97 in` baseline with straight routing and glued endpoints.
+- Align the independent embedding-addition operator to the same baseline.
+- Regenerate the VSDX, PDF, PNG, and animated Visio workflow demo.
+- Add an official-pricing-based model and API-equivalent usage example, including the fact that local Visio COM drawing consumes no OpenAI tokens.
+
 ## 1.1.0 — 2026-08-13
 
 - Add a reproducible Transformer Encoder example based on the original paper and official PyTorch documentation.
