@@ -35,7 +35,7 @@
     },
     {
       "path": "simpli-figure4-portable.svg",
-      "sha256": "b01906787dce1242366f39152f6fd335e15dcd79d5121477c211ae092c44c8b9"
+      "sha256": "544223720f001487a8bfa9a8e99c25202bb806235dcbc1f84bbeaac12b236a2c"
     },
     {
       "path": "simpli-figure4-editable.pdf",
@@ -43,7 +43,7 @@
     },
     {
       "path": "simpli-figure4-evidence.json",
-      "sha256": "3fa091ae78933d82f369ffa6d92e2b08b7d8c6e8dc666aab0ea45178514ab330"
+      "sha256": "12042d2069c31512d4aebef987575672dc9e00f5feea02996bc011d5a446d116"
     }
   ],
   "external_audit_inputs": [
