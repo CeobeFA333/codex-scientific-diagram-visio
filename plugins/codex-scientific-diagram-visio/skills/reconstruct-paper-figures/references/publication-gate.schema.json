@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/reconstruct-paper-figures/publication-gate.schema.json",
+  "title": "Complex figure publication gate",
+  "type": "object",
+  "required": [
+    "candidate_id",
+    "kind",
+    "recipe",
+    "svg",
+    "declared_status",
+    "illustrator_evidence",
+    "manual_visual_review",
+    "one_mm_decision",
+    "minimum_atomic_rasters",
+    "required_atomic_raster_ids",
+    "icons_required",
+    "required_vector_icon_ids",
+    "required_vector_object_ids",
+    "font_size_exceptions",
+    "documented_blockers"
+  ],
+  "properties": {
+    "candidate_id": {"type": "string", "minLength": 1},
+    "kind": {"enum": ["surface_plots", "circular_infographic", "detection_matrix"]},
+    "recipe": {"type": "string", "minLength": 1},
+    "svg": {"type": "string", "minLength": 1},
+    "declared_status": {"enum": ["prototype", "blocked", "candidate", "approved"]},
+    "illustrator_evidence": {
+      "type": "object",
+      "required": ["status", "audits"],
+      "properties": {
+        "status": {"enum": ["required-but-missing", "partial", "available"]},
+        "audits": {
+          "type": "object",
+          "properties": {
+            "svg_import": {"type": "string", "minLength": 1},
+            "ai_reopen": {"type": "string", "minLength": 1},
+            "pdf_reopen": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
+        "source_documents": {
+          "type": "object",
+          "required": ["svg_import", "ai_reopen", "pdf_reopen"],
+          "properties": {
+            "svg_import": {"type": "string", "minLength": 1},
+            "ai_reopen": {"type": "string", "minLength": 1},
+            "pdf_reopen": {"type": "string", "minLength": 1}
+          },
+          "additionalProperties": false
+        },
+        "text_path_audit": {"type": "string", "minLength": 1},
+        "pdf_audit": {"type": "string", "minLength": 1},
+        "pdf_text_expectations": {
+          "type": "object",
+          "properties": {
+            "required_extractable_text": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {"type": "string", "minLength": 1}
+            },
+            "forbidden_font_name_fragments": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {"type": "string", "minLength": 1}
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "manual_visual_review": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {"enum": ["pending", "failed", "passed"]},
+        "report": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "one_mm_decision": {
+      "type": "object",
+      "required": ["meaning", "approval_status", "object_ids"],
+      "properties": {
+        "meaning": {
+          "enum": [
+            "stroke_width",
+            "tick_length",
+            "marker_dimension",
+            "scale_bar_length",
+            "not_applicable",
+            "unresolved"
+          ]
+        },
+        "approval_status": {"enum": ["pending", "approved", "rejected"]},
+        "object_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "dimension_axis": {"enum": ["width", "height", "diameter"]},
+        "note": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "minimum_atomic_rasters": {"type": "integer", "minimum": 0},
+    "atomic_manifest": {"type": "string", "minLength": 1},
+    "required_atomic_raster_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "icons_required": {"type": "boolean"},
+    "required_vector_icon_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "required_vector_object_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "font_size_exceptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["contents", "size_pt", "reason"],
+        "properties": {
+          "contents": {"type": "string", "minLength": 1},
+          "size_pt": {"type": "number", "exclusiveMinimum": 0},
+          "reason": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "expected_illustrator_counts": {
+      "type": "object",
+      "required": ["text_frames", "path_items", "raster_items", "placed_items", "warnings"],
+      "properties": {
+        "text_frames": {"type": "integer", "minimum": 0},
+        "path_items": {"type": "integer", "minimum": 0},
+        "raster_items": {"type": "integer", "minimum": 0},
+        "placed_items": {"type": "integer", "minimum": 0},
+        "warnings": {"type": "integer", "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "documented_blockers": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    }
+  },
+  "additionalProperties": false
+}

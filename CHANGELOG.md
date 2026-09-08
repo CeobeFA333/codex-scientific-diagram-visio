@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.3.0 — 2026-09-08
+
+- Add the focused `reconstruct-paper-figures` skill v0.1.0 for PDF inventory, hybrid editable reconstruction, source-data-bound charts, reviewed OCR cleanup, and publication gating.
+- Add deterministic standalone skill packaging with its own MIT license and machine-readable release profile.
+- Add SVG import, Illustrator AI reopen, and editable-PDF reopen evidence contracts and scripts.
+- Add real CC BY 4.0 reconstruction previews, editable SVG/PDF examples, public evidence JSON, and attribution notices.
+- Add a 1280×720 evidence-driven GIF and H.264 MP4 in the established repository visual style, with a reproducibility manifest and explicit `publication_ready=false` status.
+- Expand release validation and Marketplace synchronization from two skills to three.
+
 ## 1.2.0 — 2026-08-13
 
 - Package the two skills as an installable Codex plugin and repo marketplace.

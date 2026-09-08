@@ -1,0 +1,70 @@
+{
+  "schema_version": "paper-figure-reconstruction-demo-v1",
+  "plugin_version": "1.3.0",
+  "presentation_kind": "evidence-driven-animation",
+  "screen_recording": false,
+  "dimensions_px": [
+    1280,
+    720
+  ],
+  "duration_seconds": 21.7,
+  "frames": 9,
+  "generator": {
+    "python": "3.8.20",
+    "pillow": "9.1.1",
+    "ffmpeg": "8.1.2",
+    "mp4_codec": "h264",
+    "mp4_pixel_format": "yuv420p"
+  },
+  "files": [
+    {
+      "path": "paper-figure-reconstruction-demo.gif",
+      "sha256": "946985c8c158c5f40f287ad97531a159084d82ec58bfb19f63be2cc618c5f31e"
+    },
+    {
+      "path": "paper-figure-reconstruction-demo.mp4",
+      "sha256": "5866b9afd1d4e6190103ab5741efc56cd39db221b347302f36d23d4a38d6747e"
+    },
+    {
+      "path": "simpli-figure4-preview.png",
+      "sha256": "1a372d1ef602c905bcc740740f9a90316f295275f7807e62f9505d88498ca8c3"
+    },
+    {
+      "path": "tomicsvis-statistical-suite-preview.png",
+      "sha256": "9fb28fb904804634121b11e5a49f504c34ffc3fbfbb1440f7e5d9e503adad254"
+    },
+    {
+      "path": "simpli-figure4-portable.svg",
+      "sha256": "b01906787dce1242366f39152f6fd335e15dcd79d5121477c211ae092c44c8b9"
+    },
+    {
+      "path": "simpli-figure4-editable.pdf",
+      "sha256": "846b2fc182e9db10f30d429a340f3c84a7efc58656caf1a995a9ec7239ad8dba"
+    },
+    {
+      "path": "simpli-figure4-evidence.json",
+      "sha256": "3fa091ae78933d82f369ffa6d92e2b08b7d8c6e8dc666aab0ea45178514ab330"
+    }
+  ],
+  "external_audit_inputs": [
+    {
+      "kind": "text-cleanup-audit",
+      "redistributed": false,
+      "sha256": "b81874982cbe5c05fc8a9082844baef651d642f24be622ade8d7c91ed08764e4",
+      "verified_facts": {
+        "selected_pixels": 2010,
+        "changed_pixels": 1206,
+        "outside_mask_changed_pixels": 0,
+        "residual_pixel_count": 0,
+        "manual_approval_required": true
+      }
+    }
+  ],
+  "publication_ready": false,
+  "declared_blockers": 6,
+  "licenses": {
+    "software_and_original_project_material": "MIT",
+    "simpli_adaptation": "CC BY 4.0",
+    "tomicsvis_adaptation": "CC BY 4.0"
+  }
+}

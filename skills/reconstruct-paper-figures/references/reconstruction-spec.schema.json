@@ -1,0 +1,461 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/reconstruct-paper-figures/reconstruction-spec.schema.json",
+  "title": "Paper figure reconstruction specification",
+  "type": "object",
+  "required": ["title", "source_image", "figure_class", "recovery_level", "canvas", "defaults", "elements"],
+  "properties": {
+    "title": {"type": "string", "minLength": 1},
+    "source_image": {"type": "string", "minLength": 1},
+    "figure_class": {"type": "string", "minLength": 1},
+    "recovery_level": {"enum": ["R0", "R1", "R2", "R3", "mixed"]},
+    "canvas": {
+      "type": "object",
+      "required": ["width_px", "height_px", "print_width_mm"],
+      "properties": {
+        "width_px": {"type": "integer", "minimum": 1},
+        "height_px": {"type": "integer", "minimum": 1},
+        "print_width_mm": {"type": "number", "exclusiveMinimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "defaults": {
+      "type": "object",
+      "required": ["font_family", "font_size_pt"],
+      "properties": {
+        "font_family": {"type": "string"},
+        "font_size_pt": {"type": "number", "exclusiveMinimum": 0},
+        "text_fill": {"type": "string"},
+        "stroke_width_mm": {"type": "number", "minimum": 0}
+      },
+      "additionalProperties": true
+    },
+    "contract": {
+      "type": "object",
+      "properties": {
+        "required_live_text": {"type": "boolean"},
+        "required_font_family": {"type": "string"},
+        "required_font_size_pt": {"type": "number"},
+        "axis_stroke_mm": {"type": ["number", "null"]},
+        "marker_diameter_mm": {"type": ["number", "null"]},
+        "require_atomic_rasters": {"type": "boolean"},
+        "require_zero_rasters": {"type": "boolean"},
+        "manual_review_required": {"type": "boolean"}
+      },
+      "additionalProperties": true
+    },
+    "masks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rect_px", "mode"],
+        "properties": {
+          "rect_px": {
+            "type": "array",
+            "prefixItems": [
+              {"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "mode": {"enum": ["fill", "sample", "clone", "color_remove"]},
+          "color": {"type": "string"},
+          "sample_px": {"type": "array", "minItems": 2, "maxItems": 2},
+          "source_rect_px": {"type": "array", "minItems": 4, "maxItems": 4},
+          "dominance_min": {"type": "integer", "minimum": 0},
+          "radius": {"type": "integer", "minimum": 1}
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"mode": {"const": "sample"}}, "required": ["mode"]},
+            "then": {"required": ["sample_px"]}
+          },
+          {
+            "if": {"properties": {"mode": {"const": "clone"}}, "required": ["mode"]},
+            "then": {"required": ["source_rect_px"]}
+          }
+        ],
+        "additionalProperties": true
+      }
+    },
+    "protected_regions_px": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "rect_px", "reason"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "rect_px": {
+            "type": "array",
+            "prefixItems": [
+              {"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "reason": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "raster_regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source_rect_px",
+          "raster_reason",
+          "atomic_raster_unit",
+          "contains_reconstructable_content",
+          "decomposition_note"
+        ],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.:-]*$"},
+          "source_rect_px": {
+            "type": "array",
+            "prefixItems": [
+              {"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "dest_rect_px": {
+            "type": "array",
+            "prefixItems": [
+              {"type": "number"}, {"type": "number"}, {"type": "number"}, {"type": "number"}
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "raster_reason": {"type": "string", "minLength": 1},
+          "atomic_raster_unit": {"type": "boolean"},
+          "contains_reconstructable_content": {"type": "boolean"},
+          "decomposition_note": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "atomic_rasters": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source_file",
+          "cleaned_file",
+          "source_bbox_px",
+          "canvas_bbox_px",
+          "evidence",
+          "raster_reason",
+          "decomposition_note",
+          "allow_nonuniform_scale"
+        ],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.:-]*$"},
+          "source_file": {"type": "string", "minLength": 1},
+          "cleaned_file": {"type": "string", "minLength": 1},
+          "source_bbox_px": {
+            "type": "array",
+            "prefixItems": [
+              {"type": "integer", "minimum": 0},
+              {"type": "integer", "minimum": 0},
+              {"type": "integer", "exclusiveMinimum": 0},
+              {"type": "integer", "exclusiveMinimum": 0}
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "canvas_bbox_px": {
+            "type": "array",
+            "prefixItems": [
+              {"type": "integer", "minimum": 0},
+              {"type": "integer", "minimum": 0},
+              {"type": "integer", "exclusiveMinimum": 0},
+              {"type": "integer", "exclusiveMinimum": 0}
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "evidence": {"const": true},
+          "raster_reason": {"type": "string", "minLength": 1},
+          "decomposition_note": {"type": "string", "minLength": 1},
+          "allow_nonuniform_scale": {"const": false}
+        },
+        "additionalProperties": false
+      }
+    },
+    "annotation_occlusion_masks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "atomic_raster_id",
+          "rect_px",
+          "mode",
+          "fill",
+          "max_area_fraction",
+          "evidence_change_contract",
+          "source_crop_sha256",
+          "old_annotation_risk",
+          "approval_status",
+          "rationale",
+          "replacement_element_ids"
+        ],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.:-]*$"},
+          "atomic_raster_id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.:-]*$"},
+          "rect_px": {
+            "description": "Absolute source-file pixel rectangle, fully contained by the referenced atomic raster source_bbox_px.",
+            "type": "array",
+            "prefixItems": [
+              {"type": "number", "minimum": 0},
+              {"type": "number", "minimum": 0},
+              {"type": "number", "exclusiveMinimum": 0},
+              {"type": "number", "exclusiveMinimum": 0}
+            ],
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "mode": {"enum": ["plate", "narrow_mask"]},
+          "fill": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"},
+          "max_area_fraction": {"type": "number", "exclusiveMinimum": 0, "maximum": 0.25},
+          "evidence_change_contract": {"const": "source_pixels_immutable"},
+          "source_crop_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "old_annotation_risk": {
+            "enum": ["confirmed_occluded", "residual_risk", "not_reviewed"]
+          },
+          "approval_status": {"enum": ["approved", "pending", "rejected"]},
+          "approved_by": {"type": "string", "minLength": 1},
+          "approval_note": {"type": "string", "minLength": 1},
+          "rationale": {"type": "string", "minLength": 1},
+          "replacement_element_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.:-]*$"}
+          }
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"approval_status": {"const": "approved"}}, "required": ["approval_status"]},
+            "then": {"required": ["approved_by", "approval_note"]}
+          }
+        ],
+        "additionalProperties": false
+      }
+    },
+    "gradients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "stops"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.:-]*$"},
+          "type": {"enum": ["linear", "radial"]},
+          "x1_px": {"type": "number"},
+          "y1_px": {"type": "number"},
+          "x2_px": {"type": "number"},
+          "y2_px": {"type": "number"},
+          "cx_px": {"type": "number"},
+          "cy_px": {"type": "number"},
+          "radius_px": {"type": "number", "exclusiveMinimum": 0},
+          "fx_px": {"type": "number"},
+          "fy_px": {"type": "number"},
+          "stops": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": ["offset_percent", "color"],
+              "properties": {
+                "offset_percent": {"type": "number", "minimum": 0, "maximum": 100},
+                "color": {"type": "string"},
+                "opacity": {"type": "number", "minimum": 0, "maximum": 1}
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"type": {"const": "linear"}}, "required": ["type"]},
+            "then": {"required": ["x1_px", "y1_px", "x2_px", "y2_px"]}
+          },
+          {
+            "if": {"properties": {"type": {"const": "radial"}}, "required": ["type"]},
+            "then": {"required": ["cx_px", "cy_px", "radius_px"]}
+          }
+        ],
+        "additionalProperties": false
+      }
+    },
+    "elements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "id"],
+        "properties": {
+          "type": {
+            "enum": [
+              "text", "line", "rect", "ellipse", "polyline", "polygon", "path",
+              "arc", "annular_sector", "group", "text_path"
+            ]
+          },
+          "id": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.:-]*$"},
+          "text": {"type": "string"},
+          "runs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["text"],
+              "properties": {
+                "text": {"type": "string"},
+                "baseline_shift": {"enum": ["sub", "super", "baseline"]},
+                "font_size_percent": {"type": "number", "exclusiveMinimum": 0},
+                "font_style": {"enum": ["normal", "italic"]}
+              },
+              "additionalProperties": false
+            }
+          },
+          "x_px": {"type": "number"},
+          "y_px": {"type": "number"},
+          "x1_px": {"type": "number"},
+          "y1_px": {"type": "number"},
+          "x2_px": {"type": "number"},
+          "y2_px": {"type": "number"},
+          "width_px": {"type": "number"},
+          "height_px": {"type": "number"},
+          "cx_px": {"type": "number"},
+          "cy_px": {"type": "number"},
+          "rx_px": {"type": "number"},
+          "ry_px": {"type": "number"},
+          "radius_px": {"type": "number", "exclusiveMinimum": 0},
+          "inner_radius_px": {"type": "number", "exclusiveMinimum": 0},
+          "outer_radius_px": {"type": "number", "exclusiveMinimum": 0},
+          "start_angle_deg": {"type": "number"},
+          "end_angle_deg": {"type": "number"},
+          "clockwise": {"type": "boolean"},
+          "start_offset_percent": {"type": "number", "minimum": 0, "maximum": 100},
+          "fill_gradient": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_.:-]*$"},
+          "points_px": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "array",
+              "prefixItems": [{"type": "number"}, {"type": "number"}],
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "commands": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["op"],
+              "properties": {
+                "op": {"enum": ["M", "L", "C", "Q", "A", "Z"]},
+                "x_px": {"type": "number"},
+                "y_px": {"type": "number"},
+                "x1_px": {"type": "number"},
+                "y1_px": {"type": "number"},
+                "x2_px": {"type": "number"},
+                "y2_px": {"type": "number"},
+                "rx_px": {"type": "number", "exclusiveMinimum": 0},
+                "ry_px": {"type": "number", "exclusiveMinimum": 0},
+                "x_axis_rotation_deg": {"type": "number"},
+                "large_arc": {"type": "boolean"},
+                "sweep": {"type": "boolean"}
+              },
+              "additionalProperties": false
+            }
+          },
+          "children": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["type", "id"]
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {"properties": {"type": {"const": "text"}}, "required": ["type"]},
+            "then": {
+              "required": ["x_px", "y_px"],
+              "anyOf": [{"required": ["text"]}, {"required": ["runs"]}]
+            }
+          },
+          {
+            "if": {"properties": {"type": {"const": "line"}}, "required": ["type"]},
+            "then": {"required": ["x1_px", "y1_px", "x2_px", "y2_px"]}
+          },
+          {
+            "if": {"properties": {"type": {"const": "rect"}}, "required": ["type"]},
+            "then": {"required": ["x_px", "y_px", "width_px", "height_px"]}
+          },
+          {
+            "if": {"properties": {"type": {"const": "ellipse"}}, "required": ["type"]},
+            "then": {"required": ["cx_px", "cy_px", "rx_px", "ry_px"]}
+          },
+          {
+            "if": {"properties": {"type": {"const": "polyline"}}, "required": ["type"]},
+            "then": {"required": ["points_px"]}
+          },
+          {
+            "if": {"properties": {"type": {"const": "polygon"}}, "required": ["type"]},
+            "then": {
+              "required": ["points_px"],
+              "properties": {"points_px": {"minItems": 3}}
+            }
+          },
+          {
+            "if": {"properties": {"type": {"const": "path"}}, "required": ["type"]},
+            "then": {"required": ["commands"]}
+          },
+          {
+            "if": {"properties": {"type": {"const": "arc"}}, "required": ["type"]},
+            "then": {
+              "required": ["cx_px", "cy_px", "radius_px", "start_angle_deg", "end_angle_deg"]
+            }
+          },
+          {
+            "if": {"properties": {"type": {"const": "annular_sector"}}, "required": ["type"]},
+            "then": {
+              "required": [
+                "cx_px", "cy_px", "inner_radius_px", "outer_radius_px",
+                "start_angle_deg", "end_angle_deg"
+              ]
+            }
+          },
+          {
+            "if": {"properties": {"type": {"const": "group"}}, "required": ["type"]},
+            "then": {"required": ["children"]}
+          },
+          {
+            "if": {"properties": {"type": {"const": "text_path"}}, "required": ["type"]},
+            "then": {
+              "required": ["cx_px", "cy_px", "radius_px", "start_angle_deg", "end_angle_deg"],
+              "anyOf": [{"required": ["text"]}, {"required": ["runs"]}]
+            }
+          }
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "allOf": [
+    {
+      "not": {
+        "required": ["raster_regions", "atomic_rasters"]
+      }
+    }
+  ],
+  "additionalProperties": true
+}

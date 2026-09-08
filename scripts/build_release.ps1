@@ -29,6 +29,10 @@ Copy-Item -LiteralPath (Join-Path $repoRoot "skills") -Destination $pluginStage 
 Copy-Item -LiteralPath (Join-Path $repoRoot "LICENSE") -Destination $pluginStage
 Copy-Item -LiteralPath (Join-Path $repoRoot "PRIVACY.md") -Destination $pluginStage
 Copy-Item -LiteralPath (Join-Path $repoRoot "TERMS.md") -Destination $pluginStage
+Get-ChildItem -LiteralPath $pluginStage -Directory -Filter "__pycache__" -Recurse |
+    Remove-Item -Recurse -Force
+Get-ChildItem -LiteralPath $pluginStage -File -Include "*.pyc", "*.pyo" -Recurse |
+    Remove-Item -Force
 
 $pluginZip = Join-Path $outputRoot "$pluginName-plugin-v$version.zip"
 Compress-Archive -LiteralPath $pluginStage -DestinationPath $pluginZip -CompressionLevel Optimal
@@ -44,6 +48,11 @@ Copy-Item -LiteralPath (Join-Path $repoRoot "SECURITY.md") -Destination $teamSta
 Copy-Item -LiteralPath (Join-Path $repoRoot "PRIVACY.md") -Destination $teamStage
 Copy-Item -LiteralPath (Join-Path $repoRoot "TERMS.md") -Destination $teamStage
 Copy-Item -LiteralPath (Join-Path $repoRoot "examples\transformer-encoder-demo") -Destination (Join-Path $teamStage "transformer-encoder-demo") -Recurse
+$paperDemoStage = Join-Path $teamStage "paper-figure-reconstruction-demo"
+New-Item -ItemType Directory -Path $paperDemoStage | Out-Null
+Copy-Item -LiteralPath (Join-Path $repoRoot "examples\paper-figure-reconstruction-demo\README.md") -Destination $paperDemoStage
+Copy-Item -LiteralPath (Join-Path $repoRoot "examples\paper-figure-reconstruction-demo\assets") -Destination $paperDemoStage -Recurse
+Copy-Item -LiteralPath (Join-Path $repoRoot "examples\paper-figure-reconstruction-demo\scripts") -Destination $paperDemoStage -Recurse
 
 $teamZip = Join-Path $outputRoot "$pluginName-team-trial-v$version.zip"
 Compress-Archive -LiteralPath $teamStage -DestinationPath $teamZip -CompressionLevel Optimal

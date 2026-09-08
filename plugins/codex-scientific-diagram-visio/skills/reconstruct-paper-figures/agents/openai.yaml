@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文配图可编辑矢量化"
+  short_description: "从论文 PDF 提取配图并重建可编辑 SVG 与高清 PDF"
+  default_prompt: "使用 $reconstruct-paper-figures 从论文 PDF 提取复杂配图，保留最小必要位图并重建活文字、坐标轴和标注。"

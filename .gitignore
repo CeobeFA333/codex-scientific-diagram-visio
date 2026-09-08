@@ -19,3 +19,9 @@ examples/**/build/
 !examples/transformer-encoder-demo/assets/*.gif
 !examples/transformer-encoder-demo/assets/*.pdf
 !examples/transformer-encoder-demo/assets/*.vsdx
+!examples/paper-figure-reconstruction-demo/assets/*.png
+!examples/paper-figure-reconstruction-demo/assets/*.gif
+!examples/paper-figure-reconstruction-demo/assets/*.mp4
+!examples/paper-figure-reconstruction-demo/assets/*.pdf
+!examples/paper-figure-reconstruction-demo/assets/*.svg
+!examples/paper-figure-reconstruction-demo/assets/*.json

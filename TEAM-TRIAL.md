@@ -5,7 +5,7 @@
 Recommended Codex plugin installation:
 
 ```powershell
-codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.2.0
+codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.0
 codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
 ```
 
@@ -13,17 +13,20 @@ Restart the Codex or ChatGPT desktop app and begin a new thread after installati
 
 推荐使用以上 Codex Plugin 安装方式。安装后重启 Codex 或 ChatGPT 桌面端，并新建对话进行测试。
 
-If Marketplace installation is unavailable, install either skill directly:
+If Marketplace installation is unavailable, install any skill directly:
 
 ```text
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.2.0/skills/scientific-model-diagram-prompting
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.2.0/skills/scientific-model-diagram-visio
+$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.3.0/skills/scientific-model-diagram-prompting
+$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.3.0/skills/scientific-model-diagram-visio
+$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.3.0/skills/reconstruct-paper-figures
 ```
 
 ## 2. Prerequisites / 环境要求
 
 - Codex with Skills or Plugins support.
 - Windows and Microsoft Visio for native VSDX construction.
+- Python 3.8+ for portable reconstruction scripts; optional PDF dependencies are documented in the skill.
+- Windows and Adobe Illustrator 29.8.2 only when testing the validated AI/editable-PDF roundtrip profile.
 - A dedicated work directory for source files, backups, screenshots, and exports.
 - A paper, model code/configuration, existing figure, or verified architecture description.
 
@@ -50,6 +53,15 @@ use independent operators and glued connectors, prevent all overlaps,
 and export PDF plus a 300-DPI PNG after reopen/editability QA.
 ```
 
+Or trial evidence-preserving reconstruction of a paper figure:
+
+```text
+Use $reconstruct-paper-figures to inventory this paper PDF and rebuild the
+selected figure as editable SVG, AI, and editable PDF. Preserve scientific
+image evidence as minimal hash-bound atoms, bind plots to supplied source data,
+and stop with explicit blockers when data, calibration, or human approval is missing.
+```
+
 中文提示词：
 
 ```text
@@ -64,14 +76,22 @@ and export PDF plus a 300-DPI PNG after reopen/editability QA.
 不得有任何重叠。保存后重新打开测试可编辑性，并导出 PDF 与 300 DPI PNG。
 ```
 
+```text
+使用 $reconstruct-paper-figures 盘点这篇论文 PDF，并把指定图片重建为
+可编辑 SVG、AI 和 PDF。连续色调科研图像只保留为最少的哈希绑定原子，
+统计图必须绑定已提供源数据；缺数据、标尺校准或人工批准时必须明确阻断。
+```
+
 ## 4. What to report / 反馈内容
 
 Open a GitHub issue and include only non-confidential information:
 
-- operating system, Codex surface, and Visio version;
+- operating system, Codex surface, and Visio/Illustrator version when applicable;
 - model family and input artifact types;
 - whether architecture/dimension conflicts were found correctly;
 - whether the VSDX remained independently editable after reopening;
+- whether SVG, AI, and editable PDF retained expected text, path, group, and placed-item counts;
+- whether publication blockers were preserved instead of silently cleared;
 - any overlap, bent-line, font, export, or installation problem;
 - a redacted screenshot when useful.
 

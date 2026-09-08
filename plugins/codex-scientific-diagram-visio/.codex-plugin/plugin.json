@@ -1,7 +1,7 @@
 {
   "name": "codex-scientific-diagram-visio",
-  "version": "1.2.0",
-  "description": "Turn verified model code and papers into publication-ready, native editable Microsoft Visio figures.",
+  "version": "1.3.0",
+  "description": "Reconstruct scientific paper figures as editable SVG/AI/PDF and build verified native Microsoft Visio model diagrams.",
   "author": {
     "name": "CeobeFA333",
     "url": "https://github.com/CeobeFA333"
@@ -18,8 +18,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Codex Scientific Diagram Visio",
-    "shortDescription": "From model evidence to editable Visio figures.",
-    "longDescription": "Audit model code and manuscript descriptions, generate a visual design reference, rebuild the result with native editable Visio shapes, and verify dimensions, routing, readability, exports, and editability.",
+    "shortDescription": "From paper evidence to editable scientific figures.",
+    "longDescription": "Audit papers, source data, model code, and legacy figures; reconstruct editable SVG, Illustrator AI, editable PDF, or native Visio outputs; and bind delivery to reproducible evidence and publication gates.",
     "developerName": "CeobeFA333",
     "category": "Productivity",
     "websiteURL": "https://github.com/CeobeFA333/codex-scientific-diagram-visio",
@@ -30,12 +30,16 @@
       "Scientific model evidence audit",
       "Diagram prompting and visual reference generation",
       "Native Microsoft Visio reconstruction",
-      "VSDX structure and export QA"
+      "VSDX structure and export QA",
+      "Paper PDF figure inventory and hybrid vector reconstruction",
+      "Source-data-bound chart reconstruction",
+      "Reviewed OCR cleanup and Illustrator roundtrip evidence"
     ],
     "defaultPrompt": [
       "Audit my model and prepare a verified diagram contract.",
       "Rebuild this architecture as an editable Visio figure.",
-      "Repair overlaps and connectors in this VSDX."
+      "Repair overlaps and connectors in this VSDX.",
+      "Reconstruct this paper figure as editable SVG, AI, and PDF with an evidence-backed publication gate."
     ]
   }
 }

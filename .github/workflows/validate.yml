@@ -17,5 +17,7 @@ jobs:
           python-version: "3.11"
       - run: python scripts/validate_release.py
       - run: python skills/scientific-model-diagram-visio/scripts/inspect_vsdx.py --help
+      - run: python skills/reconstruct-paper-figures/scripts/build_skill_release.py --help
+      - run: python -m unittest discover -s tests -v
       - shell: pwsh
         run: ./scripts/build_release.ps1

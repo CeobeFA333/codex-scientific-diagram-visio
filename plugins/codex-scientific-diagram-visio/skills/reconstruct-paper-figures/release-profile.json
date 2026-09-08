@@ -1,0 +1,124 @@
+{
+  "schema_version": "reconstruct-paper-figures-release-v1",
+  "name": "reconstruct-paper-figures",
+  "version": "0.1.0",
+  "license": "MIT",
+  "maturity": "stable",
+  "summary": "Traceable reconstruction of paper figures as editable SVG, Illustrator AI, and editable PDF while preserving scientific raster evidence.",
+  "primary_entrypoint": "SKILL.md",
+  "supported_inputs": [
+    "paper PDF",
+    "SVG",
+    "PNG/JPEG/TIFF figure assets",
+    "reviewed OCR manifests",
+    "publisher source-data tables"
+  ],
+  "supported_outputs": [
+    "editable SVG",
+    "Illustrator AI",
+    "editable PDF",
+    "atomic raster evidence",
+    "rendered QA previews",
+    "hash-bound audit JSON"
+  ],
+  "capabilities": [
+    {
+      "id": "pdf-inventory",
+      "status": "validated",
+      "description": "Inventory native PDF text, vectors, images, placements, captions, and effective PPI before reconstruction."
+    },
+    {
+      "id": "hybrid-reconstruction",
+      "status": "validated",
+      "description": "Rebuild editable vectors and live text while preserving continuous-tone scientific evidence as minimal atomic rasters."
+    },
+    {
+      "id": "source-data-chart-reconstruction",
+      "status": "validated-with-scientific-review-required",
+      "description": "Bind publisher observations and reconstruction semantics to editable statistical figures without synthesizing missing groups."
+    },
+    {
+      "id": "reviewed-text-cleanup",
+      "status": "validated-with-human-review-required",
+      "description": "Convert reviewed OCR decisions into bounded masks, safe non-generative cleanup, independent pixel audit, and live-text overlays."
+    },
+    {
+      "id": "illustrator-roundtrip-evidence",
+      "status": "validated-on-windows",
+      "description": "Audit SVG import, AI reopen, and editable-PDF reopen with object, typography, linked-atom, artboard, and hash persistence evidence."
+    },
+    {
+      "id": "drawio-visio-backends",
+      "status": "experimental-to-validated-by-backend",
+      "description": "Produce editable framework geometry for draw.io and Visio while keeping final Illustrator acceptance separate."
+    }
+  ],
+  "validated_runtime_profiles": [
+    {
+      "name": "scientific-raster-reproducibility",
+      "platform": "Windows",
+      "python": "3.8.20",
+      "pillow": "9.1.1",
+      "notes": "Authoritative profile for committed lossless crop byte hashes."
+    },
+    {
+      "name": "pdf-inventory-and-audit",
+      "platform": "Windows",
+      "python": "3.12.14",
+      "pillow": "12.3.0",
+      "pypdf": "6.10.0",
+      "pdfplumber": "0.11.9",
+      "notes": "Validated bundled runtime for current PDF inventory and audit workflows."
+    },
+    {
+      "name": "illustrator-roundtrip",
+      "platform": "Windows",
+      "illustrator": "29.8.2",
+      "notes": "Validated for live Times New Roman text, paths, placed atoms, AI reopen, and editable-PDF reopen."
+    }
+  ],
+  "entrypoints": [
+    "scripts/inventory_pdf_figures.py",
+    "scripts/build_hybrid_svg.py",
+    "scripts/build_text_detection_manifest.py",
+    "scripts/build_reviewed_text_cleanup_plan.py",
+    "scripts/apply_safe_text_cleanup.py",
+    "scripts/audit_text_cleanup.py",
+    "scripts/audit_editability.py",
+    "scripts/audit_publication_gate.py",
+    "scripts/bind_illustrator_roundtrip_evidence.py",
+    "scripts/roundtrip_selected_svg_in_illustrator.jsx",
+    "scripts/export_drawio_scene.py",
+    "scripts/export_visio_scene.py"
+  ],
+  "required_references": [
+    "references/decision-matrix.md",
+    "references/quality-contract.md",
+    "references/source-data-reconstruction-contract.md",
+    "references/cross-type-publication-acceptance.md",
+    "references/github-release.md"
+  ],
+  "package_roots": [
+    "agents",
+    "scripts",
+    "references"
+  ],
+  "github": {
+    "recommended_scope": "skill-source-only",
+    "github_upload_ready": true,
+    "release_blockers": [],
+    "excluded_from_skill_archive": [
+      "paper PDFs",
+      "extracted figures",
+      "publisher source data",
+      "Zenodo archives",
+      "AI/PDF evidence artifacts",
+      "temporary files",
+      "Python bytecode"
+    ]
+  },
+  "publication_semantics": {
+    "code_release_status_is_independent_from_figure_publication_status": true,
+    "machine_audits_do_not_replace_human_scientific_review": true
+  }
+}

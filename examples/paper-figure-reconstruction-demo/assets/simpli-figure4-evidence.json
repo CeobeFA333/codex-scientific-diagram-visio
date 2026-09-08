@@ -1,0 +1,86 @@
+{
+  "schema_version": "illustrator-evidence-validity-public-v1",
+  "status": "current-svg-three-stage-roundtrip-valid",
+  "illustrator_version": "29.8.2",
+  "public_artifacts": {
+    "portable_svg": {
+      "path": "simpli-figure4-portable.svg",
+      "sha256": "b01906787dce1242366f39152f6fd335e15dcd79d5121477c211ae092c44c8b9"
+    },
+    "editable_pdf": {
+      "path": "simpli-figure4-editable.pdf",
+      "sha256": "846b2fc182e9db10f30d429a340f3c84a7efc58656caf1a995a9ec7239ad8dba"
+    },
+    "preview": {
+      "path": "simpli-figure4-preview.png",
+      "sha256": "1a372d1ef602c905bcc740740f9a90316f295275f7807e62f9505d88498ca8c3"
+    }
+  },
+  "stage_audits": [
+    {
+      "stage": "svg_import",
+      "source_audit_sha256": "bc01ae8735b0ec6db5b1320c177bd5d7d83f7ebfef250de0e6af4ca434438891"
+    },
+    {
+      "stage": "ai_reopen",
+      "source_audit_sha256": "0d72fe0c62449d2f00e995af03be3b3ac6704dbf4fd40487b3e8e1f1f3a90eb8"
+    },
+    {
+      "stage": "editable_pdf_reopen",
+      "source_audit_sha256": "aa44ecbb9be282dcb83c95f59ef59f8c3861067703876a2b22c9934b8f100b0e"
+    }
+  ],
+  "verified_counts_each_stage": {
+    "text_frames": 102,
+    "path_items": 4466,
+    "compound_path_items": 0,
+    "group_items": 15,
+    "placed_items": 3,
+    "raster_items": 0,
+    "warnings": 0
+  },
+  "verified_typography": {
+    "font_family": "Times New Roman",
+    "actual_size_pt": 8.5,
+    "all_text_frames_match": true
+  },
+  "verified_hybrid_atoms": {
+    "status": "hash-bound-identities-links-bounds-and-placements-valid",
+    "scientific_pixels_modified": false,
+    "verified_at_each_stage": [
+      "svg_import",
+      "ai_reopen",
+      "editable_pdf_reopen"
+    ],
+    "atoms": [
+      {
+        "id": "panel-a-ihc-and-x20-mif",
+        "embedded_png_sha256": "765c7afe09a35dbd4da2d8d9197bf0b14c8519395fd50ffb67ad7c890a034137"
+      },
+      {
+        "id": "panel-j-x40-main",
+        "embedded_png_sha256": "115bca10374d6e10b90447b086a374e57d05db6090a42f422ea4425e2b63fd67"
+      },
+      {
+        "id": "panel-j-x40-six-channel-grid",
+        "embedded_png_sha256": "896ef13680a8124a6af4ed14b942cd94b03ae1ef4b5f13f721626f92cbd4c0c8"
+      }
+    ]
+  },
+  "publication_ready": false,
+  "remaining_blockers": [
+    "panel_i_pdl1_positive_distance_rows_missing_from_publisher_source_data",
+    "panel_i_native_pdf_geometry_is_not_source_data_bound",
+    "panel_a_lower_scale_bar_remains_baked_in_pdf_atom",
+    "panel_j_scale_bar_physical_length_not_independently_calibrated",
+    "figure_4f_p_value_label_swap_risk_pending_scientific_review",
+    "human_200_400_percent_visual_scientific_and_type_edit_approval_pending"
+  ],
+  "provenance": {
+    "article": "Bortolomeazzi et al., Nature Communications 13, 781 (2022)",
+    "doi": "10.1038/s41467-022-28470-x",
+    "license": "CC BY 4.0",
+    "adaptation_note": "Typography, layout, and reconstruction structure modified."
+  },
+  "scope_note": "This public summary preserves verifiable counts, hashes, and publication blockers without publishing private workspace paths. Source audit records remain available to the project owner."
+}

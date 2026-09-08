@@ -2,7 +2,7 @@
 
 ## Goal
 
-Provide a reusable Codex workflow that turns model code, configuration, manuscript evidence, and legacy figures into scientifically verified, publication-ready Microsoft Visio diagrams whose components remain natively editable.
+Provide reusable Codex workflows that turn model code, configuration, manuscript evidence, paper PDFs, source data, and legacy figures into scientifically verified editable scientific graphics with explicit application and publication gates.
 
 ## Why this repository exists
 
@@ -13,6 +13,8 @@ Raster image generation is effective for visual exploration but cannot guarantee
 - Audit architecture logic and tensor dimensions before drawing.
 - Produce a structured visual and reconstruction specification.
 - Build or revise VSDX files with native Visio objects on Windows.
+- Inventory PDF figure internals and rebuild hybrid SVG, Illustrator AI, and editable PDF outputs without replacing scientific evidence pixels.
+- Bind statistical reconstructions to publisher source data and reviewed text cleanup to pixel-level audits.
 - Verify routing, readability, exports, package structure, and reopened editability.
 - Package the workflows for Agent Skills and Codex Plugin distribution.
 
@@ -20,10 +22,11 @@ The project does not train models, replace scientific peer review, provide a hos
 
 ## Architecture
 
-The plugin contains two focused skills:
+The plugin contains three focused skills:
 
 1. `scientific-model-diagram-prompting` owns evidence reconciliation, scientific visual language, optional image-reference prompting, and the handoff specification.
 2. `scientific-model-diagram-visio` owns Microsoft Visio construction, local revision, export, and editability QA.
+3. `reconstruct-paper-figures` owns paper-figure inventory, hybrid vector/raster reconstruction, source-data plotting, reviewed OCR cleanup, editor roundtrips, and publication gates.
 
 The repository root is the canonical development source. A compact mirrored plugin under `plugins/codex-scientific-diagram-visio` supports repository Marketplace installation. `scripts/validate_release.py` fails when the canonical and Marketplace copies diverge. `scripts/build_release.ps1` creates a compact plugin ZIP and a larger research-group trial ZIP.
 
@@ -37,9 +40,13 @@ Executed model structure and training configuration outrank manuscript prose, ol
 
 The workflow needs packaged procedures and local application control, not a publisher-operated MCP server. A skills-only plugin reduces credential, network, privacy, and maintenance requirements.
 
-### Two skills instead of one large skill
+### Three focused skills instead of one large skill
 
-Analysis/prompting and Visio execution have different triggers, tools, platform constraints, and completion criteria. Splitting them improves discovery and keeps each instruction file focused.
+Architecture analysis, native Visio execution, and evidence-preserving reconstruction of published multi-panel figures have different triggers, tools, platform constraints, and completion criteria. Splitting them improves discovery and keeps each instruction file focused.
+
+### Hybrid evidence preservation
+
+Continuous-tone microscopy and other scientific pixels are retained as minimal, hash-bound atoms when vectorization would alter evidence. Text, diagram geometry, and source-data-bound plots are rebuilt as editable objects. Missing data and unresolved scale bars remain blockers instead of being inferred.
 
 ### Native Visio objects
 
@@ -53,8 +60,9 @@ Repeated layout and packaging work uses scripts. Static VSDX inspection suppleme
 
 - Codex with Skills or Plugins support.
 - Windows and Microsoft Visio for native VSDX execution.
-- Python 3.9+ for the optional standard-library VSDX inspector and release validation.
+- Python 3.8+ for portable core scripts; optional PDF packages are required for PDF inventory and rendering workflows.
 - PowerShell for the reproducible release builder and Visio COM example.
+- Adobe Illustrator 29.8.2 on Windows for the currently validated SVG/AI/editable-PDF three-stage roundtrip.
 - Image generation is optional and supplied by the user's existing environment.
 
 ## Security and privacy boundary
@@ -64,12 +72,18 @@ The packaged plugin does not operate a server or collect telemetry. It may direc
 ## Known limitations
 
 - Native construction and GUI editability testing require Windows and Microsoft Visio.
+- Validated Illustrator roundtrip evidence currently covers Windows and Illustrator 29.8.2; other versions require fresh evidence.
 - Static XML inspection cannot prove visual absence of overlap or correct routing.
 - Model inconsistencies may require author judgment before drawing can continue.
 - Image-generated references may corrupt text or formulas and must not become the source of truth.
+- Machine audits do not grant publication readiness; source-data gaps, scale bars, and scientific interpretation may require authors or editors.
 - The compact Marketplace plugin mirrors canonical skill files, so every release must run synchronization validation.
 
 ## Change history
+
+### 2026-09-08 — v1.3.0 paper figure reconstruction
+
+Added the `reconstruct-paper-figures` skill, deterministic standalone MIT package metadata, PDF inventory and hybrid reconstruction workflows, source-data and OCR safety contracts, Illustrator roundtrip evidence, CC BY demonstration artifacts, and an evidence-driven GIF/MP4 capability demo.
 
 ### 2026-08-13 — v1.2.0 Marketplace and team distribution
 
