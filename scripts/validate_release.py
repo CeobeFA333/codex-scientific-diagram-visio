@@ -59,7 +59,10 @@ def validate_paper_demo() -> None:
             fail(f"paper demo asset is missing: {path}")
         actual = hashlib.sha256(path.read_bytes()).hexdigest()
         if actual != record.get("sha256"):
-            fail(f"paper demo asset hash mismatch: {path.name}")
+            fail(
+                "paper demo asset hash mismatch: "
+                f"{path.name} (expected {record.get('sha256')}, actual {actual})"
+            )
     gif_path = assets / "paper-figure-reconstruction-demo.gif"
     if gif_path.read_bytes()[:6] not in {b"GIF87a", b"GIF89a"}:
         fail("paper demo GIF has an invalid signature")
