@@ -1,0 +1,1801 @@
+{
+  "title": "Capability Atlas — Chemistry · Materials · Electrochemistry",
+  "source_image": "../source/blank.png",
+  "figure_class": "capability-atlas",
+  "recovery_level": "R1",
+  "canvas": {
+    "width_px": 1600,
+    "height_px": 900,
+    "print_width_mm": 320,
+    "background_fill": "#F4F6F8"
+  },
+  "defaults": {
+    "font_family": "Arial",
+    "font_size_pt": 8.5,
+    "text_fill": "#233042",
+    "stroke_width_mm": 0.22
+  },
+  "contract": {
+    "required_live_text": true,
+    "required_font_family": "Arial",
+    "require_zero_rasters": true,
+    "manual_review_required": true
+  },
+  "elements": [
+    {
+      "type": "rect",
+      "id": "atlas.header.band",
+      "x_px": 0,
+      "y_px": 0,
+      "width_px": 1600,
+      "height_px": 104,
+      "fill": "#8A66A3",
+      "stroke": "none",
+      "stroke_width_pt": 0
+    },
+    {
+      "type": "text",
+      "id": "atlas.title",
+      "text": "Chemistry · Materials · Electrochemistry",
+      "x_px": 56,
+      "y_px": 50,
+      "font_size_pt": 22,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "bold"
+    },
+    {
+      "type": "text",
+      "id": "atlas.title.zh",
+      "text": "化学 · 材料 · 电化学",
+      "x_px": 56,
+      "y_px": 82,
+      "font_size_pt": 11,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "atlas.badge",
+      "text": "8 EDITABLE FIGURE FAMILIES",
+      "x_px": 1538,
+      "y_px": 65,
+      "font_size_pt": 8,
+      "fill": "#FFFFFF",
+      "anchor": "end",
+      "font_weight": "bold"
+    },
+    {
+      "type": "group",
+      "id": "card.01.molecule",
+      "aria_label": "Chemical structure: bonds · rings · stereochemistry",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.01.molecule.card",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.01.molecule.accent",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.01.molecule.title",
+          "text": "Chemical structure",
+          "x_px": 59,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.molecule.subtitle",
+          "text": "bonds · rings · stereochemistry",
+          "x_px": 59,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.molecule.ring.0",
+          "points_px": [
+            [
+              252.64101615137756,
+              311.0
+            ],
+            [
+              252.64101615137756,
+              351.0
+            ],
+            [
+              218.0,
+              371.0
+            ],
+            [
+              183.35898384862244,
+              351.0
+            ],
+            [
+              183.35898384862247,
+              311.0
+            ],
+            [
+              218.0,
+              291.0
+            ]
+          ],
+          "fill": "none",
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "line",
+          "id": "card.01.molecule.double.0.0",
+          "x1_px": 252.64101615137756,
+          "y1_px": 315.8,
+          "x2_px": 252.64101615137756,
+          "y2_px": 346.2,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.molecule.double.0.2",
+          "x1_px": 213.8430780618347,
+          "y1_px": 368.6,
+          "x2_px": 187.51590578678776,
+          "y2_px": 353.4,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.molecule.double.0.4",
+          "x1_px": 187.51590578678778,
+          "y1_px": 308.6,
+          "x2_px": 213.8430780618347,
+          "y2_px": 293.4,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.molecule.atom.0",
+          "text": "N",
+          "x_px": 248.0,
+          "y_px": 301.0,
+          "font_size_pt": 8,
+          "fill": "#D95F59",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.01.molecule.bond.a",
+          "x1_px": 253.0,
+          "y1_px": 351.0,
+          "x2_px": 293.0,
+          "y2_px": 379.0,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 2,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.molecule.group",
+          "text": "OH",
+          "x_px": 304.0,
+          "y_px": 388.0,
+          "font_size_pt": 8,
+          "fill": "#D95F59",
+          "anchor": "middle",
+          "font_weight": "bold"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.02.reaction",
+      "aria_label": "Reaction scheme: arrow · conditions · yield",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.02.reaction.card",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.reaction.accent",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.title",
+          "text": "Reaction scheme",
+          "x_px": 448,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.subtitle",
+          "text": "arrow · conditions · yield",
+          "x_px": 448,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "polygon",
+          "id": "card.02.reaction.ring.0",
+          "points_px": [
+            [
+              548.6410161513776,
+              248.0
+            ],
+            [
+              548.6410161513776,
+              288.0
+            ],
+            [
+              514.0,
+              308.0
+            ],
+            [
+              479.3589838486225,
+              288.0
+            ],
+            [
+              479.3589838486225,
+              248.0
+            ],
+            [
+              514.0,
+              228.0
+            ]
+          ],
+          "fill": "none",
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "line",
+          "id": "card.02.reaction.double.0.0",
+          "x1_px": 548.6410161513776,
+          "y1_px": 252.8,
+          "x2_px": 548.6410161513776,
+          "y2_px": 283.2,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.reaction.double.0.2",
+          "x1_px": 509.8430780618347,
+          "y1_px": 305.6,
+          "x2_px": 483.5159057867878,
+          "y2_px": 290.4,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.reaction.double.0.4",
+          "x1_px": 483.5159057867878,
+          "y1_px": 245.60000000000002,
+          "x2_px": 509.8430780618347,
+          "y2_px": 230.4,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.atom.0",
+          "text": "N",
+          "x_px": 544,
+          "y_px": 238,
+          "font_size_pt": 8,
+          "fill": "#D95F59",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polygon",
+          "id": "card.02.reaction.ring.1",
+          "points_px": [
+            [
+              658.6410161513776,
+              248.0
+            ],
+            [
+              658.6410161513776,
+              288.0
+            ],
+            [
+              624.0,
+              308.0
+            ],
+            [
+              589.3589838486224,
+              288.0
+            ],
+            [
+              589.3589838486224,
+              248.0
+            ],
+            [
+              624.0,
+              228.0
+            ]
+          ],
+          "fill": "none",
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "line",
+          "id": "card.02.reaction.double.1.0",
+          "x1_px": 658.6410161513776,
+          "y1_px": 252.8,
+          "x2_px": 658.6410161513776,
+          "y2_px": 283.2,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.reaction.double.1.2",
+          "x1_px": 619.8430780618347,
+          "y1_px": 305.6,
+          "x2_px": 593.5159057867877,
+          "y2_px": 290.4,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.reaction.double.1.4",
+          "x1_px": 593.5159057867877,
+          "y1_px": 245.60000000000002,
+          "x2_px": 619.8430780618347,
+          "y2_px": 230.4,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.atom.1",
+          "text": "N",
+          "x_px": 654,
+          "y_px": 238,
+          "font_size_pt": 8,
+          "fill": "#D95F59",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.02.reaction.reaction.shaft",
+          "x1_px": 559,
+          "y1_px": 268,
+          "x2_px": 581,
+          "y2_px": 268,
+          "stroke": "#233042",
+          "stroke_width_pt": 1.5,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.02.reaction.reaction.head",
+          "points_px": [
+            [
+              581,
+              268
+            ],
+            [
+              573.3272793014645,
+              272.70418506037595
+            ],
+            [
+              573.3272793014645,
+              263.29581493962405
+            ]
+          ],
+          "fill": "#233042",
+          "stroke": "#233042",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.conditions",
+          "text": "cat. · 80 °C",
+          "x_px": 570,
+          "y_px": 247,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.03.spectrum",
+      "aria_label": "Spectroscopy: XRD · Raman · FTIR · XPS",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.03.spectrum.card",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.spectrum.accent",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.title",
+          "text": "Spectroscopy",
+          "x_px": 837,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.subtitle",
+          "text": "XRD · Raman · FTIR · XPS",
+          "x_px": 837,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.axis.x",
+          "x1_px": 857,
+          "y1_px": 441,
+          "x2_px": 1141,
+          "y2_px": 441,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.axis.y",
+          "x1_px": 857,
+          "y1_px": 206,
+          "x2_px": 857,
+          "y2_px": 441,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.grid.1",
+          "x1_px": 857,
+          "y1_px": 283.55,
+          "x2_px": 1141,
+          "y2_px": 283.55,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.grid.2",
+          "x1_px": 857,
+          "y1_px": 361.1,
+          "x2_px": 1141,
+          "y2_px": 361.1,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "polyline",
+          "id": "card.03.spectrum.series.a",
+          "points_px": [
+            [
+              857,
+              434
+            ],
+            [
+              885,
+              432
+            ],
+            [
+              899,
+              371
+            ],
+            [
+              907,
+              433
+            ],
+            [
+              949,
+              429
+            ],
+            [
+              969,
+              336
+            ],
+            [
+              978,
+              431
+            ],
+            [
+              1027,
+              427
+            ],
+            [
+              1050,
+              385
+            ],
+            [
+              1059,
+              433
+            ],
+            [
+              1141,
+              429
+            ]
+          ],
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 2,
+          "fill": "none"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.04.chromatography",
+      "aria_label": "Separation analysis: MS · chromatography · peaks",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.04.chromatography.card",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.chromatography.accent",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.title",
+          "text": "Separation analysis",
+          "x_px": 1226,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.subtitle",
+          "text": "MS · chromatography · peaks",
+          "x_px": 1226,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.axis.x",
+          "x1_px": 1246,
+          "y1_px": 441,
+          "x2_px": 1530,
+          "y2_px": 441,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.axis.y",
+          "x1_px": 1246,
+          "y1_px": 206,
+          "x2_px": 1246,
+          "y2_px": 441,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.grid.1",
+          "x1_px": 1246,
+          "y1_px": 283.55,
+          "x2_px": 1530,
+          "y2_px": 283.55,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.grid.2",
+          "x1_px": 1246,
+          "y1_px": 361.1,
+          "x2_px": 1530,
+          "y2_px": 361.1,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "polyline",
+          "id": "card.04.chromatography.series.a",
+          "points_px": [
+            [
+              1246,
+              434
+            ],
+            [
+              1274,
+              432
+            ],
+            [
+              1288,
+              371
+            ],
+            [
+              1296,
+              433
+            ],
+            [
+              1338,
+              429
+            ],
+            [
+              1358,
+              336
+            ],
+            [
+              1367,
+              431
+            ],
+            [
+              1416,
+              427
+            ],
+            [
+              1439,
+              385
+            ],
+            [
+              1448,
+              433
+            ],
+            [
+              1530,
+              429
+            ]
+          ],
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 2,
+          "fill": "none"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.05.thermal",
+      "aria_label": "Thermal analysis: DSC · TGA · DTA",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.05.thermal.card",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.thermal.accent",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.title",
+          "text": "Thermal analysis",
+          "x_px": 59,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.subtitle",
+          "text": "DSC · TGA · DTA",
+          "x_px": 59,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.axis.x",
+          "x1_px": 79,
+          "y1_px": 820,
+          "x2_px": 363,
+          "y2_px": 820,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.axis.y",
+          "x1_px": 79,
+          "y1_px": 585,
+          "x2_px": 79,
+          "y2_px": 820,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.grid.1",
+          "x1_px": 79,
+          "y1_px": 662.55,
+          "x2_px": 363,
+          "y2_px": 662.55,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.grid.2",
+          "x1_px": 79,
+          "y1_px": 740.1,
+          "x2_px": 363,
+          "y2_px": 740.1,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "polyline",
+          "id": "card.05.thermal.series.a",
+          "points_px": [
+            [
+              79,
+              806
+            ],
+            [
+              124,
+              775
+            ],
+            [
+              165,
+              788
+            ],
+            [
+              207,
+              738
+            ],
+            [
+              253,
+              753
+            ],
+            [
+              363,
+              603
+            ]
+          ],
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 2,
+          "fill": "none"
+        },
+        {
+          "type": "polyline",
+          "id": "card.05.thermal.series.b",
+          "points_px": [
+            [
+              79,
+              824
+            ],
+            [
+              124,
+              793
+            ],
+            [
+              165,
+              806
+            ],
+            [
+              207,
+              756
+            ],
+            [
+              253,
+              771
+            ],
+            [
+              363,
+              621
+            ]
+          ],
+          "stroke": "#D95F59",
+          "stroke_width_pt": 1.6,
+          "fill": "none"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.06.nyquist",
+      "aria_label": "Electrochemistry: CV · EIS · Nyquist",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.06.nyquist.card",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.06.nyquist.accent",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.title",
+          "text": "Electrochemistry",
+          "x_px": 448,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.subtitle",
+          "text": "CV · EIS · Nyquist",
+          "x_px": 448,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.axis.x",
+          "x1_px": 468,
+          "y1_px": 820,
+          "x2_px": 752,
+          "y2_px": 820,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.axis.y",
+          "x1_px": 468,
+          "y1_px": 585,
+          "x2_px": 468,
+          "y2_px": 820,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.grid.1",
+          "x1_px": 468,
+          "y1_px": 662.55,
+          "x2_px": 752,
+          "y2_px": 662.55,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.grid.2",
+          "x1_px": 468,
+          "y1_px": 740.1,
+          "x2_px": 752,
+          "y2_px": 740.1,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "polyline",
+          "id": "card.06.nyquist.series.a",
+          "points_px": [
+            [
+              476,
+              816
+            ],
+            [
+              498,
+              782
+            ],
+            [
+              533,
+              754
+            ],
+            [
+              576,
+              747
+            ],
+            [
+              619,
+              761
+            ],
+            [
+              662,
+              790
+            ],
+            [
+              752,
+              812
+            ]
+          ],
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 2,
+          "fill": "none"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.07.material_micro",
+      "aria_label": "Surface microscopy: SEM · TEM · AFM",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.07.material_micro.card",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.07.material_micro.accent",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.07.material_micro.title",
+          "text": "Surface microscopy",
+          "x_px": 837,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.material_micro.subtitle",
+          "text": "SEM · TEM · AFM",
+          "x_px": 837,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.material_micro.frame",
+          "x_px": 858,
+          "y_px": 583,
+          "width_px": 276,
+          "height_px": 252,
+          "fill": "#17212B",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.material_micro.scan.outer",
+          "cx_px": 996.0,
+          "cy_px": 710.0,
+          "rx_px": 72,
+          "ry_px": 62,
+          "fill": "#606E7B",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.material_micro.scan.inner",
+          "cx_px": 996.0,
+          "cy_px": 710.0,
+          "rx_px": 38,
+          "ry_px": 45,
+          "fill": "#253240",
+          "stroke": "#AAB7C4",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.material_micro.roi",
+          "cx_px": 1014.0,
+          "cy_px": 702.0,
+          "rx_px": 18,
+          "ry_px": 13,
+          "fill": "none",
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "line",
+          "id": "card.07.material_micro.callout.shaft",
+          "x1_px": 1032.0,
+          "y1_px": 692.0,
+          "x2_px": 1124,
+          "y2_px": 597,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.material_micro.callout.head",
+          "points_px": [
+            [
+              1124,
+              597
+            ],
+            [
+              1122.0415834356575,
+              605.7843385955067
+            ],
+            [
+              1115.2830026326913,
+              599.2391866600026
+            ]
+          ],
+          "fill": "#8A66A3",
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1.4
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.08.eds",
+      "aria_label": "Element mapping: EDS · regions · color bar",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.08.eds.card",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.accent",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.08.eds.title",
+          "text": "Element mapping",
+          "x_px": 1226,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.eds.subtitle",
+          "text": "EDS · regions · color bar",
+          "x_px": 1226,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.0.0",
+          "x_px": 1270,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.0.1",
+          "x_px": 1295,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.0.2",
+          "x_px": 1320,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.0.3",
+          "x_px": 1345,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.0.4",
+          "x_px": 1370,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.0.5",
+          "x_px": 1395,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.0.6",
+          "x_px": 1420,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.0.7",
+          "x_px": 1445,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.1.0",
+          "x_px": 1270,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.1.1",
+          "x_px": 1295,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.1.2",
+          "x_px": 1320,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.1.3",
+          "x_px": 1345,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.1.4",
+          "x_px": 1370,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.1.5",
+          "x_px": 1395,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.1.6",
+          "x_px": 1420,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.1.7",
+          "x_px": 1445,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.2.0",
+          "x_px": 1270,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.2.1",
+          "x_px": 1295,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.2.2",
+          "x_px": 1320,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.2.3",
+          "x_px": 1345,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.2.4",
+          "x_px": 1370,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.2.5",
+          "x_px": 1395,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.2.6",
+          "x_px": 1420,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.2.7",
+          "x_px": 1445,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.3.0",
+          "x_px": 1270,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.3.1",
+          "x_px": 1295,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.3.2",
+          "x_px": 1320,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.3.3",
+          "x_px": 1345,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.3.4",
+          "x_px": 1370,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.3.5",
+          "x_px": 1395,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.3.6",
+          "x_px": 1420,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.3.7",
+          "x_px": 1445,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.4.0",
+          "x_px": 1270,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.4.1",
+          "x_px": 1295,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.4.2",
+          "x_px": 1320,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.4.3",
+          "x_px": 1345,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.4.4",
+          "x_px": 1370,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.4.5",
+          "x_px": 1395,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.4.6",
+          "x_px": 1420,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.4.7",
+          "x_px": 1445,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.5.0",
+          "x_px": 1270,
+          "y_px": 693,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.5.1",
+          "x_px": 1295,
+          "y_px": 693,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.5.2",
+          "x_px": 1320,
+          "y_px": 693,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.5.3",
+          "x_px": 1345,
+          "y_px": 693,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.5.4",
+          "x_px": 1370,
+          "y_px": 693,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.5.5",
+          "x_px": 1395,
+          "y_px": 693,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.5.6",
+          "x_px": 1420,
+          "y_px": 693,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#8A66A3",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.cell.5.7",
+          "x_px": 1445,
+          "y_px": 693,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.08.eds.low",
+          "text": "low",
+          "x_px": 1270,
+          "y_px": 731,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.08.eds.high",
+          "text": "high",
+          "x_px": 1470,
+          "y_px": 731,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "end",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "atlas.footer",
+      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "x_px": 800,
+      "y_px": 884,
+      "font_size_pt": 7.5,
+      "fill": "#667384",
+      "anchor": "middle",
+      "font_weight": "normal"
+    }
+  ],
+  "metadata": {
+    "category_id": "chemistry-materials",
+    "demonstration": true,
+    "source_data_claim": false
+  }
+}

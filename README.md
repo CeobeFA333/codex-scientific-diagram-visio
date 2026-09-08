@@ -42,6 +42,22 @@ This v1.3.2 animation uses real reconstructed artifacts and audit values: a ten-
 
 [Open the reconstruction example](examples/paper-figure-reconstruction-demo/) · [Watch MP4](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.mp4) · [Inspect evidence JSON](examples/paper-figure-reconstruction-demo/assets/simpli-figure4-evidence.json)
 
+## 64-family capability atlas
+
+The following eight sheets were generated locally through the repository's actual `reconstruct-paper-figures` recipe builder. Together they contain **64 classified figure-family demonstrations** with live text, semantic object IDs, editable vector geometry, recipe hashes, and **zero embedded raster nodes**. They are synthetic capability tests—not claims that 64 source papers were reproduced pixel-for-pixel.
+
+| AI / computer vision | Statistics / data science |
+|---|---|
+| [![AI and computer-vision figure families](examples/capability-atlas/assets/ai-computer-vision.svg)](examples/capability-atlas/assets/ai-computer-vision.svg) | [![Statistics and data-science figure families](examples/capability-atlas/assets/statistics-data-science.svg)](examples/capability-atlas/assets/statistics-data-science.svg) |
+| Clinical / biomedical | Cell / molecular / omics |
+| [![Clinical and biomedical figure families](examples/capability-atlas/assets/clinical-biomedical.svg)](examples/capability-atlas/assets/clinical-biomedical.svg) | [![Cell, molecular, and omics figure families](examples/capability-atlas/assets/cell-molecular-omics.svg)](examples/capability-atlas/assets/cell-molecular-omics.svg) |
+| Chemistry / materials / electrochemistry | Engineering / physics |
+| [![Chemistry and materials figure families](examples/capability-atlas/assets/chemistry-materials.svg)](examples/capability-atlas/assets/chemistry-materials.svg) | [![Engineering and physics figure families](examples/capability-atlas/assets/engineering-physics.svg)](examples/capability-atlas/assets/engineering-physics.svg) |
+| Experimental systems / microfluidics | Earth science / geospatial |
+| [![Experimental-system and microfluidic figure families](examples/capability-atlas/assets/experimental-systems.svg)](examples/capability-atlas/assets/experimental-systems.svg) | [![Earth-science and geospatial figure families](examples/capability-atlas/assets/earth-geospatial.svg)](examples/capability-atlas/assets/earth-geospatial.svg) |
+
+[Open the classified gallery and generator](examples/capability-atlas/) · [Inspect the 64-family manifest and SHA-256 evidence](examples/capability-atlas/capability-manifest.json)
+
 ## Why this exists
 
 Scientific architecture figures often look polished while silently misrepresenting projection direction, fusion semantics, tensor dimensions, classifier width, or class count. This plugin adds an evidence gate before visual work and an editability gate after Visio export.
@@ -92,18 +108,6 @@ The repository does not depend on a closed icon library. It constructs reusable,
 | PowerPoint / WPS | Can be used as an intermediate framework editor through Scientific Illustrator-compatible workflows | **No direct controller yet**; publication acceptance must return to SVG/Illustrator QA |
 | Inkscape, Figma, Affinity Designer, CorelDRAW | May open exported SVG/PDF depending on their own compatibility | **Not currently automated or regression-tested** |
 | ChemDraw/RDKit, PyMOL/ChimeraX, CAD/GIS tools | Identified as domain-specific future backends for chemistry, molecular rendering, assemblies, and maps | **Planned, not implemented** |
-
-## What still needs improvement
-
-1. **More real regression figures:** add redistributable golden examples for every major figure family, not only model architecture, biomedical hybrid reconstruction, and the current statistical suite.
-2. **Native draw.io and PowerPoint/WPS verification:** complete visible create/edit/save/close/reopen tests and record stable-object evidence before promoting these backends to validated.
-3. **Domain-aware adapters:** add ChemDraw/RDKit, PyMOL/ChimeraX, CAD and GIS bridges so domain semantics are preserved instead of approximated from generic paths.
-4. **Broader editor coverage:** test additional Illustrator versions and operating systems, then add Inkscape/Figma/Affinity import and editability matrices.
-5. **Stronger source-data plotting:** expand deterministic chart builders, statistical-method parity checks, source-row provenance, and missing-data diagnostics.
-6. **Reviewed OCR ergonomics:** add a visual approval interface for detection, mask correction, protected-region review, and before/after sign-off; automatic acceptance must remain disabled.
-7. **Visual regression automation:** add render comparisons, overlap/text-clipping checks, font substitution detection, and golden-image thresholds alongside structural audits.
-8. **Batch and recovery workflow:** support resumable multi-figure jobs, per-panel status dashboards, cache reuse, and artifact manifests without weakening workspace boundaries.
-9. **Release engineering:** expand the CI matrix across Python/Windows/Linux, attach signed/checksummed packages to GitHub Releases, and test clean installation in supported Codex clients.
 
 ## Included skills
 

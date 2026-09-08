@@ -1,0 +1,2373 @@
+{
+  "title": "Capability Atlas — Earth Science · Geospatial",
+  "source_image": "../source/blank.png",
+  "figure_class": "capability-atlas",
+  "recovery_level": "R1",
+  "canvas": {
+    "width_px": 1600,
+    "height_px": 900,
+    "print_width_mm": 320,
+    "background_fill": "#F4F6F8"
+  },
+  "defaults": {
+    "font_family": "Arial",
+    "font_size_pt": 8.5,
+    "text_fill": "#233042",
+    "stroke_width_mm": 0.22
+  },
+  "contract": {
+    "required_live_text": true,
+    "required_font_family": "Arial",
+    "require_zero_rasters": true,
+    "manual_review_required": true
+  },
+  "elements": [
+    {
+      "type": "rect",
+      "id": "atlas.header.band",
+      "x_px": 0,
+      "y_px": 0,
+      "width_px": 1600,
+      "height_px": 104,
+      "fill": "#4D7B5D",
+      "stroke": "none",
+      "stroke_width_pt": 0
+    },
+    {
+      "type": "text",
+      "id": "atlas.title",
+      "text": "Earth Science · Geospatial",
+      "x_px": 56,
+      "y_px": 50,
+      "font_size_pt": 22,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "bold"
+    },
+    {
+      "type": "text",
+      "id": "atlas.title.zh",
+      "text": "地球科学 · 地理空间",
+      "x_px": 56,
+      "y_px": 82,
+      "font_size_pt": 11,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "atlas.badge",
+      "text": "8 EDITABLE FIGURE FAMILIES",
+      "x_px": 1538,
+      "y_px": 65,
+      "font_size_pt": 8,
+      "fill": "#FFFFFF",
+      "anchor": "end",
+      "font_weight": "bold"
+    },
+    {
+      "type": "group",
+      "id": "card.01.map",
+      "aria_label": "GIS map: boundaries · points · legend",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.01.map.card",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.01.map.accent",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.01.map.title",
+          "text": "GIS map",
+          "x_px": 59,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.map.subtitle",
+          "text": "boundaries · points · legend",
+          "x_px": 59,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.map.map.frame",
+          "x_px": 77,
+          "y_px": 204,
+          "width_px": 282,
+          "height_px": 252,
+          "fill": "#E7EFE7",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.map.region.0",
+          "points_px": [
+            [
+              90,
+              223
+            ],
+            [
+              148,
+              214
+            ],
+            [
+              171,
+              257
+            ],
+            [
+              133,
+              282
+            ],
+            [
+              94,
+              266
+            ]
+          ],
+          "fill": "#BFD8B8",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.map.region.1",
+          "points_px": [
+            [
+              171,
+              257
+            ],
+            [
+              236,
+              220
+            ],
+            [
+              275,
+              254
+            ],
+            [
+              243,
+              294
+            ],
+            [
+              200,
+              304
+            ]
+          ],
+          "fill": "#E8D39A",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.map.region.2",
+          "points_px": [
+            [
+              133,
+              282
+            ],
+            [
+              200,
+              304
+            ],
+            [
+              185,
+              338
+            ],
+            [
+              116,
+              333
+            ]
+          ],
+          "fill": "#B7CDD9",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.map.site.0",
+          "cx_px": 130,
+          "cy_px": 250,
+          "rx_px": 5,
+          "ry_px": 5,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.map.site.1",
+          "cx_px": 207,
+          "cy_px": 278,
+          "rx_px": 6,
+          "ry_px": 6,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.map.site.2",
+          "cx_px": 266,
+          "cy_px": 247,
+          "rx_px": 7,
+          "ry_px": 7,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.map.site.3",
+          "cx_px": 167,
+          "cy_px": 317,
+          "rx_px": 8,
+          "ry_px": 8,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "text",
+          "id": "card.01.map.north",
+          "text": "N",
+          "x_px": 338,
+          "y_px": 227,
+          "font_size_pt": 9,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.map.north.arrow",
+          "points_px": [
+            [
+              338,
+              233
+            ],
+            [
+              330,
+              253
+            ],
+            [
+              338,
+              248
+            ],
+            [
+              346,
+              253
+            ]
+          ],
+          "fill": "#233042",
+          "stroke": "#233042",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "line",
+          "id": "card.01.map.scale",
+          "x1_px": 283,
+          "y1_px": 438,
+          "x2_px": 341,
+          "y2_px": 438,
+          "stroke": "#233042",
+          "stroke_width_pt": 3,
+          "linecap": "round"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.02.landcover",
+      "aria_label": "Remote sensing: land cover · classification",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.02.landcover.card",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.accent",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.02.landcover.title",
+          "text": "Remote sensing",
+          "x_px": 448,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.landcover.subtitle",
+          "text": "land cover · classification",
+          "x_px": 448,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.0.0",
+          "x_px": 492,
+          "y_px": 214,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.0.1",
+          "x_px": 517,
+          "y_px": 214,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.0.2",
+          "x_px": 542,
+          "y_px": 214,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.0.3",
+          "x_px": 567,
+          "y_px": 214,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.0.4",
+          "x_px": 592,
+          "y_px": 214,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.0.5",
+          "x_px": 617,
+          "y_px": 214,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.0.6",
+          "x_px": 642,
+          "y_px": 214,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.0.7",
+          "x_px": 667,
+          "y_px": 214,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.1.0",
+          "x_px": 492,
+          "y_px": 234,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.1.1",
+          "x_px": 517,
+          "y_px": 234,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.1.2",
+          "x_px": 542,
+          "y_px": 234,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.1.3",
+          "x_px": 567,
+          "y_px": 234,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.1.4",
+          "x_px": 592,
+          "y_px": 234,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.1.5",
+          "x_px": 617,
+          "y_px": 234,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.1.6",
+          "x_px": 642,
+          "y_px": 234,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.1.7",
+          "x_px": 667,
+          "y_px": 234,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.2.0",
+          "x_px": 492,
+          "y_px": 254,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.2.1",
+          "x_px": 517,
+          "y_px": 254,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.2.2",
+          "x_px": 542,
+          "y_px": 254,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.2.3",
+          "x_px": 567,
+          "y_px": 254,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.2.4",
+          "x_px": 592,
+          "y_px": 254,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.2.5",
+          "x_px": 617,
+          "y_px": 254,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.2.6",
+          "x_px": 642,
+          "y_px": 254,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.2.7",
+          "x_px": 667,
+          "y_px": 254,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.3.0",
+          "x_px": 492,
+          "y_px": 274,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.3.1",
+          "x_px": 517,
+          "y_px": 274,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.3.2",
+          "x_px": 542,
+          "y_px": 274,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.3.3",
+          "x_px": 567,
+          "y_px": 274,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.3.4",
+          "x_px": 592,
+          "y_px": 274,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.3.5",
+          "x_px": 617,
+          "y_px": 274,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.3.6",
+          "x_px": 642,
+          "y_px": 274,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.3.7",
+          "x_px": 667,
+          "y_px": 274,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.4.0",
+          "x_px": 492,
+          "y_px": 294,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.4.1",
+          "x_px": 517,
+          "y_px": 294,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.4.2",
+          "x_px": 542,
+          "y_px": 294,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.4.3",
+          "x_px": 567,
+          "y_px": 294,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.4.4",
+          "x_px": 592,
+          "y_px": 294,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.4.5",
+          "x_px": 617,
+          "y_px": 294,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.4.6",
+          "x_px": 642,
+          "y_px": 294,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.4.7",
+          "x_px": 667,
+          "y_px": 294,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.5.0",
+          "x_px": 492,
+          "y_px": 314,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.5.1",
+          "x_px": 517,
+          "y_px": 314,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.5.2",
+          "x_px": 542,
+          "y_px": 314,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.5.3",
+          "x_px": 567,
+          "y_px": 314,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.5.4",
+          "x_px": 592,
+          "y_px": 314,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.5.5",
+          "x_px": 617,
+          "y_px": 314,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.5.6",
+          "x_px": 642,
+          "y_px": 314,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.landcover.cell.5.7",
+          "x_px": 667,
+          "y_px": 314,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.02.landcover.low",
+          "text": "low",
+          "x_px": 492,
+          "y_px": 352,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.02.landcover.high",
+          "text": "high",
+          "x_px": 692,
+          "y_px": 352,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "end",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.03.dem",
+      "aria_label": "Terrain: DEM · contours · hillshade",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.03.dem.card",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.dem.accent",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.03.dem.title",
+          "text": "Terrain",
+          "x_px": 837,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.dem.subtitle",
+          "text": "DEM · contours · hillshade",
+          "x_px": 837,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.dem.map.frame",
+          "x_px": 855,
+          "y_px": 204,
+          "width_px": 282,
+          "height_px": 252,
+          "fill": "#E7EFE7",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "polygon",
+          "id": "card.03.dem.region.0",
+          "points_px": [
+            [
+              868,
+              223
+            ],
+            [
+              926,
+              214
+            ],
+            [
+              949,
+              257
+            ],
+            [
+              911,
+              282
+            ],
+            [
+              872,
+              266
+            ]
+          ],
+          "fill": "#BFD8B8",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.03.dem.region.1",
+          "points_px": [
+            [
+              949,
+              257
+            ],
+            [
+              1014,
+              220
+            ],
+            [
+              1053,
+              254
+            ],
+            [
+              1021,
+              294
+            ],
+            [
+              978,
+              304
+            ]
+          ],
+          "fill": "#E8D39A",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.03.dem.region.2",
+          "points_px": [
+            [
+              911,
+              282
+            ],
+            [
+              978,
+              304
+            ],
+            [
+              963,
+              338
+            ],
+            [
+              894,
+              333
+            ]
+          ],
+          "fill": "#B7CDD9",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "arc",
+          "id": "card.03.dem.contour.0",
+          "cx_px": 993,
+          "cy_px": 278,
+          "radius_px": 28,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "arc",
+          "id": "card.03.dem.contour.1",
+          "cx_px": 993,
+          "cy_px": 278,
+          "radius_px": 44,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "arc",
+          "id": "card.03.dem.contour.2",
+          "cx_px": 993,
+          "cy_px": 278,
+          "radius_px": 60,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "arc",
+          "id": "card.03.dem.contour.3",
+          "cx_px": 993,
+          "cy_px": 278,
+          "radius_px": 76,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "text",
+          "id": "card.03.dem.north",
+          "text": "N",
+          "x_px": 1116,
+          "y_px": 227,
+          "font_size_pt": 9,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polygon",
+          "id": "card.03.dem.north.arrow",
+          "points_px": [
+            [
+              1116,
+              233
+            ],
+            [
+              1108,
+              253
+            ],
+            [
+              1116,
+              248
+            ],
+            [
+              1124,
+              253
+            ]
+          ],
+          "fill": "#233042",
+          "stroke": "#233042",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "line",
+          "id": "card.03.dem.scale",
+          "x1_px": 1061,
+          "y1_px": 438,
+          "x2_px": 1119,
+          "y2_px": 438,
+          "stroke": "#233042",
+          "stroke_width_pt": 3,
+          "linecap": "round"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.04.geology",
+      "aria_label": "Geology: units · faults · contacts",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.04.geology.card",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.geology.accent",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.04.geology.title",
+          "text": "Geology",
+          "x_px": 1226,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.geology.subtitle",
+          "text": "units · faults · contacts",
+          "x_px": 1226,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.geology.map.frame",
+          "x_px": 1244,
+          "y_px": 204,
+          "width_px": 282,
+          "height_px": 252,
+          "fill": "#E7EFE7",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.geology.region.0",
+          "points_px": [
+            [
+              1257,
+              223
+            ],
+            [
+              1315,
+              214
+            ],
+            [
+              1338,
+              257
+            ],
+            [
+              1300,
+              282
+            ],
+            [
+              1261,
+              266
+            ]
+          ],
+          "fill": "#BFD8B8",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.geology.region.1",
+          "points_px": [
+            [
+              1338,
+              257
+            ],
+            [
+              1403,
+              220
+            ],
+            [
+              1442,
+              254
+            ],
+            [
+              1410,
+              294
+            ],
+            [
+              1367,
+              304
+            ]
+          ],
+          "fill": "#E8D39A",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.geology.region.2",
+          "points_px": [
+            [
+              1300,
+              282
+            ],
+            [
+              1367,
+              304
+            ],
+            [
+              1352,
+              338
+            ],
+            [
+              1283,
+              333
+            ]
+          ],
+          "fill": "#B7CDD9",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "arc",
+          "id": "card.04.geology.contour.0",
+          "cx_px": 1382,
+          "cy_px": 278,
+          "radius_px": 28,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "arc",
+          "id": "card.04.geology.contour.1",
+          "cx_px": 1382,
+          "cy_px": 278,
+          "radius_px": 44,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "arc",
+          "id": "card.04.geology.contour.2",
+          "cx_px": 1382,
+          "cy_px": 278,
+          "radius_px": 60,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "arc",
+          "id": "card.04.geology.contour.3",
+          "cx_px": 1382,
+          "cy_px": 278,
+          "radius_px": 76,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "text",
+          "id": "card.04.geology.north",
+          "text": "N",
+          "x_px": 1505,
+          "y_px": 227,
+          "font_size_pt": 9,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.geology.north.arrow",
+          "points_px": [
+            [
+              1505,
+              233
+            ],
+            [
+              1497,
+              253
+            ],
+            [
+              1505,
+              248
+            ],
+            [
+              1513,
+              253
+            ]
+          ],
+          "fill": "#233042",
+          "stroke": "#233042",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "line",
+          "id": "card.04.geology.scale",
+          "x1_px": 1450,
+          "y1_px": 438,
+          "x2_px": 1508,
+          "y2_px": 438,
+          "stroke": "#233042",
+          "stroke_width_pt": 3,
+          "linecap": "round"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.05.seismic",
+      "aria_label": "Seismic map: epicenters · stations · magnitude",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.05.seismic.card",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.seismic.accent",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.05.seismic.title",
+          "text": "Seismic map",
+          "x_px": 59,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.seismic.subtitle",
+          "text": "epicenters · stations · magnitude",
+          "x_px": 59,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.seismic.map.frame",
+          "x_px": 77,
+          "y_px": 583,
+          "width_px": 282,
+          "height_px": 252,
+          "fill": "#E7EFE7",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.seismic.region.0",
+          "points_px": [
+            [
+              90,
+              602
+            ],
+            [
+              148,
+              593
+            ],
+            [
+              171,
+              636
+            ],
+            [
+              133,
+              661
+            ],
+            [
+              94,
+              645
+            ]
+          ],
+          "fill": "#BFD8B8",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.seismic.region.1",
+          "points_px": [
+            [
+              171,
+              636
+            ],
+            [
+              236,
+              599
+            ],
+            [
+              275,
+              633
+            ],
+            [
+              243,
+              673
+            ],
+            [
+              200,
+              683
+            ]
+          ],
+          "fill": "#E8D39A",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.seismic.region.2",
+          "points_px": [
+            [
+              133,
+              661
+            ],
+            [
+              200,
+              683
+            ],
+            [
+              185,
+              717
+            ],
+            [
+              116,
+              712
+            ]
+          ],
+          "fill": "#B7CDD9",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.seismic.site.0",
+          "cx_px": 130,
+          "cy_px": 629,
+          "rx_px": 5,
+          "ry_px": 5,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.seismic.site.1",
+          "cx_px": 207,
+          "cy_px": 657,
+          "rx_px": 6,
+          "ry_px": 6,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.seismic.site.2",
+          "cx_px": 266,
+          "cy_px": 626,
+          "rx_px": 7,
+          "ry_px": 7,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.seismic.site.3",
+          "cx_px": 167,
+          "cy_px": 696,
+          "rx_px": 8,
+          "ry_px": 8,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "text",
+          "id": "card.05.seismic.north",
+          "text": "N",
+          "x_px": 338,
+          "y_px": 606,
+          "font_size_pt": 9,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.seismic.north.arrow",
+          "points_px": [
+            [
+              338,
+              612
+            ],
+            [
+              330,
+              632
+            ],
+            [
+              338,
+              627
+            ],
+            [
+              346,
+              632
+            ]
+          ],
+          "fill": "#233042",
+          "stroke": "#233042",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "line",
+          "id": "card.05.seismic.scale",
+          "x1_px": 283,
+          "y1_px": 817,
+          "x2_px": 341,
+          "y2_px": 817,
+          "stroke": "#233042",
+          "stroke_width_pt": 3,
+          "linecap": "round"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.06.section",
+      "aria_label": "Cross-section: layers · section line · depth",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.06.section.card",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.06.section.accent",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.06.section.title",
+          "text": "Cross-section",
+          "x_px": 448,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.section.subtitle",
+          "text": "layers · section line · depth",
+          "x_px": 448,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.section.map.frame",
+          "x_px": 466,
+          "y_px": 583,
+          "width_px": 282,
+          "height_px": 252,
+          "fill": "#E7EFE7",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.section.region.0",
+          "points_px": [
+            [
+              479,
+              602
+            ],
+            [
+              537,
+              593
+            ],
+            [
+              560,
+              636
+            ],
+            [
+              522,
+              661
+            ],
+            [
+              483,
+              645
+            ]
+          ],
+          "fill": "#BFD8B8",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.section.region.1",
+          "points_px": [
+            [
+              560,
+              636
+            ],
+            [
+              625,
+              599
+            ],
+            [
+              664,
+              633
+            ],
+            [
+              632,
+              673
+            ],
+            [
+              589,
+              683
+            ]
+          ],
+          "fill": "#E8D39A",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.section.region.2",
+          "points_px": [
+            [
+              522,
+              661
+            ],
+            [
+              589,
+              683
+            ],
+            [
+              574,
+              717
+            ],
+            [
+              505,
+              712
+            ]
+          ],
+          "fill": "#B7CDD9",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "arc",
+          "id": "card.06.section.contour.0",
+          "cx_px": 604,
+          "cy_px": 657,
+          "radius_px": 28,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "arc",
+          "id": "card.06.section.contour.1",
+          "cx_px": 604,
+          "cy_px": 657,
+          "radius_px": 44,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "arc",
+          "id": "card.06.section.contour.2",
+          "cx_px": 604,
+          "cy_px": 657,
+          "radius_px": 60,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "arc",
+          "id": "card.06.section.contour.3",
+          "cx_px": 604,
+          "cy_px": 657,
+          "radius_px": 76,
+          "start_angle_deg": 195,
+          "end_angle_deg": 355,
+          "clockwise": true,
+          "stroke": "#4D7B5D",
+          "stroke_width_pt": 0.9
+        },
+        {
+          "type": "text",
+          "id": "card.06.section.north",
+          "text": "N",
+          "x_px": 727,
+          "y_px": 606,
+          "font_size_pt": 9,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.section.north.arrow",
+          "points_px": [
+            [
+              727,
+              612
+            ],
+            [
+              719,
+              632
+            ],
+            [
+              727,
+              627
+            ],
+            [
+              735,
+              632
+            ]
+          ],
+          "fill": "#233042",
+          "stroke": "#233042",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "line",
+          "id": "card.06.section.scale",
+          "x1_px": 672,
+          "y1_px": 817,
+          "x2_px": 730,
+          "y2_px": 817,
+          "stroke": "#233042",
+          "stroke_width_pt": 3,
+          "linecap": "round"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.07.graticule",
+      "aria_label": "Map framework: graticule · north arrow · scale",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.07.graticule.card",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.07.graticule.accent",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.07.graticule.title",
+          "text": "Map framework",
+          "x_px": 837,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.graticule.subtitle",
+          "text": "graticule · north arrow · scale",
+          "x_px": 837,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.graticule.map.frame",
+          "x_px": 855,
+          "y_px": 583,
+          "width_px": 282,
+          "height_px": 252,
+          "fill": "#E7EFE7",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.graticule.region.0",
+          "points_px": [
+            [
+              868,
+              602
+            ],
+            [
+              926,
+              593
+            ],
+            [
+              949,
+              636
+            ],
+            [
+              911,
+              661
+            ],
+            [
+              872,
+              645
+            ]
+          ],
+          "fill": "#BFD8B8",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.graticule.region.1",
+          "points_px": [
+            [
+              949,
+              636
+            ],
+            [
+              1014,
+              599
+            ],
+            [
+              1053,
+              633
+            ],
+            [
+              1021,
+              673
+            ],
+            [
+              978,
+              683
+            ]
+          ],
+          "fill": "#E8D39A",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.graticule.region.2",
+          "points_px": [
+            [
+              911,
+              661
+            ],
+            [
+              978,
+              683
+            ],
+            [
+              963,
+              717
+            ],
+            [
+              894,
+              712
+            ]
+          ],
+          "fill": "#B7CDD9",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "line",
+          "id": "card.07.graticule.lon.0",
+          "x1_px": 905,
+          "y1_px": 587,
+          "x2_px": 905,
+          "y2_px": 830,
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.graticule.lat.0",
+          "x1_px": 858,
+          "y1_px": 617,
+          "x2_px": 1134,
+          "y2_px": 617,
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.graticule.lon.1",
+          "x1_px": 967,
+          "y1_px": 587,
+          "x2_px": 967,
+          "y2_px": 830,
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.graticule.lat.1",
+          "x1_px": 858,
+          "y1_px": 653,
+          "x2_px": 1134,
+          "y2_px": 653,
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.graticule.lon.2",
+          "x1_px": 1029,
+          "y1_px": 587,
+          "x2_px": 1029,
+          "y2_px": 830,
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.graticule.lat.2",
+          "x1_px": 858,
+          "y1_px": 689,
+          "x2_px": 1134,
+          "y2_px": 689,
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.07.graticule.north",
+          "text": "N",
+          "x_px": 1116,
+          "y_px": 606,
+          "font_size_pt": 9,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.graticule.north.arrow",
+          "points_px": [
+            [
+              1116,
+              612
+            ],
+            [
+              1108,
+              632
+            ],
+            [
+              1116,
+              627
+            ],
+            [
+              1124,
+              632
+            ]
+          ],
+          "fill": "#233042",
+          "stroke": "#233042",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "line",
+          "id": "card.07.graticule.scale",
+          "x1_px": 1061,
+          "y1_px": 817,
+          "x2_px": 1119,
+          "y2_px": 817,
+          "stroke": "#233042",
+          "stroke_width_pt": 3,
+          "linecap": "round"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.08.map_legend",
+      "aria_label": "Cartography: symbols · color key · annotation",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.08.map_legend.card",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.map_legend.accent",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#4D7B5D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.08.map_legend.title",
+          "text": "Cartography",
+          "x_px": 1226,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.map_legend.subtitle",
+          "text": "symbols · color key · annotation",
+          "x_px": 1226,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.map_legend.map.frame",
+          "x_px": 1244,
+          "y_px": 583,
+          "width_px": 282,
+          "height_px": 252,
+          "fill": "#E7EFE7",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.map_legend.region.0",
+          "points_px": [
+            [
+              1257,
+              602
+            ],
+            [
+              1315,
+              593
+            ],
+            [
+              1338,
+              636
+            ],
+            [
+              1300,
+              661
+            ],
+            [
+              1261,
+              645
+            ]
+          ],
+          "fill": "#BFD8B8",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.map_legend.region.1",
+          "points_px": [
+            [
+              1338,
+              636
+            ],
+            [
+              1403,
+              599
+            ],
+            [
+              1442,
+              633
+            ],
+            [
+              1410,
+              673
+            ],
+            [
+              1367,
+              683
+            ]
+          ],
+          "fill": "#E8D39A",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.map_legend.region.2",
+          "points_px": [
+            [
+              1300,
+              661
+            ],
+            [
+              1367,
+              683
+            ],
+            [
+              1352,
+              717
+            ],
+            [
+              1283,
+              712
+            ]
+          ],
+          "fill": "#B7CDD9",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.map_legend.site.0",
+          "cx_px": 1297,
+          "cy_px": 629,
+          "rx_px": 5,
+          "ry_px": 5,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.map_legend.site.1",
+          "cx_px": 1374,
+          "cy_px": 657,
+          "rx_px": 6,
+          "ry_px": 6,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.map_legend.site.2",
+          "cx_px": 1433,
+          "cy_px": 626,
+          "rx_px": 7,
+          "ry_px": 7,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.map_legend.site.3",
+          "cx_px": 1334,
+          "cy_px": 696,
+          "rx_px": 8,
+          "ry_px": 8,
+          "fill": "#4D7B5D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "text",
+          "id": "card.08.map_legend.north",
+          "text": "N",
+          "x_px": 1505,
+          "y_px": 606,
+          "font_size_pt": 9,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.map_legend.north.arrow",
+          "points_px": [
+            [
+              1505,
+              612
+            ],
+            [
+              1497,
+              632
+            ],
+            [
+              1505,
+              627
+            ],
+            [
+              1513,
+              632
+            ]
+          ],
+          "fill": "#233042",
+          "stroke": "#233042",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "line",
+          "id": "card.08.map_legend.scale",
+          "x1_px": 1450,
+          "y1_px": 817,
+          "x2_px": 1508,
+          "y2_px": 817,
+          "stroke": "#233042",
+          "stroke_width_pt": 3,
+          "linecap": "round"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "atlas.footer",
+      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "x_px": 800,
+      "y_px": 884,
+      "font_size_pt": 7.5,
+      "fill": "#667384",
+      "anchor": "middle",
+      "font_weight": "normal"
+    }
+  ],
+  "metadata": {
+    "category_id": "earth-geospatial",
+    "demonstration": true,
+    "source_data_claim": false
+  }
+}

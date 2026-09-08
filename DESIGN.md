@@ -85,6 +85,12 @@ The packaged plugin does not operate a server or collect telemetry. It may direc
 
 ## Change history
 
+### 2026-09-08 - Public capability atlas
+
+- Added an eight-domain, 64-family deterministic SVG atlas generated through the production reconstruction builder.
+- Kept the public gallery evidence-based: every sheet has recipes, semantic IDs, live text, zero-raster checks, and SHA-256 bindings.
+- Moved improvement items off the GitHub homepage while retaining engineering limitations in design documentation.
+
 ### 2026-09-08 — bilingual capability and roadmap matrices
 
 Expanded both homepages with the supported research domains, figure families, vector primitives and composed scientific icons, non-Visio authoring backends, validation maturity, and nine concrete development gaps. This changes documentation and claim boundaries only; it does not promote an untested backend.

@@ -1,0 +1,2063 @@
+{
+  "title": "Capability Atlas — Clinical · Biomedical",
+  "source_image": "../source/blank.png",
+  "figure_class": "capability-atlas",
+  "recovery_level": "R1",
+  "canvas": {
+    "width_px": 1600,
+    "height_px": 900,
+    "print_width_mm": 320,
+    "background_fill": "#F4F6F8"
+  },
+  "defaults": {
+    "font_family": "Arial",
+    "font_size_pt": 8.5,
+    "text_fill": "#233042",
+    "stroke_width_mm": 0.22
+  },
+  "contract": {
+    "required_live_text": true,
+    "required_font_family": "Arial",
+    "require_zero_rasters": true,
+    "manual_review_required": true
+  },
+  "elements": [
+    {
+      "type": "rect",
+      "id": "atlas.header.band",
+      "x_px": 0,
+      "y_px": 0,
+      "width_px": 1600,
+      "height_px": 104,
+      "fill": "#B64C5A",
+      "stroke": "none",
+      "stroke_width_pt": 0
+    },
+    {
+      "type": "text",
+      "id": "atlas.title",
+      "text": "Clinical · Biomedical",
+      "x_px": 56,
+      "y_px": 50,
+      "font_size_pt": 22,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "bold"
+    },
+    {
+      "type": "text",
+      "id": "atlas.title.zh",
+      "text": "临床 · 生物医学",
+      "x_px": 56,
+      "y_px": 82,
+      "font_size_pt": 11,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "atlas.badge",
+      "text": "8 EDITABLE FIGURE FAMILIES",
+      "x_px": 1538,
+      "y_px": 65,
+      "font_size_pt": 8,
+      "fill": "#FFFFFF",
+      "anchor": "end",
+      "font_weight": "bold"
+    },
+    {
+      "type": "group",
+      "id": "card.01.flow_chart",
+      "aria_label": "Clinical flow: cohort · randomization · outcome",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.01.flow_chart.card",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.01.flow_chart.accent",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.01.flow_chart.title",
+          "text": "Clinical flow",
+          "x_px": 59,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.flow_chart.subtitle",
+          "text": "cohort · randomization · outcome",
+          "x_px": 59,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.flow_chart.block.0",
+          "x_px": 55.0,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.01.flow_chart.label.0",
+          "text": "Input",
+          "x_px": 84.0,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.flow_chart.block.1",
+          "x_px": 144.33333333333331,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.01.flow_chart.label.1",
+          "text": "Feature",
+          "x_px": 173.33333333333331,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.01.flow_chart.flow.1.shaft",
+          "x1_px": 113.0,
+          "y1_px": 259,
+          "x2_px": 139.33333333333331,
+          "y2_px": 259,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.flow_chart.flow.1.head",
+          "points_px": [
+            [
+              139.33333333333331,
+              259
+            ],
+            [
+              131.66061263479776,
+              263.70418506037595
+            ],
+            [
+              131.66061263479776,
+              254.29581493962408
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.01.flow_chart.block.2",
+          "x_px": 233.66666666666666,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.01.flow_chart.label.2",
+          "text": "Transform",
+          "x_px": 262.66666666666663,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.01.flow_chart.flow.2.shaft",
+          "x1_px": 202.33333333333331,
+          "y1_px": 259,
+          "x2_px": 228.66666666666666,
+          "y2_px": 259,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.flow_chart.flow.2.head",
+          "points_px": [
+            [
+              228.66666666666666,
+              259
+            ],
+            [
+              220.9939459681311,
+              263.70418506037595
+            ],
+            [
+              220.9939459681311,
+              254.29581493962408
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.01.flow_chart.block.3",
+          "x_px": 323.0,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.01.flow_chart.label.3",
+          "text": "Output",
+          "x_px": 352.0,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.01.flow_chart.flow.3.shaft",
+          "x1_px": 291.66666666666663,
+          "y1_px": 259,
+          "x2_px": 318.0,
+          "y2_px": 259,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.flow_chart.flow.3.head",
+          "points_px": [
+            [
+              318.0,
+              259
+            ],
+            [
+              310.32727930146444,
+              263.70418506037595
+            ],
+            [
+              310.32727930146444,
+              254.29581493962408
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.02.forest",
+      "aria_label": "Forest plots: effect · CI · reference",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.02.forest.card",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.forest.accent",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.02.forest.title",
+          "text": "Forest plots",
+          "x_px": 448,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.forest.subtitle",
+          "text": "effect · CI · reference",
+          "x_px": 448,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.axis.x",
+          "x1_px": 468,
+          "y1_px": 441,
+          "x2_px": 752,
+          "y2_px": 441,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.axis.y",
+          "x1_px": 468,
+          "y1_px": 206,
+          "x2_px": 468,
+          "y2_px": 441,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1.0,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.grid.1",
+          "x1_px": 468,
+          "y1_px": 283.55,
+          "x2_px": 752,
+          "y2_px": 283.55,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.grid.2",
+          "x1_px": 468,
+          "y1_px": 361.1,
+          "x2_px": 752,
+          "y2_px": 361.1,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "polyline",
+          "id": "card.02.forest.series.a",
+          "points_px": [
+            [
+              468,
+              427
+            ],
+            [
+              513,
+              396
+            ],
+            [
+              554,
+              409
+            ],
+            [
+              596,
+              359
+            ],
+            [
+              642,
+              374
+            ],
+            [
+              752,
+              224
+            ]
+          ],
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 2,
+          "fill": "none"
+        },
+        {
+          "type": "polyline",
+          "id": "card.02.forest.series.b",
+          "points_px": [
+            [
+              468,
+              445
+            ],
+            [
+              513,
+              414
+            ],
+            [
+              554,
+              427
+            ],
+            [
+              596,
+              377
+            ],
+            [
+              642,
+              392
+            ],
+            [
+              752,
+              242
+            ]
+          ],
+          "stroke": "#D95F59",
+          "stroke_width_pt": 1.6,
+          "fill": "none"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.error.0",
+          "x1_px": 513,
+          "y1_px": 383,
+          "x2_px": 513,
+          "y2_px": 409,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.cap.0.a",
+          "x1_px": 508,
+          "y1_px": 383,
+          "x2_px": 518,
+          "y2_px": 383,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.cap.0.b",
+          "x1_px": 508,
+          "y1_px": 409,
+          "x2_px": 518,
+          "y2_px": 409,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.error.1",
+          "x1_px": 554,
+          "y1_px": 396,
+          "x2_px": 554,
+          "y2_px": 422,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.cap.1.a",
+          "x1_px": 549,
+          "y1_px": 396,
+          "x2_px": 559,
+          "y2_px": 396,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.cap.1.b",
+          "x1_px": 549,
+          "y1_px": 422,
+          "x2_px": 559,
+          "y2_px": 422,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.error.2",
+          "x1_px": 596,
+          "y1_px": 346,
+          "x2_px": 596,
+          "y2_px": 372,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.cap.2.a",
+          "x1_px": 591,
+          "y1_px": 346,
+          "x2_px": 601,
+          "y2_px": 346,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.cap.2.b",
+          "x1_px": 591,
+          "y1_px": 372,
+          "x2_px": 601,
+          "y2_px": 372,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.error.3",
+          "x1_px": 642,
+          "y1_px": 361,
+          "x2_px": 642,
+          "y2_px": 387,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.cap.3.a",
+          "x1_px": 637,
+          "y1_px": 361,
+          "x2_px": 647,
+          "y2_px": 361,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.forest.cap.3.b",
+          "x1_px": 637,
+          "y1_px": 387,
+          "x2_px": 647,
+          "y2_px": 387,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.03.cytometry",
+      "aria_label": "Flow cytometry: cloud · gate · quadrant",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.03.cytometry.card",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.cytometry.accent",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.03.cytometry.title",
+          "text": "Flow cytometry",
+          "x_px": 837,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.cytometry.subtitle",
+          "text": "cloud · gate · quadrant",
+          "x_px": 837,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.cytometry.frame",
+          "x_px": 858,
+          "y_px": 204,
+          "width_px": 276,
+          "height_px": 252,
+          "fill": "#17212B",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.0",
+          "cx_px": 883,
+          "cy_px": 221,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.1",
+          "cx_px": 930,
+          "cy_px": 252,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.2",
+          "cx_px": 977,
+          "cy_px": 283,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.3",
+          "cx_px": 1024,
+          "cy_px": 314,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.4",
+          "cx_px": 1071,
+          "cy_px": 240,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.5",
+          "cx_px": 913,
+          "cy_px": 271,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.6",
+          "cx_px": 960,
+          "cy_px": 302,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.7",
+          "cx_px": 1007,
+          "cy_px": 228,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.8",
+          "cx_px": 1054,
+          "cy_px": 259,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.9",
+          "cx_px": 896,
+          "cy_px": 290,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.10",
+          "cx_px": 943,
+          "cy_px": 321,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.11",
+          "cx_px": 990,
+          "cy_px": 247,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.12",
+          "cx_px": 1037,
+          "cy_px": 278,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.13",
+          "cx_px": 1084,
+          "cy_px": 309,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.14",
+          "cx_px": 926,
+          "cy_px": 235,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.15",
+          "cx_px": 973,
+          "cy_px": 266,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.16",
+          "cx_px": 1020,
+          "cy_px": 297,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.17",
+          "cx_px": 1067,
+          "cy_px": 223,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.18",
+          "cx_px": 909,
+          "cy_px": 254,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.19",
+          "cx_px": 956,
+          "cy_px": 285,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.20",
+          "cx_px": 1003,
+          "cy_px": 316,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.21",
+          "cx_px": 1050,
+          "cy_px": 242,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.22",
+          "cx_px": 892,
+          "cy_px": 273,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.23",
+          "cx_px": 939,
+          "cy_px": 304,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.24",
+          "cx_px": 986,
+          "cy_px": 230,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.25",
+          "cx_px": 1033,
+          "cy_px": 261,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.26",
+          "cx_px": 1080,
+          "cy_px": 292,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.27",
+          "cx_px": 922,
+          "cy_px": 323,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.28",
+          "cx_px": 969,
+          "cy_px": 249,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.29",
+          "cx_px": 1016,
+          "cy_px": 280,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.30",
+          "cx_px": 1063,
+          "cy_px": 311,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.31",
+          "cx_px": 905,
+          "cy_px": 237,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.32",
+          "cx_px": 952,
+          "cy_px": 268,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.33",
+          "cx_px": 999,
+          "cy_px": 299,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.34",
+          "cx_px": 1046,
+          "cy_px": 225,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.35",
+          "cx_px": 888,
+          "cy_px": 256,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.36",
+          "cx_px": 935,
+          "cy_px": 287,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.37",
+          "cx_px": 982,
+          "cy_px": 318,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.38",
+          "cx_px": 1029,
+          "cy_px": 244,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.39",
+          "cx_px": 1076,
+          "cy_px": 275,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.40",
+          "cx_px": 918,
+          "cy_px": 306,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.cytometry.point.41",
+          "cx_px": 965,
+          "cy_px": 232,
+          "rx_px": 2.5,
+          "ry_px": 2.5,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.03.cytometry.gate",
+          "points_px": [
+            [
+              901,
+              306
+            ],
+            [
+              925,
+              239
+            ],
+            [
+              1013,
+              228
+            ],
+            [
+              1059,
+              288
+            ],
+            [
+              993,
+              326
+            ]
+          ],
+          "fill": "none",
+          "stroke": "#F2B84B",
+          "stroke_width_pt": 1.6
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.04.medical_scan",
+      "aria_label": "Medical imaging: CT · MRI · PET · ultrasound",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.04.medical_scan.card",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.medical_scan.accent",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.04.medical_scan.title",
+          "text": "Medical imaging",
+          "x_px": 1226,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.medical_scan.subtitle",
+          "text": "CT · MRI · PET · ultrasound",
+          "x_px": 1226,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.medical_scan.frame",
+          "x_px": 1247,
+          "y_px": 204,
+          "width_px": 276,
+          "height_px": 252,
+          "fill": "#17212B",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.04.medical_scan.scan.outer",
+          "cx_px": 1385.0,
+          "cy_px": 331.0,
+          "rx_px": 72,
+          "ry_px": 62,
+          "fill": "#606E7B",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.04.medical_scan.scan.inner",
+          "cx_px": 1385.0,
+          "cy_px": 331.0,
+          "rx_px": 38,
+          "ry_px": 45,
+          "fill": "#253240",
+          "stroke": "#AAB7C4",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.04.medical_scan.roi",
+          "cx_px": 1403.0,
+          "cy_px": 323.0,
+          "rx_px": 18,
+          "ry_px": 13,
+          "fill": "none",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "line",
+          "id": "card.04.medical_scan.callout.shaft",
+          "x1_px": 1421.0,
+          "y1_px": 313.0,
+          "x2_px": 1513,
+          "y2_px": 218,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.medical_scan.callout.head",
+          "points_px": [
+            [
+              1513,
+              218
+            ],
+            [
+              1511.0415834356575,
+              226.7843385955067
+            ],
+            [
+              1504.2830026326913,
+              220.23918666000262
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.05.histology",
+      "aria_label": "Histology: whole slide · tissue annotation",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.05.histology.card",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.histology.accent",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.05.histology.title",
+          "text": "Histology",
+          "x_px": 59,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.histology.subtitle",
+          "text": "whole slide · tissue annotation",
+          "x_px": 59,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.histology.image",
+          "x_px": 77,
+          "y_px": 583,
+          "width_px": 282,
+          "height_px": 250,
+          "fill": "#E9EEF2",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "rect",
+          "id": "card.05.histology.bbox.a",
+          "x_px": 103,
+          "y_px": 603,
+          "width_px": 92,
+          "height_px": 94,
+          "fill": "none",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "rect",
+          "id": "card.05.histology.bbox.b",
+          "x_px": 223,
+          "y_px": 625,
+          "width_px": 86,
+          "height_px": 70,
+          "fill": "none",
+          "stroke": "#D95F59",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "text",
+          "id": "card.05.histology.class.a",
+          "text": "cell 0.97",
+          "x_px": 103,
+          "y_px": 598,
+          "font_size_pt": 7,
+          "fill": "#B64C5A",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.05.histology.class.b",
+          "text": "object 0.91",
+          "x_px": 223,
+          "y_px": 620,
+          "font_size_pt": 7,
+          "fill": "#D95F59",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.histology.keypoint.0",
+          "cx_px": 127,
+          "cy_px": 637,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.histology.keypoint.1",
+          "cx_px": 163,
+          "cy_px": 623,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.histology.keypoint.2",
+          "cx_px": 147,
+          "cy_px": 667,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.histology.keypoint.3",
+          "cx_px": 257,
+          "cy_px": 653,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.histology.keypoint.4",
+          "cx_px": 285,
+          "cy_px": 669,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.5
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.06.roi",
+      "aria_label": "Segmentation: ROI · contour · orientation",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.06.roi.card",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.06.roi.accent",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.06.roi.title",
+          "text": "Segmentation",
+          "x_px": 448,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.roi.subtitle",
+          "text": "ROI · contour · orientation",
+          "x_px": 448,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.roi.image",
+          "x_px": 466,
+          "y_px": 583,
+          "width_px": 282,
+          "height_px": 250,
+          "fill": "#E9EEF2",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.roi.mask.a",
+          "points_px": [
+            [
+              496,
+              615
+            ],
+            [
+              556,
+              597
+            ],
+            [
+              612,
+              640
+            ],
+            [
+              581,
+              696
+            ],
+            [
+              517,
+              687
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.roi.mask.b",
+          "points_px": [
+            [
+              620,
+              653
+            ],
+            [
+              682,
+              622
+            ],
+            [
+              714,
+              678
+            ],
+            [
+              665,
+              714
+            ]
+          ],
+          "fill": "#F2B84B",
+          "stroke": "#F2B84B",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.06.roi.legend.a",
+          "text": "class A",
+          "x_px": 502,
+          "y_px": 842,
+          "font_size_pt": 7,
+          "fill": "#B64C5A",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.06.roi.legend.b",
+          "text": "class B",
+          "x_px": 634,
+          "y_px": 842,
+          "font_size_pt": 7,
+          "fill": "#B87300",
+          "anchor": "start",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.07.risk_table",
+      "aria_label": "Risk tables: time points · at-risk counts",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.07.risk_table.card",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.07.risk_table.accent",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.07.risk_table.title",
+          "text": "Risk tables",
+          "x_px": 837,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.risk_table.subtitle",
+          "text": "time points · at-risk counts",
+          "x_px": 837,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.risk_table.block.0",
+          "x_px": 833.0,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.07.risk_table.label.0",
+          "text": "Input",
+          "x_px": 862.0,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.risk_table.block.1",
+          "x_px": 922.3333333333334,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.07.risk_table.label.1",
+          "text": "Feature",
+          "x_px": 951.3333333333334,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.07.risk_table.flow.1.shaft",
+          "x1_px": 891.0,
+          "y1_px": 638,
+          "x2_px": 917.3333333333334,
+          "y2_px": 638,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.risk_table.flow.1.head",
+          "points_px": [
+            [
+              917.3333333333334,
+              638
+            ],
+            [
+              909.6606126347979,
+              642.704185060376
+            ],
+            [
+              909.6606126347979,
+              633.295814939624
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.07.risk_table.block.2",
+          "x_px": 1011.6666666666666,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.07.risk_table.label.2",
+          "text": "Transform",
+          "x_px": 1040.6666666666665,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.07.risk_table.flow.2.shaft",
+          "x1_px": 980.3333333333334,
+          "y1_px": 638,
+          "x2_px": 1006.6666666666666,
+          "y2_px": 638,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.risk_table.flow.2.head",
+          "points_px": [
+            [
+              1006.6666666666666,
+              638
+            ],
+            [
+              998.9939459681311,
+              642.704185060376
+            ],
+            [
+              998.9939459681311,
+              633.295814939624
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.07.risk_table.block.3",
+          "x_px": 1101.0,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.07.risk_table.label.3",
+          "text": "Output",
+          "x_px": 1130.0,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.07.risk_table.flow.3.shaft",
+          "x1_px": 1069.6666666666665,
+          "y1_px": 638,
+          "x2_px": 1096.0,
+          "y2_px": 638,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.risk_table.flow.3.head",
+          "points_px": [
+            [
+              1096.0,
+              638
+            ],
+            [
+              1088.3272793014644,
+              642.704185060376
+            ],
+            [
+              1088.3272793014644,
+              633.295814939624
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.08.timeline",
+      "aria_label": "Study timelines: treatment · visit · follow-up",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.08.timeline.card",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.timeline.accent",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#B64C5A",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.08.timeline.title",
+          "text": "Study timelines",
+          "x_px": 1226,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.timeline.subtitle",
+          "text": "treatment · visit · follow-up",
+          "x_px": 1226,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.timeline.block.0",
+          "x_px": 1222.0,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.08.timeline.label.0",
+          "text": "Input",
+          "x_px": 1251.0,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.timeline.block.1",
+          "x_px": 1311.3333333333333,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.08.timeline.label.1",
+          "text": "Feature",
+          "x_px": 1340.3333333333333,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.08.timeline.flow.1.shaft",
+          "x1_px": 1280.0,
+          "y1_px": 638,
+          "x2_px": 1306.3333333333333,
+          "y2_px": 638,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.timeline.flow.1.head",
+          "points_px": [
+            [
+              1306.3333333333333,
+              638
+            ],
+            [
+              1298.6606126347976,
+              642.704185060376
+            ],
+            [
+              1298.6606126347976,
+              633.295814939624
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.08.timeline.block.2",
+          "x_px": 1400.6666666666667,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.08.timeline.label.2",
+          "text": "Transform",
+          "x_px": 1429.6666666666667,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.08.timeline.flow.2.shaft",
+          "x1_px": 1369.3333333333333,
+          "y1_px": 638,
+          "x2_px": 1395.6666666666667,
+          "y2_px": 638,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.timeline.flow.2.head",
+          "points_px": [
+            [
+              1395.6666666666667,
+              638
+            ],
+            [
+              1387.9939459681311,
+              642.704185060376
+            ],
+            [
+              1387.9939459681311,
+              633.295814939624
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.08.timeline.block.3",
+          "x_px": 1490.0,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.08.timeline.label.3",
+          "text": "Output",
+          "x_px": 1519.0,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.08.timeline.flow.3.shaft",
+          "x1_px": 1458.6666666666667,
+          "y1_px": 638,
+          "x2_px": 1485.0,
+          "y2_px": 638,
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.timeline.flow.3.head",
+          "points_px": [
+            [
+              1485.0,
+              638
+            ],
+            [
+              1477.3272793014644,
+              642.704185060376
+            ],
+            [
+              1477.3272793014644,
+              633.295814939624
+            ]
+          ],
+          "fill": "#B64C5A",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 1.4
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "atlas.footer",
+      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "x_px": 800,
+      "y_px": 884,
+      "font_size_pt": 7.5,
+      "fill": "#667384",
+      "anchor": "middle",
+      "font_weight": "normal"
+    }
+  ],
+  "metadata": {
+    "category_id": "clinical-biomedical",
+    "demonstration": true,
+    "source_data_claim": false
+  }
+}

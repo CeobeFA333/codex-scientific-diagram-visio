@@ -44,6 +44,22 @@ VSDX + PDF + 300 DPI PNG
 
 [查看完整示例与来源说明](examples/paper-figure-reconstruction-demo/) · [观看 MP4](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.mp4) · [检查证据 JSON](examples/paper-figure-reconstruction-demo/assets/simpli-figure4-evidence.json)
 
+## 64 类图型能力图谱
+
+下面 8 张分类图由本仓库真实的 `reconstruct-paper-figures` 配方构建器在本机生成，共包含 **64 个细分图型演示**。所有卡片都保留实时文字、语义对象 ID 和可编辑矢量几何，并记录配方/SVG 哈希；结构审计结果为 **0 个嵌入栅格节点**。这些是合成的能力测试，不是“已经逐像素复刻了 64 篇来源论文”的宣传。
+
+| AI / 计算机视觉 | 统计学 / 数据科学 |
+|---|---|
+| [![AI 与计算机视觉图型](examples/capability-atlas/assets/ai-computer-vision.svg)](examples/capability-atlas/assets/ai-computer-vision.svg) | [![统计学与数据科学图型](examples/capability-atlas/assets/statistics-data-science.svg)](examples/capability-atlas/assets/statistics-data-science.svg) |
+| 临床 / 生物医学 | 细胞 / 分子 / 组学 |
+| [![临床与生物医学图型](examples/capability-atlas/assets/clinical-biomedical.svg)](examples/capability-atlas/assets/clinical-biomedical.svg) | [![细胞、分子与组学图型](examples/capability-atlas/assets/cell-molecular-omics.svg)](examples/capability-atlas/assets/cell-molecular-omics.svg) |
+| 化学 / 材料 / 电化学 | 工程 / 物理 |
+| [![化学、材料与电化学图型](examples/capability-atlas/assets/chemistry-materials.svg)](examples/capability-atlas/assets/chemistry-materials.svg) | [![工程与物理图型](examples/capability-atlas/assets/engineering-physics.svg)](examples/capability-atlas/assets/engineering-physics.svg) |
+| 实验系统 / 微流控 | 地球科学 / 地理空间 |
+| [![实验系统与微流控图型](examples/capability-atlas/assets/experimental-systems.svg)](examples/capability-atlas/assets/experimental-systems.svg) | [![地球科学与地理空间图型](examples/capability-atlas/assets/earth-geospatial.svg)](examples/capability-atlas/assets/earth-geospatial.svg) |
+
+[查看分类画廊、配方与生成器](examples/capability-atlas/) · [检查 64 类清单和 SHA-256 证据](examples/capability-atlas/capability-manifest.json)
+
 ## 支持的科研领域与图型
 
 这里的“支持”是指：能够识别面板类型、选择不破坏科学证据的重建路线，并输出可编辑规范或产物。它不等于所有像素图都能无损全矢量化；最终能否用于发表，仍取决于源数据、标定信息与人工科学审核。
@@ -90,18 +106,6 @@ VSDX + PDF + 300 DPI PNG
 | PowerPoint / WPS | 可通过 Scientific Illustrator 兼容流程作为中间框架编辑器 | **尚无直接控制器**；发表验收需回到 SVG/Illustrator QA |
 | Inkscape、Figma、Affinity Designer、CorelDRAW | 理论上可按各自兼容性打开导出的 SVG/PDF | **当前未自动化、未回归测试** |
 | ChemDraw/RDKit、PyMOL/ChimeraX、CAD/GIS 工具 | 作为化学、分子渲染、装配与地图的领域语义后端 | **已规划，尚未实现** |
-
-## 当前仍需改进的地方
-
-1. **扩大真实回归样本**：为每个主要图型增加可再分发的黄金样例，而不只是当前的模型架构、生物医学混合重建和统计图组。
-2. **draw.io 与 PowerPoint/WPS 原生验收**：完成可见的创建、编辑、保存、关闭、重开测试，录入稳定对象证据后再升级为“已验证”。
-3. **领域语义适配器**：增加 ChemDraw/RDKit、PyMOL/ChimeraX、CAD 和 GIS 桥接，避免仅用通用路径近似领域对象。
-4. **更广的编辑器覆盖**：测试更多 Illustrator 版本和操作系统，并建立 Inkscape/Figma/Affinity 导入与可编辑性矩阵。
-5. **加强源数据绘图**：扩展确定性统计图生成器、统计方法等价性、源行溯源和缺失数据诊断。
-6. **改善受审 OCR 交互**：提供检测确认、掩膜修正、保护区域复核和前后对比签字界面；仍禁止机器自动批准。
-7. **视觉回归自动化**：在结构审计之外增加渲染对比、重叠/文字裁切检查、字体替换检测和黄金图像阈值。
-8. **批处理与恢复**：支持可续传的多图任务、面板状态看板、缓存复用和产物清单，同时不放松工作区边界。
-9. **发布工程**：扩展 Python/Windows/Linux CI 矩阵，将已签名、已校验的包附加到 GitHub Releases，并测试支持的 Codex 客户端洁净安装。
 
 ## 三个技能
 

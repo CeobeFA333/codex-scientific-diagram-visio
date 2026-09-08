@@ -1,0 +1,2098 @@
+{
+  "title": "Capability Atlas — Cell · Molecular · Omics",
+  "source_image": "../source/blank.png",
+  "figure_class": "capability-atlas",
+  "recovery_level": "R1",
+  "canvas": {
+    "width_px": 1600,
+    "height_px": 900,
+    "print_width_mm": 320,
+    "background_fill": "#F4F6F8"
+  },
+  "defaults": {
+    "font_family": "Arial",
+    "font_size_pt": 8.5,
+    "text_fill": "#233042",
+    "stroke_width_mm": 0.22
+  },
+  "contract": {
+    "required_live_text": true,
+    "required_font_family": "Arial",
+    "require_zero_rasters": true,
+    "manual_review_required": true
+  },
+  "elements": [
+    {
+      "type": "rect",
+      "id": "atlas.header.band",
+      "x_px": 0,
+      "y_px": 0,
+      "width_px": 1600,
+      "height_px": 104,
+      "fill": "#6B8F44",
+      "stroke": "none",
+      "stroke_width_pt": 0
+    },
+    {
+      "type": "text",
+      "id": "atlas.title",
+      "text": "Cell · Molecular · Omics",
+      "x_px": 56,
+      "y_px": 50,
+      "font_size_pt": 22,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "bold"
+    },
+    {
+      "type": "text",
+      "id": "atlas.title.zh",
+      "text": "细胞 · 分子 · 组学",
+      "x_px": 56,
+      "y_px": 82,
+      "font_size_pt": 11,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "atlas.badge",
+      "text": "8 EDITABLE FIGURE FAMILIES",
+      "x_px": 1538,
+      "y_px": 65,
+      "font_size_pt": 8,
+      "fill": "#FFFFFF",
+      "anchor": "end",
+      "font_weight": "bold"
+    },
+    {
+      "type": "group",
+      "id": "card.01.microscopy",
+      "aria_label": "Microscopy: fluorescence · confocal · scale",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.01.microscopy.card",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.01.microscopy.accent",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.01.microscopy.title",
+          "text": "Microscopy",
+          "x_px": 59,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.microscopy.subtitle",
+          "text": "fluorescence · confocal · scale",
+          "x_px": 59,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.microscopy.frame",
+          "x_px": 80,
+          "y_px": 204,
+          "width_px": 276,
+          "height_px": 252,
+          "fill": "#17212B",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.microscopy.scan.outer",
+          "cx_px": 218.0,
+          "cy_px": 331.0,
+          "rx_px": 72,
+          "ry_px": 62,
+          "fill": "#606E7B",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.microscopy.scan.inner",
+          "cx_px": 218.0,
+          "cy_px": 331.0,
+          "rx_px": 38,
+          "ry_px": 45,
+          "fill": "#253240",
+          "stroke": "#AAB7C4",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.microscopy.roi",
+          "cx_px": 236.0,
+          "cy_px": 323.0,
+          "rx_px": 18,
+          "ry_px": 13,
+          "fill": "none",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "line",
+          "id": "card.01.microscopy.callout.shaft",
+          "x1_px": 254.0,
+          "y1_px": 313.0,
+          "x2_px": 346,
+          "y2_px": 218,
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.microscopy.callout.head",
+          "points_px": [
+            [
+              346,
+              218
+            ],
+            [
+              344.0415834356575,
+              226.7843385955067
+            ],
+            [
+              337.2830026326913,
+              220.23918666000262
+            ]
+          ],
+          "fill": "#6B8F44",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.4
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.02.multiplex",
+      "aria_label": "Multiplex imaging: channels · composite · cells",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.02.multiplex.card",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.multiplex.accent",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.02.multiplex.title",
+          "text": "Multiplex imaging",
+          "x_px": 448,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.multiplex.subtitle",
+          "text": "channels · composite · cells",
+          "x_px": 448,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.multiplex.image",
+          "x_px": 466,
+          "y_px": 204,
+          "width_px": 282,
+          "height_px": 250,
+          "fill": "#E9EEF2",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.02.multiplex.mask.a",
+          "points_px": [
+            [
+              496,
+              236
+            ],
+            [
+              556,
+              218
+            ],
+            [
+              612,
+              261
+            ],
+            [
+              581,
+              317
+            ],
+            [
+              517,
+              308
+            ]
+          ],
+          "fill": "#6B8F44",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "polygon",
+          "id": "card.02.multiplex.mask.b",
+          "points_px": [
+            [
+              620,
+              274
+            ],
+            [
+              682,
+              243
+            ],
+            [
+              714,
+              299
+            ],
+            [
+              665,
+              335
+            ]
+          ],
+          "fill": "#F2B84B",
+          "stroke": "#F2B84B",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.02.multiplex.legend.a",
+          "text": "class A",
+          "x_px": 502,
+          "y_px": 463,
+          "font_size_pt": 7,
+          "fill": "#6B8F44",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.02.multiplex.legend.b",
+          "text": "class B",
+          "x_px": 634,
+          "y_px": 463,
+          "font_size_pt": 7,
+          "fill": "#B87300",
+          "anchor": "start",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.03.blot",
+      "aria_label": "Western blot: bands · lanes · molecular weight",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.03.blot.card",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.accent",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.03.blot.title",
+          "text": "Western blot",
+          "x_px": 837,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.blot.subtitle",
+          "text": "bands · lanes · molecular weight",
+          "x_px": 837,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.frame",
+          "x_px": 858,
+          "y_px": 204,
+          "width_px": 276,
+          "height_px": 252,
+          "fill": "#17212B",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.0.0",
+          "x_px": 883,
+          "y_px": 231,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.0.1",
+          "x_px": 883,
+          "y_px": 266,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.0.2",
+          "x_px": 883,
+          "y_px": 301,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.1.0",
+          "x_px": 919,
+          "y_px": 236,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.1.1",
+          "x_px": 919,
+          "y_px": 271,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.1.2",
+          "x_px": 919,
+          "y_px": 306,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.2.0",
+          "x_px": 955,
+          "y_px": 231,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.2.1",
+          "x_px": 955,
+          "y_px": 266,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.2.2",
+          "x_px": 955,
+          "y_px": 301,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.3.0",
+          "x_px": 991,
+          "y_px": 236,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.3.1",
+          "x_px": 991,
+          "y_px": 271,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.3.2",
+          "x_px": 991,
+          "y_px": 306,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.4.0",
+          "x_px": 1027,
+          "y_px": 231,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.4.1",
+          "x_px": 1027,
+          "y_px": 266,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.4.2",
+          "x_px": 1027,
+          "y_px": 301,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.5.0",
+          "x_px": 1063,
+          "y_px": 236,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.5.1",
+          "x_px": 1063,
+          "y_px": 271,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.band.5.2",
+          "x_px": 1063,
+          "y_px": 306,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.03.blot.ladder",
+          "text": "kDa",
+          "x_px": 864,
+          "y_px": 224,
+          "font_size_pt": 6.5,
+          "fill": "#FFFFFF",
+          "anchor": "start",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.04.gel",
+      "aria_label": "Electrophoresis: gel · ladder · sample lanes",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.04.gel.card",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.accent",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.04.gel.title",
+          "text": "Electrophoresis",
+          "x_px": 1226,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.gel.subtitle",
+          "text": "gel · ladder · sample lanes",
+          "x_px": 1226,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.frame",
+          "x_px": 1247,
+          "y_px": 204,
+          "width_px": 276,
+          "height_px": 252,
+          "fill": "#17212B",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.0.0",
+          "x_px": 1272,
+          "y_px": 231,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.0.1",
+          "x_px": 1272,
+          "y_px": 266,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.0.2",
+          "x_px": 1272,
+          "y_px": 301,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.1.0",
+          "x_px": 1308,
+          "y_px": 236,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.1.1",
+          "x_px": 1308,
+          "y_px": 271,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.1.2",
+          "x_px": 1308,
+          "y_px": 306,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.2.0",
+          "x_px": 1344,
+          "y_px": 231,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.2.1",
+          "x_px": 1344,
+          "y_px": 266,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.2.2",
+          "x_px": 1344,
+          "y_px": 301,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.3.0",
+          "x_px": 1380,
+          "y_px": 236,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.3.1",
+          "x_px": 1380,
+          "y_px": 271,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.3.2",
+          "x_px": 1380,
+          "y_px": 306,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.4.0",
+          "x_px": 1416,
+          "y_px": 231,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.4.1",
+          "x_px": 1416,
+          "y_px": 266,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.4.2",
+          "x_px": 1416,
+          "y_px": 301,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.5.0",
+          "x_px": 1452,
+          "y_px": 236,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.5.1",
+          "x_px": 1452,
+          "y_px": 271,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#F3F5F7",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.band.5.2",
+          "x_px": 1452,
+          "y_px": 306,
+          "width_px": 24,
+          "height_px": 5,
+          "fill": "#B9C5D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.04.gel.ladder",
+          "text": "kDa",
+          "x_px": 1253,
+          "y_px": 224,
+          "font_size_pt": 6.5,
+          "fill": "#FFFFFF",
+          "anchor": "start",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.05.genomic_heatmap",
+      "aria_label": "Genomic matrices: heatmap · annotation tracks",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.card",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.accent",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.05.genomic_heatmap.title",
+          "text": "Genomic matrices",
+          "x_px": 59,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.genomic_heatmap.subtitle",
+          "text": "heatmap · annotation tracks",
+          "x_px": 59,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.0.0",
+          "x_px": 103,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.0.1",
+          "x_px": 128,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.0.2",
+          "x_px": 153,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.0.3",
+          "x_px": 178,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.0.4",
+          "x_px": 203,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.0.5",
+          "x_px": 228,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.0.6",
+          "x_px": 253,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.0.7",
+          "x_px": 278,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.0.8",
+          "x_px": 303,
+          "y_px": 593,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.1.0",
+          "x_px": 103,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.1.1",
+          "x_px": 128,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.1.2",
+          "x_px": 153,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.1.3",
+          "x_px": 178,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.1.4",
+          "x_px": 203,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.1.5",
+          "x_px": 228,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.1.6",
+          "x_px": 253,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.1.7",
+          "x_px": 278,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.1.8",
+          "x_px": 303,
+          "y_px": 613,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.2.0",
+          "x_px": 103,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.2.1",
+          "x_px": 128,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.2.2",
+          "x_px": 153,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.2.3",
+          "x_px": 178,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.2.4",
+          "x_px": 203,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.2.5",
+          "x_px": 228,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.2.6",
+          "x_px": 253,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.2.7",
+          "x_px": 278,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.2.8",
+          "x_px": 303,
+          "y_px": 633,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.3.0",
+          "x_px": 103,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.3.1",
+          "x_px": 128,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.3.2",
+          "x_px": 153,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.3.3",
+          "x_px": 178,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.3.4",
+          "x_px": 203,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.3.5",
+          "x_px": 228,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.3.6",
+          "x_px": 253,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.3.7",
+          "x_px": 278,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.3.8",
+          "x_px": 303,
+          "y_px": 653,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.4.0",
+          "x_px": 103,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.4.1",
+          "x_px": 128,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.4.2",
+          "x_px": 153,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.4.3",
+          "x_px": 178,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.4.4",
+          "x_px": 203,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.4.5",
+          "x_px": 228,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.4.6",
+          "x_px": 253,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.4.7",
+          "x_px": 278,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.cell.4.8",
+          "x_px": 303,
+          "y_px": 673,
+          "width_px": 24,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.track.0",
+          "x_px": 83,
+          "y_px": 593,
+          "width_px": 12,
+          "height_px": 19,
+          "fill": "#EFF3F8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.track.1",
+          "x_px": 83,
+          "y_px": 613,
+          "width_px": 12,
+          "height_px": 19,
+          "fill": "#C8D7E8",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.track.2",
+          "x_px": 83,
+          "y_px": 633,
+          "width_px": 12,
+          "height_px": 19,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.track.3",
+          "x_px": 83,
+          "y_px": 653,
+          "width_px": 12,
+          "height_px": 19,
+          "fill": "#F2B84B",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.track.4",
+          "x_px": 83,
+          "y_px": 673,
+          "width_px": 12,
+          "height_px": 19,
+          "fill": "#D95F59",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.05.genomic_heatmap.low",
+          "text": "low",
+          "x_px": 103,
+          "y_px": 711,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.05.genomic_heatmap.high",
+          "text": "high",
+          "x_px": 328,
+          "y_px": 711,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "end",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.06.phylogeny",
+      "aria_label": "Phylogenetics: tree · clade · branch scale",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.06.phylogeny.card",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.06.phylogeny.accent",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.06.phylogeny.title",
+          "text": "Phylogenetics",
+          "x_px": 448,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.phylogeny.subtitle",
+          "text": "tree · clade · branch scale",
+          "x_px": 448,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.06.phylogeny.edge.0",
+          "x1_px": 474,
+          "y1_px": 650,
+          "x2_px": 532,
+          "y2_px": 603,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.phylogeny.edge.1",
+          "x1_px": 474,
+          "y1_px": 650,
+          "x2_px": 539,
+          "y2_px": 697,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.phylogeny.edge.2",
+          "x1_px": 532,
+          "y1_px": 603,
+          "x2_px": 604,
+          "y2_px": 643,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.phylogeny.edge.3",
+          "x1_px": 539,
+          "y1_px": 697,
+          "x2_px": 604,
+          "y2_px": 643,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.phylogeny.edge.4",
+          "x1_px": 604,
+          "y1_px": 643,
+          "x2_px": 669,
+          "y2_px": 603,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.phylogeny.edge.5",
+          "x1_px": 604,
+          "y1_px": 643,
+          "x2_px": 696,
+          "y2_px": 681,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.phylogeny.edge.6",
+          "x1_px": 669,
+          "y1_px": 603,
+          "x2_px": 696,
+          "y2_px": 681,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.phylogeny.node.0",
+          "cx_px": 474,
+          "cy_px": 650,
+          "rx_px": 14,
+          "ry_px": 14,
+          "fill": "#6B8F44",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.phylogeny.node.1",
+          "cx_px": 532,
+          "cy_px": 603,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.phylogeny.node.2",
+          "cx_px": 539,
+          "cy_px": 697,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.phylogeny.node.3",
+          "cx_px": 604,
+          "cy_px": 643,
+          "rx_px": 14,
+          "ry_px": 14,
+          "fill": "#6B8F44",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.phylogeny.node.4",
+          "cx_px": 669,
+          "cy_px": 603,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.phylogeny.node.5",
+          "cx_px": 696,
+          "cy_px": 681,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.07.protein",
+      "aria_label": "Protein renders: ribbon · residue · domain",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.07.protein.card",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.07.protein.accent",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.07.protein.title",
+          "text": "Protein renders",
+          "x_px": 837,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.protein.subtitle",
+          "text": "ribbon · residue · domain",
+          "x_px": 837,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.07.protein.edge.0",
+          "x1_px": 863,
+          "y1_px": 650,
+          "x2_px": 921,
+          "y2_px": 603,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.protein.edge.1",
+          "x1_px": 863,
+          "y1_px": 650,
+          "x2_px": 928,
+          "y2_px": 697,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.protein.edge.2",
+          "x1_px": 921,
+          "y1_px": 603,
+          "x2_px": 993,
+          "y2_px": 643,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.protein.edge.3",
+          "x1_px": 928,
+          "y1_px": 697,
+          "x2_px": 993,
+          "y2_px": 643,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.protein.edge.4",
+          "x1_px": 993,
+          "y1_px": 643,
+          "x2_px": 1058,
+          "y2_px": 603,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.protein.edge.5",
+          "x1_px": 993,
+          "y1_px": 643,
+          "x2_px": 1085,
+          "y2_px": 681,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.07.protein.edge.6",
+          "x1_px": 1058,
+          "y1_px": 603,
+          "x2_px": 1085,
+          "y2_px": 681,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.protein.node.0",
+          "cx_px": 863,
+          "cy_px": 650,
+          "rx_px": 14,
+          "ry_px": 14,
+          "fill": "#6B8F44",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.protein.node.1",
+          "cx_px": 921,
+          "cy_px": 603,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.protein.node.2",
+          "cx_px": 928,
+          "cy_px": 697,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.protein.node.3",
+          "cx_px": 993,
+          "cy_px": 643,
+          "rx_px": 14,
+          "ry_px": 14,
+          "fill": "#6B8F44",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.protein.node.4",
+          "cx_px": 1058,
+          "cy_px": 603,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.protein.node.5",
+          "cx_px": 1085,
+          "cy_px": 681,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.08.ligand",
+      "aria_label": "Ligand interactions: ligand · residue · dashed bond",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.08.ligand.card",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.ligand.accent",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#6B8F44",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.08.ligand.title",
+          "text": "Ligand interactions",
+          "x_px": 1226,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.ligand.subtitle",
+          "text": "ligand · residue · dashed bond",
+          "x_px": 1226,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.08.ligand.edge.0",
+          "x1_px": 1252,
+          "y1_px": 650,
+          "x2_px": 1310,
+          "y2_px": 603,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.08.ligand.edge.1",
+          "x1_px": 1252,
+          "y1_px": 650,
+          "x2_px": 1317,
+          "y2_px": 697,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.08.ligand.edge.2",
+          "x1_px": 1310,
+          "y1_px": 603,
+          "x2_px": 1382,
+          "y2_px": 643,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.08.ligand.edge.3",
+          "x1_px": 1317,
+          "y1_px": 697,
+          "x2_px": 1382,
+          "y2_px": 643,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.08.ligand.edge.4",
+          "x1_px": 1382,
+          "y1_px": 643,
+          "x2_px": 1447,
+          "y2_px": 603,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.08.ligand.edge.5",
+          "x1_px": 1382,
+          "y1_px": 643,
+          "x2_px": 1474,
+          "y2_px": 681,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.08.ligand.edge.6",
+          "x1_px": 1447,
+          "y1_px": 603,
+          "x2_px": 1474,
+          "y2_px": 681,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.3,
+          "linecap": "round"
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.ligand.node.0",
+          "cx_px": 1252,
+          "cy_px": 650,
+          "rx_px": 14,
+          "ry_px": 14,
+          "fill": "#6B8F44",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.ligand.node.1",
+          "cx_px": 1310,
+          "cy_px": 603,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.ligand.node.2",
+          "cx_px": 1317,
+          "cy_px": 697,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.ligand.node.3",
+          "cx_px": 1382,
+          "cy_px": 643,
+          "rx_px": 14,
+          "ry_px": 14,
+          "fill": "#6B8F44",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.ligand.node.4",
+          "cx_px": 1447,
+          "cy_px": 603,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.ligand.node.5",
+          "cx_px": 1474,
+          "cy_px": 681,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#6B8F44",
+          "stroke_width_pt": 1.5
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "atlas.footer",
+      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "x_px": 800,
+      "y_px": 884,
+      "font_size_pt": 7.5,
+      "fill": "#667384",
+      "anchor": "middle",
+      "font_weight": "normal"
+    }
+  ],
+  "metadata": {
+    "category_id": "cell-molecular-omics",
+    "demonstration": true,
+    "source_data_claim": false
+  }
+}

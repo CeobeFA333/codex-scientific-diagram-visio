@@ -1,0 +1,5801 @@
+{
+  "title": "Capability Atlas — Engineering · Physics",
+  "source_image": "../source/blank.png",
+  "figure_class": "capability-atlas",
+  "recovery_level": "R1",
+  "canvas": {
+    "width_px": 1600,
+    "height_px": 900,
+    "print_width_mm": 320,
+    "background_fill": "#F4F6F8"
+  },
+  "defaults": {
+    "font_family": "Arial",
+    "font_size_pt": 8.5,
+    "text_fill": "#233042",
+    "stroke_width_mm": 0.22
+  },
+  "contract": {
+    "required_live_text": true,
+    "required_font_family": "Arial",
+    "require_zero_rasters": true,
+    "manual_review_required": true
+  },
+  "elements": [
+    {
+      "type": "rect",
+      "id": "atlas.header.band",
+      "x_px": 0,
+      "y_px": 0,
+      "width_px": 1600,
+      "height_px": 104,
+      "fill": "#D28A2E",
+      "stroke": "none",
+      "stroke_width_pt": 0
+    },
+    {
+      "type": "text",
+      "id": "atlas.title",
+      "text": "Engineering · Physics",
+      "x_px": 56,
+      "y_px": 50,
+      "font_size_pt": 22,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "bold"
+    },
+    {
+      "type": "text",
+      "id": "atlas.title.zh",
+      "text": "机械 · 电气 · 工程物理",
+      "x_px": 56,
+      "y_px": 82,
+      "font_size_pt": 11,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "atlas.badge",
+      "text": "8 EDITABLE FIGURE FAMILIES",
+      "x_px": 1538,
+      "y_px": 65,
+      "font_size_pt": 8,
+      "fill": "#FFFFFF",
+      "anchor": "end",
+      "font_weight": "bold"
+    },
+    {
+      "type": "group",
+      "id": "card.01.circuit",
+      "aria_label": "Circuit diagram: symbols · wires · parameters",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.01.circuit.card",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.01.circuit.accent",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#D28A2E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.01.circuit.title",
+          "text": "Circuit diagram",
+          "x_px": 59,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.circuit.subtitle",
+          "text": "symbols · wires · parameters",
+          "x_px": 59,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.01.circuit.wire.top",
+          "x1_px": 85,
+          "y1_px": 234,
+          "x2_px": 346,
+          "y2_px": 234,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.circuit.wire.bottom",
+          "x1_px": 85,
+          "y1_px": 314,
+          "x2_px": 346,
+          "y2_px": 314,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.8,
+          "linecap": "round"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.circuit.resistor",
+          "x_px": 133,
+          "y_px": 224,
+          "width_px": 48,
+          "height_px": 20,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.circuit.source",
+          "cx_px": 103,
+          "cy_px": 274,
+          "rx_px": 17,
+          "ry_px": 17,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "line",
+          "id": "card.01.circuit.source.link.a",
+          "x1_px": 103,
+          "y1_px": 234,
+          "x2_px": 103,
+          "y2_px": 257,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.circuit.source.link.b",
+          "x1_px": 103,
+          "y1_px": 291,
+          "x2_px": 103,
+          "y2_px": 314,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.circuit.capacitor.a",
+          "x1_px": 239,
+          "y1_px": 262,
+          "x2_px": 273,
+          "y2_px": 262,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 2,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.circuit.capacitor.b",
+          "x1_px": 239,
+          "y1_px": 273,
+          "x2_px": 273,
+          "y2_px": 273,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 2,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.circuit.capacitor.link.a",
+          "x1_px": 256,
+          "y1_px": 234,
+          "x2_px": 256,
+          "y2_px": 262,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.circuit.capacitor.link.b",
+          "x1_px": 256,
+          "y1_px": 273,
+          "x2_px": 256,
+          "y2_px": 314,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.circuit.label",
+          "text": "R1        C1",
+          "x_px": 146,
+          "y_px": 218,
+          "font_size_pt": 7,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.02.control",
+      "aria_label": "Control system: blocks · feedback · transfer",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.02.control.card",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.control.accent",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#D28A2E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.title",
+          "text": "Control system",
+          "x_px": 448,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.subtitle",
+          "text": "blocks · feedback · transfer",
+          "x_px": 448,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.control.block.0",
+          "x_px": 444.0,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.label.0",
+          "text": "Setpoint",
+          "x_px": 473.0,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.control.block.1",
+          "x_px": 533.3333333333334,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.label.1",
+          "text": "Controller",
+          "x_px": 562.3333333333334,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.02.control.flow.1.shaft",
+          "x1_px": 502.0,
+          "y1_px": 259,
+          "x2_px": 528.3333333333334,
+          "y2_px": 259,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.02.control.flow.1.head",
+          "points_px": [
+            [
+              528.3333333333334,
+              259
+            ],
+            [
+              520.6606126347979,
+              263.70418506037595
+            ],
+            [
+              520.6606126347979,
+              254.29581493962408
+            ]
+          ],
+          "fill": "#D28A2E",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.02.control.block.2",
+          "x_px": 622.6666666666666,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#D28A2E",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.label.2",
+          "text": "Plant",
+          "x_px": 651.6666666666666,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.02.control.flow.2.shaft",
+          "x1_px": 591.3333333333334,
+          "y1_px": 259,
+          "x2_px": 617.6666666666666,
+          "y2_px": 259,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.02.control.flow.2.head",
+          "points_px": [
+            [
+              617.6666666666666,
+              259
+            ],
+            [
+              609.9939459681311,
+              263.70418506037595
+            ],
+            [
+              609.9939459681311,
+              254.29581493962408
+            ]
+          ],
+          "fill": "#D28A2E",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.02.control.block.3",
+          "x_px": 712.0,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.label.3",
+          "text": "Output",
+          "x_px": 741.0,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.02.control.flow.3.shaft",
+          "x1_px": 680.6666666666666,
+          "y1_px": 259,
+          "x2_px": 707.0,
+          "y2_px": 259,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.02.control.flow.3.head",
+          "points_px": [
+            [
+              707.0,
+              259
+            ],
+            [
+              699.3272793014645,
+              263.70418506037595
+            ],
+            [
+              699.3272793014645,
+              254.29581493962408
+            ]
+          ],
+          "fill": "#D28A2E",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "polyline",
+          "id": "card.02.control.return",
+          "points_px": [
+            [
+              741.0,
+              294
+            ],
+            [
+              741.0,
+              454
+            ],
+            [
+              473.0,
+              454
+            ],
+            [
+              473.0,
+              294
+            ]
+          ],
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.4,
+          "fill": "none"
+        },
+        {
+          "type": "ellipse",
+          "id": "card.02.control.sum",
+          "cx_px": 473.0,
+          "cy_px": 294,
+          "rx_px": 8,
+          "ry_px": 8,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.2
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.03.wiring",
+      "aria_label": "Wiring: junctions · terminals · IDs",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.03.wiring.card",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.wiring.accent",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#D28A2E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.03.wiring.title",
+          "text": "Wiring",
+          "x_px": 837,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.wiring.subtitle",
+          "text": "junctions · terminals · IDs",
+          "x_px": 837,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.wiring.wire.top",
+          "x1_px": 863,
+          "y1_px": 234,
+          "x2_px": 1124,
+          "y2_px": 234,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.wiring.wire.bottom",
+          "x1_px": 863,
+          "y1_px": 314,
+          "x2_px": 1124,
+          "y2_px": 314,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.8,
+          "linecap": "round"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.wiring.resistor",
+          "x_px": 911,
+          "y_px": 224,
+          "width_px": 48,
+          "height_px": 20,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.03.wiring.source",
+          "cx_px": 881,
+          "cy_px": 274,
+          "rx_px": 17,
+          "ry_px": 17,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "line",
+          "id": "card.03.wiring.source.link.a",
+          "x1_px": 881,
+          "y1_px": 234,
+          "x2_px": 881,
+          "y2_px": 257,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.wiring.source.link.b",
+          "x1_px": 881,
+          "y1_px": 291,
+          "x2_px": 881,
+          "y2_px": 314,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.wiring.capacitor.a",
+          "x1_px": 1017,
+          "y1_px": 262,
+          "x2_px": 1051,
+          "y2_px": 262,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 2,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.wiring.capacitor.b",
+          "x1_px": 1017,
+          "y1_px": 273,
+          "x2_px": 1051,
+          "y2_px": 273,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 2,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.wiring.capacitor.link.a",
+          "x1_px": 1034,
+          "y1_px": 234,
+          "x2_px": 1034,
+          "y2_px": 262,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.wiring.capacitor.link.b",
+          "x1_px": 1034,
+          "y1_px": 273,
+          "x2_px": 1034,
+          "y2_px": 314,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.5,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.wiring.label",
+          "text": "R1        C1",
+          "x_px": 924,
+          "y_px": 218,
+          "font_size_pt": 7,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.04.fea",
+      "aria_label": "FEA fields: stress · strain · boundary loads",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.04.fea.card",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.fea.accent",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#D28A2E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.04.fea.title",
+          "text": "FEA fields",
+          "x_px": 1226,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.fea.subtitle",
+          "text": "stress · strain · boundary loads",
+          "x_px": 1226,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.0",
+          "points_px": [
+            [
+              1257,
+              216
+            ],
+            [
+              1280,
+              214
+            ],
+            [
+              1278,
+              234
+            ],
+            [
+              1255,
+              236
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.1",
+          "points_px": [
+            [
+              1280,
+              216
+            ],
+            [
+              1303,
+              214
+            ],
+            [
+              1301,
+              234
+            ],
+            [
+              1278,
+              236
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.2",
+          "points_px": [
+            [
+              1303,
+              216
+            ],
+            [
+              1326,
+              214
+            ],
+            [
+              1324,
+              234
+            ],
+            [
+              1301,
+              236
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.3",
+          "points_px": [
+            [
+              1326,
+              216
+            ],
+            [
+              1349,
+              214
+            ],
+            [
+              1347,
+              234
+            ],
+            [
+              1324,
+              236
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.4",
+          "points_px": [
+            [
+              1349,
+              216
+            ],
+            [
+              1372,
+              214
+            ],
+            [
+              1370,
+              234
+            ],
+            [
+              1347,
+              236
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.5",
+          "points_px": [
+            [
+              1372,
+              216
+            ],
+            [
+              1395,
+              214
+            ],
+            [
+              1393,
+              234
+            ],
+            [
+              1370,
+              236
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.6",
+          "points_px": [
+            [
+              1395,
+              216
+            ],
+            [
+              1418,
+              214
+            ],
+            [
+              1416,
+              234
+            ],
+            [
+              1393,
+              236
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.7",
+          "points_px": [
+            [
+              1418,
+              216
+            ],
+            [
+              1441,
+              214
+            ],
+            [
+              1439,
+              234
+            ],
+            [
+              1416,
+              236
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.8",
+          "points_px": [
+            [
+              1441,
+              216
+            ],
+            [
+              1464,
+              214
+            ],
+            [
+              1462,
+              234
+            ],
+            [
+              1439,
+              236
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.0.9",
+          "points_px": [
+            [
+              1464,
+              216
+            ],
+            [
+              1487,
+              214
+            ],
+            [
+              1485,
+              234
+            ],
+            [
+              1462,
+              236
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.0",
+          "points_px": [
+            [
+              1257,
+              236
+            ],
+            [
+              1280,
+              234
+            ],
+            [
+              1278,
+              254
+            ],
+            [
+              1255,
+              256
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.1",
+          "points_px": [
+            [
+              1280,
+              236
+            ],
+            [
+              1303,
+              234
+            ],
+            [
+              1301,
+              254
+            ],
+            [
+              1278,
+              256
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.2",
+          "points_px": [
+            [
+              1303,
+              236
+            ],
+            [
+              1326,
+              234
+            ],
+            [
+              1324,
+              254
+            ],
+            [
+              1301,
+              256
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.3",
+          "points_px": [
+            [
+              1326,
+              236
+            ],
+            [
+              1349,
+              234
+            ],
+            [
+              1347,
+              254
+            ],
+            [
+              1324,
+              256
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.4",
+          "points_px": [
+            [
+              1349,
+              236
+            ],
+            [
+              1372,
+              234
+            ],
+            [
+              1370,
+              254
+            ],
+            [
+              1347,
+              256
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.5",
+          "points_px": [
+            [
+              1372,
+              236
+            ],
+            [
+              1395,
+              234
+            ],
+            [
+              1393,
+              254
+            ],
+            [
+              1370,
+              256
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.6",
+          "points_px": [
+            [
+              1395,
+              236
+            ],
+            [
+              1418,
+              234
+            ],
+            [
+              1416,
+              254
+            ],
+            [
+              1393,
+              256
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.7",
+          "points_px": [
+            [
+              1418,
+              236
+            ],
+            [
+              1441,
+              234
+            ],
+            [
+              1439,
+              254
+            ],
+            [
+              1416,
+              256
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.8",
+          "points_px": [
+            [
+              1441,
+              236
+            ],
+            [
+              1464,
+              234
+            ],
+            [
+              1462,
+              254
+            ],
+            [
+              1439,
+              256
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.1.9",
+          "points_px": [
+            [
+              1464,
+              236
+            ],
+            [
+              1487,
+              234
+            ],
+            [
+              1485,
+              254
+            ],
+            [
+              1462,
+              256
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.0",
+          "points_px": [
+            [
+              1257,
+              256
+            ],
+            [
+              1280,
+              254
+            ],
+            [
+              1278,
+              274
+            ],
+            [
+              1255,
+              276
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.1",
+          "points_px": [
+            [
+              1280,
+              256
+            ],
+            [
+              1303,
+              254
+            ],
+            [
+              1301,
+              274
+            ],
+            [
+              1278,
+              276
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.2",
+          "points_px": [
+            [
+              1303,
+              256
+            ],
+            [
+              1326,
+              254
+            ],
+            [
+              1324,
+              274
+            ],
+            [
+              1301,
+              276
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.3",
+          "points_px": [
+            [
+              1326,
+              256
+            ],
+            [
+              1349,
+              254
+            ],
+            [
+              1347,
+              274
+            ],
+            [
+              1324,
+              276
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.4",
+          "points_px": [
+            [
+              1349,
+              256
+            ],
+            [
+              1372,
+              254
+            ],
+            [
+              1370,
+              274
+            ],
+            [
+              1347,
+              276
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.5",
+          "points_px": [
+            [
+              1372,
+              256
+            ],
+            [
+              1395,
+              254
+            ],
+            [
+              1393,
+              274
+            ],
+            [
+              1370,
+              276
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.6",
+          "points_px": [
+            [
+              1395,
+              256
+            ],
+            [
+              1418,
+              254
+            ],
+            [
+              1416,
+              274
+            ],
+            [
+              1393,
+              276
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.7",
+          "points_px": [
+            [
+              1418,
+              256
+            ],
+            [
+              1441,
+              254
+            ],
+            [
+              1439,
+              274
+            ],
+            [
+              1416,
+              276
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.8",
+          "points_px": [
+            [
+              1441,
+              256
+            ],
+            [
+              1464,
+              254
+            ],
+            [
+              1462,
+              274
+            ],
+            [
+              1439,
+              276
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.2.9",
+          "points_px": [
+            [
+              1464,
+              256
+            ],
+            [
+              1487,
+              254
+            ],
+            [
+              1485,
+              274
+            ],
+            [
+              1462,
+              276
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.0",
+          "points_px": [
+            [
+              1257,
+              276
+            ],
+            [
+              1280,
+              274
+            ],
+            [
+              1278,
+              294
+            ],
+            [
+              1255,
+              296
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.1",
+          "points_px": [
+            [
+              1280,
+              276
+            ],
+            [
+              1303,
+              274
+            ],
+            [
+              1301,
+              294
+            ],
+            [
+              1278,
+              296
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.2",
+          "points_px": [
+            [
+              1303,
+              276
+            ],
+            [
+              1326,
+              274
+            ],
+            [
+              1324,
+              294
+            ],
+            [
+              1301,
+              296
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.3",
+          "points_px": [
+            [
+              1326,
+              276
+            ],
+            [
+              1349,
+              274
+            ],
+            [
+              1347,
+              294
+            ],
+            [
+              1324,
+              296
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.4",
+          "points_px": [
+            [
+              1349,
+              276
+            ],
+            [
+              1372,
+              274
+            ],
+            [
+              1370,
+              294
+            ],
+            [
+              1347,
+              296
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.5",
+          "points_px": [
+            [
+              1372,
+              276
+            ],
+            [
+              1395,
+              274
+            ],
+            [
+              1393,
+              294
+            ],
+            [
+              1370,
+              296
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.6",
+          "points_px": [
+            [
+              1395,
+              276
+            ],
+            [
+              1418,
+              274
+            ],
+            [
+              1416,
+              294
+            ],
+            [
+              1393,
+              296
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.7",
+          "points_px": [
+            [
+              1418,
+              276
+            ],
+            [
+              1441,
+              274
+            ],
+            [
+              1439,
+              294
+            ],
+            [
+              1416,
+              296
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.8",
+          "points_px": [
+            [
+              1441,
+              276
+            ],
+            [
+              1464,
+              274
+            ],
+            [
+              1462,
+              294
+            ],
+            [
+              1439,
+              296
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.3.9",
+          "points_px": [
+            [
+              1464,
+              276
+            ],
+            [
+              1487,
+              274
+            ],
+            [
+              1485,
+              294
+            ],
+            [
+              1462,
+              296
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.0",
+          "points_px": [
+            [
+              1257,
+              296
+            ],
+            [
+              1280,
+              294
+            ],
+            [
+              1278,
+              314
+            ],
+            [
+              1255,
+              316
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.1",
+          "points_px": [
+            [
+              1280,
+              296
+            ],
+            [
+              1303,
+              294
+            ],
+            [
+              1301,
+              314
+            ],
+            [
+              1278,
+              316
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.2",
+          "points_px": [
+            [
+              1303,
+              296
+            ],
+            [
+              1326,
+              294
+            ],
+            [
+              1324,
+              314
+            ],
+            [
+              1301,
+              316
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.3",
+          "points_px": [
+            [
+              1326,
+              296
+            ],
+            [
+              1349,
+              294
+            ],
+            [
+              1347,
+              314
+            ],
+            [
+              1324,
+              316
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.4",
+          "points_px": [
+            [
+              1349,
+              296
+            ],
+            [
+              1372,
+              294
+            ],
+            [
+              1370,
+              314
+            ],
+            [
+              1347,
+              316
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.5",
+          "points_px": [
+            [
+              1372,
+              296
+            ],
+            [
+              1395,
+              294
+            ],
+            [
+              1393,
+              314
+            ],
+            [
+              1370,
+              316
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.6",
+          "points_px": [
+            [
+              1395,
+              296
+            ],
+            [
+              1418,
+              294
+            ],
+            [
+              1416,
+              314
+            ],
+            [
+              1393,
+              316
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.7",
+          "points_px": [
+            [
+              1418,
+              296
+            ],
+            [
+              1441,
+              294
+            ],
+            [
+              1439,
+              314
+            ],
+            [
+              1416,
+              316
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.8",
+          "points_px": [
+            [
+              1441,
+              296
+            ],
+            [
+              1464,
+              294
+            ],
+            [
+              1462,
+              314
+            ],
+            [
+              1439,
+              316
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.4.9",
+          "points_px": [
+            [
+              1464,
+              296
+            ],
+            [
+              1487,
+              294
+            ],
+            [
+              1485,
+              314
+            ],
+            [
+              1462,
+              316
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.0",
+          "points_px": [
+            [
+              1257,
+              316
+            ],
+            [
+              1280,
+              314
+            ],
+            [
+              1278,
+              334
+            ],
+            [
+              1255,
+              336
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.1",
+          "points_px": [
+            [
+              1280,
+              316
+            ],
+            [
+              1303,
+              314
+            ],
+            [
+              1301,
+              334
+            ],
+            [
+              1278,
+              336
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.2",
+          "points_px": [
+            [
+              1303,
+              316
+            ],
+            [
+              1326,
+              314
+            ],
+            [
+              1324,
+              334
+            ],
+            [
+              1301,
+              336
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.3",
+          "points_px": [
+            [
+              1326,
+              316
+            ],
+            [
+              1349,
+              314
+            ],
+            [
+              1347,
+              334
+            ],
+            [
+              1324,
+              336
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.4",
+          "points_px": [
+            [
+              1349,
+              316
+            ],
+            [
+              1372,
+              314
+            ],
+            [
+              1370,
+              334
+            ],
+            [
+              1347,
+              336
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.5",
+          "points_px": [
+            [
+              1372,
+              316
+            ],
+            [
+              1395,
+              314
+            ],
+            [
+              1393,
+              334
+            ],
+            [
+              1370,
+              336
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.6",
+          "points_px": [
+            [
+              1395,
+              316
+            ],
+            [
+              1418,
+              314
+            ],
+            [
+              1416,
+              334
+            ],
+            [
+              1393,
+              336
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.7",
+          "points_px": [
+            [
+              1418,
+              316
+            ],
+            [
+              1441,
+              314
+            ],
+            [
+              1439,
+              334
+            ],
+            [
+              1416,
+              336
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.8",
+          "points_px": [
+            [
+              1441,
+              316
+            ],
+            [
+              1464,
+              314
+            ],
+            [
+              1462,
+              334
+            ],
+            [
+              1439,
+              336
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.fea.field.5.9",
+          "points_px": [
+            [
+              1464,
+              316
+            ],
+            [
+              1487,
+              314
+            ],
+            [
+              1485,
+              334
+            ],
+            [
+              1462,
+              336
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.fea.colorbar",
+          "x_px": 1518,
+          "y_px": 216,
+          "width_px": 10,
+          "height_px": 120,
+          "fill": "#D28A2E",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.8
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.05.cfd",
+      "aria_label": "CFD fields: velocity · pressure · streamlines",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.05.cfd.card",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.cfd.accent",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#D28A2E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.05.cfd.title",
+          "text": "CFD fields",
+          "x_px": 59,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.cfd.subtitle",
+          "text": "velocity · pressure · streamlines",
+          "x_px": 59,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.0",
+          "points_px": [
+            [
+              90,
+              595
+            ],
+            [
+              113,
+              593
+            ],
+            [
+              111,
+              613
+            ],
+            [
+              88,
+              615
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.1",
+          "points_px": [
+            [
+              113,
+              595
+            ],
+            [
+              136,
+              593
+            ],
+            [
+              134,
+              613
+            ],
+            [
+              111,
+              615
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.2",
+          "points_px": [
+            [
+              136,
+              595
+            ],
+            [
+              159,
+              593
+            ],
+            [
+              157,
+              613
+            ],
+            [
+              134,
+              615
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.3",
+          "points_px": [
+            [
+              159,
+              595
+            ],
+            [
+              182,
+              593
+            ],
+            [
+              180,
+              613
+            ],
+            [
+              157,
+              615
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.4",
+          "points_px": [
+            [
+              182,
+              595
+            ],
+            [
+              205,
+              593
+            ],
+            [
+              203,
+              613
+            ],
+            [
+              180,
+              615
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.5",
+          "points_px": [
+            [
+              205,
+              595
+            ],
+            [
+              228,
+              593
+            ],
+            [
+              226,
+              613
+            ],
+            [
+              203,
+              615
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.6",
+          "points_px": [
+            [
+              228,
+              595
+            ],
+            [
+              251,
+              593
+            ],
+            [
+              249,
+              613
+            ],
+            [
+              226,
+              615
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.7",
+          "points_px": [
+            [
+              251,
+              595
+            ],
+            [
+              274,
+              593
+            ],
+            [
+              272,
+              613
+            ],
+            [
+              249,
+              615
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.8",
+          "points_px": [
+            [
+              274,
+              595
+            ],
+            [
+              297,
+              593
+            ],
+            [
+              295,
+              613
+            ],
+            [
+              272,
+              615
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.0.9",
+          "points_px": [
+            [
+              297,
+              595
+            ],
+            [
+              320,
+              593
+            ],
+            [
+              318,
+              613
+            ],
+            [
+              295,
+              615
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.0",
+          "points_px": [
+            [
+              90,
+              615
+            ],
+            [
+              113,
+              613
+            ],
+            [
+              111,
+              633
+            ],
+            [
+              88,
+              635
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.1",
+          "points_px": [
+            [
+              113,
+              615
+            ],
+            [
+              136,
+              613
+            ],
+            [
+              134,
+              633
+            ],
+            [
+              111,
+              635
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.2",
+          "points_px": [
+            [
+              136,
+              615
+            ],
+            [
+              159,
+              613
+            ],
+            [
+              157,
+              633
+            ],
+            [
+              134,
+              635
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.3",
+          "points_px": [
+            [
+              159,
+              615
+            ],
+            [
+              182,
+              613
+            ],
+            [
+              180,
+              633
+            ],
+            [
+              157,
+              635
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.4",
+          "points_px": [
+            [
+              182,
+              615
+            ],
+            [
+              205,
+              613
+            ],
+            [
+              203,
+              633
+            ],
+            [
+              180,
+              635
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.5",
+          "points_px": [
+            [
+              205,
+              615
+            ],
+            [
+              228,
+              613
+            ],
+            [
+              226,
+              633
+            ],
+            [
+              203,
+              635
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.6",
+          "points_px": [
+            [
+              228,
+              615
+            ],
+            [
+              251,
+              613
+            ],
+            [
+              249,
+              633
+            ],
+            [
+              226,
+              635
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.7",
+          "points_px": [
+            [
+              251,
+              615
+            ],
+            [
+              274,
+              613
+            ],
+            [
+              272,
+              633
+            ],
+            [
+              249,
+              635
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.8",
+          "points_px": [
+            [
+              274,
+              615
+            ],
+            [
+              297,
+              613
+            ],
+            [
+              295,
+              633
+            ],
+            [
+              272,
+              635
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.1.9",
+          "points_px": [
+            [
+              297,
+              615
+            ],
+            [
+              320,
+              613
+            ],
+            [
+              318,
+              633
+            ],
+            [
+              295,
+              635
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.0",
+          "points_px": [
+            [
+              90,
+              635
+            ],
+            [
+              113,
+              633
+            ],
+            [
+              111,
+              653
+            ],
+            [
+              88,
+              655
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.1",
+          "points_px": [
+            [
+              113,
+              635
+            ],
+            [
+              136,
+              633
+            ],
+            [
+              134,
+              653
+            ],
+            [
+              111,
+              655
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.2",
+          "points_px": [
+            [
+              136,
+              635
+            ],
+            [
+              159,
+              633
+            ],
+            [
+              157,
+              653
+            ],
+            [
+              134,
+              655
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.3",
+          "points_px": [
+            [
+              159,
+              635
+            ],
+            [
+              182,
+              633
+            ],
+            [
+              180,
+              653
+            ],
+            [
+              157,
+              655
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.4",
+          "points_px": [
+            [
+              182,
+              635
+            ],
+            [
+              205,
+              633
+            ],
+            [
+              203,
+              653
+            ],
+            [
+              180,
+              655
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.5",
+          "points_px": [
+            [
+              205,
+              635
+            ],
+            [
+              228,
+              633
+            ],
+            [
+              226,
+              653
+            ],
+            [
+              203,
+              655
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.6",
+          "points_px": [
+            [
+              228,
+              635
+            ],
+            [
+              251,
+              633
+            ],
+            [
+              249,
+              653
+            ],
+            [
+              226,
+              655
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.7",
+          "points_px": [
+            [
+              251,
+              635
+            ],
+            [
+              274,
+              633
+            ],
+            [
+              272,
+              653
+            ],
+            [
+              249,
+              655
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.8",
+          "points_px": [
+            [
+              274,
+              635
+            ],
+            [
+              297,
+              633
+            ],
+            [
+              295,
+              653
+            ],
+            [
+              272,
+              655
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.2.9",
+          "points_px": [
+            [
+              297,
+              635
+            ],
+            [
+              320,
+              633
+            ],
+            [
+              318,
+              653
+            ],
+            [
+              295,
+              655
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.0",
+          "points_px": [
+            [
+              90,
+              655
+            ],
+            [
+              113,
+              653
+            ],
+            [
+              111,
+              673
+            ],
+            [
+              88,
+              675
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.1",
+          "points_px": [
+            [
+              113,
+              655
+            ],
+            [
+              136,
+              653
+            ],
+            [
+              134,
+              673
+            ],
+            [
+              111,
+              675
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.2",
+          "points_px": [
+            [
+              136,
+              655
+            ],
+            [
+              159,
+              653
+            ],
+            [
+              157,
+              673
+            ],
+            [
+              134,
+              675
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.3",
+          "points_px": [
+            [
+              159,
+              655
+            ],
+            [
+              182,
+              653
+            ],
+            [
+              180,
+              673
+            ],
+            [
+              157,
+              675
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.4",
+          "points_px": [
+            [
+              182,
+              655
+            ],
+            [
+              205,
+              653
+            ],
+            [
+              203,
+              673
+            ],
+            [
+              180,
+              675
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.5",
+          "points_px": [
+            [
+              205,
+              655
+            ],
+            [
+              228,
+              653
+            ],
+            [
+              226,
+              673
+            ],
+            [
+              203,
+              675
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.6",
+          "points_px": [
+            [
+              228,
+              655
+            ],
+            [
+              251,
+              653
+            ],
+            [
+              249,
+              673
+            ],
+            [
+              226,
+              675
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.7",
+          "points_px": [
+            [
+              251,
+              655
+            ],
+            [
+              274,
+              653
+            ],
+            [
+              272,
+              673
+            ],
+            [
+              249,
+              675
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.8",
+          "points_px": [
+            [
+              274,
+              655
+            ],
+            [
+              297,
+              653
+            ],
+            [
+              295,
+              673
+            ],
+            [
+              272,
+              675
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.3.9",
+          "points_px": [
+            [
+              297,
+              655
+            ],
+            [
+              320,
+              653
+            ],
+            [
+              318,
+              673
+            ],
+            [
+              295,
+              675
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.0",
+          "points_px": [
+            [
+              90,
+              675
+            ],
+            [
+              113,
+              673
+            ],
+            [
+              111,
+              693
+            ],
+            [
+              88,
+              695
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.1",
+          "points_px": [
+            [
+              113,
+              675
+            ],
+            [
+              136,
+              673
+            ],
+            [
+              134,
+              693
+            ],
+            [
+              111,
+              695
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.2",
+          "points_px": [
+            [
+              136,
+              675
+            ],
+            [
+              159,
+              673
+            ],
+            [
+              157,
+              693
+            ],
+            [
+              134,
+              695
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.3",
+          "points_px": [
+            [
+              159,
+              675
+            ],
+            [
+              182,
+              673
+            ],
+            [
+              180,
+              693
+            ],
+            [
+              157,
+              695
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.4",
+          "points_px": [
+            [
+              182,
+              675
+            ],
+            [
+              205,
+              673
+            ],
+            [
+              203,
+              693
+            ],
+            [
+              180,
+              695
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.5",
+          "points_px": [
+            [
+              205,
+              675
+            ],
+            [
+              228,
+              673
+            ],
+            [
+              226,
+              693
+            ],
+            [
+              203,
+              695
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.6",
+          "points_px": [
+            [
+              228,
+              675
+            ],
+            [
+              251,
+              673
+            ],
+            [
+              249,
+              693
+            ],
+            [
+              226,
+              695
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.7",
+          "points_px": [
+            [
+              251,
+              675
+            ],
+            [
+              274,
+              673
+            ],
+            [
+              272,
+              693
+            ],
+            [
+              249,
+              695
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.8",
+          "points_px": [
+            [
+              274,
+              675
+            ],
+            [
+              297,
+              673
+            ],
+            [
+              295,
+              693
+            ],
+            [
+              272,
+              695
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.4.9",
+          "points_px": [
+            [
+              297,
+              675
+            ],
+            [
+              320,
+              673
+            ],
+            [
+              318,
+              693
+            ],
+            [
+              295,
+              695
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.0",
+          "points_px": [
+            [
+              90,
+              695
+            ],
+            [
+              113,
+              693
+            ],
+            [
+              111,
+              713
+            ],
+            [
+              88,
+              715
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.1",
+          "points_px": [
+            [
+              113,
+              695
+            ],
+            [
+              136,
+              693
+            ],
+            [
+              134,
+              713
+            ],
+            [
+              111,
+              715
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.2",
+          "points_px": [
+            [
+              136,
+              695
+            ],
+            [
+              159,
+              693
+            ],
+            [
+              157,
+              713
+            ],
+            [
+              134,
+              715
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.3",
+          "points_px": [
+            [
+              159,
+              695
+            ],
+            [
+              182,
+              693
+            ],
+            [
+              180,
+              713
+            ],
+            [
+              157,
+              715
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.4",
+          "points_px": [
+            [
+              182,
+              695
+            ],
+            [
+              205,
+              693
+            ],
+            [
+              203,
+              713
+            ],
+            [
+              180,
+              715
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.5",
+          "points_px": [
+            [
+              205,
+              695
+            ],
+            [
+              228,
+              693
+            ],
+            [
+              226,
+              713
+            ],
+            [
+              203,
+              715
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.6",
+          "points_px": [
+            [
+              228,
+              695
+            ],
+            [
+              251,
+              693
+            ],
+            [
+              249,
+              713
+            ],
+            [
+              226,
+              715
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.7",
+          "points_px": [
+            [
+              251,
+              695
+            ],
+            [
+              274,
+              693
+            ],
+            [
+              272,
+              713
+            ],
+            [
+              249,
+              715
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.8",
+          "points_px": [
+            [
+              274,
+              695
+            ],
+            [
+              297,
+              693
+            ],
+            [
+              295,
+              713
+            ],
+            [
+              272,
+              715
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.cfd.field.5.9",
+          "points_px": [
+            [
+              297,
+              695
+            ],
+            [
+              320,
+              693
+            ],
+            [
+              318,
+              713
+            ],
+            [
+              295,
+              715
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polyline",
+          "id": "card.05.cfd.stream.0",
+          "points_px": [
+            [
+              80,
+              610
+            ],
+            [
+              165,
+              597
+            ],
+            [
+              245,
+              617
+            ],
+            [
+              325,
+              603
+            ]
+          ],
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.1,
+          "fill": "none"
+        },
+        {
+          "type": "polyline",
+          "id": "card.05.cfd.stream.1",
+          "points_px": [
+            [
+              80,
+              638
+            ],
+            [
+              165,
+              623
+            ],
+            [
+              245,
+              636
+            ],
+            [
+              325,
+              625
+            ]
+          ],
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.1,
+          "fill": "none"
+        },
+        {
+          "type": "polyline",
+          "id": "card.05.cfd.stream.2",
+          "points_px": [
+            [
+              80,
+              666
+            ],
+            [
+              165,
+              649
+            ],
+            [
+              245,
+              655
+            ],
+            [
+              325,
+              647
+            ]
+          ],
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.1,
+          "fill": "none"
+        },
+        {
+          "type": "polyline",
+          "id": "card.05.cfd.stream.3",
+          "points_px": [
+            [
+              80,
+              694
+            ],
+            [
+              165,
+              675
+            ],
+            [
+              245,
+              674
+            ],
+            [
+              325,
+              669
+            ]
+          ],
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 1.1,
+          "fill": "none"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.cfd.colorbar",
+          "x_px": 351,
+          "y_px": 595,
+          "width_px": 10,
+          "height_px": 120,
+          "fill": "#D28A2E",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.8
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.06.surface",
+      "aria_label": "Response surface: 3D surface · contour · points",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.06.surface.card",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.06.surface.accent",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#D28A2E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.06.surface.title",
+          "text": "Response surface",
+          "x_px": 448,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.surface.subtitle",
+          "text": "3D surface · contour · points",
+          "x_px": 448,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.0",
+          "points_px": [
+            [
+              479,
+              595
+            ],
+            [
+              502,
+              593
+            ],
+            [
+              500,
+              613
+            ],
+            [
+              477,
+              615
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.1",
+          "points_px": [
+            [
+              502,
+              595
+            ],
+            [
+              525,
+              593
+            ],
+            [
+              523,
+              613
+            ],
+            [
+              500,
+              615
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.2",
+          "points_px": [
+            [
+              525,
+              595
+            ],
+            [
+              548,
+              593
+            ],
+            [
+              546,
+              613
+            ],
+            [
+              523,
+              615
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.3",
+          "points_px": [
+            [
+              548,
+              595
+            ],
+            [
+              571,
+              593
+            ],
+            [
+              569,
+              613
+            ],
+            [
+              546,
+              615
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.4",
+          "points_px": [
+            [
+              571,
+              595
+            ],
+            [
+              594,
+              593
+            ],
+            [
+              592,
+              613
+            ],
+            [
+              569,
+              615
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.5",
+          "points_px": [
+            [
+              594,
+              595
+            ],
+            [
+              617,
+              593
+            ],
+            [
+              615,
+              613
+            ],
+            [
+              592,
+              615
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.6",
+          "points_px": [
+            [
+              617,
+              595
+            ],
+            [
+              640,
+              593
+            ],
+            [
+              638,
+              613
+            ],
+            [
+              615,
+              615
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.7",
+          "points_px": [
+            [
+              640,
+              595
+            ],
+            [
+              663,
+              593
+            ],
+            [
+              661,
+              613
+            ],
+            [
+              638,
+              615
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.8",
+          "points_px": [
+            [
+              663,
+              595
+            ],
+            [
+              686,
+              593
+            ],
+            [
+              684,
+              613
+            ],
+            [
+              661,
+              615
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.0.9",
+          "points_px": [
+            [
+              686,
+              595
+            ],
+            [
+              709,
+              593
+            ],
+            [
+              707,
+              613
+            ],
+            [
+              684,
+              615
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.0",
+          "points_px": [
+            [
+              479,
+              615
+            ],
+            [
+              502,
+              613
+            ],
+            [
+              500,
+              633
+            ],
+            [
+              477,
+              635
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.1",
+          "points_px": [
+            [
+              502,
+              615
+            ],
+            [
+              525,
+              613
+            ],
+            [
+              523,
+              633
+            ],
+            [
+              500,
+              635
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.2",
+          "points_px": [
+            [
+              525,
+              615
+            ],
+            [
+              548,
+              613
+            ],
+            [
+              546,
+              633
+            ],
+            [
+              523,
+              635
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.3",
+          "points_px": [
+            [
+              548,
+              615
+            ],
+            [
+              571,
+              613
+            ],
+            [
+              569,
+              633
+            ],
+            [
+              546,
+              635
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.4",
+          "points_px": [
+            [
+              571,
+              615
+            ],
+            [
+              594,
+              613
+            ],
+            [
+              592,
+              633
+            ],
+            [
+              569,
+              635
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.5",
+          "points_px": [
+            [
+              594,
+              615
+            ],
+            [
+              617,
+              613
+            ],
+            [
+              615,
+              633
+            ],
+            [
+              592,
+              635
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.6",
+          "points_px": [
+            [
+              617,
+              615
+            ],
+            [
+              640,
+              613
+            ],
+            [
+              638,
+              633
+            ],
+            [
+              615,
+              635
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.7",
+          "points_px": [
+            [
+              640,
+              615
+            ],
+            [
+              663,
+              613
+            ],
+            [
+              661,
+              633
+            ],
+            [
+              638,
+              635
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.8",
+          "points_px": [
+            [
+              663,
+              615
+            ],
+            [
+              686,
+              613
+            ],
+            [
+              684,
+              633
+            ],
+            [
+              661,
+              635
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.1.9",
+          "points_px": [
+            [
+              686,
+              615
+            ],
+            [
+              709,
+              613
+            ],
+            [
+              707,
+              633
+            ],
+            [
+              684,
+              635
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.0",
+          "points_px": [
+            [
+              479,
+              635
+            ],
+            [
+              502,
+              633
+            ],
+            [
+              500,
+              653
+            ],
+            [
+              477,
+              655
+            ]
+          ],
+          "fill": "#355CBB",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.1",
+          "points_px": [
+            [
+              502,
+              635
+            ],
+            [
+              525,
+              633
+            ],
+            [
+              523,
+              653
+            ],
+            [
+              500,
+              655
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.2",
+          "points_px": [
+            [
+              525,
+              635
+            ],
+            [
+              548,
+              633
+            ],
+            [
+              546,
+              653
+            ],
+            [
+              523,
+              655
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.3",
+          "points_px": [
+            [
+              548,
+              635
+            ],
+            [
+              571,
+              633
+            ],
+            [
+              569,
+              653
+            ],
+            [
+              546,
+              655
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.4",
+          "points_px": [
+            [
+              571,
+              635
+            ],
+            [
+              594,
+              633
+            ],
+            [
+              592,
+              653
+            ],
+            [
+              569,
+              655
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.5",
+          "points_px": [
+            [
+              594,
+              635
+            ],
+            [
+              617,
+              633
+            ],
+            [
+              615,
+              653
+            ],
+            [
+              592,
+              655
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.6",
+          "points_px": [
+            [
+              617,
+              635
+            ],
+            [
+              640,
+              633
+            ],
+            [
+              638,
+              653
+            ],
+            [
+              615,
+              655
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.7",
+          "points_px": [
+            [
+              640,
+              635
+            ],
+            [
+              663,
+              633
+            ],
+            [
+              661,
+              653
+            ],
+            [
+              638,
+              655
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.8",
+          "points_px": [
+            [
+              663,
+              635
+            ],
+            [
+              686,
+              633
+            ],
+            [
+              684,
+              653
+            ],
+            [
+              661,
+              655
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.2.9",
+          "points_px": [
+            [
+              686,
+              635
+            ],
+            [
+              709,
+              633
+            ],
+            [
+              707,
+              653
+            ],
+            [
+              684,
+              655
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.0",
+          "points_px": [
+            [
+              479,
+              655
+            ],
+            [
+              502,
+              653
+            ],
+            [
+              500,
+              673
+            ],
+            [
+              477,
+              675
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.1",
+          "points_px": [
+            [
+              502,
+              655
+            ],
+            [
+              525,
+              653
+            ],
+            [
+              523,
+              673
+            ],
+            [
+              500,
+              675
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.2",
+          "points_px": [
+            [
+              525,
+              655
+            ],
+            [
+              548,
+              653
+            ],
+            [
+              546,
+              673
+            ],
+            [
+              523,
+              675
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.3",
+          "points_px": [
+            [
+              548,
+              655
+            ],
+            [
+              571,
+              653
+            ],
+            [
+              569,
+              673
+            ],
+            [
+              546,
+              675
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.4",
+          "points_px": [
+            [
+              571,
+              655
+            ],
+            [
+              594,
+              653
+            ],
+            [
+              592,
+              673
+            ],
+            [
+              569,
+              675
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.5",
+          "points_px": [
+            [
+              594,
+              655
+            ],
+            [
+              617,
+              653
+            ],
+            [
+              615,
+              673
+            ],
+            [
+              592,
+              675
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.6",
+          "points_px": [
+            [
+              617,
+              655
+            ],
+            [
+              640,
+              653
+            ],
+            [
+              638,
+              673
+            ],
+            [
+              615,
+              675
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.7",
+          "points_px": [
+            [
+              640,
+              655
+            ],
+            [
+              663,
+              653
+            ],
+            [
+              661,
+              673
+            ],
+            [
+              638,
+              675
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.8",
+          "points_px": [
+            [
+              663,
+              655
+            ],
+            [
+              686,
+              653
+            ],
+            [
+              684,
+              673
+            ],
+            [
+              661,
+              675
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.3.9",
+          "points_px": [
+            [
+              686,
+              655
+            ],
+            [
+              709,
+              653
+            ],
+            [
+              707,
+              673
+            ],
+            [
+              684,
+              675
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.0",
+          "points_px": [
+            [
+              479,
+              675
+            ],
+            [
+              502,
+              673
+            ],
+            [
+              500,
+              693
+            ],
+            [
+              477,
+              695
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.1",
+          "points_px": [
+            [
+              502,
+              675
+            ],
+            [
+              525,
+              673
+            ],
+            [
+              523,
+              693
+            ],
+            [
+              500,
+              695
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.2",
+          "points_px": [
+            [
+              525,
+              675
+            ],
+            [
+              548,
+              673
+            ],
+            [
+              546,
+              693
+            ],
+            [
+              523,
+              695
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.3",
+          "points_px": [
+            [
+              548,
+              675
+            ],
+            [
+              571,
+              673
+            ],
+            [
+              569,
+              693
+            ],
+            [
+              546,
+              695
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.4",
+          "points_px": [
+            [
+              571,
+              675
+            ],
+            [
+              594,
+              673
+            ],
+            [
+              592,
+              693
+            ],
+            [
+              569,
+              695
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.5",
+          "points_px": [
+            [
+              594,
+              675
+            ],
+            [
+              617,
+              673
+            ],
+            [
+              615,
+              693
+            ],
+            [
+              592,
+              695
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.6",
+          "points_px": [
+            [
+              617,
+              675
+            ],
+            [
+              640,
+              673
+            ],
+            [
+              638,
+              693
+            ],
+            [
+              615,
+              695
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.7",
+          "points_px": [
+            [
+              640,
+              675
+            ],
+            [
+              663,
+              673
+            ],
+            [
+              661,
+              693
+            ],
+            [
+              638,
+              695
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.8",
+          "points_px": [
+            [
+              663,
+              675
+            ],
+            [
+              686,
+              673
+            ],
+            [
+              684,
+              693
+            ],
+            [
+              661,
+              695
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.4.9",
+          "points_px": [
+            [
+              686,
+              675
+            ],
+            [
+              709,
+              673
+            ],
+            [
+              707,
+              693
+            ],
+            [
+              684,
+              695
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.0",
+          "points_px": [
+            [
+              479,
+              695
+            ],
+            [
+              502,
+              693
+            ],
+            [
+              500,
+              713
+            ],
+            [
+              477,
+              715
+            ]
+          ],
+          "fill": "#39A7D0",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.1",
+          "points_px": [
+            [
+              502,
+              695
+            ],
+            [
+              525,
+              693
+            ],
+            [
+              523,
+              713
+            ],
+            [
+              500,
+              715
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.2",
+          "points_px": [
+            [
+              525,
+              695
+            ],
+            [
+              548,
+              693
+            ],
+            [
+              546,
+              713
+            ],
+            [
+              523,
+              715
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.3",
+          "points_px": [
+            [
+              548,
+              695
+            ],
+            [
+              571,
+              693
+            ],
+            [
+              569,
+              713
+            ],
+            [
+              546,
+              715
+            ]
+          ],
+          "fill": "#73C879",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.4",
+          "points_px": [
+            [
+              571,
+              695
+            ],
+            [
+              594,
+              693
+            ],
+            [
+              592,
+              713
+            ],
+            [
+              569,
+              715
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.5",
+          "points_px": [
+            [
+              594,
+              695
+            ],
+            [
+              617,
+              693
+            ],
+            [
+              615,
+              713
+            ],
+            [
+              592,
+              715
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.6",
+          "points_px": [
+            [
+              617,
+              695
+            ],
+            [
+              640,
+              693
+            ],
+            [
+              638,
+              713
+            ],
+            [
+              615,
+              715
+            ]
+          ],
+          "fill": "#F2D15D",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.7",
+          "points_px": [
+            [
+              640,
+              695
+            ],
+            [
+              663,
+              693
+            ],
+            [
+              661,
+              713
+            ],
+            [
+              638,
+              715
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.8",
+          "points_px": [
+            [
+              663,
+              695
+            ],
+            [
+              686,
+              693
+            ],
+            [
+              684,
+              713
+            ],
+            [
+              661,
+              715
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.surface.field.5.9",
+          "points_px": [
+            [
+              686,
+              695
+            ],
+            [
+              709,
+              693
+            ],
+            [
+              707,
+              713
+            ],
+            [
+              684,
+              715
+            ]
+          ],
+          "fill": "#E75B45",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "rect",
+          "id": "card.06.surface.colorbar",
+          "x_px": 740,
+          "y_px": 595,
+          "width_px": 10,
+          "height_px": 120,
+          "fill": "#D28A2E",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.8
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.07.cad",
+      "aria_label": "CAD drawing: contours · dimensions · leaders",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.07.cad.card",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.07.cad.accent",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#D28A2E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.07.cad.title",
+          "text": "CAD drawing",
+          "x_px": 837,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.cad.subtitle",
+          "text": "contours · dimensions · leaders",
+          "x_px": 837,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.cad.part.a",
+          "x_px": 871,
+          "y_px": 623,
+          "width_px": 74,
+          "height_px": 62,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.6
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.cad.part.b",
+          "points_px": [
+            [
+              971,
+              615
+            ],
+            [
+              1038,
+              600
+            ],
+            [
+              1070,
+              640
+            ],
+            [
+              1003,
+              655
+            ]
+          ],
+          "fill": "#E6EEF7",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.6
+        },
+        {
+          "type": "ellipse",
+          "id": "card.07.cad.hole",
+          "cx_px": 908,
+          "cy_px": 654,
+          "rx_px": 17,
+          "ry_px": 17,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.3
+        },
+        {
+          "type": "line",
+          "id": "card.07.cad.dimension.shaft",
+          "x1_px": 868,
+          "y1_px": 705,
+          "x2_px": 1071,
+          "y2_px": 705,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.cad.dimension.head",
+          "points_px": [
+            [
+              1071,
+              705
+            ],
+            [
+              1063.3272793014644,
+              709.704185060376
+            ],
+            [
+              1063.3272793014644,
+              700.295814939624
+            ]
+          ],
+          "fill": "#6B7788",
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "text",
+          "id": "card.07.cad.dimension.label",
+          "text": "120.0 mm",
+          "x_px": 970,
+          "y_px": 721,
+          "font_size_pt": 7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.08.exploded",
+      "aria_label": "Exploded assembly: parts · BOM · exploded leaders",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.08.exploded.card",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.exploded.accent",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#D28A2E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.08.exploded.title",
+          "text": "Exploded assembly",
+          "x_px": 1226,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.exploded.subtitle",
+          "text": "parts · BOM · exploded leaders",
+          "x_px": 1226,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.exploded.part.a",
+          "x_px": 1260,
+          "y_px": 623,
+          "width_px": 74,
+          "height_px": 62,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.6
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.exploded.part.b",
+          "points_px": [
+            [
+              1360,
+              615
+            ],
+            [
+              1427,
+              600
+            ],
+            [
+              1459,
+              640
+            ],
+            [
+              1392,
+              655
+            ]
+          ],
+          "fill": "#E6EEF7",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.6
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.exploded.hole",
+          "cx_px": 1297,
+          "cy_px": 654,
+          "rx_px": 17,
+          "ry_px": 17,
+          "fill": "#FFFFFF",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.3
+        },
+        {
+          "type": "line",
+          "id": "card.08.exploded.dimension.shaft",
+          "x1_px": 1257,
+          "y1_px": 705,
+          "x2_px": 1460,
+          "y2_px": 705,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.exploded.dimension.head",
+          "points_px": [
+            [
+              1460,
+              705
+            ],
+            [
+              1452.3272793014644,
+              709.704185060376
+            ],
+            [
+              1452.3272793014644,
+              700.295814939624
+            ]
+          ],
+          "fill": "#6B7788",
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "text",
+          "id": "card.08.exploded.dimension.label",
+          "text": "120.0 mm",
+          "x_px": 1359,
+          "y_px": 721,
+          "font_size_pt": 7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.08.exploded.explode.shaft",
+          "x1_px": 1334,
+          "y1_px": 654,
+          "x2_px": 1357,
+          "y2_px": 641,
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.exploded.explode.head",
+          "points_px": [
+            [
+              1357,
+              641
+            ],
+            [
+              1352.6351428836429,
+              648.8707065981262
+            ],
+            [
+              1348.0056860923094,
+              640.6801291980747
+            ]
+          ],
+          "fill": "#D28A2E",
+          "stroke": "#D28A2E",
+          "stroke_width_pt": 1.4
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "atlas.footer",
+      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "x_px": 800,
+      "y_px": 884,
+      "font_size_pt": 7.5,
+      "fill": "#667384",
+      "anchor": "middle",
+      "font_weight": "normal"
+    }
+  ],
+  "metadata": {
+    "category_id": "engineering-physics",
+    "demonstration": true,
+    "source_data_claim": false
+  }
+}

@@ -1,0 +1,1479 @@
+{
+  "title": "Capability Atlas — Experimental Systems · Microfluidics",
+  "source_image": "../source/blank.png",
+  "figure_class": "capability-atlas",
+  "recovery_level": "R1",
+  "canvas": {
+    "width_px": 1600,
+    "height_px": 900,
+    "print_width_mm": 320,
+    "background_fill": "#F4F6F8"
+  },
+  "defaults": {
+    "font_family": "Arial",
+    "font_size_pt": 8.5,
+    "text_fill": "#233042",
+    "stroke_width_mm": 0.22
+  },
+  "contract": {
+    "required_live_text": true,
+    "required_font_family": "Arial",
+    "require_zero_rasters": true,
+    "manual_review_required": true
+  },
+  "elements": [
+    {
+      "type": "rect",
+      "id": "atlas.header.band",
+      "x_px": 0,
+      "y_px": 0,
+      "width_px": 1600,
+      "height_px": 104,
+      "fill": "#287E8E",
+      "stroke": "none",
+      "stroke_width_pt": 0
+    },
+    {
+      "type": "text",
+      "id": "atlas.title",
+      "text": "Experimental Systems · Microfluidics",
+      "x_px": 56,
+      "y_px": 50,
+      "font_size_pt": 22,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "bold"
+    },
+    {
+      "type": "text",
+      "id": "atlas.title.zh",
+      "text": "实验系统 · 微流控",
+      "x_px": 56,
+      "y_px": 82,
+      "font_size_pt": 11,
+      "fill": "#FFFFFF",
+      "anchor": "start",
+      "font_weight": "normal"
+    },
+    {
+      "type": "text",
+      "id": "atlas.badge",
+      "text": "8 EDITABLE FIGURE FAMILIES",
+      "x_px": 1538,
+      "y_px": 65,
+      "font_size_pt": 8,
+      "fill": "#FFFFFF",
+      "anchor": "end",
+      "font_weight": "bold"
+    },
+    {
+      "type": "group",
+      "id": "card.01.apparatus",
+      "aria_label": "Experimental setup: source · sample · detector",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.01.apparatus.card",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.01.apparatus.accent",
+          "x_px": 37,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#287E8E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.01.apparatus.title",
+          "text": "Experimental setup",
+          "x_px": 59,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.apparatus.subtitle",
+          "text": "source · sample · detector",
+          "x_px": 59,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.apparatus.source",
+          "x_px": 80,
+          "y_px": 248,
+          "width_px": 48,
+          "height_px": 48,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.apparatus.sample",
+          "cx_px": 201,
+          "cy_px": 272,
+          "rx_px": 24,
+          "ry_px": 24,
+          "fill": "#F3D7A4",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "rect",
+          "id": "card.01.apparatus.detector",
+          "x_px": 277,
+          "y_px": 244,
+          "width_px": 56,
+          "height_px": 56,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "line",
+          "id": "card.01.apparatus.beam.a.shaft",
+          "x1_px": 128,
+          "y1_px": 272,
+          "x2_px": 172,
+          "y2_px": 272,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.apparatus.beam.a.head",
+          "points_px": [
+            [
+              172,
+              272
+            ],
+            [
+              164.32727930146444,
+              276.70418506037595
+            ],
+            [
+              164.32727930146444,
+              267.29581493962405
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "line",
+          "id": "card.01.apparatus.beam.b.shaft",
+          "x1_px": 225,
+          "y1_px": 272,
+          "x2_px": 274,
+          "y2_px": 272,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.apparatus.beam.b.head",
+          "points_px": [
+            [
+              274,
+              272
+            ],
+            [
+              266.32727930146444,
+              276.70418506037595
+            ],
+            [
+              266.32727930146444,
+              267.29581493962405
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "text",
+          "id": "card.01.apparatus.source.label",
+          "text": "SOURCE",
+          "x_px": 104,
+          "y_px": 312,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.01.apparatus.sample.label",
+          "text": "SAMPLE",
+          "x_px": 201,
+          "y_px": 312,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.01.apparatus.detector.label",
+          "text": "DETECT",
+          "x_px": 305,
+          "y_px": 312,
+          "font_size_pt": 6.5,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.02.microfluidic",
+      "aria_label": "Microfluidics: channels · junctions · flow",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.02.microfluidic.card",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.02.microfluidic.accent",
+          "x_px": 426,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#287E8E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.02.microfluidic.title",
+          "text": "Microfluidics",
+          "x_px": 448,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.microfluidic.subtitle",
+          "text": "channels · junctions · flow",
+          "x_px": 448,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.microfluidic.chip",
+          "x_px": 479,
+          "y_px": 220,
+          "width_px": 256,
+          "height_px": 224,
+          "fill": "#F2F8FA",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.6
+        },
+        {
+          "type": "line",
+          "id": "card.02.microfluidic.channel.a",
+          "x1_px": 494,
+          "y1_px": 266,
+          "x2_px": 607.0,
+          "y2_px": 266,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 6,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.microfluidic.channel.b",
+          "x1_px": 607.0,
+          "y1_px": 231,
+          "x2_px": 607.0,
+          "y2_px": 308,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 6,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.microfluidic.channel.c",
+          "x1_px": 607.0,
+          "y1_px": 266,
+          "x2_px": 720,
+          "y2_px": 266,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 6,
+          "linecap": "round"
+        },
+        {
+          "type": "ellipse",
+          "id": "card.02.microfluidic.port.0",
+          "cx_px": 494,
+          "cy_px": 266,
+          "rx_px": 9,
+          "ry_px": 9,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.02.microfluidic.port.1",
+          "cx_px": 607.0,
+          "cy_px": 231,
+          "rx_px": 9,
+          "ry_px": 9,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.02.microfluidic.port.2",
+          "cx_px": 720,
+          "cy_px": 266,
+          "rx_px": 9,
+          "ry_px": 9,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.03.layers",
+      "aria_label": "Layered device: substrate · membrane · chamber",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.03.layers.card",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.03.layers.accent",
+          "x_px": 815,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#287E8E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.03.layers.title",
+          "text": "Layered device",
+          "x_px": 837,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.layers.subtitle",
+          "text": "substrate · membrane · chamber",
+          "x_px": 837,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "polygon",
+          "id": "card.03.layers.layer.0",
+          "points_px": [
+            [
+              888,
+              231
+            ],
+            [
+              1043,
+              231
+            ],
+            [
+              1083,
+              248
+            ],
+            [
+              928,
+              248
+            ]
+          ],
+          "fill": "#DDE8F5",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.1
+        },
+        {
+          "type": "polygon",
+          "id": "card.03.layers.layer.1",
+          "points_px": [
+            [
+              895,
+              256
+            ],
+            [
+              1050,
+              256
+            ],
+            [
+              1090,
+              273
+            ],
+            [
+              935,
+              273
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.1
+        },
+        {
+          "type": "polygon",
+          "id": "card.03.layers.layer.2",
+          "points_px": [
+            [
+              902,
+              281
+            ],
+            [
+              1057,
+              281
+            ],
+            [
+              1097,
+              298
+            ],
+            [
+              942,
+              298
+            ]
+          ],
+          "fill": "#F3D7A4",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.1
+        },
+        {
+          "type": "polygon",
+          "id": "card.03.layers.layer.3",
+          "points_px": [
+            [
+              909,
+              306
+            ],
+            [
+              1064,
+              306
+            ],
+            [
+              1104,
+              323
+            ],
+            [
+              949,
+              323
+            ]
+          ],
+          "fill": "#DCE7D0",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.1
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.04.sensor",
+      "aria_label": "Sensor chain: sensor · amplifier · acquisition",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.04.sensor.card",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.04.sensor.accent",
+          "x_px": 1204,
+          "y_px": 127,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#287E8E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.04.sensor.title",
+          "text": "Sensor chain",
+          "x_px": 1226,
+          "y_px": 158,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.sensor.subtitle",
+          "text": "sensor · amplifier · acquisition",
+          "x_px": 1226,
+          "y_px": 181,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.sensor.block.0",
+          "x_px": 1222.0,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.04.sensor.label.0",
+          "text": "Sensor",
+          "x_px": 1251.0,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.sensor.block.1",
+          "x_px": 1311.3333333333333,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.04.sensor.label.1",
+          "text": "Amplify",
+          "x_px": 1340.3333333333333,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.04.sensor.flow.1.shaft",
+          "x1_px": 1280.0,
+          "y1_px": 259,
+          "x2_px": 1306.3333333333333,
+          "y2_px": 259,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.sensor.flow.1.head",
+          "points_px": [
+            [
+              1306.3333333333333,
+              259
+            ],
+            [
+              1298.6606126347976,
+              263.70418506037595
+            ],
+            [
+              1298.6606126347976,
+              254.29581493962408
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.04.sensor.block.2",
+          "x_px": 1400.6666666666667,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.04.sensor.label.2",
+          "text": "Acquire",
+          "x_px": 1429.6666666666667,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.04.sensor.flow.2.shaft",
+          "x1_px": 1369.3333333333333,
+          "y1_px": 259,
+          "x2_px": 1395.6666666666667,
+          "y2_px": 259,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.sensor.flow.2.head",
+          "points_px": [
+            [
+              1395.6666666666667,
+              259
+            ],
+            [
+              1387.9939459681311,
+              263.70418506037595
+            ],
+            [
+              1387.9939459681311,
+              254.29581493962408
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.04.sensor.block.3",
+          "x_px": 1490.0,
+          "y_px": 230,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.04.sensor.label.3",
+          "text": "Analyze",
+          "x_px": 1519.0,
+          "y_px": 264,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.04.sensor.flow.3.shaft",
+          "x1_px": 1458.6666666666667,
+          "y1_px": 259,
+          "x2_px": 1485.0,
+          "y2_px": 259,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.04.sensor.flow.3.head",
+          "points_px": [
+            [
+              1485.0,
+              259
+            ],
+            [
+              1477.3272793014644,
+              263.70418506037595
+            ],
+            [
+              1477.3272793014644,
+              254.29581493962408
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.05.device_panel",
+      "aria_label": "Device photo panel: atomic image · labels · scale",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.05.device_panel.card",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.05.device_panel.accent",
+          "x_px": 37,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#287E8E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.05.device_panel.title",
+          "text": "Device photo panel",
+          "x_px": 59,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.device_panel.subtitle",
+          "text": "atomic image · labels · scale",
+          "x_px": 59,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.device_panel.image",
+          "x_px": 77,
+          "y_px": 583,
+          "width_px": 282,
+          "height_px": 250,
+          "fill": "#E9EEF2",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "rect",
+          "id": "card.05.device_panel.bbox.a",
+          "x_px": 103,
+          "y_px": 603,
+          "width_px": 92,
+          "height_px": 94,
+          "fill": "none",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "rect",
+          "id": "card.05.device_panel.bbox.b",
+          "x_px": 223,
+          "y_px": 625,
+          "width_px": 86,
+          "height_px": 70,
+          "fill": "none",
+          "stroke": "#D95F59",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "text",
+          "id": "card.05.device_panel.class.a",
+          "text": "cell 0.97",
+          "x_px": 103,
+          "y_px": 598,
+          "font_size_pt": 7,
+          "fill": "#287E8E",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.05.device_panel.class.b",
+          "text": "object 0.91",
+          "x_px": 223,
+          "y_px": 620,
+          "font_size_pt": 7,
+          "fill": "#D95F59",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.device_panel.keypoint.0",
+          "cx_px": 127,
+          "cy_px": 637,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.device_panel.keypoint.1",
+          "cx_px": 163,
+          "cy_px": 623,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.device_panel.keypoint.2",
+          "cx_px": 147,
+          "cy_px": 667,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.device_panel.keypoint.3",
+          "cx_px": 257,
+          "cy_px": 653,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.device_panel.keypoint.4",
+          "cx_px": 285,
+          "cy_px": 669,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.06.composite",
+      "aria_label": "Composite figure: photo · schematic · plot",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.06.composite.card",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.06.composite.accent",
+          "x_px": 426,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#287E8E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.06.composite.title",
+          "text": "Composite figure",
+          "x_px": 448,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.composite.subtitle",
+          "text": "photo · schematic · plot",
+          "x_px": 448,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.composite.image",
+          "x_px": 466,
+          "y_px": 583,
+          "width_px": 282,
+          "height_px": 250,
+          "fill": "#E9EEF2",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "rect",
+          "id": "card.06.composite.bbox.a",
+          "x_px": 492,
+          "y_px": 603,
+          "width_px": 92,
+          "height_px": 94,
+          "fill": "none",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "rect",
+          "id": "card.06.composite.bbox.b",
+          "x_px": 612,
+          "y_px": 625,
+          "width_px": 86,
+          "height_px": 70,
+          "fill": "none",
+          "stroke": "#D95F59",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "text",
+          "id": "card.06.composite.class.a",
+          "text": "cell 0.97",
+          "x_px": 492,
+          "y_px": 598,
+          "font_size_pt": 7,
+          "fill": "#287E8E",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.06.composite.class.b",
+          "text": "object 0.91",
+          "x_px": 612,
+          "y_px": 620,
+          "font_size_pt": 7,
+          "fill": "#D95F59",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.composite.keypoint.0",
+          "cx_px": 516,
+          "cy_px": 637,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.composite.keypoint.1",
+          "cx_px": 552,
+          "cy_px": 623,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.composite.keypoint.2",
+          "cx_px": 536,
+          "cy_px": 667,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.composite.keypoint.3",
+          "cx_px": 646,
+          "cy_px": 653,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.composite.keypoint.4",
+          "cx_px": 674,
+          "cy_px": 669,
+          "rx_px": 4,
+          "ry_px": 4,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.5
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.07.process",
+      "aria_label": "Process principle: stages · material flow",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.07.process.card",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.07.process.accent",
+          "x_px": 815,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#287E8E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.07.process.title",
+          "text": "Process principle",
+          "x_px": 837,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.process.subtitle",
+          "text": "stages · material flow",
+          "x_px": 837,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.process.block.0",
+          "x_px": 833.0,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.07.process.label.0",
+          "text": "Feed",
+          "x_px": 862.0,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.process.block.1",
+          "x_px": 922.3333333333334,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.07.process.label.1",
+          "text": "Treat",
+          "x_px": 951.3333333333334,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.07.process.flow.1.shaft",
+          "x1_px": 891.0,
+          "y1_px": 638,
+          "x2_px": 917.3333333333334,
+          "y2_px": 638,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.process.flow.1.head",
+          "points_px": [
+            [
+              917.3333333333334,
+              638
+            ],
+            [
+              909.6606126347979,
+              642.704185060376
+            ],
+            [
+              909.6606126347979,
+              633.295814939624
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.07.process.block.2",
+          "x_px": 1011.6666666666666,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.07.process.label.2",
+          "text": "Separate",
+          "x_px": 1040.6666666666665,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.07.process.flow.2.shaft",
+          "x1_px": 980.3333333333334,
+          "y1_px": 638,
+          "x2_px": 1006.6666666666666,
+          "y2_px": 638,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.process.flow.2.head",
+          "points_px": [
+            [
+              1006.6666666666666,
+              638
+            ],
+            [
+              998.9939459681311,
+              642.704185060376
+            ],
+            [
+              998.9939459681311,
+              633.295814939624
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.07.process.block.3",
+          "x_px": 1101.0,
+          "y_px": 609,
+          "width_px": 58,
+          "height_px": 58,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.07.process.label.3",
+          "text": "Product",
+          "x_px": 1130.0,
+          "y_px": 643,
+          "font_size_pt": 7.2,
+          "fill": "#233042",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.07.process.flow.3.shaft",
+          "x1_px": 1069.6666666666665,
+          "y1_px": 638,
+          "x2_px": 1096.0,
+          "y2_px": 638,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.07.process.flow.3.head",
+          "points_px": [
+            [
+              1096.0,
+              638
+            ],
+            [
+              1088.3272793014644,
+              642.704185060376
+            ],
+            [
+              1088.3272793014644,
+              633.295814939624
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.4
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "card.08.measurement",
+      "aria_label": "Measurement layout: dimension · angle · calibration",
+      "children": [
+        {
+          "type": "rect",
+          "id": "card.08.measurement.card",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 362,
+          "height_px": 354,
+          "fill": "#FFFFFF",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 1.0
+        },
+        {
+          "type": "rect",
+          "id": "card.08.measurement.accent",
+          "x_px": 1204,
+          "y_px": 506,
+          "width_px": 7,
+          "height_px": 354,
+          "fill": "#287E8E",
+          "stroke": "none",
+          "stroke_width_pt": 0
+        },
+        {
+          "type": "text",
+          "id": "card.08.measurement.title",
+          "text": "Measurement layout",
+          "x_px": 1226,
+          "y_px": 537,
+          "font_size_pt": 10.5,
+          "fill": "#233042",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.measurement.subtitle",
+          "text": "dimension · angle · calibration",
+          "x_px": 1226,
+          "y_px": 560,
+          "font_size_pt": 7.2,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.measurement.part.a",
+          "x_px": 1260,
+          "y_px": 623,
+          "width_px": 74,
+          "height_px": 62,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.6
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.measurement.part.b",
+          "points_px": [
+            [
+              1360,
+              615
+            ],
+            [
+              1427,
+              600
+            ],
+            [
+              1459,
+              640
+            ],
+            [
+              1392,
+              655
+            ]
+          ],
+          "fill": "#E6EEF7",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.6
+        },
+        {
+          "type": "ellipse",
+          "id": "card.08.measurement.hole",
+          "cx_px": 1297,
+          "cy_px": 654,
+          "rx_px": 17,
+          "ry_px": 17,
+          "fill": "#FFFFFF",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.3
+        },
+        {
+          "type": "line",
+          "id": "card.08.measurement.dimension.shaft",
+          "x1_px": 1257,
+          "y1_px": 705,
+          "x2_px": 1460,
+          "y2_px": 705,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.08.measurement.dimension.head",
+          "points_px": [
+            [
+              1460,
+              705
+            ],
+            [
+              1452.3272793014644,
+              709.704185060376
+            ],
+            [
+              1452.3272793014644,
+              700.295814939624
+            ]
+          ],
+          "fill": "#6B7788",
+          "stroke": "#6B7788",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "text",
+          "id": "card.08.measurement.dimension.label",
+          "text": "120.0 mm",
+          "x_px": 1359,
+          "y_px": 721,
+          "font_size_pt": 7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "atlas.footer",
+      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "x_px": 800,
+      "y_px": 884,
+      "font_size_pt": 7.5,
+      "fill": "#667384",
+      "anchor": "middle",
+      "font_weight": "normal"
+    }
+  ],
+  "metadata": {
+    "category_id": "experimental-systems",
+    "demonstration": true,
+    "source_data_claim": false
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "format_version": 1,
+  "generator": "reconstruct-paper-figures/build_hybrid_svg.py",
+  "demonstration_scope": "synthetic deterministic capability atlas; not a source-paper fidelity claim",
+  "category_count": 8,
+  "figure_family_count": 64,
+  "editable_svg_count": 8,
+  "records": [
+    {
+      "id": "ai-computer-vision",
+      "title": "AI · Machine Learning · Computer Vision",
+      "title_zh": "AI · 机器学习 · 计算机视觉",
+      "svg": "ai-computer-vision.svg",
+      "recipe": "ai-computer-vision.json",
+      "card_count": 8,
+      "figure_families": [
+        {
+          "title": "Neural architectures",
+          "subtitle": "Transformer · CNN · MLP",
+          "kind": "pipeline"
+        },
+        {
+          "title": "Encoder–decoder",
+          "subtitle": "U-Net · multiscale flows",
+          "kind": "encoder"
+        },
+        {
+          "title": "Feature maps",
+          "subtitle": "tensors · dimensions",
+          "kind": "cuboids"
+        },
+        {
+          "title": "Residual paths",
+          "subtitle": "skip · feedback · return",
+          "kind": "residual"
+        },
+        {
+          "title": "Attention",
+          "subtitle": "Q/K/V · projection",
+          "kind": "attention"
+        },
+        {
+          "title": "Multimodal fusion",
+          "subtitle": "sum · concat · weighted",
+          "kind": "fusion"
+        },
+        {
+          "title": "Detection",
+          "subtitle": "boxes · classes · keypoints",
+          "kind": "detection"
+        },
+        {
+          "title": "Dense prediction",
+          "subtitle": "masks · depth · probability",
+          "kind": "segmentation"
+        }
+      ],
+      "audit": {
+        "semantic_card_groups": 8,
+        "live_text_nodes": 48,
+        "raster_nodes": 0,
+        "missing_kinds": []
+      },
+      "svg_sha256": "16a40672df7b8825db1d6d9117c7f04fec51cee76ef89f08d6628e7ae0afbecb",
+      "recipe_sha256": "945b492364f8949bfb19a3d56d6dfa5c172a9d9d14f4fb25a28bb5d258908129"
+    },
+    {
+      "id": "statistics-data-science",
+      "title": "Statistics · Data Science",
+      "title_zh": "统计学 · 数据科学",
+      "svg": "statistics-data-science.svg",
+      "recipe": "statistics-data-science.json",
+      "card_count": 8,
+      "figure_families": [
+        {
+          "title": "Curves and points",
+          "subtitle": "line · scatter · fitted",
+          "kind": "line_plot"
+        },
+        {
+          "title": "Uncertainty",
+          "subtitle": "error bar · confidence interval",
+          "kind": "error_plot"
+        },
+        {
+          "title": "Distributions",
+          "subtitle": "bar · box · violin · ROC",
+          "kind": "distribution"
+        },
+        {
+          "title": "Clinical statistics",
+          "subtitle": "Kaplan–Meier · forest · risk",
+          "kind": "survival"
+        },
+        {
+          "title": "Matrices",
+          "subtitle": "heatmap · confusion · correlation",
+          "kind": "heatmap"
+        },
+        {
+          "title": "Embeddings",
+          "subtitle": "PCA · t-SNE · clustered scatter",
+          "kind": "embedding"
+        },
+        {
+          "title": "Trees and graphs",
+          "subtitle": "dendrogram · network · phylogeny",
+          "kind": "tree"
+        },
+        {
+          "title": "Circular data",
+          "subtitle": "Circos · rings · radial labels",
+          "kind": "circos"
+        }
+      ],
+      "audit": {
+        "semantic_card_groups": 8,
+        "live_text_nodes": 22,
+        "raster_nodes": 0,
+        "missing_kinds": []
+      },
+      "svg_sha256": "8c23c41d6cee78225d8aa2680e9fa2fc5f6826fa6d21ac6880d221a018f85c62",
+      "recipe_sha256": "0b41e87e7364e24070d623e118ec51ff27bb34f2931c560fde260f2900930830"
+    },
+    {
+      "id": "clinical-biomedical",
+      "title": "Clinical · Biomedical",
+      "title_zh": "临床 · 生物医学",
+      "svg": "clinical-biomedical.svg",
+      "recipe": "clinical-biomedical.json",
+      "card_count": 8,
+      "figure_families": [
+        {
+          "title": "Clinical flow",
+          "subtitle": "cohort · randomization · outcome",
+          "kind": "flow_chart"
+        },
+        {
+          "title": "Forest plots",
+          "subtitle": "effect · CI · reference",
+          "kind": "forest"
+        },
+        {
+          "title": "Flow cytometry",
+          "subtitle": "cloud · gate · quadrant",
+          "kind": "cytometry"
+        },
+        {
+          "title": "Medical imaging",
+          "subtitle": "CT · MRI · PET · ultrasound",
+          "kind": "medical_scan"
+        },
+        {
+          "title": "Histology",
+          "subtitle": "whole slide · tissue annotation",
+          "kind": "histology"
+        },
+        {
+          "title": "Segmentation",
+          "subtitle": "ROI · contour · orientation",
+          "kind": "roi"
+        },
+        {
+          "title": "Risk tables",
+          "subtitle": "time points · at-risk counts",
+          "kind": "risk_table"
+        },
+        {
+          "title": "Study timelines",
+          "subtitle": "treatment · visit · follow-up",
+          "kind": "timeline"
+        }
+      ],
+      "audit": {
+        "semantic_card_groups": 8,
+        "live_text_nodes": 36,
+        "raster_nodes": 0,
+        "missing_kinds": []
+      },
+      "svg_sha256": "c19b5dd1ca2dcc042e65141cecd669772deed29bef16fb2445a97128fc8e89d2",
+      "recipe_sha256": "e6cd96ed5534110ef15242d833cc73323493ef2654816b54aa19659184e957e3"
+    },
+    {
+      "id": "cell-molecular-omics",
+      "title": "Cell · Molecular · Omics",
+      "title_zh": "细胞 · 分子 · 组学",
+      "svg": "cell-molecular-omics.svg",
+      "recipe": "cell-molecular-omics.json",
+      "card_count": 8,
+      "figure_families": [
+        {
+          "title": "Microscopy",
+          "subtitle": "fluorescence · confocal · scale",
+          "kind": "microscopy"
+        },
+        {
+          "title": "Multiplex imaging",
+          "subtitle": "channels · composite · cells",
+          "kind": "multiplex"
+        },
+        {
+          "title": "Western blot",
+          "subtitle": "bands · lanes · molecular weight",
+          "kind": "blot"
+        },
+        {
+          "title": "Electrophoresis",
+          "subtitle": "gel · ladder · sample lanes",
+          "kind": "gel"
+        },
+        {
+          "title": "Genomic matrices",
+          "subtitle": "heatmap · annotation tracks",
+          "kind": "genomic_heatmap"
+        },
+        {
+          "title": "Phylogenetics",
+          "subtitle": "tree · clade · branch scale",
+          "kind": "phylogeny"
+        },
+        {
+          "title": "Protein renders",
+          "subtitle": "ribbon · residue · domain",
+          "kind": "protein"
+        },
+        {
+          "title": "Ligand interactions",
+          "subtitle": "ligand · residue · dashed bond",
+          "kind": "ligand"
+        }
+      ],
+      "audit": {
+        "semantic_card_groups": 8,
+        "live_text_nodes": 26,
+        "raster_nodes": 0,
+        "missing_kinds": []
+      },
+      "svg_sha256": "0f09e5be210a70ac2f77f76fa132fa536560f429bbcad4dd1785eed9478e08c6",
+      "recipe_sha256": "43ac3562a8a010040e2e37000d3c35d8eb97b57d144337114a67324ddc8252a3"
+    },
+    {
+      "id": "chemistry-materials",
+      "title": "Chemistry · Materials · Electrochemistry",
+      "title_zh": "化学 · 材料 · 电化学",
+      "svg": "chemistry-materials.svg",
+      "recipe": "chemistry-materials.json",
+      "card_count": 8,
+      "figure_families": [
+        {
+          "title": "Chemical structure",
+          "subtitle": "bonds · rings · stereochemistry",
+          "kind": "molecule"
+        },
+        {
+          "title": "Reaction scheme",
+          "subtitle": "arrow · conditions · yield",
+          "kind": "reaction"
+        },
+        {
+          "title": "Spectroscopy",
+          "subtitle": "XRD · Raman · FTIR · XPS",
+          "kind": "spectrum"
+        },
+        {
+          "title": "Separation analysis",
+          "subtitle": "MS · chromatography · peaks",
+          "kind": "chromatography"
+        },
+        {
+          "title": "Thermal analysis",
+          "subtitle": "DSC · TGA · DTA",
+          "kind": "thermal"
+        },
+        {
+          "title": "Electrochemistry",
+          "subtitle": "CV · EIS · Nyquist",
+          "kind": "nyquist"
+        },
+        {
+          "title": "Surface microscopy",
+          "subtitle": "SEM · TEM · AFM",
+          "kind": "material_micro"
+        },
+        {
+          "title": "Element mapping",
+          "subtitle": "EDS · regions · color bar",
+          "kind": "eds"
+        }
+      ],
+      "audit": {
+        "semantic_card_groups": 8,
+        "live_text_nodes": 27,
+        "raster_nodes": 0,
+        "missing_kinds": []
+      },
+      "svg_sha256": "e107cea0c740597256eb01306636f025ddf1cbdb035e8d4133636d864dd3716f",
+      "recipe_sha256": "6f2d6bdf063231c775141498aefae3031ce96af1d0da373b8cdc491bc57e86e7"
+    },
+    {
+      "id": "engineering-physics",
+      "title": "Engineering · Physics",
+      "title_zh": "机械 · 电气 · 工程物理",
+      "svg": "engineering-physics.svg",
+      "recipe": "engineering-physics.json",
+      "card_count": 8,
+      "figure_families": [
+        {
+          "title": "Circuit diagram",
+          "subtitle": "symbols · wires · parameters",
+          "kind": "circuit"
+        },
+        {
+          "title": "Control system",
+          "subtitle": "blocks · feedback · transfer",
+          "kind": "control"
+        },
+        {
+          "title": "Wiring",
+          "subtitle": "junctions · terminals · IDs",
+          "kind": "wiring"
+        },
+        {
+          "title": "FEA fields",
+          "subtitle": "stress · strain · boundary loads",
+          "kind": "fea"
+        },
+        {
+          "title": "CFD fields",
+          "subtitle": "velocity · pressure · streamlines",
+          "kind": "cfd"
+        },
+        {
+          "title": "Response surface",
+          "subtitle": "3D surface · contour · points",
+          "kind": "surface"
+        },
+        {
+          "title": "CAD drawing",
+          "subtitle": "contours · dimensions · leaders",
+          "kind": "cad"
+        },
+        {
+          "title": "Exploded assembly",
+          "subtitle": "parts · BOM · exploded leaders",
+          "kind": "exploded"
+        }
+      ],
+      "audit": {
+        "semantic_card_groups": 8,
+        "live_text_nodes": 28,
+        "raster_nodes": 0,
+        "missing_kinds": []
+      },
+      "svg_sha256": "2aa15eb36afb3a26678f349db8ec48d3dba35abc120fa6006722ca086f106826",
+      "recipe_sha256": "e63d849b1d0e79d982c020dd4354c294542e301e774005447360136071e6898e"
+    },
+    {
+      "id": "experimental-systems",
+      "title": "Experimental Systems · Microfluidics",
+      "title_zh": "实验系统 · 微流控",
+      "svg": "experimental-systems.svg",
+      "recipe": "experimental-systems.json",
+      "card_count": 8,
+      "figure_families": [
+        {
+          "title": "Experimental setup",
+          "subtitle": "source · sample · detector",
+          "kind": "apparatus"
+        },
+        {
+          "title": "Microfluidics",
+          "subtitle": "channels · junctions · flow",
+          "kind": "microfluidic"
+        },
+        {
+          "title": "Layered device",
+          "subtitle": "substrate · membrane · chamber",
+          "kind": "layers"
+        },
+        {
+          "title": "Sensor chain",
+          "subtitle": "sensor · amplifier · acquisition",
+          "kind": "sensor"
+        },
+        {
+          "title": "Device photo panel",
+          "subtitle": "atomic image · labels · scale",
+          "kind": "device_panel"
+        },
+        {
+          "title": "Composite figure",
+          "subtitle": "photo · schematic · plot",
+          "kind": "composite"
+        },
+        {
+          "title": "Process principle",
+          "subtitle": "stages · material flow",
+          "kind": "process"
+        },
+        {
+          "title": "Measurement layout",
+          "subtitle": "dimension · angle · calibration",
+          "kind": "measurement"
+        }
+      ],
+      "audit": {
+        "semantic_card_groups": 8,
+        "live_text_nodes": 36,
+        "raster_nodes": 0,
+        "missing_kinds": []
+      },
+      "svg_sha256": "5d69cac18b791068500bf71c7679562bf6b1d801a7694b167fa6ddbf951ddb4b",
+      "recipe_sha256": "77c79cd8c65b5dfd91bc466f2be831004aa726e89bd259c99557c4e240b95294"
+    },
+    {
+      "id": "earth-geospatial",
+      "title": "Earth Science · Geospatial",
+      "title_zh": "地球科学 · 地理空间",
+      "svg": "earth-geospatial.svg",
+      "recipe": "earth-geospatial.json",
+      "card_count": 8,
+      "figure_families": [
+        {
+          "title": "GIS map",
+          "subtitle": "boundaries · points · legend",
+          "kind": "map"
+        },
+        {
+          "title": "Remote sensing",
+          "subtitle": "land cover · classification",
+          "kind": "landcover"
+        },
+        {
+          "title": "Terrain",
+          "subtitle": "DEM · contours · hillshade",
+          "kind": "dem"
+        },
+        {
+          "title": "Geology",
+          "subtitle": "units · faults · contacts",
+          "kind": "geology"
+        },
+        {
+          "title": "Seismic map",
+          "subtitle": "epicenters · stations · magnitude",
+          "kind": "seismic"
+        },
+        {
+          "title": "Cross-section",
+          "subtitle": "layers · section line · depth",
+          "kind": "section"
+        },
+        {
+          "title": "Map framework",
+          "subtitle": "graticule · north arrow · scale",
+          "kind": "graticule"
+        },
+        {
+          "title": "Cartography",
+          "subtitle": "symbols · color key · annotation",
+          "kind": "map_legend"
+        }
+      ],
+      "audit": {
+        "semantic_card_groups": 8,
+        "live_text_nodes": 29,
+        "raster_nodes": 0,
+        "missing_kinds": []
+      },
+      "svg_sha256": "5a5ad29f9573c89f1f18acbd330d3bc89431b93f572e63bc30417e991fcfdba3",
+      "recipe_sha256": "fddc00c15900b01c498b1a370f3e57a9edcf40fe92b098bc9c3259bdebe31228"
+    }
+  ]
+}
