@@ -1,6 +1,6 @@
 {
   "schema_version": "paper-figure-reconstruction-demo-v1",
-  "plugin_version": "1.3.1",
+  "plugin_version": "1.3.2",
   "presentation_kind": "evidence-driven-animation",
   "screen_recording": false,
   "dimensions_px": [
@@ -12,18 +12,18 @@
   "generator": {
     "python": "3.8.20",
     "pillow": "9.1.1",
-    "ffmpeg": "8.1.2",
+    "ffmpeg": "3.0.1",
     "mp4_codec": "h264",
     "mp4_pixel_format": "yuv420p"
   },
   "files": [
     {
       "path": "paper-figure-reconstruction-demo.gif",
-      "sha256": "38655b02affbdcb8d63d7c0ad6bc5491afcd3210f130a275e801e6aa8799d4b7"
+      "sha256": "d7ec00c316067e347d9af6be8b352b570a3160fe02d93b18af735c1b697f9c65"
     },
     {
       "path": "paper-figure-reconstruction-demo.mp4",
-      "sha256": "08b301477e0764c45c9f8bea7a86e90289687853499976ba653174b2fa138527"
+      "sha256": "261e8608e662d541d052d3984010991e9f214f15c754b17b0c747bb9831a1c04"
     },
     {
       "path": "simpli-figure4-preview.png",

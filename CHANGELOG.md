@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.2 — 2026-09-08
+
+- Bind demo evidence hashes to the LF-normalized SVG bytes committed to Git.
+- Surface exact release-validation failures as GitHub Actions annotations.
+- Move the validation workflow to Node.js 24-based action releases.
+
 ## 1.3.1 — 2026-09-08
 
 - Make text-asset line endings deterministic across Windows and Linux so hash-bound demo validation survives a fresh clone.

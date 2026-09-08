@@ -49,8 +49,8 @@ def validate_paper_demo() -> None:
     assets = ROOT / "examples" / "paper-figure-reconstruction-demo" / "assets"
     manifest_path = assets / "demo-manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    if manifest.get("plugin_version") != "1.3.1":
-        fail("paper demo manifest must target plugin version 1.3.1")
+    if manifest.get("plugin_version") != "1.3.2":
+        fail("paper demo manifest must target plugin version 1.3.2")
     if manifest.get("screen_recording") is not False:
         fail("paper demo must identify itself as evidence-driven, not a screen recording")
     for record in manifest.get("files", []):
@@ -100,8 +100,8 @@ def main() -> int:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     if manifest.get("name") != "codex-scientific-diagram-visio":
         fail("unexpected plugin name")
-    if manifest.get("version") != "1.3.1":
-        fail("release manifest must be version 1.3.1")
+    if manifest.get("version") != "1.3.2":
+        fail("release manifest must be version 1.3.2")
 
     marketplace_path = ROOT / ".agents" / "plugins" / "marketplace.json"
     marketplace = json.loads(marketplace_path.read_text(encoding="utf-8"))

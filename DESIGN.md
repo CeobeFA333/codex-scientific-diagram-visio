@@ -81,6 +81,10 @@ The packaged plugin does not operate a server or collect telemetry. It may direc
 
 ## Change history
 
+### 2026-09-08 — v1.3.2 immutable release repair
+
+Bound the public demo manifest to the repository's LF-normalized SVG bytes, made validation failures visible as GitHub annotations, and upgraded workflow actions to their Node.js 24 runtimes. The existing v1.3.1 tag remains immutable; v1.3.2 carries the corrected release state.
+
 ### 2026-09-08 — v1.3.1 cross-platform release hardening
 
 Pinned repository text assets to LF for stable SHA-256 validation on Windows and Linux, enforced a workspace path boundary in the demo generator, added standalone skill release tests, and removed Python bytecode from release archives.

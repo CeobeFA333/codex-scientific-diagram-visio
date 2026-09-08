@@ -33,6 +33,14 @@ python scripts/make_workflow_demo.py `
   --workspace path/to/a/common/safe/workspace
 ```
 
+Convert the generated GIF to the committed browser-compatible MP4 with an FFmpeg build that includes `libx264`:
+
+```powershell
+ffmpeg -y -i assets/paper-figure-reconstruction-demo.gif `
+  -an -c:v libx264 -pix_fmt yuv420p -r 30 -movflags +faststart `
+  assets/paper-figure-reconstruction-demo.mp4
+```
+
 The prebuilt GIF, MP4, previews, editable outputs, public evidence JSON, and manifest are committed so users can inspect the demonstration without the private workspace.
 
 ## Source and license notices

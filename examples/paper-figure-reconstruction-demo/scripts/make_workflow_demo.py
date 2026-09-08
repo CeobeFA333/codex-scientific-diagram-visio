@@ -85,7 +85,7 @@ def title_card() -> Image.Image:
     draw.text((98, 256), "REBUILT AS EDITABLE EVIDENCE", font=fit_text(draw, "REBUILT AS EDITABLE EVIDENCE", 1040, 55, True), fill=WHITE)
     draw.rounded_rectangle((98, 373, 1145, 465), radius=18, fill=(27, 57, 96))
     draw.text((126, 399), "PDF inventory  →  hybrid vectors  →  source-data charts  →  roundtrip QA", font=fit_text(draw, "PDF inventory  →  hybrid vectors  →  source-data charts  →  roundtrip QA", 990, 25), fill=(219, 231, 244))
-    draw.text((100, 549), "v1.3.1 · MIT · real outputs and audit evidence", font=font(24, True), fill=(244, 184, 80))
+    draw.text((100, 549), "v1.3.2 · MIT · real outputs and audit evidence", font=font(24, True), fill=(244, 184, 80))
     return image
 
 
@@ -205,7 +205,7 @@ def cleanup_card(audit: Dict[str, object]) -> Image.Image:
 
 def capability_card() -> Image.Image:
     image, draw = canvas()
-    header(draw, "Current capability", "What v1.3.1 can actually deliver", "One plugin, three focused skills, explicit editor and evidence boundaries.")
+    header(draw, "Current capability", "What v1.3.2 can actually deliver", "One plugin, three focused skills, explicit editor and evidence boundaries.")
     rows = [
         ("PDF INVENTORY", "text · vectors · images · placements · captions · effective PPI", "VALIDATED"),
         ("HYBRID REBUILD", "editable SVG + live text + minimal scientific raster atoms", "VALIDATED"),
@@ -258,7 +258,7 @@ def end_card() -> Image.Image:
     draw.text((108, 303), "Prompting · Native Visio · Paper figure reconstruction", font=fit_text(draw, "Prompting · Native Visio · Paper figure reconstruction", 1058, 30, True), fill=WHITE)
     draw.text((108, 363), "Editable outputs, reproducible audits, explicit publication blockers", font=fit_text(draw, "Editable outputs, reproducible audits, explicit publication blockers", 1058, 25), fill=(219, 231, 244))
     draw.text((72, 528), "github.com/CeobeFA333/codex-scientific-diagram-visio", font=fit_text(draw, "github.com/CeobeFA333/codex-scientific-diagram-visio", 1136, 28, True), fill=(244, 184, 80))
-    draw.text((72, 594), "MIT License · v1.3.1", font=font(22, True), fill=WHITE)
+    draw.text((72, 594), "MIT License · v1.3.2", font=font(22, True), fill=WHITE)
     return image
 
 
