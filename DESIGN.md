@@ -44,6 +44,10 @@ The workflow needs packaged procedures and local application control, not a publ
 
 Architecture analysis, native Visio execution, and evidence-preserving reconstruction of published multi-panel figures have different triggers, tools, platform constraints, and completion criteria. Splitting them improves discovery and keeps each instruction file focused.
 
+### Capability claims carry maturity labels
+
+The public homepage separates figure-routing support, structural adapters, and native runtime validation. A listed research domain means the workflow can classify and decompose that figure family; it does not imply lossless vectorization, a domain-semantic backend, or publication acceptance. Tool integrations are labelled as native-runtime validated, roundtrip validated, structurally implemented, documented only, or planned.
+
 ### Hybrid evidence preservation
 
 Continuous-tone microscopy and other scientific pixels are retained as minimal, hash-bound atoms when vectorization would alter evidence. Text, diagram geometry, and source-data-bound plots are rebuilt as editable objects. Missing data and unresolved scale bars remain blockers instead of being inferred.
@@ -80,6 +84,10 @@ The packaged plugin does not operate a server or collect telemetry. It may direc
 - The compact Marketplace plugin mirrors canonical skill files, so every release must run synchronization validation.
 
 ## Change history
+
+### 2026-09-08 — bilingual capability and roadmap matrices
+
+Expanded both homepages with the supported research domains, figure families, vector primitives and composed scientific icons, non-Visio authoring backends, validation maturity, and nine concrete development gaps. This changes documentation and claim boundaries only; it does not promote an untested backend.
 
 ### 2026-09-08 — v1.3.2 immutable release repair
 

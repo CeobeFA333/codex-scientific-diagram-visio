@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Add bilingual homepage matrices for supported research domains, figure families, drawable scientific components, authoring backends, validation maturity, and the development roadmap.
+
 ## 1.3.2 — 2026-09-08
 
 - Bind demo evidence hashes to the LF-normalized SVG bytes committed to Git.
