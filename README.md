@@ -36,7 +36,7 @@ This real Microsoft Visio capture shows Codex reading a verified Transformer Enc
 
 ## Paper figure reconstruction demo
 
-This v1.3.0 animation uses real reconstructed artifacts and audit values: a ten-panel hybrid biological figure, an editable statistical suite, bounded OCR cleanup evidence, and three-stage Illustrator reopen counts. It is an evidence-driven presentation, not an Illustrator screen recording.
+This v1.3.1 animation uses real reconstructed artifacts and audit values: a ten-panel hybrid biological figure, an editable statistical suite, bounded OCR cleanup evidence, and three-stage Illustrator reopen counts. It is an evidence-driven presentation, not an Illustrator screen recording.
 
 ![Paper figure reconstruction capabilities](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.gif)
 
@@ -85,7 +85,7 @@ Scientific architecture figures often look polished while silently misrepresenti
 Install the versioned Codex plugin from this repository marketplace:
 
 ```powershell
-codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.0
+codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.1
 codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
 ```
 

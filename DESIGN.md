@@ -81,6 +81,10 @@ The packaged plugin does not operate a server or collect telemetry. It may direc
 
 ## Change history
 
+### 2026-09-08 — v1.3.1 cross-platform release hardening
+
+Pinned repository text assets to LF for stable SHA-256 validation on Windows and Linux, enforced a workspace path boundary in the demo generator, added standalone skill release tests, and removed Python bytecode from release archives.
+
 ### 2026-09-08 — v1.3.0 paper figure reconstruction
 
 Added the `reconstruct-paper-figures` skill, deterministic standalone MIT package metadata, PDF inventory and hybrid reconstruction workflows, source-data and OCR safety contracts, Illustrator roundtrip evidence, CC BY demonstration artifacts, and an evidence-driven GIF/MP4 capability demo.

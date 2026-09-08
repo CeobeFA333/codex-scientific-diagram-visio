@@ -5,7 +5,7 @@
 Recommended Codex plugin installation:
 
 ```powershell
-codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.0
+codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.1
 codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
 ```
 
@@ -16,9 +16,9 @@ Restart the Codex or ChatGPT desktop app and begin a new thread after installati
 If Marketplace installation is unavailable, install any skill directly:
 
 ```text
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.3.0/skills/scientific-model-diagram-prompting
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.3.0/skills/scientific-model-diagram-visio
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.3.0/skills/reconstruct-paper-figures
+$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.3.1/skills/scientific-model-diagram-prompting
+$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.3.1/skills/scientific-model-diagram-visio
+$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/v1.3.1/skills/reconstruct-paper-figures
 ```
 
 ## 2. Prerequisites / 环境要求

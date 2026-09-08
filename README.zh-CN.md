@@ -38,7 +38,7 @@ VSDX + PDF + 300 DPI PNG
 
 ## 论文图片重建能力演示
 
-下面的 v1.3.0 动图直接采用真实重建产物与审计数值，展示十面板混合生物医学图、可编辑统计图组、受限 OCR 清理，以及 Illustrator 三阶段重开计数。它是“真实产物 + 真实证据”组成的能力演示，不冒充 Illustrator 界面录屏。
+下面的 v1.3.1 动图直接采用真实重建产物与审计数值，展示十面板混合生物医学图、可编辑统计图组、受限 OCR 清理，以及 Illustrator 三阶段重开计数。它是“真实产物 + 真实证据”组成的能力演示，不冒充 Illustrator 界面录屏。
 
 ![论文图片重建能力演示](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.gif)
 
@@ -75,7 +75,7 @@ VSDX + PDF + 300 DPI PNG
 推荐通过本仓库的版本化 Marketplace 安装 Codex Plugin：
 
 ```powershell
-codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.0
+codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.1
 codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
 ```
 

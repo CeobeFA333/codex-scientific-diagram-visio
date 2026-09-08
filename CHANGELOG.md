@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.1 — 2026-09-08
+
+- Make text-asset line endings deterministic across Windows and Linux so hash-bound demo validation survives a fresh clone.
+- Harden the demo generator with an explicit workspace boundary and add standard-library release tests.
+- Exclude Python bytecode from plugin and team-trial archives.
+
 ## 1.3.0 — 2026-09-08
 
 - Add the focused `reconstruct-paper-figures` skill v0.1.0 for PDF inventory, hybrid editable reconstruction, source-data-bound charts, reviewed OCR cleanup, and publication gating.
