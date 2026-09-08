@@ -4,53 +4,108 @@
   <strong>English</strong> | <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-Turn model code, paper descriptions, PDFs, source data, and legacy figures into editable scientific diagrams with evidence-backed QA.
+Evidence-first Codex workflows for turning model code, manuscripts, paper PDFs, source data, and legacy figures into editable scientific graphics.
 
-The project separates scientific truth from visual design:
+[Release v1.3.2](https://github.com/CeobeFA333/codex-scientific-diagram-visio/releases/tag/v1.3.2) · [MIT license](LICENSE) · [Research-group trial guide](TEAM-TRIAL.md)
 
-```text
-Prompt + code + manuscript + old figure
-                ↓
-Evidence audit and tensor-shape contract
-                ↓
-Image-generated visual reference (optional)
-                ↓
-Native Visio reconstruction and local revision
-                ↓
-Reopen/editability QA + VSDX/PDF/300-DPI PNG
+> Verify the science before drawing. Preserve editability after export. Never let visual polish silently change the method.
+
+## What you receive
+
+This is a plugin containing **three focused skills**, not one giant context-heavy skill. Codex loads the skill that matches the task.
+
+| Workflow | Typical input | Deliverables |
+|---|---|---|
+| Verify and design a model diagram | Code, configuration, equations, manuscript text, old figure | Evidence table, conflict list, tensor/model contract, visual-reference prompt, editable reconstruction specification |
+| Build or revise native Visio | Verified contract, reference image, or existing VSDX | Native editable VSDX, reopened-object QA, PDF, 300-DPI PNG, inspection report, and versioned backup for revisions |
+| Reconstruct a paper figure | Paper PDF, extracted assets, source data, OCR review, legacy raster/vector figure | Figure inventory, reconstruction recipe, editable SVG, optional AI/editable PDF, atomic raster evidence, QA reports, and explicit publication blockers |
+
+The skills are:
+
+- `scientific-model-diagram-prompting` — reconciles scientific evidence and produces the drawing contract.
+- `scientific-model-diagram-visio` — constructs, revises, reopens, and exports native Microsoft Visio figures.
+- `reconstruct-paper-figures` — rebuilds dense paper figures while preserving scientific pixels and source-data provenance.
+
+## Install
+
+Install the versioned plugin from this repository marketplace:
+
+```powershell
+codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.2
+codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
 ```
 
-For dense multi-panel paper figures, the third skill follows a parallel path: inventory the PDF, classify editable geometry versus scientific pixels, rebuild live text and vectors, preserve necessary image evidence as minimal atoms, then verify SVG/AI/editable-PDF roundtrips and publication blockers.
+Restart Codex or the ChatGPT desktop app and start a new task. To install all three skills with the open Agent Skills CLI instead:
 
-The generated image is a design reference, never the source of truth. Executed model shapes, training code, configuration, and manuscript equations are reconciled before drawing.
+```bash
+npx skills add CeobeFA333/codex-scientific-diagram-visio
+```
 
-## Live workflow demo
+Individual skill URLs and group-rollout instructions are in the [trial guide](TEAM-TRIAL.md).
 
-This real Microsoft Visio capture shows Codex reading a verified Transformer Encoder contract, generating a style reference, constructing the figure from native shapes, reopening the VSDX, and selecting editable objects.
+## Choose a workflow
+
+### 1. Audit before drawing
+
+```text
+Use $scientific-model-diagram-prompting to compare my model code,
+configuration, manuscript equations, and current figure. Return the
+authoritative model contract, tensor audit, conflicts, and a reconstruction
+specification. Stop before drawing if a material contradiction remains.
+```
+
+### 2. Build or revise an editable VSDX
+
+```text
+Use $scientific-model-diagram-visio to rebuild this verified contract as a
+native editable VSDX. Keep repeated branches aligned, operators independent,
+and connectors glued. Reopen the file, test editability, then export PDF and
+a 300-DPI PNG.
+```
+
+### 3. Reconstruct a multi-panel paper figure
+
+```text
+Use $reconstruct-paper-figures to inventory this PDF and rebuild the selected
+figure as editable SVG, Illustrator AI, and editable PDF. Preserve continuous-
+tone scientific evidence as minimal hash-bound atoms, bind plots to supplied
+source data, and keep unresolved review items as publication blockers.
+```
+
+## Verified demonstrations
+
+### Paper/code to native Visio
+
+This Microsoft Visio capture shows Codex reading a verified Transformer Encoder contract, generating an optional style reference, constructing the page from native shapes, reopening the VSDX, and selecting editable objects.
 
 ![Paper and code to editable Visio workflow](examples/transformer-encoder-demo/assets/workflow-demo.gif)
 
-[Open the reproducible example](examples/transformer-encoder-demo/) · [Download the editable VSDX](examples/transformer-encoder-demo/assets/transformer-encoder-demo.vsdx) · [View PDF](examples/transformer-encoder-demo/assets/transformer-encoder-demo.pdf)
+[Reproduce the example](examples/transformer-encoder-demo/) · [Download VSDX](examples/transformer-encoder-demo/assets/transformer-encoder-demo.vsdx) · [View PDF](examples/transformer-encoder-demo/assets/transformer-encoder-demo.pdf) · [Inspect the documented usage example](examples/transformer-encoder-demo/COST-EXAMPLE.md)
 
-[Model and usage example](examples/transformer-encoder-demo/COST-EXAMPLE.md): approximately **$0.32 API-equivalent cost** for the documented `gpt-5.6-terra` + one medium `gpt-image-2` reference + local Visio scenario. Subscription message limits are not a fixed token-to-credit conversion.
+The documented `gpt-5.6-terra` + one medium `gpt-image-2` reference + local Visio scenario is approximately **$0.32 API-equivalent cost** under its stated assumptions. Local Visio automation itself uses no model tokens; subscription limits are not a fixed token-to-credit conversion.
 
-## Paper figure reconstruction demo
+### Evidence-preserving paper reconstruction
 
-This v1.3.2 animation uses real reconstructed artifacts and audit values: a ten-panel hybrid biological figure, an editable statistical suite, bounded OCR cleanup evidence, and three-stage Illustrator reopen counts. It is an evidence-driven presentation, not an Illustrator screen recording.
+The v1.3.2 presentation below is assembled from committed reconstruction artifacts and machine-readable audits. It demonstrates a ten-panel hybrid biological figure, an editable statistical suite, reviewed OCR cleanup evidence, and three-stage Illustrator reopen counts. It is **not** presented as an Illustrator screen recording.
 
 ![Paper figure reconstruction capabilities](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.gif)
 
-[Open the reconstruction example](examples/paper-figure-reconstruction-demo/) · [Watch MP4](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.mp4) · [Inspect evidence JSON](examples/paper-figure-reconstruction-demo/assets/simpli-figure4-evidence.json)
+[Open the example](examples/paper-figure-reconstruction-demo/) · [Watch MP4](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.mp4) · [Inspect evidence JSON](examples/paper-figure-reconstruction-demo/assets/simpli-figure4-evidence.json)
 
-## 64-family capability atlas
+The showcased artifact deliberately remains `publication_ready=false`: passing machine QA does not replace source-data, scale-bar, or human scientific approval.
 
-The following eight sheets were generated locally through the repository's actual `reconstruct-paper-figures` recipe builder. Together they contain **64 classified figure-family demonstrations** with live text, semantic object IDs, editable vector geometry, recipe hashes, and **zero embedded raster nodes**. Each card now includes publication-like parameters plus a real-task planning footer. They are synthetic capability tests—not claims that 64 source papers were reproduced pixel-for-pixel.
+## 64-family editable capability atlas
 
-Consumption labels use `S`, `M`, `L`, or conditional `S/M` and `M/L` tiers. They estimate **15–150k agent tokens** and **0–4 optional generated visual references** for a real reconstruction, depending on source quality, scientific review, editor roundtrips, and rework. They are planning ranges, not prices or usage guarantees. Generating this atlas itself uses deterministic local Python and **0 model/API calls**.
+The repository's real recipe builder deterministically generated **8 full-size SVG sheets covering 64 figure families**. Every card has semantic IDs, live text, editable vector geometry, a recipe hash, an object count, and a real-task planning estimate; the manifest requires **zero embedded raster nodes**. These are synthetic capability tests, not claims that 64 papers were reproduced pixel-for-pixel.
 
-Each sheet is shown at full README width. Click any image to open the original SVG, then use browser zoom to inspect individual paths and labels without raster blur.
+Click the sheet below to open the original SVG and zoom without raster blur.
 
-### AI / computer vision
+[![AI, machine-learning, and computer-vision capability sheet](examples/capability-atlas/assets/ai-computer-vision.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/ai-computer-vision.svg)
+
+<details>
+<summary><strong>Open all 8 full-size, click-to-zoom domain sheets</strong></summary>
+
+### AI / machine learning / computer vision
 
 [![AI and computer-vision figure families](examples/capability-atlas/assets/ai-computer-vision.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/ai-computer-vision.svg)
 
@@ -82,223 +137,110 @@ Each sheet is shown at full README width. Click any image to open the original S
 
 [![Earth-science and geospatial figure families](examples/capability-atlas/assets/earth-geospatial.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/earth-geospatial.svg)
 
-[Open the classified gallery and generator](examples/capability-atlas/) · [Inspect the 64-family manifest and SHA-256 evidence](examples/capability-atlas/capability-manifest.json)
+</details>
 
-## Why this exists
+[Open the local full-width gallery](examples/capability-atlas/gallery.html) · [Read the atlas guide](examples/capability-atlas/) · [Inspect the 64-family manifest and SHA-256 evidence](examples/capability-atlas/capability-manifest.json)
 
-Scientific architecture figures often look polished while silently misrepresenting projection direction, fusion semantics, tensor dimensions, classifier width, or class count. This plugin adds an evidence gate before visual work and an editability gate after Visio export.
+### Domains and detailed figure families
 
-## Supported research domains and figure families
+“Supported” means the workflow can classify the figure, choose an evidence-preserving route, and produce an editable specification or artifact. Lossless recovery still depends on source vectors/data, calibration, and scientific review.
 
-"Supported" means the workflow can classify the panel, choose an evidence-preserving reconstruction route, and produce an editable specification or artifact. It does not mean that every figure can be converted losslessly from pixels: source data, calibration, and human scientific review still determine whether a result is publication-ready.
-
-| Research domain | Figure families covered | Current reconstruction route |
-|---|---|---|
-| AI, machine learning, and computer vision | Neural-network architectures, Transformer/CNN/U-Net and encoder-decoder flows, multimodal pipelines, feature maps, residual/skip paths, detection boxes, classes, confidence labels, keypoints, segmentation masks, depth and probability-map panels | Native Visio for architecture geometry; hybrid SVG for image-bearing qualitative results |
-| Statistics and data science | Line, scatter, fitted curve, error-bar, bar, box, violin, ROC, Kaplan-Meier, forest, risk table, heatmap, confusion/correlation matrix, PCA, t-SNE, clustering dendrogram, network, phylogenetic tree, and Circos-style ring figures | Full vector when PDF objects or source data exist; approximate digitization must be labelled as such |
-| Clinical and biomedical research | Clinical flow diagrams, survival and forest figures, flow-cytometry gates, CT/MRI/PET/ultrasound overlays, histology and whole-slide annotations | Vector labels, gates, ROIs, scales, and legends over immutable scientific-image atoms |
-| Cell, molecular, and omics research | Fluorescence/confocal microscopy, multiplex imaging, Western blot, electrophoresis, genomic heatmaps, phylogenetic figures, protein/ligand render annotations | Preserve intensity, tissue, band, or molecular-render pixels; rebuild annotations and data-bound plots |
-| Chemistry, materials, and electrochemistry | Chemical structures and reaction schemes; XRD, Raman, FTIR, XPS, mass-spectrometry and chromatography curves; DSC/TGA/DTA; CV/EIS/Nyquist; SEM/TEM/AFM/EDS panels | Vector curves, peaks, axes, bonds, arrows, conditions, scales, and callouts; instrument pixels remain raster when necessary |
-| Mechanical, electrical, and physical engineering | Circuit/control/wiring diagrams, FEA stress/strain fields, CFD velocity/pressure/streamlines, 3D response surfaces and contours, CAD/exploded assemblies | Vector framework, symbols, dimensions, leaders, boundaries, and color bars around retained continuous fields or renders |
-| Experimental systems and microfluidics | Experimental setups, process principles, channels, layers, flow paths, sensors, device photos, and mixed photo + schematic + plot composites | Editable framework with minimal atomic photos/microscopy regions and explicit measurement blockers |
-| Earth science and geospatial research | GIS and remote-sensing maps, land-cover panels, terrain/DEM, geology and seismic maps, faults, epicenters, sections, graticules, north arrows, scales, and legends | Editable map overlays around retained satellite, terrain, or continuous raster evidence |
-
-Recovery is recorded per panel as `R0` native PDF geometry, `R1` source-data regeneration, `R2` approximate digitization, or `R3` immutable scientific pixels. A mixed figure may use several recovery levels at once.
-
-## Drawable objects, symbols, and scientific icons
-
-The repository does not depend on a closed icon library. It constructs reusable, editable scientific components from explicit vector primitives and semantic IDs.
-
-| Component family | Drawable objects and icons |
+| Domain | Figure families represented in the atlas |
 |---|---|
-| Core vector primitives | Rectangle and rounded rectangle, ellipse and circle, triangle and quadrilateral, polygon, line, polyline, cubic/arc path, open/closed arc, annular sector, nested group, linear/radial gradient, live straight text, curved path text, subscript and superscript runs |
-| Flow and relationship symbols | Straight and orthogonal arrows, glued connectors, double-headed dimension/spread arrows, branch, merge, residual/skip path, feedback/return path, leader, bracket, boundary, ROI box, dashed enclosure, junction and checkpoint |
-| AI/model architecture components | Editable 3D tensor/feature-map cuboids, input/output blocks, encoder/decoder stages, projection and weight matrices, bias/vector blocks, attention, normalization, convolution/pooling modules, classifier heads, parallel branches and multimodal fusion |
-| Mathematical operators | Independent `×`, `+`, `Σ`, concatenation `‖`, arrows, equality and formula text; matrices, dimensions, Greek letters, primes, subscripts and superscripts remain separately editable |
-| Statistical mini-plots | Definition-driven mean, variance, skewness and kurtosis icons; axes, ticks, gridlines, markers, error bars, confidence intervals, censor marks, fitted curves, legends, significance brackets and p-value labels |
-| Matrix, network, and circular components | Heatmap cells, confusion/correlation cells, dendrogram branches, graph nodes/edges, phylogenetic branches, concentric rings, annular sectors, circular labels and color bars |
-| Image and measurement overlays | Panel letters, channel labels, scale bars, orientation marks, ROI polygons, segmentation boundaries, gates/quadrants, arrows, keypoints, class/confidence labels, peak markers and reference lines |
-| Apparatus and engineering components | Process containers, pipes/channels, flow arrows, circuit wires, junctions, instrument blocks, boundary/load arrows, dimension lines, section markers, exploded-view leaders and BOM identifiers |
-| Chemistry and molecular components | Bonds, rings, stereochemical wedges, reaction arrows, condition/yield text, residue/ligand labels and dashed interaction bonds can be composed as vectors; a chemistry-aware ChemDraw/RDKit backend is not yet included |
-| Map components | Boundaries, points, section lines, graticules, north arrows, scale bars, legends, fault traces and epicenter symbols; coordinate-aware GIS import is not yet included |
+| AI / machine learning / computer vision | Neural architectures; encoder–decoder and U-Net; feature maps; residual paths; Q/K/V attention; multimodal fusion; detection boxes/classes/keypoints; segmentation, depth, and probability maps |
+| Statistics / data science | Line/scatter/fitted curves; error bars and confidence intervals; bar/box/violin/ROC; Kaplan–Meier/forest/risk tables; heatmaps and matrices; PCA/t-SNE; dendrogram/network/phylogeny; Circos-style rings |
+| Clinical / biomedical | Cohort and randomization flows; forest plots; flow-cytometry gates; CT/MRI/PET/ultrasound overlays; histology; ROI/segmentation; risk tables; study timelines |
+| Cell / molecular / omics | Fluorescence/confocal and multiplex microscopy; Western blots; electrophoresis; genomic matrices; phylogenetics; protein renders; ligand interactions |
+| Chemistry / materials / electrochemistry | Chemical structures; reaction schemes; XRD/Raman/FTIR/XPS; MS/chromatography; DSC/TGA/DTA; CV/EIS/Nyquist; SEM/TEM/AFM; EDS maps |
+| Engineering / physics | Circuits; control systems; wiring; FEA; CFD; response surfaces; CAD drawings; exploded assemblies and BOM callouts |
+| Experimental systems / microfluidics | Experimental setups; microfluidic channels; layered devices; sensor chains; device-photo panels; composite figures; process principles; measurement layouts |
+| Earth science / geospatial | GIS maps; remote sensing; DEM/terrain; geology; seismic maps; cross-sections; graticules/north arrows/scales; cartographic legends |
 
-## Drawing and authoring tools
+### Consumption labels
 
-| Tool/backend | What this repository can do now | Validation status |
+| Tier | Planning range for a real task | Typical scope |
 |---|---|---|
-| Microsoft Visio | Open and control Visio on Windows, create native shapes/groups/connectors, save VSDX, reopen objects, validate glue/fidelity, and export SVG/PDF/PNG | **Native runtime validated** with desktop Visio 16.0 |
-| Adobe Illustrator | Run JSX helpers for SVG import, AI save/reopen, editable-PDF export/reopen, object/font/path audits, and constrained path-text repair | **Roundtrip validated** on Windows with Illustrator 29.8.2 |
-| SVG + editable PDF | Generate portable editable SVG, hybrid vector/raster assemblies, live text, physical sizing, hashes, and structural audits without Visio | **Portable core implemented**; final editor inspection remains required |
-| draw.io / diagrams.net | Convert the supported SVG subset to an editable `mxGraphModel` with stable IDs, layers, plain text, connectors, manifests, and fail-closed auditing | **Structural adapter implemented**; live import/save/reopen validation is still pending |
-| Scientific Illustrator | Produce backend-neutral scenes compatible with framework-heavy drawing workflows and use its documented draw.io/PowerPoint direction | **Integration contract documented**; its runtime is not bundled or claimed as validated here |
-| PowerPoint / WPS | Can be used as an intermediate framework editor through Scientific Illustrator-compatible workflows | **No direct controller yet**; publication acceptance must return to SVG/Illustrator QA |
-| Inkscape, Figma, Affinity Designer, CorelDRAW | May open exported SVG/PDF depending on their own compatibility | **Not currently automated or regression-tested** |
-| ChemDraw/RDKit, PyMOL/ChimeraX, CAD/GIS tools | Identified as domain-specific future backends for chemistry, molecular rendering, assemblies, and maps | **Planned, not implemented** |
+| S | 15–35k agent tokens; 0–1 optional visual reference | Single-panel, mostly vector, limited evidence reconciliation |
+| M | 35–75k; 0–2 references | Multi-layer figure, source inspection, one editor QA pass |
+| L | 75–150k; 1–4 references | Dense or image-bearing figure, scientific review, editor roundtrips and rework |
+| S/M or M/L | Spans adjacent tiers | Complexity depends on real data, source quality, linked panels, and acceptance requirements |
 
-## Included skills
+These are planning ranges, not prices or usage guarantees. Generating the committed atlas uses deterministic local Python and **0 model/API calls**.
 
-### `scientific-model-diagram-prompting`
+## Editable objects and scientific symbols
 
-- Inspect model code, configuration, manuscript text, screenshots, and old diagrams.
-- Freeze stage order, operations, symbols, tensor dimensions, and class labels.
-- Generate or revise a visual reference with definition-driven scientific icons.
-- Produce a structured native-vector reconstruction specification.
+The workflow constructs components from explicit vector primitives and semantic IDs rather than depending on a closed icon library.
 
-### `scientific-model-diagram-visio`
+<details>
+<summary><strong>Browse the drawable object catalog</strong></summary>
 
-- Rebuild or locally revise figures in Microsoft Visio.
-- Use native editable containers, cuboids, operators, labels, and glued connectors.
-- Enforce horizontal parallel branches, readable typography, consistent spacing, and collision-free routing.
-- Reopen the VSDX, test independent object editability, and export PDF plus 300-DPI PNG.
-- Inspect VSDX package structure with a bundled standard-library Python script.
+| Family | Editable components |
+|---|---|
+| Core primitives | Rectangles, ellipses, polygons, lines, polylines, cubic/arc paths, annular sectors, groups, gradients, straight/path text, subscript and superscript runs |
+| Flow and relationships | Straight/orthogonal arrows, glued connectors, branches, merges, residual/skip and feedback paths, leaders, brackets, ROI boxes, dashed enclosures, junctions |
+| Model architecture | 3D tensor cuboids, encoder/decoder stages, projection/weight matrices, bias vectors, attention, normalization, convolution/pooling, classifier heads, parallel branches, multimodal fusion |
+| Mathematics | Independent `×`, `+`, `Σ`, concatenation `‖`, equality, formulas, matrices, dimensions, Greek letters, primes, subscripts, superscripts |
+| Statistics | Axes, ticks, grids, markers, error bars, confidence intervals, censor marks, fitted curves, legends, significance brackets, p-values, mean/variance/skewness/kurtosis mini-plots |
+| Matrices, graphs, circles | Heatmap and confusion/correlation cells, dendrograms, networks, phylogenetic branches, rings, sectors, radial labels, color bars |
+| Image/measurement overlays | Panel letters, channel labels, scale bars, orientation marks, ROIs, segmentation boundaries, gates, keypoints, class/confidence labels, peak/reference markers |
+| Apparatus and engineering | Containers, pipes/channels, circuit wires, instrument blocks, boundary/load arrows, dimensions, section markers, exploded-view leaders, BOM identifiers |
+| Chemistry and molecular | Bonds, rings, stereochemical wedges, reaction arrows, condition/yield text, residue/ligand labels, dashed interaction bonds |
+| Maps | Boundaries, points, section lines, graticules, north arrows, scale bars, legends, fault traces, epicenters |
 
-### `reconstruct-paper-figures`
+</details>
 
-- Inventory PDF text, vectors, images, placements, captions, and effective PPI before editing.
-- Rebuild live text and editable SVG geometry while retaining continuous-tone scientific evidence as minimal, hash-bound image atoms.
-- Reconstruct statistical plots from publisher source data without inventing absent groups or observations.
-- Apply only reviewed OCR cleanup plans, audit every changed pixel, and keep human approval mandatory.
-- Bind SVG import, Illustrator AI reopen, and editable-PDF reopen to machine-readable object and hash evidence.
-- Export draw.io/Visio framework geometry where appropriate while keeping Illustrator acceptance separate.
+## Authoring backends and validation scope
 
-## Requirements
+| Backend | Current capability | Evidence level |
+|---|---|---|
+| Microsoft Visio | Native shapes, groups and glued connectors; VSDX save/reopen; SVG/PDF/PNG export | **Native runtime validated** with desktop Visio 16.0 on Windows |
+| Adobe Illustrator | SVG import; AI save/reopen; editable-PDF export/reopen; object, font and path audits; constrained path-text repair | **Roundtrip validated** with Illustrator 29.8.2 on Windows |
+| SVG + editable PDF | Portable vector/hybrid assembly, live text, physical sizing, hashes, and structural audits | **Portable core implemented**; target-editor inspection remains required |
+| draw.io / diagrams.net | Supported SVG subset to editable `mxGraphModel` with stable IDs, layers, text, connectors, manifests, and fail-closed audit | **Structural adapter implemented**; live import/save/reopen validation pending |
+| Scientific Illustrator | Backend-neutral scene contract for framework-heavy workflows | **Integration contract documented**; runtime is not bundled or claimed as validated |
+| PowerPoint / WPS | Possible intermediate framework editor through compatible external workflows | **No direct controller**; not a publication-acceptance backend here |
+| Inkscape / Figma / Affinity / CorelDRAW | May import exported SVG/PDF according to each editor's compatibility | **Not automated or regression-tested** |
+| ChemDraw/RDKit / PyMOL/ChimeraX / CAD/GIS | Candidate semantic backends for chemistry, molecular rendering, assemblies, and maps | **Planned, not implemented** |
 
-- Codex with Agent Skills support.
-- Windows and Microsoft Visio for native VSDX construction and GUI verification.
-- Python 3.8+ for the portable skill scripts; PDF inventory and rendering features require the optional PDF packages documented by the skill.
-- Adobe Illustrator is optional and needed only for the validated AI/editable-PDF roundtrip workflow (tested with Illustrator 29.8.2 on Windows).
-- Image generation is optional; the Visio workflow can start from a verified written specification.
+## Evidence and acceptance model
 
-## Install
+For paper figures, recovery is recorded per panel:
 
-Install the versioned Codex plugin from this repository marketplace:
+| Level | Meaning |
+|---|---|
+| R0 | Recover native PDF text/vector geometry |
+| R1 | Regenerate from authoritative source data |
+| R2 | Approximate digitization, explicitly labelled as such |
+| R3 | Preserve immutable scientific pixels as minimal hash-bound atoms |
 
-```powershell
-codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.2
-codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
-```
+A single figure may mix several levels. The workflow separates inventory, reconstruction, editor roundtrip, visual QA, and scientific approval. Missing data, calibration, scale bars, fonts, or human review stay visible as blockers; machine audits never grant publication readiness by themselves.
 
-Restart the Codex or ChatGPT desktop app and start a new thread. For a group rollout, send members the [bilingual trial guide](TEAM-TRIAL.md) or the `team-trial` ZIP attached to the release.
+## Requirements and project scope
 
-Alternative Agent Skills installation:
+- Codex with Agent Skills or Plugins support.
+- Python 3.8+ for portable scripts; PDF inventory/rendering needs the optional packages documented by the skill.
+- Windows + Microsoft Visio for native VSDX construction and GUI verification.
+- Adobe Illustrator is optional and required only for the currently validated AI/editable-PDF roundtrip profile.
+- Image generation is optional and used only as a visual reference, never as scientific ground truth.
 
-Install all three skills with the open Agent Skills CLI:
+The packaged plugin is local and skills-only: it runs no publisher-operated server, creates no account, and collects no telemetry. It may read only the artifacts placed in scope and may control Visio or Illustrator when the selected workflow requires it. Keep confidential papers, data, code, credentials, and model weights out of public issues.
 
-```bash
-npx skills add CeobeFA333/codex-scientific-diagram-visio
-```
+See [DESIGN.md](DESIGN.md), [SECURITY.md](SECURITY.md), [PRIVACY.md](PRIVACY.md), [TERMS.md](TERMS.md), and [CHANGELOG.md](CHANGELOG.md) for engineering boundaries and release history.
 
-Or install a single skill in Codex from its GitHub directory:
-
-```text
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/main/skills/scientific-model-diagram-prompting
-
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/main/skills/scientific-model-diagram-visio
-
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/main/skills/reconstruct-paper-figures
-```
-
-Restart Codex after installation so the skills are discovered.
-
-## Example prompts
-
-Analyze before drawing:
+## Repository layout
 
 ```text
-Use $scientific-model-diagram-prompting to compare my PyTorch model,
-experiment config, manuscript equations, and old architecture figure.
-Return the authoritative model contract, dimensional audit, and a
-publication-ready visual-reference prompt.
+skills/                                      canonical skill sources
+plugins/codex-scientific-diagram-visio/      synchronized Marketplace package
+examples/transformer-encoder-demo/           reproducible native-Visio example
+examples/paper-figure-reconstruction-demo/   evidence-driven reconstruction demo
+examples/capability-atlas/                    8-domain, 64-family editable SVG atlas
+scripts/validate_release.py                   release and mirror validation
+tests/                                        standard-library regression tests
 ```
 
-Build a new editable figure:
+## Version and license
 
-```text
-Use $scientific-model-diagram-visio to rebuild this verified model contract
-as a native editable VSDX. Keep four parallel branches perfectly horizontal,
-use separate operand and operator objects, glue every connector, and export
-PDF plus a 300-DPI PNG after reopening and testing editability.
-```
+The latest tagged plugin release is **v1.3.2**. The `main` branch also contains the newer deterministic capability atlas and homepage documentation queued under `Unreleased`; a code release does not change any figure's scientific or publication status.
 
-Revise only one region:
-
-```text
-Use $scientific-model-diagram-visio to back up this VSDX and modify only the
-fusion and classifier stages. Preserve all unaffected objects and styles,
-reroute adjacent connectors, and save a versioned revision.
-```
-
-Reconstruct a multi-panel paper figure:
-
-```text
-Use $reconstruct-paper-figures to inventory this paper PDF and rebuild the
-selected figure as editable SVG, Illustrator AI, and editable PDF. Preserve
-continuous-tone microscopy as minimal hash-bound atoms, bind plots to supplied
-source data, produce rendered and editability audits, and leave every unresolved
-scientific or human-review item as an explicit publication blocker.
-```
-
-## Architecture
-
-```mermaid
-flowchart LR
-    A[Prompt and source artifacts] --> B[Evidence table]
-    B --> C[Model contract]
-    C --> D[Diagram specification]
-    D --> E[Optional ImageGen reference]
-    E --> F[Visio native reconstruction]
-    D --> F
-    F --> G[Reopen and editability tests]
-    G --> H[VSDX + PDF + 300-DPI PNG]
-    A --> I[PDF figure inventory]
-    I --> J[Hybrid SVG + source-data charts]
-    J --> K[AI and editable-PDF roundtrip evidence]
-    K --> L[Publication gate]
-```
-
-Recommended production strategy:
-
-1. Use deterministic scripts or Visio automation for page setup, repeated geometry, layers, and initial connectors.
-2. Use Visio GUI control for visual refinement and collision repair.
-3. Use static package inspection plus screenshots and reopened-object tests for final QA.
-
-## VSDX inspection
-
-The inspector is read-only and uses only the Python standard library:
-
-```bash
-python skills/scientific-model-diagram-visio/scripts/inspect_vsdx.py figure.vsdx --json
-```
-
-Optional checks:
-
-```bash
-python skills/scientific-model-diagram-visio/scripts/inspect_vsdx.py figure.vsdx --require-single-page --forbid-raster
-```
-
-Static inspection cannot prove that connectors are visually routed correctly or that text does not overlap. Reopen and screenshot-based QA remain mandatory.
-
-## Quality principles
-
-- Evidence before aesthetics.
-- Model contract before image generation.
-- Native shapes instead of a full-page bitmap.
-- Explicit matrix convention and dimensional audit.
-- Straight horizontal branches and reserved connector corridors.
-- Operators remain independent from operands.
-- No required text below 9 pt on a 16:9 publication page.
-- Save, close, reopen, edit, export, and inspect before delivery.
-
-## Platform scope
-
-The prompting and core paper-reconstruction procedures are portable across Agent Skills-compatible clients. Native VSDX construction requires Windows and Microsoft Visio. The validated Illustrator roundtrip requires Windows and Adobe Illustrator 29.8.2; other versions and vector editors may work but are not claimed as validated. PDF inventory, SVG construction, and source-data preparation can run without Visio or Illustrator when their documented Python dependencies are present.
-
-## Security
-
-This plugin may instruct an agent to read user-selected source files, control Microsoft Visio or Adobe Illustrator, and write outputs in a user-selected work directory. Review [SECURITY.md](SECURITY.md) before use. The packaged skills do not upload papers, images, source data, or outputs to the publisher and do not require credentials for local inspection.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
-
-中文说明见 [README.zh-CN.md](README.zh-CN.md).
+Source code and original project material are released under the [MIT License](LICENSE). Third-party demonstration figures retain the licenses and attribution stated in their example directories.

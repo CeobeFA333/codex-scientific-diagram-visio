@@ -48,6 +48,10 @@ Architecture analysis, native Visio execution, and evidence-preserving reconstru
 
 The public homepage separates figure-routing support, structural adapters, and native runtime validation. A listed research domain means the workflow can classify and decompose that figure family; it does not imply lossless vectorization, a domain-semantic backend, or publication acceptance. Tool integrations are labelled as native-runtime validated, roundtrip validated, structurally implemented, documented only, or planned.
 
+### Outcome-first public homepage
+
+The bilingual homepages lead with the three workflow-specific deliverable sets, installation, and copyable entry prompts before demonstrations or exhaustive capability detail. One full-size atlas sheet remains visible; the complete eight-sheet, click-to-zoom gallery and object catalog are progressively disclosed with native HTML details blocks. English and Chinese keep the same section order, claims, evidence links, cost caveats, and backend maturity labels.
+
 ### Hybrid evidence preservation
 
 Continuous-tone microscopy and other scientific pixels are retained as minimal, hash-bound atoms when vectorization would alter evidence. Text, diagram geometry, and source-data-bound plots are rebuilt as editable objects. Missing data and unresolved scale bars remain blockers instead of being inferred.
@@ -84,6 +88,13 @@ The packaged plugin does not operate a server or collect telemetry. It may direc
 - The compact Marketplace plugin mirrors canonical skill files, so every release must run synchronization validation.
 
 ## Change history
+
+### 2026-09-08 - Outcome-first bilingual homepage
+
+- Rewrote both GitHub homepages around concrete deliverables, versioned installation, workflow selection, verified demonstrations, capability evidence, and explicit acceptance boundaries.
+- Reconciled the English and Chinese structures and separated the tagged v1.3.2 package from newer `main`-branch atlas and documentation work.
+- Kept a full-size clickable atlas example on the page while moving all eight zoomable sheets and the detailed object catalog into expandable sections.
+- Added a standard-library regression test for local links and bilingual homepage structure.
 
 ### 2026-09-08 - Public capability atlas
 

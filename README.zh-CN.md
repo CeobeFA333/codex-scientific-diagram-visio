@@ -1,58 +1,108 @@
-# Codex 科研模型图 Visio 工作流
+# Codex 科研图重建与 Visio 工作流
 
 <p align="right">
   <a href="README.md">English</a> | <strong>简体中文</strong>
 </p>
 
-将模型代码、论文 PDF、源数据和旧图转换为可编辑科研图，并用可复核证据约束交付质量。
+一组“先核验科学证据、再绘制”的 Codex 工作流：把模型代码、论文文字、PDF、源数据和旧图转成可编辑科研图。
 
-核心流程：
+[正式版 v1.3.2](https://github.com/CeobeFA333/codex-scientific-diagram-visio/releases/tag/v1.3.2) · [MIT 许可证](LICENSE) · [课题组试用指南](TEAM-TRIAL.md)
 
-```text
-提示词 + 实验代码 + 论文 + 旧图
-                ↓
-证据核验与张量维度契约
-                ↓
-Codex 生图生成视觉参考（可选）
-                ↓
-Microsoft Visio 原生矢量重建或局部修改
-                ↓
-重新打开、可编辑性验收和导出检查
-                ↓
-VSDX + PDF + 300 DPI PNG
+> 绘图前先核对科学事实，导出后再证明可编辑性；不能让视觉美化悄悄改变研究方法。
+
+## 最终会得到什么
+
+这不是一个不断膨胀、每次都加载全部上下文的巨型 Skill，而是一个包含 **3 个专注 Skill** 的插件。Codex 会按任务匹配需要的能力。
+
+| 工作流 | 常见输入 | 交付物 |
+|---|---|---|
+| 核验并设计模型图 | 模型代码、配置、公式、论文文字、旧图 | 证据表、冲突清单、张量/模型契约、视觉参考提示词、可执行的矢量重建规范 |
+| 新建或局部修改 Visio | 已核验契约、参考图或现有 VSDX | 原生可编辑 VSDX、重开对象测试、PDF、300-DPI PNG、检查报告；修改任务另含版本化备份 |
+| 重建论文图片 | 论文 PDF、提取素材、源数据、已复核 OCR、旧的栅格/矢量图 | 图片盘点、重建配方、可编辑 SVG、可选 AI/可编辑 PDF、原子科研像素证据、QA 报告和明确的发表阻断项 |
+
+三个 Skill 分工如下：
+
+- `scientific-model-diagram-prompting`：核对科学证据，形成绘图契约。
+- `scientific-model-diagram-visio`：用 Microsoft Visio 原生对象新建、修改、重开并导出模型图。
+- `reconstruct-paper-figures`：重建复杂论文图片，同时保留科研像素证据和源数据来源。
+
+## 安装
+
+推荐从本仓库的版本化 Marketplace 安装：
+
+```powershell
+codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.2
+codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
 ```
 
-生成图片只用于布局和风格探索，不覆盖代码与公式确定的实际模型。
+安装后重启 Codex 或 ChatGPT 桌面端并新建任务。也可以通过开放 Agent Skills CLI 一次安装全部 Skill：
 
-对于复杂多面板论文图，第三个技能走并行流程：先盘点 PDF 中的文本、矢量、图片和位置，再区分可重建几何与必须保真的科学像素，重建实时文字和矢量，最后核验 SVG、AI、可编辑 PDF 的往返证据与发表阻断项。
+```bash
+npx skills add CeobeFA333/codex-scientific-diagram-visio
+```
 
-## 完整工作流动图
+单独安装某个 Skill 的地址和课题组分发方法见[试用指南](TEAM-TRIAL.md)。
 
-下面是真实 Microsoft Visio 窗口录制式演示：Codex 先读取并冻结 Transformer Encoder 模型契约，再用生图生成风格参考，随后以 Visio 原生形状逐步重建，保存并重新打开 VSDX，最后选择独立模块和已粘合连接线验证可编辑性。
+## 选择工作流
 
-![从论文和代码到可编辑 Visio 的完整流程](examples/transformer-encoder-demo/assets/workflow-demo.gif)
+### 1. 先核验再绘制
 
-[查看可复现示例](examples/transformer-encoder-demo/) · [下载可编辑 VSDX](examples/transformer-encoder-demo/assets/transformer-encoder-demo.vsdx) · [查看 PDF](examples/transformer-encoder-demo/assets/transformer-encoder-demo.pdf)
+```text
+使用 $scientific-model-diagram-prompting 对照检查我的模型代码、配置、
+论文公式和现有图片。输出权威模型契约、张量维度核验、冲突清单和
+可执行的重建规范。仍有影响架构的矛盾时先停止绘图。
+```
 
-[模型与额度示例](examples/transformer-encoder-demo/COST-EXAMPLE.md)：在文档假设下，使用 `gpt-5.6-terra`、生成 1 张中等质量 `gpt-image-2` 参考图，再由本机 Visio 绘制，API 等价成本约为 **0.32 美元**。ChatGPT/Codex 套餐消息额度不等于固定的 token 换算比例。
+### 2. 新建或局部修改可编辑 VSDX
 
-## 论文图片重建能力演示
+```text
+使用 $scientific-model-diagram-visio 把这份已核验契约重建为原生可编辑
+VSDX。重复分支水平等距、运算符独立、连接线真实粘合。保存后重新打开，
+测试对象可编辑性，再导出 PDF 和 300-DPI PNG。
+```
 
-下面的 v1.3.2 动图直接采用真实重建产物与审计数值，展示十面板混合生物医学图、可编辑统计图组、受限 OCR 清理，以及 Illustrator 三阶段重开计数。它是“真实产物 + 真实证据”组成的能力演示，不冒充 Illustrator 界面录屏。
+### 3. 重建复杂论文图片
+
+```text
+使用 $reconstruct-paper-figures 盘点这篇 PDF，把指定图片重建成可编辑
+SVG、Illustrator AI 和可编辑 PDF。连续色调科研图像只保留为最小的
+哈希绑定原子，统计图绑定已提供源数据，未解决的复核项保留为发表阻断。
+```
+
+## 已验证演示
+
+### 论文/代码到原生 Visio
+
+这段 Microsoft Visio 实录展示了 Codex 读取已核验的 Transformer Encoder 契约、生成可选风格参考、使用原生形状构图、重开 VSDX，以及选中可独立编辑的对象。
+
+![论文与代码到可编辑 Visio 的工作流](examples/transformer-encoder-demo/assets/workflow-demo.gif)
+
+[复现实例](examples/transformer-encoder-demo/) · [下载 VSDX](examples/transformer-encoder-demo/assets/transformer-encoder-demo.vsdx) · [查看 PDF](examples/transformer-encoder-demo/assets/transformer-encoder-demo.pdf) · [查看消耗算例](examples/transformer-encoder-demo/COST-EXAMPLE.md)
+
+文档中的 `gpt-5.6-terra` + 1 张中等尺寸 `gpt-image-2` 参考图 + 本地 Visio 场景，在其假设下约为 **0.32 美元 API 等效成本**。本地 Visio 自动化本身不消耗模型 token；订阅消息限额也不能固定换算成 token 或积分。
+
+### 保留科研证据的论文图重建
+
+下面的 v1.3.2 演示由仓库内的真实重建产物和机器审计数据组成，展示十面板混合生物图、可编辑统计图组、已复核 OCR 清理证据，以及 Illustrator 三阶段重开计数。它**不是**伪装成 Illustrator 录屏的动画。
 
 ![论文图片重建能力演示](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.gif)
 
-[查看完整示例与来源说明](examples/paper-figure-reconstruction-demo/) · [观看 MP4](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.mp4) · [检查证据 JSON](examples/paper-figure-reconstruction-demo/assets/simpli-figure4-evidence.json)
+[打开实例](examples/paper-figure-reconstruction-demo/) · [观看 MP4](examples/paper-figure-reconstruction-demo/assets/paper-figure-reconstruction-demo.mp4) · [查看证据 JSON](examples/paper-figure-reconstruction-demo/assets/simpli-figure4-evidence.json)
 
-## 64 类图型能力图谱
+演示产物刻意保持 `publication_ready=false`：机器检查通过不等于源数据、比例尺和人工科学审核已经完成。
 
-下面 8 张分类图由本仓库真实的 `reconstruct-paper-figures` 配方构建器在本机生成，共包含 **64 个细分图型演示**。所有卡片都保留实时文字、语义对象 ID 和可编辑矢量几何，并记录配方/SVG 哈希；结构审计结果为 **0 个嵌入栅格节点**。每张卡片现在还带有接近论文面板的参数细节和真实任务消耗规划。它们是合成的能力测试，不是“已经逐像素复刻了 64 篇来源论文”的宣传。
+## 64 类可编辑能力图谱
 
-卡片中的消耗档位为 `S`、`M`、`L`，或可条件升级的 `S/M`、`M/L`；对应真实重建任务约 **1.5 万—15 万 Agent token** 和 **0—4 次可选视觉参考生图**。它只是依据源图质量、科学校验、编辑器往返和返工量给出的规划区间，不是价格或额度保证。生成这套图谱本身只运行确定性本地 Python，消耗为 **0 次模型/API 调用**。
+仓库的真实配方构建器确定性生成了 **8 张全尺寸 SVG，共覆盖 64 个图型家族**。每张卡片都有语义 ID、实时文字、可拆分矢量对象、配方哈希、对象计数和真实任务消耗规划；清单要求 **0 个嵌入栅格节点**。这些是合成能力测试，不代表已经对 64 篇论文做了逐像素复刻。
 
-下面改为单列全宽展示。点击任意图片会直接打开原始 SVG，可继续使用浏览器缩放查看单个路径、参数和消耗标签，不会出现位图放大的模糊问题。
+点击下面的大图可打开原始 SVG，无损放大查看文字、路径和细节。
 
-### AI / 计算机视觉
+[![AI、机器学习与计算机视觉能力图谱](examples/capability-atlas/assets/ai-computer-vision.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/ai-computer-vision.svg)
+
+<details>
+<summary><strong>展开全部 8 个领域的全尺寸可点击图谱</strong></summary>
+
+### AI / 机器学习 / 计算机视觉
 
 [![AI 与计算机视觉图型](examples/capability-atlas/assets/ai-computer-vision.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/ai-computer-vision.svg)
 
@@ -70,7 +120,7 @@ VSDX + PDF + 300 DPI PNG
 
 ### 化学 / 材料 / 电化学
 
-[![化学、材料与电化学图型](examples/capability-atlas/assets/chemistry-materials.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/chemistry-materials.svg)
+[![化学与材料图型](examples/capability-atlas/assets/chemistry-materials.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/chemistry-materials.svg)
 
 ### 工程 / 物理
 
@@ -84,129 +134,110 @@ VSDX + PDF + 300 DPI PNG
 
 [![地球科学与地理空间图型](examples/capability-atlas/assets/earth-geospatial.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/earth-geospatial.svg)
 
-[查看分类画廊、配方与生成器](examples/capability-atlas/) · [检查 64 类清单和 SHA-256 证据](examples/capability-atlas/capability-manifest.json)
+</details>
 
-## 支持的科研领域与图型
+[打开本地全宽画廊](examples/capability-atlas/gallery.html) · [阅读图谱说明](examples/capability-atlas/) · [检查 64 类清单与 SHA-256 证据](examples/capability-atlas/capability-manifest.json)
 
-这里的“支持”是指：能够识别面板类型、选择不破坏科学证据的重建路线，并输出可编辑规范或产物。它不等于所有像素图都能无损全矢量化；最终能否用于发表，仍取决于源数据、标定信息与人工科学审核。
+### 支持领域与细分图型
 
-| 科研领域 | 可处理的图型 | 当前重建路线 |
-|---|---|---|
-| AI、机器学习与计算机视觉 | 神经网络架构、Transformer/CNN/U-Net、编码器-解码器、多模态流程、特征图、残差/跳连、检测框、类别与置信度、关键点、分割掩膜、深度图和概率图 | 架构几何使用 Visio 原生对象；含科学图像的定性结果使用混合 SVG |
-| 统计学与数据科学 | 折线、散点、拟合曲线、误差棒、柱状、箱线、小提琴、ROC、Kaplan-Meier、森林图、风险表、热图、混淆/相关矩阵、PCA、t-SNE、聚类树、网络、系统发育树和 Circos 环形图 | PDF 原生几何或源数据存在时全矢量重建；数字化曲线必须明确标记为近似数据 |
-| 临床与生物医学 | 临床流程、生存曲线、森林图、流式细胞门、CT/MRI/PET/超声叠加图、组织学与全切片标注 | 在不可变科学图像原子上重建门、ROI、标尺、图例与实时文字 |
-| 细胞、分子与组学 | 荧光/共聚焦显微、多重成像、Western blot、电泳、基因组热图、系统发育图、蛋白质/配体渲染标注 | 保留强度、组织、条带或分子渲染像素；重建标注与数据绑定图层 |
-| 化学、材料与电化学 | 化学结构/反应式，XRD、Raman、FTIR、XPS、质谱、色谱，DSC/TGA/DTA，CV/EIS/Nyquist，SEM/TEM/AFM/EDS | 重建曲线、峰、坐标、化学键、反应箭头、条件、标尺和标注；必要时保留仪器像素 |
-| 机械、电气与工程物理 | 电路/控制/接线图、FEA 应力应变场、CFD 速度/压力/流线、3D 响应面/等高线、CAD 与爆炸装配图 | 在连续场或渲染图周围重建框架、符号、尺寸、引线、边界、载荷箭头和色标 |
-| 实验系统与微流控 | 实验装置、过程原理、通道、层、流路、传感器、设备照片，以及照片+示意图+曲线的混合多面板图 | 可编辑框架+最小原子化照片/显微区域，未解决的测量问题保留为阻断项 |
-| 地球科学与地理空间 | GIS/遥感、土地覆盖、地形/DEM、地质/地震地图、断层、震中、剖面、经纬网、指北针、比例尺和图例 | 在卫星、地形或连续栅格证据上重建可编辑地图叠加层 |
+这里的“支持”是指工作流能够分类图型、选择保留证据的重建路径，并输出可编辑规范或产物。能否无损恢复仍取决于源矢量、源数据、标定信息和人工科学审核。
 
-每个面板都会记录恢复等级：`R0` 为 PDF 原生几何，`R1` 为源数据重生，`R2` 为近似数字化，`R3` 为必须保留的科学像素。同一张混合图可以同时使用多个等级。
-
-## 可绘制的对象、符号与科研图标
-
-项目不依赖封闭图标库，而是使用明确的矢量原语和语义 ID 组合成可复用、可编辑科研组件。
-
-| 组件类别 | 可绘制对象与图标 |
+| 领域 | 图谱内的细分图型 |
 |---|---|
-| 基础矢量原语 | 矩形/圆角矩形、椭圆/圆、三角形/四边形/多边形、直线/折线、三次曲线与圆弧路径、开放/闭合圆弧、环形扇区、嵌套组、线性/径向渐变、实时文字、曲线路径文字、上下标格式 |
-| 流程与关系符号 | 直线/正交箭头、粘合连接线、双向尺寸/离散度箭头、分支、合并、残差/跳连、反馈/回路、引线、括号、边界、ROI 框、虚线围栏、结点和检查点 |
-| AI/模型架构组件 | 可编辑 3D 张量/特征图方块、输入/输出块、编码器/解码器、投影与权重矩阵、偏置/向量块、注意力、归一化、卷积/池化、分类头、平行分支和多模态融合 |
-| 数学运算符 | 独立的 `×`、`+`、`Σ`、拼接 `‖`、箭头、等号与公式文字；矩阵、维度、希腊字母、prime（撇号）、上下标可独立编辑 |
-| 统计缩略图 | 按定义区分的均值、方差、偏度、峰度图标；坐标、刻度、网格、点、误差棒、置信区间、删失标志、拟合曲线、图例、显著性括号和 p 值文字 |
-| 矩阵、网络与环形组件 | 热图单元格、混淆/相关单元格、树状图分支、图节点/边、系统发育分支、同心环、环形扇区、环形文字和色标 |
-| 图像与测量叠加层 | 面板字母、通道名、比例尺、方向标记、ROI 多边形、分割边界、门/象限、箭头、关键点、类别/置信度、峰标记和参考线 |
-| 实验装置与工程组件 | 过程容器、管道/通道、流向箭头、电路连线、结点、仪器方块、边界/载荷箭头、尺寸线、剖面标记、爆炸图引线和 BOM 编号 |
-| 化学与分子组件 | 化学键、环、立体化学楔形、反应箭头、条件/产率文字、残基/配体标注、虚线相互作用键；尚未内置理解化学语义的 ChemDraw/RDKit 后端 |
-| 地图组件 | 边界、点、剖面线、经纬网、指北针、比例尺、图例、断层迹线和震中符号；尚未内置坐标感知的 GIS 导入后端 |
+| AI / 机器学习 / 计算机视觉 | 神经网络架构；编码器–解码器与 U-Net；特征图；残差路径；Q/K/V 注意力；多模态融合；检测框/类别/关键点；分割、深度与概率图 |
+| 统计学 / 数据科学 | 折线/散点/拟合；误差棒与置信区间；柱状/箱线/小提琴/ROC；Kaplan–Meier/森林图/风险表；热图与矩阵；PCA/t-SNE；树状图/网络/系统发育；Circos 式环形图 |
+| 临床 / 生物医学 | 队列与随机流程；森林图；流式细胞门；CT/MRI/PET/超声叠加；组织学；ROI/分割；风险表；研究时间线 |
+| 细胞 / 分子 / 组学 | 荧光/共聚焦与多重成像；Western blot；电泳；基因组矩阵；系统发育；蛋白渲染；配体相互作用 |
+| 化学 / 材料 / 电化学 | 化学结构；反应式；XRD/Raman/FTIR/XPS；质谱/色谱；DSC/TGA/DTA；CV/EIS/Nyquist；SEM/TEM/AFM；EDS 元素图 |
+| 工程 / 物理 | 电路；控制系统；接线图；FEA；CFD；响应面；CAD 图；爆炸装配图与 BOM 标注 |
+| 实验系统 / 微流控 | 实验装置；微流控通道；分层器件；传感链；设备照片面板；复合图；过程原理；测量布局 |
+| 地球科学 / 地理空间 | GIS 地图；遥感；DEM/地形；地质图；地震图；剖面；经纬网/指北针/比例尺；制图图例 |
 
-## 支持的绘图工具与后端
+### 消耗标注
 
-| 工具/后端 | 当前能力 | 验证状态 |
+| 档位 | 真实任务规划范围 | 常见范围 |
 |---|---|---|
-| Microsoft Visio | 在 Windows 上打开并控制 Visio，生成原生形状/组/连接线，保存 VSDX，重开对象，验证粘合与保真度，导出 SVG/PDF/PNG | **已验证原生运行时**：桌面 Visio 16.0 |
-| Adobe Illustrator | 运行 JSX 脚本完成 SVG 导入、AI 保存/重开、可编辑 PDF 导出/重开、对象/字体/路径审计和受限路径文字修复 | **已验证往返**：Windows + Illustrator 29.8.2 |
-| SVG + 可编辑 PDF | 不依赖 Visio 生成可编辑 SVG、混合矢量/栅格组合、实时文字、物理尺寸、哈希和结构审计 | **便携核心已实现**；最终仍需目标编辑器人工验收 |
-| draw.io / diagrams.net | 将受支持的 SVG 子集转成含稳定 ID、图层、纯文本、连接线、清单和失败关闭审计的可编辑 `mxGraphModel` | **结构适配器已实现**；真实导入/保存/关闭/重开验收待完成 |
-| Scientific Illustrator | 可产生适合框架图的后端中立场景，对接其已公开的 draw.io/PowerPoint 方向 | **已记录集成契约**；本仓库没有内置或宣称其运行时已验证 |
-| PowerPoint / WPS | 可通过 Scientific Illustrator 兼容流程作为中间框架编辑器 | **尚无直接控制器**；发表验收需回到 SVG/Illustrator QA |
-| Inkscape、Figma、Affinity Designer、CorelDRAW | 理论上可按各自兼容性打开导出的 SVG/PDF | **当前未自动化、未回归测试** |
-| ChemDraw/RDKit、PyMOL/ChimeraX、CAD/GIS 工具 | 作为化学、分子渲染、装配与地图的领域语义后端 | **已规划，尚未实现** |
+| S | 15–35k Agent token；0–1 次可选视觉参考 | 单面板、主要为矢量、证据核对较少 |
+| M | 35–75k；0–2 次参考 | 多层图片、需要源文件检查和一次编辑器 QA |
+| L | 75–150k；1–4 次参考 | 密集或含科研图像，需要科学复核、编辑器往返和返工 |
+| S/M 或 M/L | 横跨相邻档位 | 由真实数据、源文件质量、关联面板和验收要求决定 |
 
-## 三个技能
+这些数字是规划区间，不是价格或用量保证。仓库内图谱由本地确定性 Python 生成，使用 **0 次模型/API 调用**。
 
-### `scientific-model-diagram-prompting`
+## 可编辑对象与科研符号
 
-- 读取模型代码、训练配置、论文、截图和旧图。
-- 核对流程、公式、投影方向、融合方式、维度与类别数。
-- 生成科研模型图设计提示词和视觉参考图。
-- 输出 Visio 原生重建所需的结构化规范。
+工作流用明确的矢量图元和语义 ID 组合组件，不依赖封闭图标库。
 
-### `scientific-model-diagram-visio`
+<details>
+<summary><strong>展开可绘制对象清单</strong></summary>
 
-- 使用 Microsoft Visio 完整重建或局部修改 VSDX。
-- 使用原生可编辑容器、3D 方块、运算符、标签和连接线。
-- 保持平行分支水平、等距，避免文字、形状和连接线重叠。
-- 保存后关闭并重新打开，测试方块、符号、标签和连接线是否可独立编辑。
-- 导出 PDF 与至少 300 DPI PNG，并检查裁切、字体和阴影。
+| 家族 | 可编辑组件 |
+|---|---|
+| 基础图元 | 矩形、椭圆、多边形、直线、折线、三次/圆弧路径、环形扇区、分组、渐变、直线/路径文字、上下标文本 |
+| 流程与关系 | 直线/正交箭头、粘合连接线、分支、合并、残差/跳跃与反馈路径、引线、括号、ROI 框、虚线围框、结点 |
+| 模型架构 | 3D 张量方块、编码器/解码器、投影/权重矩阵、偏置向量、注意力、归一化、卷积/池化、分类头、平行分支、多模态融合 |
+| 数学 | 独立的 `×`、`+`、`Σ`、拼接 `‖`、等号、公式、矩阵、维度、希腊字母、prime、上下标 |
+| 统计 | 坐标轴、刻度、网格、点、误差棒、置信区间、删失标记、拟合曲线、图例、显著性括号、p 值、均值/方差/偏度/峰度缩略图 |
+| 矩阵、图与环形 | 热图、混淆/相关矩阵、树状图、网络、系统发育分支、同心环、扇区、环形文字、色标 |
+| 图像/测量叠加 | 面板字母、通道名、比例尺、方向标记、ROI、分割边界、门、关键点、类别/置信度、峰与参考线 |
+| 实验装置与工程 | 容器、管道/通道、电路线、仪器块、边界/载荷箭头、尺寸线、剖面标记、爆炸图引线、BOM 编号 |
+| 化学与分子 | 化学键、环、立体楔形、反应箭头、条件/产率、残基/配体标签、虚线相互作用键 |
+| 地图 | 边界、点、剖面线、经纬网、指北针、比例尺、图例、断层、震中 |
 
-### `reconstruct-paper-figures`
+</details>
 
-- 编辑前盘点 PDF 的文本、矢量、图片、位置、图注和有效 PPI。
-- 重建实时文字与可编辑 SVG，把连续色调科研证据保留为最少、哈希绑定的图片原子。
-- 根据出版方源数据重建统计图；缺失分组或观测值时不臆造数据。
-- 只执行人工复核后的 OCR 清理计划，逐像素审计变更，并保留人工批准门槛。
-- 为 SVG 导入、Illustrator AI 重开和可编辑 PDF 重开生成机器可读的对象与哈希证据。
-- 适合时输出 draw.io/Visio 框架几何，但不混淆各编辑器的最终验收边界。
+## 绘图工具、后端与验证范围
 
-## 安装
+| 后端 | 当前能力 | 证据等级 |
+|---|---|---|
+| Microsoft Visio | 原生形状、分组和粘合连接线；VSDX 保存/重开；SVG/PDF/PNG 导出 | **原生运行时已验证**：Windows 桌面 Visio 16.0 |
+| Adobe Illustrator | SVG 导入；AI 保存/重开；可编辑 PDF 导出/重开；对象、字体和路径审计；受限路径文字修复 | **往返已验证**：Windows + Illustrator 29.8.2 |
+| SVG + 可编辑 PDF | 便携矢量/混合组装、实时文字、物理尺寸、哈希和结构审计 | **便携核心已实现**；仍需目标编辑器验收 |
+| draw.io / diagrams.net | 把受支持的 SVG 子集转成含稳定 ID、图层、文字、连接线、清单和失败关闭审计的 `mxGraphModel` | **结构适配器已实现**；真实导入/保存/重开待验证 |
+| Scientific Illustrator | 面向框架图的后端中立场景契约 | **集成契约已有文档**；未内置其运行时，也不宣称已验证 |
+| PowerPoint / WPS | 可通过兼容的外部流程用作中间框架编辑器 | **没有直接控制器**；本项目不把它作为发表验收后端 |
+| Inkscape / Figma / Affinity / CorelDRAW | 可以按各编辑器自身兼容性导入 SVG/PDF | **未自动化、未做回归测试** |
+| ChemDraw/RDKit / PyMOL/ChimeraX / CAD/GIS | 化学、分子渲染、装配和地图的候选语义后端 | **规划中，尚未实现** |
 
-推荐通过本仓库的版本化 Marketplace 安装 Codex Plugin：
+## 证据恢复与验收模型
 
-```powershell
-codex plugin marketplace add CeobeFA333/codex-scientific-diagram-visio --ref v1.3.2
-codex plugin add codex-scientific-diagram-visio@ceobefa-scientific-tools
-```
+论文图按面板记录恢复等级：
 
-安装后重启 Codex 或 ChatGPT 桌面端，并新建对话。课题组试用时，可直接分享[中英双语试用指南](TEAM-TRIAL.md)，或 Release 中的 `team-trial` 压缩包。
+| 等级 | 含义 |
+|---|---|
+| R0 | 恢复 PDF 原生文字/矢量几何 |
+| R1 | 用权威源数据重新生成 |
+| R2 | 近似数字化，并明确标记为近似结果 |
+| R3 | 把不可改写的科研像素保留为最小哈希绑定原子 |
 
-也可以使用 Agent Skills 方式安装：
+一张图可以混用多个等级。工作流把素材盘点、重建、编辑器往返、视觉 QA 和科学批准分开。缺失数据、标定、比例尺、字体或人工审核会继续显示为阻断项；机器审计不会自动授予“可发表”状态。
 
-通过开放 Agent Skills CLI 安装：
+## 环境要求与项目边界
 
-```bash
-npx skills add CeobeFA333/codex-scientific-diagram-visio
-```
+- Codex 支持 Agent Skills 或 Plugins。
+- 便携脚本需要 Python 3.8+；PDF 盘点/渲染还需 Skill 文档列出的可选依赖。
+- 原生 VSDX 构建和 GUI 验证需要 Windows + Microsoft Visio。
+- Adobe Illustrator 为可选项，仅在执行当前已验证的 AI/可编辑 PDF 往返流程时需要。
+- 生图为可选视觉参考，绝不能作为科学事实来源。
 
-也可以在 Codex 中分别从 GitHub 安装三个技能：
+打包插件是本地、纯 Skill 方案：项目维护者不运行服务、不创建账户、不收集遥测。它只会按任务读取用户纳入范围的材料，并在相应流程中控制 Visio 或 Illustrator。不要把保密论文、数据、代码、凭据或模型权重上传到公开 Issue。
+
+工程边界和发布历史见 [DESIGN.md](DESIGN.md)、[SECURITY.md](SECURITY.md)、[PRIVACY.md](PRIVACY.md)、[TERMS.md](TERMS.md) 与 [CHANGELOG.md](CHANGELOG.md)。
+
+## 仓库结构
 
 ```text
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/main/skills/scientific-model-diagram-prompting
-
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/main/skills/scientific-model-diagram-visio
-
-$skill-installer install https://github.com/CeobeFA333/codex-scientific-diagram-visio/tree/main/skills/reconstruct-paper-figures
+skills/                                      Skill 权威源码
+plugins/codex-scientific-diagram-visio/      与源码同步的 Marketplace 包
+examples/transformer-encoder-demo/           可复现的原生 Visio 示例
+examples/paper-figure-reconstruction-demo/   证据驱动的论文图重建演示
+examples/capability-atlas/                    8 领域、64 类可编辑 SVG 图谱
+scripts/validate_release.py                   发布与镜像一致性验证
+tests/                                        标准库回归测试
 ```
 
-## 适用场景
+## 版本与许可证
 
-- 根据 PyTorch/TensorFlow 代码重建论文模型图。
-- 检查论文描述和实际训练模型是否一致。
-- 将生图得到的参考图转换为原生可编辑 Visio。
-- 修改现有 VSDX 中某个阶段、维度、公式、字体或连接线。
-- 检查多页、嵌入位图、原生形状、分组和连接记录。
-- 将复杂论文图重建为可编辑 SVG、AI 和 PDF，同时保留必须的科学像素证据。
-- 根据出版方源数据重建统计图，或对已复核文字执行受限像素清理。
+当前最新标签版为 **v1.3.2**。`main` 分支还包含归入 `Unreleased` 的确定性能力图谱和新版主页文档；代码发布不会自动改变任何图片的科学审核或发表状态。
 
-## v1.3 支持范围
-
-- 模型证据核验和设计提示词可以跨平台使用。
-- 原生 VSDX 构建需要 Windows 和 Microsoft Visio。
-- PDF 盘点、SVG 构建和源数据准备可跨平台运行，但需要技能文档列出的 Python 依赖。
-- AI/可编辑 PDF 三阶段往返已经在 Windows + Adobe Illustrator 29.8.2 上验证；其他版本不在当前验证承诺内。
-
-## 安全边界
-
-技能可能要求 Agent 读取用户指定的论文、图片、源数据和代码，控制 Visio 或 Illustrator，并在指定工作目录中保存文件。打包技能本身不会把这些材料上传给项目维护者，也不需要密码或令牌。运行公开第三方 Skill 前仍应阅读其内容和脚本。
-
-许可证：MIT。
+源代码和项目原创材料使用 [MIT 许可证](LICENSE)。第三方演示图片继续遵循其示例目录中列出的许可证与署名要求。
