@@ -104,10 +104,10 @@ def audit_svg(svg_path, category):
 
 def gallery_html(records):
     cards = "\n".join(
-        f'''<article><h2>{record["title"]}</h2><p>{record["title_zh"]}</p><a href="assets/{record["svg"]}"><img src="assets/{record["svg"]}" alt="{record["title"]}"></a></article>'''
+        f'''<article><h2>{record["title"]}</h2><p>{record["title_zh"]}</p><a href="assets/{record["svg"]}" target="_blank" rel="noopener"><img src="assets/{record["svg"]}" alt="{record["title"]}"></a></article>'''
         for record in records
     )
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scientific Figure Capability Atlas</title><style>body{{margin:0;background:#eef1f4;color:#233042;font:16px/1.5 system-ui,sans-serif}}header{{padding:42px max(4vw,24px);background:#172536;color:white}}main{{display:grid;grid-template-columns:repeat(auto-fit,minmax(520px,1fr));gap:24px;padding:24px}}article{{background:white;padding:18px;box-shadow:0 6px 24px #1c2b3a18}}h2{{margin:0;font-size:20px}}p{{margin:2px 0 14px;color:#6b7788}}img{{display:block;width:100%;height:auto;border:1px solid #d9e0e8}}</style></head><body><header><h1>Scientific Figure Capability Atlas</h1><p>64 deterministic, editable SVG demonstrations generated through the reconstruction skill.</p></header><main>{cards}</main></body></html>'''
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Scientific Figure Capability Atlas</title><style>body{{margin:0;background:#eef1f4;color:#233042;font:16px/1.5 system-ui,sans-serif}}header{{padding:42px max(4vw,24px);background:#172536;color:white}}main{{display:grid;grid-template-columns:1fr;gap:30px;padding:30px;max-width:1500px;margin:auto}}article{{background:white;padding:22px;box-shadow:0 6px 24px #1c2b3a18}}h2{{margin:0;font-size:22px}}p{{margin:2px 0 14px;color:#6b7788}}img{{display:block;width:100%;height:auto;border:1px solid #d9e0e8;cursor:zoom-in}}</style></head><body><header><h1>Scientific Figure Capability Atlas</h1><p>64 deterministic, editable SVG demonstrations. Click a sheet to open its full-resolution SVG.</p></header><main>{cards}</main></body></html>'''
 
 
 def main():

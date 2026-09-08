@@ -562,6 +562,61 @@
           "font_weight": "normal"
         },
         {
+          "type": "text",
+          "id": "card.02.reaction.reagent",
+          "text": "R–B(OH)₂",
+          "x_px": 570,
+          "y_px": 226,
+          "font_size_pt": 6.2,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.yield",
+          "text": "87%",
+          "x_px": 570,
+          "y_px": 297,
+          "font_size_pt": 6.2,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.02.reaction.product.bond",
+          "x1_px": 659,
+          "y1_px": 288,
+          "x2_px": 694,
+          "y2_px": 312,
+          "stroke": "#8A66A3",
+          "stroke_width_pt": 1.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.product.group",
+          "text": "R",
+          "x_px": 704,
+          "y_px": 320,
+          "font_size_pt": 7,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.stereo",
+          "text": "wedge / atom map",
+          "x_px": 624,
+          "y_px": 341,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
           "type": "line",
           "id": "card.02.reaction.detail.rule",
           "x1_px": 448,

@@ -1649,11 +1649,11 @@
         },
         {
           "type": "rect",
-          "id": "card.04.medical_scan.frame",
-          "x_px": 1247,
-          "y_px": 204,
-          "width_px": 276,
-          "height_px": 142,
+          "id": "card.04.medical_scan.scan.frame",
+          "x_px": 1238,
+          "y_px": 203,
+          "width_px": 176,
+          "height_px": 144,
           "fill": "#17212B",
           "stroke": "#D9E0E8",
           "stroke_width_pt": 1
@@ -1661,67 +1661,144 @@
         {
           "type": "ellipse",
           "id": "card.04.medical_scan.scan.outer",
-          "cx_px": 1385.0,
-          "cy_px": 276.0,
-          "rx_px": 72,
-          "ry_px": 62,
-          "fill": "#606E7B",
+          "cx_px": 1323,
+          "cy_px": 272,
+          "rx_px": 58,
+          "ry_px": 55,
+          "fill": "#6E7C89",
           "stroke": "#FFFFFF",
           "stroke_width_pt": 1
         },
         {
           "type": "ellipse",
           "id": "card.04.medical_scan.scan.inner",
-          "cx_px": 1385.0,
-          "cy_px": 276.0,
-          "rx_px": 38,
-          "ry_px": 45,
+          "cx_px": 1323,
+          "cy_px": 272,
+          "rx_px": 31,
+          "ry_px": 39,
           "fill": "#253240",
           "stroke": "#AAB7C4",
           "stroke_width_pt": 1
         },
         {
           "type": "ellipse",
-          "id": "card.04.medical_scan.roi",
-          "cx_px": 1403.0,
-          "cy_px": 268.0,
-          "rx_px": 18,
-          "ry_px": 13,
+          "id": "card.04.medical_scan.scan.roi",
+          "cx_px": 1338,
+          "cy_px": 264,
+          "rx_px": 14,
+          "ry_px": 11,
           "fill": "none",
           "stroke": "#B64C5A",
           "stroke_width_pt": 2
         },
         {
-          "type": "line",
-          "id": "card.04.medical_scan.callout.shaft",
-          "x1_px": 1421.0,
-          "y1_px": 258.0,
-          "x2_px": 1513,
-          "y2_px": 218,
+          "type": "text",
+          "id": "card.04.medical_scan.scan.orientation",
+          "text": "A",
+          "x_px": 1323,
+          "y_px": 213,
+          "font_size_pt": 6,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.medical_scan.scan.slice",
+          "text": "T2 · 42/96",
+          "x_px": 1246,
+          "y_px": 341,
+          "font_size_pt": 5.8,
+          "fill": "#FFFFFF",
+          "anchor": "start",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.medical_scan.zoom.frame",
+          "x_px": 1437,
+          "y_px": 216,
+          "width_px": 82,
+          "height_px": 82,
+          "fill": "#253240",
           "stroke": "#B64C5A",
-          "stroke_width_pt": 1.4,
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "ellipse",
+          "id": "card.04.medical_scan.zoom.lesion",
+          "cx_px": 1478,
+          "cy_px": 255,
+          "rx_px": 24,
+          "ry_px": 18,
+          "fill": "#6E7C89",
+          "stroke": "#DCE5ED",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "ellipse",
+          "id": "card.04.medical_scan.zoom.roi",
+          "cx_px": 1482,
+          "cy_px": 253,
+          "rx_px": 14,
+          "ry_px": 10,
+          "fill": "none",
+          "stroke": "#B64C5A",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "text",
+          "id": "card.04.medical_scan.zoom.label",
+          "text": "ROI ×4",
+          "x_px": 1478,
+          "y_px": 312,
+          "font_size_pt": 6.2,
+          "fill": "#B64C5A",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.04.medical_scan.scale",
+          "x1_px": 1458,
+          "y1_px": 329,
+          "x2_px": 1504,
+          "y2_px": 329,
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 3,
           "linecap": "round"
         },
         {
-          "type": "polygon",
-          "id": "card.04.medical_scan.callout.head",
+          "type": "text",
+          "id": "card.04.medical_scan.scale.label",
+          "text": "20 mm",
+          "x_px": 1481,
+          "y_px": 342,
+          "font_size_pt": 5.6,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "polyline",
+          "id": "card.04.medical_scan.roi.callout",
           "points_px": [
             [
-              1513,
-              218
+              1352,
+              255
             ],
             [
-              1507.8392590138762,
-              225.37338134604082
+              1405,
+              233
             ],
             [
-              1504.087896180881,
-              216.74524683015167
+              1437,
+              233
             ]
           ],
-          "fill": "#B64C5A",
           "stroke": "#B64C5A",
-          "stroke_width_pt": 1.4
+          "stroke_width_pt": 1.4,
+          "fill": "none"
         },
         {
           "type": "line",

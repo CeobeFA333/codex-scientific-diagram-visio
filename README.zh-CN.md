@@ -50,15 +50,39 @@ VSDX + PDF + 300 DPI PNG
 
 卡片中的消耗档位为 `S`、`M`、`L`，或可条件升级的 `S/M`、`M/L`；对应真实重建任务约 **1.5 万—15 万 Agent token** 和 **0—4 次可选视觉参考生图**。它只是依据源图质量、科学校验、编辑器往返和返工量给出的规划区间，不是价格或额度保证。生成这套图谱本身只运行确定性本地 Python，消耗为 **0 次模型/API 调用**。
 
-| AI / 计算机视觉 | 统计学 / 数据科学 |
-|---|---|
-| [![AI 与计算机视觉图型](examples/capability-atlas/assets/ai-computer-vision.svg)](examples/capability-atlas/assets/ai-computer-vision.svg) | [![统计学与数据科学图型](examples/capability-atlas/assets/statistics-data-science.svg)](examples/capability-atlas/assets/statistics-data-science.svg) |
-| 临床 / 生物医学 | 细胞 / 分子 / 组学 |
-| [![临床与生物医学图型](examples/capability-atlas/assets/clinical-biomedical.svg)](examples/capability-atlas/assets/clinical-biomedical.svg) | [![细胞、分子与组学图型](examples/capability-atlas/assets/cell-molecular-omics.svg)](examples/capability-atlas/assets/cell-molecular-omics.svg) |
-| 化学 / 材料 / 电化学 | 工程 / 物理 |
-| [![化学、材料与电化学图型](examples/capability-atlas/assets/chemistry-materials.svg)](examples/capability-atlas/assets/chemistry-materials.svg) | [![工程与物理图型](examples/capability-atlas/assets/engineering-physics.svg)](examples/capability-atlas/assets/engineering-physics.svg) |
-| 实验系统 / 微流控 | 地球科学 / 地理空间 |
-| [![实验系统与微流控图型](examples/capability-atlas/assets/experimental-systems.svg)](examples/capability-atlas/assets/experimental-systems.svg) | [![地球科学与地理空间图型](examples/capability-atlas/assets/earth-geospatial.svg)](examples/capability-atlas/assets/earth-geospatial.svg) |
+下面改为单列全宽展示。点击任意图片会直接打开原始 SVG，可继续使用浏览器缩放查看单个路径、参数和消耗标签，不会出现位图放大的模糊问题。
+
+### AI / 计算机视觉
+
+[![AI 与计算机视觉图型](examples/capability-atlas/assets/ai-computer-vision.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/ai-computer-vision.svg)
+
+### 统计学 / 数据科学
+
+[![统计学与数据科学图型](examples/capability-atlas/assets/statistics-data-science.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/statistics-data-science.svg)
+
+### 临床 / 生物医学
+
+[![临床与生物医学图型](examples/capability-atlas/assets/clinical-biomedical.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/clinical-biomedical.svg)
+
+### 细胞 / 分子 / 组学
+
+[![细胞、分子与组学图型](examples/capability-atlas/assets/cell-molecular-omics.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/cell-molecular-omics.svg)
+
+### 化学 / 材料 / 电化学
+
+[![化学、材料与电化学图型](examples/capability-atlas/assets/chemistry-materials.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/chemistry-materials.svg)
+
+### 工程 / 物理
+
+[![工程与物理图型](examples/capability-atlas/assets/engineering-physics.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/engineering-physics.svg)
+
+### 实验系统 / 微流控
+
+[![实验系统与微流控图型](examples/capability-atlas/assets/experimental-systems.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/experimental-systems.svg)
+
+### 地球科学 / 地理空间
+
+[![地球科学与地理空间图型](examples/capability-atlas/assets/earth-geospatial.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/earth-geospatial.svg)
 
 [查看分类画廊、配方与生成器](examples/capability-atlas/) · [检查 64 类清单和 SHA-256 证据](examples/capability-atlas/capability-manifest.json)
 

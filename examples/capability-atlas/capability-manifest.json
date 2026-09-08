@@ -136,24 +136,24 @@
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 88,
+        "live_text_nodes": 99,
         "raster_nodes": 0,
         "minimum_objects_per_card": 18,
-        "maximum_objects_per_card": 35,
+        "maximum_objects_per_card": 55,
         "card_object_counts": {
           "card.01.pipeline": 27,
           "card.02.encoder": 27,
           "card.03.cuboids": 35,
           "card.04.residual": 29,
-          "card.05.attention": 27,
-          "card.06.fusion": 27,
+          "card.05.attention": 55,
+          "card.06.fusion": 44,
           "card.07.detection": 23,
           "card.08.segmentation": 18
         },
         "missing_kinds": []
       },
-      "svg_sha256": "05ac7accd8526d61868d0728ef62a209f4af569de3ce8b7314b5b50af6acaccf",
-      "recipe_sha256": "9e60ca2f776ef2a30d4a3d60b371d8606b8b76fb1942940ddc44b4fdf59992cf"
+      "svg_sha256": "582289fe4056355aa391d36c665b4121a6f168002b0eeb9efd237dad2ac88821",
+      "recipe_sha256": "0b925dcee891103f79e9e273e7c142e3c7e13cf986baddb8a644f6c6a5a440a1"
     },
     {
       "id": "statistics-data-science",
@@ -372,7 +372,7 @@
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 81,
+        "live_text_nodes": 85,
         "raster_nodes": 0,
         "minimum_objects_per_card": 18,
         "maximum_objects_per_card": 57,
@@ -380,7 +380,7 @@
           "card.01.flow_chart": 27,
           "card.02.forest": 45,
           "card.03.cytometry": 57,
-          "card.04.medical_scan": 19,
+          "card.04.medical_scan": 26,
           "card.05.histology": 23,
           "card.06.roi": 18,
           "card.07.risk_table": 27,
@@ -388,8 +388,8 @@
         },
         "missing_kinds": []
       },
-      "svg_sha256": "0a141150cb6cf4f1602ff215f6e74e5c331e8baccbfcfaed42629c8d68d7c5dd",
-      "recipe_sha256": "798c39fc8d1bbcae206c6a277d06502c70192eab6c177776e8c14fafd12ad09b"
+      "svg_sha256": "bdc7312059c061cf9cfdda5261222fed2aed87d1579b671de144c42e2a19eab6",
+      "recipe_sha256": "c5a6fc8814f2b219214c25401e2be4e9f7a6088b66b6a9a55e85a793d1ff1904"
     },
     {
       "id": "cell-molecular-omics",
@@ -608,13 +608,13 @@
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 87,
+        "live_text_nodes": 91,
         "raster_nodes": 0,
         "minimum_objects_per_card": 19,
         "maximum_objects_per_card": 63,
         "card_object_counts": {
           "card.01.molecule": 20,
-          "card.02.reaction": 26,
+          "card.02.reaction": 31,
           "card.03.spectrum": 32,
           "card.04.chromatography": 32,
           "card.05.thermal": 33,
@@ -624,8 +624,8 @@
         },
         "missing_kinds": []
       },
-      "svg_sha256": "6ba11e417dd131322e20e2538ad87f560d8bed6ad8342a76f69a574e14852543",
-      "recipe_sha256": "ffa507ac4e68b7a03483ca90f04dbdc84958a2e96f1915a55dd420556f6a054d"
+      "svg_sha256": "eb374cb7ec330a824e1feb7351e1a8795f13b4901efa0aff750af2812c9f4277",
+      "recipe_sha256": "7a51fe9b2f4c8b6f6d19e2ea9607f6941ffd872b3e58932b07118d64befb6f8b"
     },
     {
       "id": "engineering-physics",
@@ -844,12 +844,12 @@
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 76,
+        "live_text_nodes": 79,
         "raster_nodes": 0,
         "minimum_objects_per_card": 17,
-        "maximum_objects_per_card": 27,
+        "maximum_objects_per_card": 35,
         "card_object_counts": {
-          "card.01.apparatus": 23,
+          "card.01.apparatus": 35,
           "card.02.microfluidic": 20,
           "card.03.layers": 17,
           "card.04.sensor": 27,
@@ -860,8 +860,8 @@
         },
         "missing_kinds": []
       },
-      "svg_sha256": "2b3835b8f98d9c2bf91da4c43ff3b921dfb7367d8381dc55c4d116a26978fd56",
-      "recipe_sha256": "23ecf2c912bbf4a659bd0dc7d2bfa5c799e71e9bbe4964dbc1c552267726cc59"
+      "svg_sha256": "af1125e36b6c95e0f0766b3afb17b4453d3dbdc334c96f87bdd66a6244d39e3a",
+      "recipe_sha256": "c8fa7c1fd7ab5f373229142e83fa0754ab5be0717b02edacfcff4893180cab96"
     },
     {
       "id": "earth-geospatial",

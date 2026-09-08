@@ -48,15 +48,39 @@ The following eight sheets were generated locally through the repository's actua
 
 Consumption labels use `S`, `M`, `L`, or conditional `S/M` and `M/L` tiers. They estimate **15–150k agent tokens** and **0–4 optional generated visual references** for a real reconstruction, depending on source quality, scientific review, editor roundtrips, and rework. They are planning ranges, not prices or usage guarantees. Generating this atlas itself uses deterministic local Python and **0 model/API calls**.
 
-| AI / computer vision | Statistics / data science |
-|---|---|
-| [![AI and computer-vision figure families](examples/capability-atlas/assets/ai-computer-vision.svg)](examples/capability-atlas/assets/ai-computer-vision.svg) | [![Statistics and data-science figure families](examples/capability-atlas/assets/statistics-data-science.svg)](examples/capability-atlas/assets/statistics-data-science.svg) |
-| Clinical / biomedical | Cell / molecular / omics |
-| [![Clinical and biomedical figure families](examples/capability-atlas/assets/clinical-biomedical.svg)](examples/capability-atlas/assets/clinical-biomedical.svg) | [![Cell, molecular, and omics figure families](examples/capability-atlas/assets/cell-molecular-omics.svg)](examples/capability-atlas/assets/cell-molecular-omics.svg) |
-| Chemistry / materials / electrochemistry | Engineering / physics |
-| [![Chemistry and materials figure families](examples/capability-atlas/assets/chemistry-materials.svg)](examples/capability-atlas/assets/chemistry-materials.svg) | [![Engineering and physics figure families](examples/capability-atlas/assets/engineering-physics.svg)](examples/capability-atlas/assets/engineering-physics.svg) |
-| Experimental systems / microfluidics | Earth science / geospatial |
-| [![Experimental-system and microfluidic figure families](examples/capability-atlas/assets/experimental-systems.svg)](examples/capability-atlas/assets/experimental-systems.svg) | [![Earth-science and geospatial figure families](examples/capability-atlas/assets/earth-geospatial.svg)](examples/capability-atlas/assets/earth-geospatial.svg) |
+Each sheet is shown at full README width. Click any image to open the original SVG, then use browser zoom to inspect individual paths and labels without raster blur.
+
+### AI / computer vision
+
+[![AI and computer-vision figure families](examples/capability-atlas/assets/ai-computer-vision.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/ai-computer-vision.svg)
+
+### Statistics / data science
+
+[![Statistics and data-science figure families](examples/capability-atlas/assets/statistics-data-science.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/statistics-data-science.svg)
+
+### Clinical / biomedical
+
+[![Clinical and biomedical figure families](examples/capability-atlas/assets/clinical-biomedical.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/clinical-biomedical.svg)
+
+### Cell / molecular / omics
+
+[![Cell, molecular, and omics figure families](examples/capability-atlas/assets/cell-molecular-omics.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/cell-molecular-omics.svg)
+
+### Chemistry / materials / electrochemistry
+
+[![Chemistry and materials figure families](examples/capability-atlas/assets/chemistry-materials.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/chemistry-materials.svg)
+
+### Engineering / physics
+
+[![Engineering and physics figure families](examples/capability-atlas/assets/engineering-physics.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/engineering-physics.svg)
+
+### Experimental systems / microfluidics
+
+[![Experimental-system and microfluidic figure families](examples/capability-atlas/assets/experimental-systems.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/experimental-systems.svg)
+
+### Earth science / geospatial
+
+[![Earth-science and geospatial figure families](examples/capability-atlas/assets/earth-geospatial.svg)](https://raw.githubusercontent.com/CeobeFA333/codex-scientific-diagram-visio/main/examples/capability-atlas/assets/earth-geospatial.svg)
 
 [Open the classified gallery and generator](examples/capability-atlas/) · [Inspect the 64-family manifest and SHA-256 evidence](examples/capability-atlas/capability-manifest.json)
 

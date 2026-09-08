@@ -118,10 +118,10 @@
         {
           "type": "rect",
           "id": "card.01.apparatus.source",
-          "x_px": 80,
-          "y_px": 248,
-          "width_px": 48,
-          "height_px": 48,
+          "x_px": 63,
+          "y_px": 250,
+          "width_px": 40,
+          "height_px": 40,
           "fill": "#FFFFFF",
           "stroke": "#287E8E",
           "stroke_width_pt": 1.5
@@ -129,10 +129,10 @@
         {
           "type": "ellipse",
           "id": "card.01.apparatus.sample",
-          "cx_px": 201,
-          "cy_px": 272,
-          "rx_px": 24,
-          "ry_px": 24,
+          "cx_px": 239,
+          "cy_px": 271,
+          "rx_px": 20,
+          "ry_px": 20,
           "fill": "#F3D7A4",
           "stroke": "#287E8E",
           "stroke_width_pt": 1.5
@@ -140,10 +140,10 @@
         {
           "type": "rect",
           "id": "card.01.apparatus.detector",
-          "x_px": 277,
+          "x_px": 323,
           "y_px": 244,
-          "width_px": 56,
-          "height_px": 56,
+          "width_px": 48,
+          "height_px": 54,
           "fill": "#FFFFFF",
           "stroke": "#287E8E",
           "stroke_width_pt": 1.5
@@ -151,10 +151,10 @@
         {
           "type": "line",
           "id": "card.01.apparatus.beam.a.shaft",
-          "x1_px": 128,
-          "y1_px": 272,
-          "x2_px": 172,
-          "y2_px": 272,
+          "x1_px": 103,
+          "y1_px": 270,
+          "x2_px": 132,
+          "y2_px": 270,
           "stroke": "#287E8E",
           "stroke_width_pt": 2,
           "linecap": "round"
@@ -164,16 +164,16 @@
           "id": "card.01.apparatus.beam.a.head",
           "points_px": [
             [
-              172,
-              272
+              132,
+              270
             ],
             [
-              164.32727930146444,
-              276.70418506037595
+              124.32727930146444,
+              274.70418506037595
             ],
             [
-              164.32727930146444,
-              267.29581493962405
+              124.32727930146444,
+              265.29581493962405
             ]
           ],
           "fill": "#287E8E",
@@ -181,12 +181,23 @@
           "stroke_width_pt": 2
         },
         {
+          "type": "ellipse",
+          "id": "card.01.apparatus.lens.a",
+          "cx_px": 143,
+          "cy_px": 270,
+          "rx_px": 7,
+          "ry_px": 30,
+          "fill": "#DCEAF3",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.3
+        },
+        {
           "type": "line",
           "id": "card.01.apparatus.beam.b.shaft",
-          "x1_px": 225,
-          "y1_px": 272,
-          "x2_px": 274,
-          "y2_px": 272,
+          "x1_px": 150,
+          "y1_px": 270,
+          "x2_px": 182,
+          "y2_px": 270,
           "stroke": "#287E8E",
           "stroke_width_pt": 2,
           "linecap": "round"
@@ -196,16 +207,16 @@
           "id": "card.01.apparatus.beam.b.head",
           "points_px": [
             [
-              274,
-              272
+              182,
+              270
             ],
             [
-              266.32727930146444,
-              276.70418506037595
+              174.32727930146444,
+              274.70418506037595
             ],
             [
-              266.32727930146444,
-              267.29581493962405
+              174.32727930146444,
+              265.29581493962405
             ]
           ],
           "fill": "#287E8E",
@@ -213,12 +224,148 @@
           "stroke_width_pt": 2
         },
         {
+          "type": "polygon",
+          "id": "card.01.apparatus.mirror",
+          "points_px": [
+            [
+              187,
+              248
+            ],
+            [
+              198,
+              238
+            ],
+            [
+              218,
+              259
+            ],
+            [
+              207,
+              270
+            ]
+          ],
+          "fill": "#E9EEF2",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.3
+        },
+        {
+          "type": "polyline",
+          "id": "card.01.apparatus.beam.fold",
+          "points_px": [
+            [
+              200,
+              254
+            ],
+            [
+              200,
+              218
+            ],
+            [
+              239,
+              218
+            ],
+            [
+              239,
+              248
+            ]
+          ],
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2,
+          "fill": "none"
+        },
+        {
+          "type": "line",
+          "id": "card.01.apparatus.beam.sample.shaft",
+          "x1_px": 239,
+          "y1_px": 248,
+          "x2_px": 239,
+          "y2_px": 251,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.apparatus.beam.sample.head",
+          "points_px": [
+            [
+              239,
+              251
+            ],
+            [
+              234.29581493962408,
+              243.32727930146444
+            ],
+            [
+              243.70418506037592,
+              243.32727930146444
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "line",
+          "id": "card.01.apparatus.beam.detect.shaft",
+          "x1_px": 259,
+          "y1_px": 271,
+          "x2_px": 320,
+          "y2_px": 271,
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.01.apparatus.beam.detect.head",
+          "points_px": [
+            [
+              320,
+              271
+            ],
+            [
+              312.32727930146444,
+              275.70418506037595
+            ],
+            [
+              312.32727930146444,
+              266.29581493962405
+            ]
+          ],
+          "fill": "#287E8E",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 2
+        },
+        {
+          "type": "ellipse",
+          "id": "card.01.apparatus.filter",
+          "cx_px": 287,
+          "cy_px": 271,
+          "rx_px": 6,
+          "ry_px": 27,
+          "fill": "#E7D9F1",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1.2
+        },
+        {
           "type": "text",
           "id": "card.01.apparatus.source.label",
-          "text": "SOURCE",
-          "x_px": 104,
+          "text": "LASER",
+          "x_px": 83,
+          "y_px": 307,
+          "font_size_pt": 6.2,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.01.apparatus.lens.label",
+          "text": "L1",
+          "x_px": 143,
           "y_px": 312,
-          "font_size_pt": 6.5,
+          "font_size_pt": 5.8,
           "fill": "#6B7788",
           "anchor": "middle",
           "font_weight": "normal"
@@ -227,9 +374,20 @@
           "type": "text",
           "id": "card.01.apparatus.sample.label",
           "text": "SAMPLE",
-          "x_px": 201,
+          "x_px": 239,
           "y_px": 312,
-          "font_size_pt": 6.5,
+          "font_size_pt": 6.2,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "card.01.apparatus.filter.label",
+          "text": "F1",
+          "x_px": 287,
+          "y_px": 312,
+          "font_size_pt": 5.8,
           "fill": "#6B7788",
           "anchor": "middle",
           "font_weight": "normal"
@@ -237,13 +395,35 @@
         {
           "type": "text",
           "id": "card.01.apparatus.detector.label",
-          "text": "DETECT",
-          "x_px": 305,
+          "text": "PMT",
+          "x_px": 347,
           "y_px": 312,
-          "font_size_pt": 6.5,
+          "font_size_pt": 6.2,
           "fill": "#6B7788",
           "anchor": "middle",
           "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.apparatus.daq",
+          "x_px": 309,
+          "y_px": 326,
+          "width_px": 62,
+          "height_px": 22,
+          "fill": "#F4F7FA",
+          "stroke": "#287E8E",
+          "stroke_width_pt": 1
+        },
+        {
+          "type": "text",
+          "id": "card.01.apparatus.daq.label",
+          "text": "DAQ · 16 bit",
+          "x_px": 340,
+          "y_px": 341,
+          "font_size_pt": 5.8,
+          "fill": "#287E8E",
+          "anchor": "middle",
+          "font_weight": "bold"
         },
         {
           "type": "line",

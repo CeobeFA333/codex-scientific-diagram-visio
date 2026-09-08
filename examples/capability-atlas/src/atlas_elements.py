@@ -201,6 +201,60 @@ def motif_pipeline(prefix, x, y, w, h, accent, variant):
     return items
 
 
+def motif_attention(prefix, x, y, w, h, accent):
+    """Multi-branch scaled-dot-product attention instead of a linear icon."""
+
+    items = []
+    for idx, label in enumerate(("Q", "K", "V")):
+        by = y + 12 + idx * 47
+        items.append(rect(prefix, f"input.{label}", x+4, by, 36, 28, "#FFFFFF", accent, 1.3))
+        items.append(text(prefix, f"input.{label}.label", label, x+22, by+19, 7, accent, "middle", "bold"))
+    items += arrow(prefix, "q.to.score", x+40, y+26, x+88, y+52, accent)
+    items += arrow(prefix, "k.to.score", x+40, y+73, x+88, y+62, accent)
+    items.append(text(prefix, "transpose", "Kᵀ", x+69, y+78, 6.2, MUTED, "middle"))
+    for row in range(4):
+        for col in range(4):
+            fill = accent if (row+col) % 3 == 0 else "#DCE8F5"
+            items.append(rect(prefix, f"score.{row}.{col}", x+91+col*12, y+40+row*12, 11, 11, fill, "#FFFFFF", .4))
+    items.append(text(prefix, "score.label", "QKᵀ / √d", x+115, y+101, 6.2, MUTED, "middle"))
+    items += arrow(prefix, "score.to.softmax", x+141, y+64, x+162, y+64, accent)
+    items.append(rect(prefix, "softmax", x+166, y+39, 54, 50, "#FFFFFF", accent, 1.4))
+    items.append(text(prefix, "softmax.label", "softmax", x+193, y+68, 6.5, accent, "middle", "bold"))
+    items += arrow(prefix, "v.to.merge", x+40, y+120, x+234, y+98, accent)
+    items += arrow(prefix, "softmax.to.merge", x+220, y+64, x+234, y+81, accent)
+    items.append(ellipse(prefix, "weighted.sum", x+242, y+89, 10, 10, "#FFFFFF", accent, 1.5))
+    items.append(text(prefix, "weighted.sum.label", "Σ", x+242, y+94, 7, accent, "middle", "bold"))
+    items += arrow(prefix, "merge.to.output", x+252, y+89, x+w-48, y+89, accent)
+    items.append(rect(prefix, "output", x+w-44, y+67, 40, 44, accent, accent, 1.2))
+    items.append(text(prefix, "output.label", "Z", x+w-24, y+94, 7, "#FFFFFF", "middle", "bold"))
+    return items
+
+
+def motif_fusion(prefix, x, y, w, h, accent):
+    """Parallel multimodal encoders, gated merge, and prediction head."""
+
+    items = []
+    rows = (("IMG", y+24, "768"), ("TXT", y+101, "512"))
+    for idx, (label, cy, dim) in enumerate(rows):
+        items.append(rect(prefix, f"input.{idx}", x+2, cy-18, 42, 36, "#FFFFFF", accent, 1.3))
+        items.append(text(prefix, f"input.{idx}.label", label, x+23, cy+4, 6.5, accent, "middle", "bold"))
+        items += arrow(prefix, f"input.{idx}.flow", x+44, cy, x+66, cy, accent)
+        items.append(rect(prefix, f"encoder.{idx}", x+70, cy-22, 62, 44, "#E7EEF7", accent, 1.3))
+        items.append(text(prefix, f"encoder.{idx}.label", "Encoder", x+101, cy-2, 6.3, accent, "middle", "bold"))
+        items.append(text(prefix, f"encoder.{idx}.dim", dim, x+101, cy+12, 5.5, MUTED, "middle"))
+        items += arrow(prefix, f"encoder.{idx}.gate", x+132, cy, x+163, cy, accent)
+        items.append(ellipse(prefix, f"gate.{idx}", x+174, cy, 11, 11, "#FFFFFF", accent, 1.4))
+        items.append(text(prefix, f"gate.{idx}.label", "α" if idx == 0 else "β", x+174, cy+4, 6.5, accent, "middle", "bold"))
+        items.append(polyline(prefix, f"merge.path.{idx}", [[x+185,cy],[x+204,cy],[x+204,y+63+idx*13],[x+218,y+70]], accent, 1.4))
+    items.append(ellipse(prefix, "concat", x+229, y+70, 13, 13, accent, accent, 1.3))
+    items.append(text(prefix, "concat.label", "‖", x+229, y+75, 8, "#FFFFFF", "middle", "bold"))
+    items += arrow(prefix, "concat.to.head", x+242, y+70, x+262, y+70, accent)
+    items.append(rect(prefix, "head", x+266, y+44, 51, 52, "#FFFFFF", accent, 1.4))
+    items.append(text(prefix, "head.label", "Head", x+291, y+67, 6.5, accent, "middle", "bold"))
+    items.append(text(prefix, "head.output", "ŷ", x+291, y+84, 7, accent, "middle"))
+    return items
+
+
 def motif_cuboids(prefix, x, y, w, h, accent):
     items = []
     for idx, scale in enumerate((1.0, .82, .64, .46)):
@@ -303,6 +357,23 @@ def motif_network(prefix, x, y, w, h, accent, variant):
 
 
 def motif_medical(prefix, x, y, w, h, accent, variant):
+    if variant == "medical_scan":
+        items = [rect(prefix,"scan.frame",x+16,y+7,176,h-16,"#17212B",GRID,1)]
+        items += [
+            ellipse(prefix,"scan.outer",x+101,y+76,58,55,"#6E7C89","#FFFFFF",1),
+            ellipse(prefix,"scan.inner",x+101,y+76,31,39,"#253240","#AAB7C4",1),
+            ellipse(prefix,"scan.roi",x+116,y+68,14,11,"none",accent,2),
+            text(prefix,"scan.orientation","A",x+101,y+17,6,"#FFFFFF","middle","bold"),
+            text(prefix,"scan.slice","T2 · 42/96",x+24,y+145,5.8,"#FFFFFF"),
+            rect(prefix,"zoom.frame",x+215,y+20,82,82,"#253240",accent,1.5),
+            ellipse(prefix,"zoom.lesion",x+256,y+59,24,18,"#6E7C89","#DCE5ED",1),
+            ellipse(prefix,"zoom.roi",x+260,y+57,14,10,"none",accent,2),
+            text(prefix,"zoom.label","ROI ×4",x+256,y+116,6.2,accent,"middle","bold"),
+            line(prefix,"scale",x+236,y+133,x+282,y+133,"#FFFFFF",3),
+            text(prefix,"scale.label","20 mm",x+259,y+146,5.6,"#FFFFFF","middle"),
+        ]
+        items.append(polyline(prefix,"roi.callout",[[x+130,y+59],[x+183,y+37],[x+215,y+37]],accent,1.4))
+        return items
     items = [rect(prefix,"frame",x+25,y+8,w-50,h-18,"#17212B",GRID,1)]
     if variant in {"blot","gel"}:
         for lane in range(6):
@@ -336,6 +407,13 @@ def motif_molecule(prefix, x, y, w, h, accent, reaction=False):
     if reaction:
         items += arrow(prefix,"reaction",x+115,y+72,x+137,y+72,INK,1.5)
         items.append(text(prefix,"conditions","cat. · 80 °C",x+126,y+51,6.5,MUTED,"middle"))
+        items += [
+            text(prefix,"reagent","R–B(OH)₂",x+126,y+30,6.2,accent,"middle","bold"),
+            text(prefix,"yield","87%",x+126,y+101,6.2,"#6B8F44","middle","bold"),
+            line(prefix,"product.bond",x+215,y+92,x+250,y+116,accent,1.8),
+            text(prefix,"product.group","R",x+260,y+124,7,accent,"middle","bold"),
+            text(prefix,"stereo","wedge / atom map",x+180,y+145,5.8,MUTED,"middle"),
+        ]
     else:
         items += [line(prefix,"bond.a",x+w/2+35,y+h/2+20,x+w/2+75,y+h/2+48,accent,2),text(prefix,"group","OH",x+w/2+86,y+h/2+57,8,"#D95F59","middle","bold")]
     return items
@@ -377,10 +455,24 @@ def motif_apparatus(prefix, x, y, w, h, accent, variant):
             colors=["#DDE8F5",accent,"#F3D7A4","#DCE7D0"]
             for idx,color in enumerate(colors): items.append(polygon(prefix,f"layer.{idx}",[[x+55+idx*7,y+35+idx*25],[x+210+idx*7,y+35+idx*25],[x+250+idx*7,y+52+idx*25],[x+95+idx*7,y+52+idx*25]],color,accent,1.1))
         return items
-    items=[rect(prefix,"source",x+25,y+52,48,48,"#FFFFFF",accent,1.5),ellipse(prefix,"sample",x+146,y+76,24,24,"#F3D7A4",accent,1.5),rect(prefix,"detector",x+222,y+48,56,56,"#FFFFFF",accent,1.5)]
-    items += arrow(prefix,"beam.a",x+73,y+76,x+117,y+76,accent,2)
-    items += arrow(prefix,"beam.b",x+170,y+76,x+219,y+76,accent,2)
-    items += [text(prefix,"source.label","SOURCE",x+49,y+116,6.5,MUTED,"middle"),text(prefix,"sample.label","SAMPLE",x+146,y+116,6.5,MUTED,"middle"),text(prefix,"detector.label","DETECT",x+250,y+116,6.5,MUTED,"middle")]
+    items=[rect(prefix,"source",x+8,y+54,40,40,"#FFFFFF",accent,1.5),ellipse(prefix,"sample",x+184,y+75,20,20,"#F3D7A4",accent,1.5),rect(prefix,"detector",x+268,y+48,48,54,"#FFFFFF",accent,1.5)]
+    items += arrow(prefix,"beam.a",x+48,y+74,x+77,y+74,accent,2)
+    items.append(ellipse(prefix,"lens.a",x+88,y+74,7,30,"#DCEAF3",accent,1.3))
+    items += arrow(prefix,"beam.b",x+95,y+74,x+127,y+74,accent,2)
+    items.append(polygon(prefix,"mirror",[[x+132,y+52],[x+143,y+42],[x+163,y+63],[x+152,y+74]],"#E9EEF2",accent,1.3))
+    items.append(polyline(prefix,"beam.fold",[[x+145,y+58],[x+145,y+22],[x+184,y+22],[x+184,y+52]],accent,2))
+    items += arrow(prefix,"beam.sample",x+184,y+52,x+184,y+55,accent,2)
+    items += arrow(prefix,"beam.detect",x+204,y+75,x+265,y+75,accent,2)
+    items.append(ellipse(prefix,"filter",x+232,y+75,6,27,"#E7D9F1",accent,1.2))
+    items += [
+        text(prefix,"source.label","LASER",x+28,y+111,6.2,MUTED,"middle"),
+        text(prefix,"lens.label","L1",x+88,y+116,5.8,MUTED,"middle"),
+        text(prefix,"sample.label","SAMPLE",x+184,y+116,6.2,MUTED,"middle"),
+        text(prefix,"filter.label","F1",x+232,y+116,5.8,MUTED,"middle"),
+        text(prefix,"detector.label","PMT",x+292,y+116,6.2,MUTED,"middle"),
+        rect(prefix,"daq",x+254,y+130,62,22,"#F4F7FA",accent,1),
+        text(prefix,"daq.label","DAQ · 16 bit",x+285,y+145,5.8,accent,"middle","bold"),
+    ]
     return items
 
 
@@ -418,7 +510,9 @@ def detail_strip(prefix, kind, x, y, w, accent):
 
 
 def motif_for(kind, prefix, x, y, w, h, accent):
-    if kind in {"pipeline","encoder","residual","attention","fusion","flow_chart","control","sensor","process","timeline","risk_table"}:
+    if kind == "attention": return motif_attention(prefix,x,y,w,h,accent)
+    if kind == "fusion": return motif_fusion(prefix,x,y,w,h,accent)
+    if kind in {"pipeline","encoder","residual","flow_chart","control","sensor","process","timeline","risk_table"}:
         return motif_pipeline(prefix,x,y,w,h,accent,kind)
     if kind=="cuboids": return motif_cuboids(prefix,x,y,w,h,accent)
     if kind in {"detection","segmentation","roi","histology","multiplex","device_panel","composite"}: return motif_detection(prefix,x,y,w,h,accent,kind in {"segmentation","roi","multiplex"})

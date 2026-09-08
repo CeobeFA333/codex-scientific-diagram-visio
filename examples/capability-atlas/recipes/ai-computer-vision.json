@@ -1689,128 +1689,358 @@
         },
         {
           "type": "rect",
-          "id": "card.05.attention.block.0",
-          "x_px": 55.0,
-          "y_px": 609,
-          "width_px": 58,
-          "height_px": 58,
+          "id": "card.05.attention.input.Q",
+          "x_px": 59,
+          "y_px": 587,
+          "width_px": 36,
+          "height_px": 28,
           "fill": "#FFFFFF",
           "stroke": "#315C9D",
-          "stroke_width_pt": 1.2
+          "stroke_width_pt": 1.3
         },
         {
           "type": "text",
-          "id": "card.05.attention.label.0",
+          "id": "card.05.attention.input.Q.label",
           "text": "Q",
-          "x_px": 84.0,
-          "y_px": 643,
-          "font_size_pt": 7.2,
-          "fill": "#233042",
+          "x_px": 77,
+          "y_px": 606,
+          "font_size_pt": 7,
+          "fill": "#315C9D",
           "anchor": "middle",
           "font_weight": "bold"
         },
         {
           "type": "rect",
-          "id": "card.05.attention.block.1",
-          "x_px": 144.33333333333331,
-          "y_px": 609,
-          "width_px": 58,
-          "height_px": 58,
+          "id": "card.05.attention.input.K",
+          "x_px": 59,
+          "y_px": 634,
+          "width_px": 36,
+          "height_px": 28,
           "fill": "#FFFFFF",
           "stroke": "#315C9D",
-          "stroke_width_pt": 1.2
+          "stroke_width_pt": 1.3
         },
         {
           "type": "text",
-          "id": "card.05.attention.label.1",
+          "id": "card.05.attention.input.K.label",
           "text": "K",
-          "x_px": 173.33333333333331,
-          "y_px": 643,
-          "font_size_pt": 7.2,
-          "fill": "#233042",
+          "x_px": 77,
+          "y_px": 653,
+          "font_size_pt": 7,
+          "fill": "#315C9D",
           "anchor": "middle",
           "font_weight": "bold"
         },
         {
-          "type": "line",
-          "id": "card.05.attention.flow.1.shaft",
-          "x1_px": 113.0,
-          "y1_px": 638,
-          "x2_px": 139.33333333333331,
-          "y2_px": 638,
-          "stroke": "#315C9D",
-          "stroke_width_pt": 1.4,
-          "linecap": "round"
-        },
-        {
-          "type": "polygon",
-          "id": "card.05.attention.flow.1.head",
-          "points_px": [
-            [
-              139.33333333333331,
-              638
-            ],
-            [
-              131.66061263479776,
-              642.704185060376
-            ],
-            [
-              131.66061263479776,
-              633.295814939624
-            ]
-          ],
-          "fill": "#315C9D",
-          "stroke": "#315C9D",
-          "stroke_width_pt": 1.4
-        },
-        {
           "type": "rect",
-          "id": "card.05.attention.block.2",
-          "x_px": 233.66666666666666,
-          "y_px": 609,
-          "width_px": 58,
-          "height_px": 58,
-          "fill": "#315C9D",
+          "id": "card.05.attention.input.V",
+          "x_px": 59,
+          "y_px": 681,
+          "width_px": 36,
+          "height_px": 28,
+          "fill": "#FFFFFF",
           "stroke": "#315C9D",
-          "stroke_width_pt": 1.2
+          "stroke_width_pt": 1.3
         },
         {
           "type": "text",
-          "id": "card.05.attention.label.2",
+          "id": "card.05.attention.input.V.label",
           "text": "V",
-          "x_px": 262.66666666666663,
-          "y_px": 643,
-          "font_size_pt": 7.2,
-          "fill": "#FFFFFF",
+          "x_px": 77,
+          "y_px": 700,
+          "font_size_pt": 7,
+          "fill": "#315C9D",
           "anchor": "middle",
           "font_weight": "bold"
         },
         {
           "type": "line",
-          "id": "card.05.attention.flow.2.shaft",
-          "x1_px": 202.33333333333331,
-          "y1_px": 638,
-          "x2_px": 228.66666666666666,
-          "y2_px": 638,
+          "id": "card.05.attention.q.to.score.shaft",
+          "x1_px": 95,
+          "y1_px": 601,
+          "x2_px": 143,
+          "y2_px": 627,
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4,
           "linecap": "round"
         },
         {
           "type": "polygon",
-          "id": "card.05.attention.flow.2.head",
+          "id": "card.05.attention.q.to.score.head",
           "points_px": [
             [
-              228.66666666666666,
-              638
+              143,
+              627
             ],
             [
-              220.9939459681311,
-              642.704185060376
+              134.01291425642304,
+              627.4819645605186
             ],
             [
-              220.9939459681311,
-              633.295814939624
+              138.49396240017148,
+              619.2092602951368
+            ]
+          ],
+          "fill": "#315C9D",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.05.attention.k.to.score.shaft",
+          "x1_px": 95,
+          "y1_px": 648,
+          "x2_px": 143,
+          "y2_px": 637,
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.attention.k.to.score.head",
+          "points_px": [
+            [
+              143,
+              637
+            ],
+            [
+              136.5719539415455,
+              643.2992240689142
+            ],
+            [
+              134.47034838664763,
+              634.1285816475415
+            ]
+          ],
+          "fill": "#315C9D",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "text",
+          "id": "card.05.attention.transpose",
+          "text": "Kᵀ",
+          "x_px": 124,
+          "y_px": 653,
+          "font_size_pt": 6.2,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.0.0",
+          "x_px": 146,
+          "y_px": 615,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#315C9D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.0.1",
+          "x_px": 158,
+          "y_px": 615,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.0.2",
+          "x_px": 170,
+          "y_px": 615,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.0.3",
+          "x_px": 182,
+          "y_px": 615,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#315C9D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.1.0",
+          "x_px": 146,
+          "y_px": 627,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.1.1",
+          "x_px": 158,
+          "y_px": 627,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.1.2",
+          "x_px": 170,
+          "y_px": 627,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#315C9D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.1.3",
+          "x_px": 182,
+          "y_px": 627,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.2.0",
+          "x_px": 146,
+          "y_px": 639,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.2.1",
+          "x_px": 158,
+          "y_px": 639,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#315C9D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.2.2",
+          "x_px": 170,
+          "y_px": 639,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.2.3",
+          "x_px": 182,
+          "y_px": 639,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.3.0",
+          "x_px": 146,
+          "y_px": 651,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#315C9D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.3.1",
+          "x_px": 158,
+          "y_px": 651,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.3.2",
+          "x_px": 170,
+          "y_px": 651,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#DCE8F5",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.score.3.3",
+          "x_px": 182,
+          "y_px": 651,
+          "width_px": 11,
+          "height_px": 11,
+          "fill": "#315C9D",
+          "stroke": "#FFFFFF",
+          "stroke_width_pt": 0.4
+        },
+        {
+          "type": "text",
+          "id": "card.05.attention.score.label",
+          "text": "QKᵀ / √d",
+          "x_px": 170,
+          "y_px": 676,
+          "font_size_pt": 6.2,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.05.attention.score.to.softmax.shaft",
+          "x1_px": 196,
+          "y1_px": 639,
+          "x2_px": 217,
+          "y2_px": 639,
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.attention.score.to.softmax.head",
+          "points_px": [
+            [
+              217,
+              639
+            ],
+            [
+              209.32727930146444,
+              643.704185060376
+            ],
+            [
+              209.32727930146444,
+              634.295814939624
             ]
           ],
           "fill": "#315C9D",
@@ -1819,57 +2049,165 @@
         },
         {
           "type": "rect",
-          "id": "card.05.attention.block.3",
-          "x_px": 323.0,
-          "y_px": 609,
-          "width_px": 58,
-          "height_px": 58,
+          "id": "card.05.attention.softmax",
+          "x_px": 221,
+          "y_px": 614,
+          "width_px": 54,
+          "height_px": 50,
           "fill": "#FFFFFF",
           "stroke": "#315C9D",
-          "stroke_width_pt": 1.2
+          "stroke_width_pt": 1.4
         },
         {
           "type": "text",
-          "id": "card.05.attention.label.3",
-          "text": "Attention",
-          "x_px": 352.0,
+          "id": "card.05.attention.softmax.label",
+          "text": "softmax",
+          "x_px": 248,
           "y_px": 643,
-          "font_size_pt": 7.2,
-          "fill": "#233042",
+          "font_size_pt": 6.5,
+          "fill": "#315C9D",
           "anchor": "middle",
           "font_weight": "bold"
         },
         {
           "type": "line",
-          "id": "card.05.attention.flow.3.shaft",
-          "x1_px": 291.66666666666663,
-          "y1_px": 638,
-          "x2_px": 318.0,
-          "y2_px": 638,
+          "id": "card.05.attention.v.to.merge.shaft",
+          "x1_px": 95,
+          "y1_px": 695,
+          "x2_px": 289,
+          "y2_px": 673,
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4,
           "linecap": "round"
         },
         {
           "type": "polygon",
-          "id": "card.05.attention.flow.3.head",
+          "id": "card.05.attention.v.to.merge.head",
           "points_px": [
             [
-              318.0,
-              638
+              289,
+              673
             ],
             [
-              310.32727930146444,
-              642.704185060376
+              281.9062110365094,
+              678.5387867030116
             ],
             [
-              310.32727930146444,
-              633.295814939624
+              280.8460773644147,
+              669.1903352309042
             ]
           ],
           "fill": "#315C9D",
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.05.attention.softmax.to.merge.shaft",
+          "x1_px": 275,
+          "y1_px": 639,
+          "x2_px": 289,
+          "y2_px": 656,
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.attention.softmax.to.merge.head",
+          "points_px": [
+            [
+              289,
+              656
+            ],
+            [
+              280.49109312072125,
+              653.0676794650375
+            ],
+            [
+              287.7536984848057,
+              647.0867103416738
+            ]
+          ],
+          "fill": "#315C9D",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "ellipse",
+          "id": "card.05.attention.weighted.sum",
+          "cx_px": 297,
+          "cy_px": 664,
+          "rx_px": 10,
+          "ry_px": 10,
+          "fill": "#FFFFFF",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.5
+        },
+        {
+          "type": "text",
+          "id": "card.05.attention.weighted.sum.label",
+          "text": "Σ",
+          "x_px": 297,
+          "y_px": 669,
+          "font_size_pt": 7,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.05.attention.merge.to.output.shaft",
+          "x1_px": 307,
+          "y1_px": 664,
+          "x2_px": 333,
+          "y2_px": 664,
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.05.attention.merge.to.output.head",
+          "points_px": [
+            [
+              333,
+              664
+            ],
+            [
+              325.32727930146444,
+              668.704185060376
+            ],
+            [
+              325.32727930146444,
+              659.295814939624
+            ]
+          ],
+          "fill": "#315C9D",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.output",
+          "x_px": 337,
+          "y_px": 642,
+          "width_px": 40,
+          "height_px": 44,
+          "fill": "#315C9D",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.2
+        },
+        {
+          "type": "text",
+          "id": "card.05.attention.output.label",
+          "text": "Z",
+          "x_px": 357,
+          "y_px": 669,
+          "font_size_pt": 7,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "bold"
         },
         {
           "type": "line",
@@ -2023,74 +2361,52 @@
         },
         {
           "type": "rect",
-          "id": "card.06.fusion.block.0",
-          "x_px": 444.0,
-          "y_px": 609,
-          "width_px": 58,
-          "height_px": 58,
+          "id": "card.06.fusion.input.0",
+          "x_px": 446,
+          "y_px": 581,
+          "width_px": 42,
+          "height_px": 36,
           "fill": "#FFFFFF",
           "stroke": "#315C9D",
-          "stroke_width_pt": 1.2
+          "stroke_width_pt": 1.3
         },
         {
           "type": "text",
-          "id": "card.06.fusion.label.0",
-          "text": "Image",
-          "x_px": 473.0,
-          "y_px": 643,
-          "font_size_pt": 7.2,
-          "fill": "#233042",
-          "anchor": "middle",
-          "font_weight": "bold"
-        },
-        {
-          "type": "rect",
-          "id": "card.06.fusion.block.1",
-          "x_px": 533.3333333333334,
-          "y_px": 609,
-          "width_px": 58,
-          "height_px": 58,
-          "fill": "#FFFFFF",
-          "stroke": "#315C9D",
-          "stroke_width_pt": 1.2
-        },
-        {
-          "type": "text",
-          "id": "card.06.fusion.label.1",
-          "text": "Text",
-          "x_px": 562.3333333333334,
-          "y_px": 643,
-          "font_size_pt": 7.2,
-          "fill": "#233042",
+          "id": "card.06.fusion.input.0.label",
+          "text": "IMG",
+          "x_px": 467,
+          "y_px": 603,
+          "font_size_pt": 6.5,
+          "fill": "#315C9D",
           "anchor": "middle",
           "font_weight": "bold"
         },
         {
           "type": "line",
-          "id": "card.06.fusion.flow.1.shaft",
-          "x1_px": 502.0,
-          "y1_px": 638,
-          "x2_px": 528.3333333333334,
-          "y2_px": 638,
+          "id": "card.06.fusion.input.0.flow.shaft",
+          "x1_px": 488,
+          "y1_px": 599,
+          "x2_px": 510,
+          "y2_px": 599,
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4,
           "linecap": "round"
         },
         {
           "type": "polygon",
-          "id": "card.06.fusion.flow.1.head",
+          "id": "card.06.fusion.input.0.flow.head",
           "points_px": [
             [
-              528.3333333333334,
-              638
+              510,
+              599
             ],
             [
-              520.6606126347979,
-              642.704185060376
+              502.32727930146444,
+              603.704185060376
             ],
             [
-              520.6606126347979,
-              633.295814939624
+              502.32727930146444,
+              594.295814939624
             ]
           ],
           "fill": "#315C9D",
@@ -2099,52 +2415,164 @@
         },
         {
           "type": "rect",
-          "id": "card.06.fusion.block.2",
-          "x_px": 622.6666666666666,
-          "y_px": 609,
-          "width_px": 58,
-          "height_px": 58,
-          "fill": "#315C9D",
+          "id": "card.06.fusion.encoder.0",
+          "x_px": 514,
+          "y_px": 577,
+          "width_px": 62,
+          "height_px": 44,
+          "fill": "#E7EEF7",
           "stroke": "#315C9D",
-          "stroke_width_pt": 1.2
+          "stroke_width_pt": 1.3
         },
         {
           "type": "text",
-          "id": "card.06.fusion.label.2",
-          "text": "Fusion",
-          "x_px": 651.6666666666666,
-          "y_px": 643,
-          "font_size_pt": 7.2,
-          "fill": "#FFFFFF",
+          "id": "card.06.fusion.encoder.0.label",
+          "text": "Encoder",
+          "x_px": 545,
+          "y_px": 597,
+          "font_size_pt": 6.3,
+          "fill": "#315C9D",
           "anchor": "middle",
           "font_weight": "bold"
         },
         {
+          "type": "text",
+          "id": "card.06.fusion.encoder.0.dim",
+          "text": "768",
+          "x_px": 545,
+          "y_px": 611,
+          "font_size_pt": 5.5,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
           "type": "line",
-          "id": "card.06.fusion.flow.2.shaft",
-          "x1_px": 591.3333333333334,
-          "y1_px": 638,
-          "x2_px": 617.6666666666666,
-          "y2_px": 638,
+          "id": "card.06.fusion.encoder.0.gate.shaft",
+          "x1_px": 576,
+          "y1_px": 599,
+          "x2_px": 607,
+          "y2_px": 599,
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4,
           "linecap": "round"
         },
         {
           "type": "polygon",
-          "id": "card.06.fusion.flow.2.head",
+          "id": "card.06.fusion.encoder.0.gate.head",
           "points_px": [
             [
-              617.6666666666666,
+              607,
+              599
+            ],
+            [
+              599.3272793014645,
+              603.704185060376
+            ],
+            [
+              599.3272793014645,
+              594.295814939624
+            ]
+          ],
+          "fill": "#315C9D",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.fusion.gate.0",
+          "cx_px": 618,
+          "cy_px": 599,
+          "rx_px": 11,
+          "ry_px": 11,
+          "fill": "#FFFFFF",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.gate.0.label",
+          "text": "α",
+          "x_px": 618,
+          "y_px": 603,
+          "font_size_pt": 6.5,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polyline",
+          "id": "card.06.fusion.merge.path.0",
+          "points_px": [
+            [
+              629,
+              599
+            ],
+            [
+              648,
+              599
+            ],
+            [
+              648,
               638
             ],
             [
-              609.9939459681311,
-              642.704185060376
+              662,
+              645
+            ]
+          ],
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4,
+          "fill": "none"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.fusion.input.1",
+          "x_px": 446,
+          "y_px": 658,
+          "width_px": 42,
+          "height_px": 36,
+          "fill": "#FFFFFF",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.3
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.input.1.label",
+          "text": "TXT",
+          "x_px": 467,
+          "y_px": 680,
+          "font_size_pt": 6.5,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.06.fusion.input.1.flow.shaft",
+          "x1_px": 488,
+          "y1_px": 676,
+          "x2_px": 510,
+          "y2_px": 676,
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.fusion.input.1.flow.head",
+          "points_px": [
+            [
+              510,
+              676
             ],
             [
-              609.9939459681311,
-              633.295814939624
+              502.32727930146444,
+              680.704185060376
+            ],
+            [
+              502.32727930146444,
+              671.295814939624
             ]
           ],
           "fill": "#315C9D",
@@ -2153,57 +2581,202 @@
         },
         {
           "type": "rect",
-          "id": "card.06.fusion.block.3",
-          "x_px": 712.0,
-          "y_px": 609,
-          "width_px": 58,
-          "height_px": 58,
-          "fill": "#FFFFFF",
+          "id": "card.06.fusion.encoder.1",
+          "x_px": 514,
+          "y_px": 654,
+          "width_px": 62,
+          "height_px": 44,
+          "fill": "#E7EEF7",
           "stroke": "#315C9D",
-          "stroke_width_pt": 1.2
+          "stroke_width_pt": 1.3
         },
         {
           "type": "text",
-          "id": "card.06.fusion.label.3",
-          "text": "Output",
-          "x_px": 741.0,
-          "y_px": 643,
-          "font_size_pt": 7.2,
-          "fill": "#233042",
+          "id": "card.06.fusion.encoder.1.label",
+          "text": "Encoder",
+          "x_px": 545,
+          "y_px": 674,
+          "font_size_pt": 6.3,
+          "fill": "#315C9D",
           "anchor": "middle",
           "font_weight": "bold"
         },
         {
+          "type": "text",
+          "id": "card.06.fusion.encoder.1.dim",
+          "text": "512",
+          "x_px": 545,
+          "y_px": 688,
+          "font_size_pt": 5.5,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
           "type": "line",
-          "id": "card.06.fusion.flow.3.shaft",
-          "x1_px": 680.6666666666666,
-          "y1_px": 638,
-          "x2_px": 707.0,
-          "y2_px": 638,
+          "id": "card.06.fusion.encoder.1.gate.shaft",
+          "x1_px": 576,
+          "y1_px": 676,
+          "x2_px": 607,
+          "y2_px": 676,
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4,
           "linecap": "round"
         },
         {
           "type": "polygon",
-          "id": "card.06.fusion.flow.3.head",
+          "id": "card.06.fusion.encoder.1.gate.head",
           "points_px": [
             [
-              707.0,
-              638
+              607,
+              676
             ],
             [
-              699.3272793014645,
-              642.704185060376
+              599.3272793014645,
+              680.704185060376
             ],
             [
-              699.3272793014645,
-              633.295814939624
+              599.3272793014645,
+              671.295814939624
             ]
           ],
           "fill": "#315C9D",
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.fusion.gate.1",
+          "cx_px": 618,
+          "cy_px": 676,
+          "rx_px": 11,
+          "ry_px": 11,
+          "fill": "#FFFFFF",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.gate.1.label",
+          "text": "β",
+          "x_px": 618,
+          "y_px": 680,
+          "font_size_pt": 6.5,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "polyline",
+          "id": "card.06.fusion.merge.path.1",
+          "points_px": [
+            [
+              629,
+              676
+            ],
+            [
+              648,
+              676
+            ],
+            [
+              648,
+              651
+            ],
+            [
+              662,
+              645
+            ]
+          ],
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4,
+          "fill": "none"
+        },
+        {
+          "type": "ellipse",
+          "id": "card.06.fusion.concat",
+          "cx_px": 673,
+          "cy_px": 645,
+          "rx_px": 13,
+          "ry_px": 13,
+          "fill": "#315C9D",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.3
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.concat.label",
+          "text": "‖",
+          "x_px": 673,
+          "y_px": 650,
+          "font_size_pt": 8,
+          "fill": "#FFFFFF",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.06.fusion.concat.to.head.shaft",
+          "x1_px": 686,
+          "y1_px": 645,
+          "x2_px": 706,
+          "y2_px": 645,
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4,
+          "linecap": "round"
+        },
+        {
+          "type": "polygon",
+          "id": "card.06.fusion.concat.to.head.head",
+          "points_px": [
+            [
+              706,
+              645
+            ],
+            [
+              698.3272793014645,
+              649.704185060376
+            ],
+            [
+              698.3272793014645,
+              640.295814939624
+            ]
+          ],
+          "fill": "#315C9D",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "rect",
+          "id": "card.06.fusion.head",
+          "x_px": 710,
+          "y_px": 619,
+          "width_px": 51,
+          "height_px": 52,
+          "fill": "#FFFFFF",
+          "stroke": "#315C9D",
+          "stroke_width_pt": 1.4
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.head.label",
+          "text": "Head",
+          "x_px": 735,
+          "y_px": 642,
+          "font_size_pt": 6.5,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.head.output",
+          "text": "ŷ",
+          "x_px": 735,
+          "y_px": 659,
+          "font_size_pt": 7,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "normal"
         },
         {
           "type": "line",

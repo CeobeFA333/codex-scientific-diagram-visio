@@ -36,7 +36,7 @@
 python examples/capability-atlas/scripts/generate_capability_atlas.py --force
 ```
 
-生成后可打开 [`gallery.html`](gallery.html)，或直接查看 [`assets/`](assets/) 中的 8 张 SVG。SVG 可导入 Illustrator、Inkscape、Figma 等支持 SVG 的编辑器；不同编辑器的字体与分组兼容性仍需各自验收。
+生成后可打开 [`gallery.html`](gallery.html)，或直接查看 [`assets/`](assets/) 中的 8 张 SVG。画廊采用单列全宽布局，点击任一图会在新标签打开原始 SVG，便于继续放大。SVG 可导入 Illustrator、Inkscape、Figma 等支持 SVG 的编辑器；不同编辑器的字体与分组兼容性仍需各自验收。
 
 ## 目录结构
 
