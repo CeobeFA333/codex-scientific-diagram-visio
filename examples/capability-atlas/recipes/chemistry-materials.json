@@ -121,27 +121,27 @@
           "points_px": [
             [
               252.64101615137756,
-              311.0
+              256.0
             ],
             [
               252.64101615137756,
-              351.0
+              296.0
             ],
             [
               218.0,
-              371.0
+              316.0
             ],
             [
               183.35898384862244,
-              351.0
+              296.0
             ],
             [
               183.35898384862247,
-              311.0
+              256.0
             ],
             [
               218.0,
-              291.0
+              236.0
             ]
           ],
           "fill": "none",
@@ -152,9 +152,9 @@
           "type": "line",
           "id": "card.01.molecule.double.0.0",
           "x1_px": 252.64101615137756,
-          "y1_px": 315.8,
+          "y1_px": 260.8,
           "x2_px": 252.64101615137756,
-          "y2_px": 346.2,
+          "y2_px": 291.20000000000005,
           "stroke": "#8A66A3",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -163,9 +163,9 @@
           "type": "line",
           "id": "card.01.molecule.double.0.2",
           "x1_px": 213.8430780618347,
-          "y1_px": 368.6,
+          "y1_px": 313.59999999999997,
           "x2_px": 187.51590578678776,
-          "y2_px": 353.4,
+          "y2_px": 298.40000000000003,
           "stroke": "#8A66A3",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -174,9 +174,9 @@
           "type": "line",
           "id": "card.01.molecule.double.0.4",
           "x1_px": 187.51590578678778,
-          "y1_px": 308.6,
+          "y1_px": 253.6,
           "x2_px": 213.8430780618347,
-          "y2_px": 293.4,
+          "y2_px": 238.4,
           "stroke": "#8A66A3",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -186,7 +186,7 @@
           "id": "card.01.molecule.atom.0",
           "text": "N",
           "x_px": 248.0,
-          "y_px": 301.0,
+          "y_px": 246.0,
           "font_size_pt": 8,
           "fill": "#D95F59",
           "anchor": "middle",
@@ -196,9 +196,9 @@
           "type": "line",
           "id": "card.01.molecule.bond.a",
           "x1_px": 253.0,
-          "y1_px": 351.0,
+          "y1_px": 296.0,
           "x2_px": 293.0,
-          "y2_px": 379.0,
+          "y2_px": 324.0,
           "stroke": "#8A66A3",
           "stroke_width_pt": 2,
           "linecap": "round"
@@ -208,9 +208,108 @@
           "id": "card.01.molecule.group",
           "text": "OH",
           "x_px": 304.0,
-          "y_px": 388.0,
+          "y_px": 333.0,
           "font_size_pt": 8,
           "fill": "#D95F59",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "line",
+          "id": "card.01.molecule.detail.rule",
+          "x1_px": 59,
+          "y1_px": 364,
+          "x2_px": 377,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.molecule.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.molecule.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.molecule.detail.value.0",
+          "text": "atom-mapped",
+          "x_px": 109.66666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.molecule.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.molecule.detail.value.1",
+          "text": "stereo bonds",
+          "x_px": 217.99999999999997,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.molecule.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.molecule.detail.value.2",
+          "text": "formula",
+          "x_px": 326.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.molecule.consumption",
+          "text": "REAL-TASK PLAN S · 15–35k tok · 0–1 img",
+          "x_px": 218.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
           "anchor": "middle",
           "font_weight": "bold"
         }
@@ -461,6 +560,105 @@
           "fill": "#6B7788",
           "anchor": "middle",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.02.reaction.detail.rule",
+          "x1_px": 448,
+          "y1_px": 364,
+          "x2_px": 766,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.reaction.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.detail.value.0",
+          "text": "cat. 5 mol%",
+          "x_px": 498.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.reaction.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.detail.value.1",
+          "text": "80 °C · 2 h",
+          "x_px": 607.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.reaction.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.detail.value.2",
+          "text": "yield 87%",
+          "x_px": 715.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.reaction.consumption",
+          "text": "REAL-TASK PLAN S · 15–35k tok · 0–1 img",
+          "x_px": 607.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -517,9 +715,9 @@
           "type": "line",
           "id": "card.03.spectrum.axis.x",
           "x1_px": 857,
-          "y1_px": 441,
+          "y1_px": 331,
           "x2_px": 1141,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -530,7 +728,7 @@
           "x1_px": 857,
           "y1_px": 206,
           "x2_px": 857,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -539,9 +737,9 @@
           "type": "line",
           "id": "card.03.spectrum.grid.1",
           "x1_px": 857,
-          "y1_px": 283.55,
+          "y1_px": 247.25,
           "x2_px": 1141,
-          "y2_px": 283.55,
+          "y2_px": 247.25,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
           "linecap": "round"
@@ -550,11 +748,165 @@
           "type": "line",
           "id": "card.03.spectrum.grid.2",
           "x1_px": 857,
-          "y1_px": 361.1,
+          "y1_px": 288.5,
           "x2_px": 1141,
-          "y2_px": 361.1,
+          "y2_px": 288.5,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.tick.x.0",
+          "x1_px": 857.0,
+          "y1_px": 331,
+          "x2_px": 857.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.tick.x.label.0",
+          "text": "0",
+          "x_px": 857.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.tick.x.1",
+          "x1_px": 928.0,
+          "y1_px": 331,
+          "x2_px": 928.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.tick.x.label.1",
+          "text": "2",
+          "x_px": 928.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.tick.x.2",
+          "x1_px": 999.0,
+          "y1_px": 331,
+          "x2_px": 999.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.tick.x.label.2",
+          "text": "4",
+          "x_px": 999.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.tick.x.3",
+          "x1_px": 1070.0,
+          "y1_px": 331,
+          "x2_px": 1070.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.tick.x.label.3",
+          "text": "6",
+          "x_px": 1070.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.tick.x.4",
+          "x1_px": 1141.0,
+          "y1_px": 331,
+          "x2_px": 1141.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.tick.x.label.4",
+          "text": "8",
+          "x_px": 1141.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.tick.y.0",
+          "x1_px": 852,
+          "y1_px": 206.0,
+          "x2_px": 857,
+          "y2_px": 206.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.tick.y.1",
+          "x1_px": 852,
+          "y1_px": 247.66666666666666,
+          "x2_px": 857,
+          "y2_px": 247.66666666666666,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.tick.y.2",
+          "x1_px": 852,
+          "y1_px": 289.3333333333333,
+          "x2_px": 857,
+          "y2_px": 289.3333333333333,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.tick.y.3",
+          "x1_px": 852,
+          "y1_px": 331.0,
+          "x2_px": 857,
+          "y2_px": 331.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
           "linecap": "round"
         },
         {
@@ -563,52 +915,151 @@
           "points_px": [
             [
               857,
-              434
+              324
             ],
             [
               885,
-              432
+              322
             ],
             [
               899,
-              371
+              261
             ],
             [
               907,
-              433
+              323
             ],
             [
               949,
-              429
+              319
             ],
             [
               969,
-              336
+              226
             ],
             [
               978,
-              431
+              321
             ],
             [
               1027,
-              427
+              317
             ],
             [
               1050,
-              385
+              275
             ],
             [
               1059,
-              433
+              323
             ],
             [
               1141,
-              429
+              319
             ]
           ],
           "stroke": "#8A66A3",
           "stroke_width_pt": 2,
           "fill": "none"
+        },
+        {
+          "type": "line",
+          "id": "card.03.spectrum.detail.rule",
+          "x1_px": 837,
+          "y1_px": 364,
+          "x2_px": 1155,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.spectrum.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.detail.value.0",
+          "text": "2θ / cm⁻¹",
+          "x_px": 887.6666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.spectrum.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.detail.value.1",
+          "text": "peak fit",
+          "x_px": 996.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.spectrum.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.detail.value.2",
+          "text": "baseline",
+          "x_px": 1104.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.spectrum.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 996.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -665,9 +1116,9 @@
           "type": "line",
           "id": "card.04.chromatography.axis.x",
           "x1_px": 1246,
-          "y1_px": 441,
+          "y1_px": 331,
           "x2_px": 1530,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -678,7 +1129,7 @@
           "x1_px": 1246,
           "y1_px": 206,
           "x2_px": 1246,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -687,9 +1138,9 @@
           "type": "line",
           "id": "card.04.chromatography.grid.1",
           "x1_px": 1246,
-          "y1_px": 283.55,
+          "y1_px": 247.25,
           "x2_px": 1530,
-          "y2_px": 283.55,
+          "y2_px": 247.25,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
           "linecap": "round"
@@ -698,11 +1149,165 @@
           "type": "line",
           "id": "card.04.chromatography.grid.2",
           "x1_px": 1246,
-          "y1_px": 361.1,
+          "y1_px": 288.5,
           "x2_px": 1530,
-          "y2_px": 361.1,
+          "y2_px": 288.5,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.tick.x.0",
+          "x1_px": 1246.0,
+          "y1_px": 331,
+          "x2_px": 1246.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.tick.x.label.0",
+          "text": "0",
+          "x_px": 1246.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.tick.x.1",
+          "x1_px": 1317.0,
+          "y1_px": 331,
+          "x2_px": 1317.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.tick.x.label.1",
+          "text": "2",
+          "x_px": 1317.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.tick.x.2",
+          "x1_px": 1388.0,
+          "y1_px": 331,
+          "x2_px": 1388.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.tick.x.label.2",
+          "text": "4",
+          "x_px": 1388.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.tick.x.3",
+          "x1_px": 1459.0,
+          "y1_px": 331,
+          "x2_px": 1459.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.tick.x.label.3",
+          "text": "6",
+          "x_px": 1459.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.tick.x.4",
+          "x1_px": 1530.0,
+          "y1_px": 331,
+          "x2_px": 1530.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.tick.x.label.4",
+          "text": "8",
+          "x_px": 1530.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.tick.y.0",
+          "x1_px": 1241,
+          "y1_px": 206.0,
+          "x2_px": 1246,
+          "y2_px": 206.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.tick.y.1",
+          "x1_px": 1241,
+          "y1_px": 247.66666666666666,
+          "x2_px": 1246,
+          "y2_px": 247.66666666666666,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.tick.y.2",
+          "x1_px": 1241,
+          "y1_px": 289.3333333333333,
+          "x2_px": 1246,
+          "y2_px": 289.3333333333333,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.tick.y.3",
+          "x1_px": 1241,
+          "y1_px": 331.0,
+          "x2_px": 1246,
+          "y2_px": 331.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
           "linecap": "round"
         },
         {
@@ -711,52 +1316,151 @@
           "points_px": [
             [
               1246,
-              434
+              324
             ],
             [
               1274,
-              432
+              322
             ],
             [
               1288,
-              371
+              261
             ],
             [
               1296,
-              433
+              323
             ],
             [
               1338,
-              429
+              319
             ],
             [
               1358,
-              336
+              226
             ],
             [
               1367,
-              431
+              321
             ],
             [
               1416,
-              427
+              317
             ],
             [
               1439,
-              385
+              275
             ],
             [
               1448,
-              433
+              323
             ],
             [
               1530,
-              429
+              319
             ]
           ],
           "stroke": "#8A66A3",
           "stroke_width_pt": 2,
           "fill": "none"
+        },
+        {
+          "type": "line",
+          "id": "card.04.chromatography.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 364,
+          "x2_px": 1544,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.chromatography.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.detail.value.0",
+          "text": "RT 4.82 min",
+          "x_px": 1276.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.chromatography.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.detail.value.1",
+          "text": "S/N 36",
+          "x_px": 1385.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.chromatography.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.detail.value.2",
+          "text": "area 91%",
+          "x_px": 1493.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.chromatography.consumption",
+          "text": "REAL-TASK PLAN M/L · 35–150k tok · 0–4 img",
+          "x_px": 1385.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -813,9 +1517,9 @@
           "type": "line",
           "id": "card.05.thermal.axis.x",
           "x1_px": 79,
-          "y1_px": 820,
+          "y1_px": 710,
           "x2_px": 363,
-          "y2_px": 820,
+          "y2_px": 710,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -826,7 +1530,7 @@
           "x1_px": 79,
           "y1_px": 585,
           "x2_px": 79,
-          "y2_px": 820,
+          "y2_px": 710,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -835,9 +1539,9 @@
           "type": "line",
           "id": "card.05.thermal.grid.1",
           "x1_px": 79,
-          "y1_px": 662.55,
+          "y1_px": 626.25,
           "x2_px": 363,
-          "y2_px": 662.55,
+          "y2_px": 626.25,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
           "linecap": "round"
@@ -846,11 +1550,165 @@
           "type": "line",
           "id": "card.05.thermal.grid.2",
           "x1_px": 79,
-          "y1_px": 740.1,
+          "y1_px": 667.5,
           "x2_px": 363,
-          "y2_px": 740.1,
+          "y2_px": 667.5,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.tick.x.0",
+          "x1_px": 79.0,
+          "y1_px": 710,
+          "x2_px": 79.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.tick.x.label.0",
+          "text": "0",
+          "x_px": 79.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.tick.x.1",
+          "x1_px": 150.0,
+          "y1_px": 710,
+          "x2_px": 150.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.tick.x.label.1",
+          "text": "2",
+          "x_px": 150.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.tick.x.2",
+          "x1_px": 221.0,
+          "y1_px": 710,
+          "x2_px": 221.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.tick.x.label.2",
+          "text": "4",
+          "x_px": 221.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.tick.x.3",
+          "x1_px": 292.0,
+          "y1_px": 710,
+          "x2_px": 292.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.tick.x.label.3",
+          "text": "6",
+          "x_px": 292.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.tick.x.4",
+          "x1_px": 363.0,
+          "y1_px": 710,
+          "x2_px": 363.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.tick.x.label.4",
+          "text": "8",
+          "x_px": 363.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.tick.y.0",
+          "x1_px": 74,
+          "y1_px": 585.0,
+          "x2_px": 79,
+          "y2_px": 585.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.tick.y.1",
+          "x1_px": 74,
+          "y1_px": 626.6666666666666,
+          "x2_px": 79,
+          "y2_px": 626.6666666666666,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.tick.y.2",
+          "x1_px": 74,
+          "y1_px": 668.3333333333334,
+          "x2_px": 79,
+          "y2_px": 668.3333333333334,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.tick.y.3",
+          "x1_px": 74,
+          "y1_px": 710.0,
+          "x2_px": 79,
+          "y2_px": 710.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
           "linecap": "round"
         },
         {
@@ -859,23 +1717,23 @@
           "points_px": [
             [
               79,
-              806
+              696
             ],
             [
               124,
-              775
+              665
             ],
             [
               165,
-              788
+              678
             ],
             [
               207,
-              738
+              628
             ],
             [
               253,
-              753
+              643
             ],
             [
               363,
@@ -892,23 +1750,23 @@
           "points_px": [
             [
               79,
-              824
+              714
             ],
             [
               124,
-              793
+              683
             ],
             [
               165,
-              806
+              696
             ],
             [
               207,
-              756
+              646
             ],
             [
               253,
-              771
+              661
             ],
             [
               363,
@@ -918,6 +1776,105 @@
           "stroke": "#D95F59",
           "stroke_width_pt": 1.6,
           "fill": "none"
+        },
+        {
+          "type": "line",
+          "id": "card.05.thermal.detail.rule",
+          "x1_px": 59,
+          "y1_px": 743,
+          "x2_px": 377,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.thermal.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.detail.value.0",
+          "text": "10 °C min⁻¹",
+          "x_px": 109.66666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.thermal.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.detail.value.1",
+          "text": "N₂ flow",
+          "x_px": 217.99999999999997,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.thermal.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.detail.value.2",
+          "text": "onset 312 °C",
+          "x_px": 326.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.thermal.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 218.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -974,9 +1931,9 @@
           "type": "line",
           "id": "card.06.nyquist.axis.x",
           "x1_px": 468,
-          "y1_px": 820,
+          "y1_px": 710,
           "x2_px": 752,
-          "y2_px": 820,
+          "y2_px": 710,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -987,7 +1944,7 @@
           "x1_px": 468,
           "y1_px": 585,
           "x2_px": 468,
-          "y2_px": 820,
+          "y2_px": 710,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -996,9 +1953,9 @@
           "type": "line",
           "id": "card.06.nyquist.grid.1",
           "x1_px": 468,
-          "y1_px": 662.55,
+          "y1_px": 626.25,
           "x2_px": 752,
-          "y2_px": 662.55,
+          "y2_px": 626.25,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
           "linecap": "round"
@@ -1007,11 +1964,165 @@
           "type": "line",
           "id": "card.06.nyquist.grid.2",
           "x1_px": 468,
-          "y1_px": 740.1,
+          "y1_px": 667.5,
           "x2_px": 752,
-          "y2_px": 740.1,
+          "y2_px": 667.5,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.tick.x.0",
+          "x1_px": 468.0,
+          "y1_px": 710,
+          "x2_px": 468.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.tick.x.label.0",
+          "text": "0",
+          "x_px": 468.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.tick.x.1",
+          "x1_px": 539.0,
+          "y1_px": 710,
+          "x2_px": 539.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.tick.x.label.1",
+          "text": "2",
+          "x_px": 539.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.tick.x.2",
+          "x1_px": 610.0,
+          "y1_px": 710,
+          "x2_px": 610.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.tick.x.label.2",
+          "text": "4",
+          "x_px": 610.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.tick.x.3",
+          "x1_px": 681.0,
+          "y1_px": 710,
+          "x2_px": 681.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.tick.x.label.3",
+          "text": "6",
+          "x_px": 681.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.tick.x.4",
+          "x1_px": 752.0,
+          "y1_px": 710,
+          "x2_px": 752.0,
+          "y2_px": 715,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.tick.x.label.4",
+          "text": "8",
+          "x_px": 752.0,
+          "y_px": 725,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.tick.y.0",
+          "x1_px": 463,
+          "y1_px": 585.0,
+          "x2_px": 468,
+          "y2_px": 585.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.tick.y.1",
+          "x1_px": 463,
+          "y1_px": 626.6666666666666,
+          "x2_px": 468,
+          "y2_px": 626.6666666666666,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.tick.y.2",
+          "x1_px": 463,
+          "y1_px": 668.3333333333334,
+          "x2_px": 468,
+          "y2_px": 668.3333333333334,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.tick.y.3",
+          "x1_px": 463,
+          "y1_px": 710.0,
+          "x2_px": 468,
+          "y2_px": 710.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
           "linecap": "round"
         },
         {
@@ -1020,36 +2131,135 @@
           "points_px": [
             [
               476,
-              816
+              706
             ],
             [
               498,
-              782
+              672
             ],
             [
               533,
-              754
+              644
             ],
             [
               576,
-              747
+              637
             ],
             [
               619,
-              761
+              651
             ],
             [
               662,
-              790
+              680
             ],
             [
               752,
-              812
+              702
             ]
           ],
           "stroke": "#8A66A3",
           "stroke_width_pt": 2,
           "fill": "none"
+        },
+        {
+          "type": "line",
+          "id": "card.06.nyquist.detail.rule",
+          "x1_px": 448,
+          "y1_px": 743,
+          "x2_px": 766,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.nyquist.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.detail.value.0",
+          "text": "10 mHz–100 kHz",
+          "x_px": 498.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.nyquist.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.detail.value.1",
+          "text": "Rct 42 Ω",
+          "x_px": 607.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.nyquist.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.detail.value.2",
+          "text": "fit χ²",
+          "x_px": 715.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.nyquist.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 607.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1108,7 +2318,7 @@
           "x_px": 858,
           "y_px": 583,
           "width_px": 276,
-          "height_px": 252,
+          "height_px": 142,
           "fill": "#17212B",
           "stroke": "#D9E0E8",
           "stroke_width_pt": 1
@@ -1117,7 +2327,7 @@
           "type": "ellipse",
           "id": "card.07.material_micro.scan.outer",
           "cx_px": 996.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "rx_px": 72,
           "ry_px": 62,
           "fill": "#606E7B",
@@ -1128,7 +2338,7 @@
           "type": "ellipse",
           "id": "card.07.material_micro.scan.inner",
           "cx_px": 996.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "rx_px": 38,
           "ry_px": 45,
           "fill": "#253240",
@@ -1139,7 +2349,7 @@
           "type": "ellipse",
           "id": "card.07.material_micro.roi",
           "cx_px": 1014.0,
-          "cy_px": 702.0,
+          "cy_px": 647.0,
           "rx_px": 18,
           "ry_px": 13,
           "fill": "none",
@@ -1150,7 +2360,7 @@
           "type": "line",
           "id": "card.07.material_micro.callout.shaft",
           "x1_px": 1032.0,
-          "y1_px": 692.0,
+          "y1_px": 637.0,
           "x2_px": 1124,
           "y2_px": 597,
           "stroke": "#8A66A3",
@@ -1166,17 +2376,116 @@
               597
             ],
             [
-              1122.0415834356575,
-              605.7843385955067
+              1118.8392590138762,
+              604.3733813460408
             ],
             [
-              1115.2830026326913,
-              599.2391866600026
+              1115.087896180881,
+              595.7452468301517
             ]
           ],
           "fill": "#8A66A3",
           "stroke": "#8A66A3",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.07.material_micro.detail.rule",
+          "x1_px": 837,
+          "y1_px": 743,
+          "x2_px": 1155,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.07.material_micro.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.material_micro.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.material_micro.detail.value.0",
+          "text": "SEM 15 kV",
+          "x_px": 887.6666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.material_micro.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.material_micro.detail.value.1",
+          "text": "scale 2 μm",
+          "x_px": 996.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.material_micro.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.material_micro.detail.value.2",
+          "text": "3 ROIs",
+          "x_px": 1104.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.material_micro.consumption",
+          "text": "REAL-TASK PLAN M/L · 35–150k tok · 0–4 img",
+          "x_px": 996.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1778,13 +3087,112 @@
           "fill": "#6B7788",
           "anchor": "end",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.08.eds.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 743,
+          "x2_px": 1544,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.08.eds.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.eds.detail.value.0",
+          "text": "C / O / Fe",
+          "x_px": 1276.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.eds.detail.value.1",
+          "text": "atomic %",
+          "x_px": 1385.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.eds.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.eds.detail.value.2",
+          "text": "registered",
+          "x_px": 1493.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#8A66A3",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.eds.consumption",
+          "text": "REAL-TASK PLAN L · 75–150k tok · 1–4 img",
+          "x_px": 1385.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
     {
       "type": "text",
       "id": "atlas.footer",
-      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "text": "Atlas build: local deterministic Python · 0 model/API calls · live text · zero raster",
       "x_px": 800,
       "y_px": 884,
       "font_size_pt": 7.5,

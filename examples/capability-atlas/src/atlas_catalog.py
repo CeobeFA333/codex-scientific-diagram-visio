@@ -135,6 +135,79 @@ CATEGORIES = [
 ]
 
 
+WORKLOAD_PROFILES = {
+    "S": {
+        "token_range": "15–35k tok",
+        "image_refs": "0–1 img",
+        "description": "single-panel vector reconstruction with limited evidence reconciliation",
+    },
+    "M": {
+        "token_range": "35–75k tok",
+        "image_refs": "0–2 img",
+        "description": "multi-layer panel with source inspection and one editor QA pass",
+    },
+    "L": {
+        "token_range": "75–150k tok",
+        "image_refs": "1–4 img",
+        "description": "dense or image-bearing panel with scientific review and roundtrip QA",
+    },
+    "S/M": {
+        "token_range": "15–75k tok",
+        "image_refs": "0–2 img",
+        "description": "small schematic at S; real data, statistics, or linked panels upgrade to M",
+    },
+    "M/L": {
+        "token_range": "35–150k tok",
+        "image_refs": "0–4 img",
+        "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L",
+    },
+}
+
+
+LARGE_KINDS = {
+    "circos", "medical_scan", "histology", "multiplex", "eds", "fea", "cfd",
+    "cad", "exploded", "landcover", "dem", "geology", "seismic",
+}
+
+SMALL_KINDS = {
+    "pipeline", "timeline", "molecule", "reaction", "circuit", "control",
+    "wiring", "sensor", "process", "measurement",
+}
+
+SMALL_MEDIUM_KINDS = {
+    "line_plot", "distribution", "risk_table", "blot", "gel", "graticule",
+    "map_legend",
+}
+
+MEDIUM_LARGE_KINDS = {
+    "map", "section", "surface", "material_micro", "protein", "ligand",
+    "device_panel", "composite", "detection", "segmentation", "cytometry",
+    "genomic_heatmap", "phylogeny", "chromatography", "apparatus", "microfluidic",
+}
+
+
+def consumption_for(kind):
+    """Return a conservative real-task planning range, not a billing quote."""
+
+    if kind in SMALL_MEDIUM_KINDS:
+        tier = "S/M"
+    elif kind in MEDIUM_LARGE_KINDS:
+        tier = "M/L"
+    elif kind in LARGE_KINDS:
+        tier = "L"
+    elif kind in SMALL_KINDS:
+        tier = "S"
+    else:
+        tier = "M"
+    profile = WORKLOAD_PROFILES[tier]
+    return {
+        "tier": tier,
+        "token_range": profile["token_range"],
+        "image_refs": profile["image_refs"],
+        "description": profile["description"],
+    }
+
+
 def all_cards():
     """Yield ``(category, title, subtitle, kind)`` for every catalog card."""
 

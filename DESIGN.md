@@ -90,6 +90,7 @@ The packaged plugin does not operate a server or collect telemetry. It may direc
 - Added an eight-domain, 64-family deterministic SVG atlas generated through the production reconstruction builder.
 - Kept the public gallery evidence-based: every sheet has recipes, semantic IDs, live text, zero-raster checks, and SHA-256 bindings.
 - Moved improvement items off the GitHub homepage while retaining engineering limitations in design documentation.
+- Enriched each card with publication-like parameters and per-card object-count evidence; consumption labels use independently reviewed S/M/L or conditional S/M and M/L planning ranges, never fixed billing claims.
 
 ### 2026-09-08 — bilingual capability and roadmap matrices
 

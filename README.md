@@ -44,7 +44,9 @@ This v1.3.2 animation uses real reconstructed artifacts and audit values: a ten-
 
 ## 64-family capability atlas
 
-The following eight sheets were generated locally through the repository's actual `reconstruct-paper-figures` recipe builder. Together they contain **64 classified figure-family demonstrations** with live text, semantic object IDs, editable vector geometry, recipe hashes, and **zero embedded raster nodes**. They are synthetic capability tests—not claims that 64 source papers were reproduced pixel-for-pixel.
+The following eight sheets were generated locally through the repository's actual `reconstruct-paper-figures` recipe builder. Together they contain **64 classified figure-family demonstrations** with live text, semantic object IDs, editable vector geometry, recipe hashes, and **zero embedded raster nodes**. Each card now includes publication-like parameters plus a real-task planning footer. They are synthetic capability tests—not claims that 64 source papers were reproduced pixel-for-pixel.
+
+Consumption labels use `S`, `M`, `L`, or conditional `S/M` and `M/L` tiers. They estimate **15–150k agent tokens** and **0–4 optional generated visual references** for a real reconstruction, depending on source quality, scientific review, editor roundtrips, and rework. They are planning ranges, not prices or usage guarantees. Generating this atlas itself uses deterministic local Python and **0 model/API calls**.
 
 | AI / computer vision | Statistics / data science |
 |---|---|

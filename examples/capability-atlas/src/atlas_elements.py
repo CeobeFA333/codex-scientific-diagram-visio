@@ -11,6 +11,74 @@ PALE = "#F4F7FA"
 GRID = "#D9E0E8"
 
 
+DETAILS = {
+    "pipeline": ("stages 12", "d_model 512", "heads 8"),
+    "encoder": ("levels 4", "skip ×4", "out 256²"),
+    "cuboids": ("B × C × H × W", "stride 2", "fp16"),
+    "residual": ("identity", "norm + act", "drop 0.1"),
+    "attention": ("QKᵀ / √d", "softmax", "head ×8"),
+    "fusion": ("image 768", "text 512", "concat 1280"),
+    "detection": ("IoU 0.72", "NMS 0.50", "mAP 0.61"),
+    "segmentation": ("Dice 0.89", "3 classes", "pixelwise"),
+    "line_plot": ("n = 128", "fit ± CI", "3 repeats"),
+    "error_plot": ("mean ± SD", "n = 24", "p < 0.05"),
+    "distribution": ("median + IQR", "n = 96", "outliers"),
+    "survival": ("KM estimate", "censored +", "log-rank"),
+    "heatmap": ("z-score", "Ward linkage", "FDR < .05"),
+    "embedding": ("PCA → t-SNE", "perplexity 30", "n = 420"),
+    "tree": ("distance 0.1", "bootstrap", "clades 6"),
+    "circos": ("10 sectors", "5 links", "3 tracks"),
+    "flow_chart": ("screened 428", "excluded 76", "analyzed 352"),
+    "forest": ("effect + 95% CI", "I² = 31%", "random effect"),
+    "cytometry": ("live singlets", "gate P3", "42k events"),
+    "medical_scan": ("axial T2", "slice 42/96", "ROI 214 mm²"),
+    "histology": ("H&E", "20× field", "scale 100 μm"),
+    "roi": ("mask review", "Dice 0.91", "scale 50 μm"),
+    "risk_table": ("0 / 6 / 12 mo", "at risk", "events"),
+    "timeline": ("baseline", "treatment", "follow-up"),
+    "microscopy": ("DAPI / FITC", "z-stack 18", "scale 20 μm"),
+    "multiplex": ("4 channels", "composite", "cell masks"),
+    "blot": ("target / actin", "6 lanes", "densitometry"),
+    "gel": ("100 bp ladder", "6 samples", "2% agarose"),
+    "genomic_heatmap": ("2k genes", "row z-score", "3 cohorts"),
+    "phylogeny": ("ML tree", "1k bootstrap", "scale 0.1"),
+    "protein": ("chain A/B", "domain 3", "ligand pocket"),
+    "ligand": ("H-bond 2.8 Å", "π–π", "residue labels"),
+    "molecule": ("atom-mapped", "stereo bonds", "formula"),
+    "reaction": ("cat. 5 mol%", "80 °C · 2 h", "yield 87%"),
+    "spectrum": ("2θ / cm⁻¹", "peak fit", "baseline"),
+    "chromatography": ("RT 4.82 min", "S/N 36", "area 91%"),
+    "thermal": ("10 °C min⁻¹", "N₂ flow", "onset 312 °C"),
+    "nyquist": ("10 mHz–100 kHz", "Rct 42 Ω", "fit χ²"),
+    "material_micro": ("SEM 15 kV", "scale 2 μm", "3 ROIs"),
+    "eds": ("C / O / Fe", "atomic %", "registered"),
+    "circuit": ("Vin 5 V", "R1 10 kΩ", "C1 100 nF"),
+    "control": ("G(s)", "negative FB", "settle 0.8 s"),
+    "wiring": ("24 VDC", "terminal IDs", "grounded"),
+    "fea": ("12,480 cells", "fixed BC", "σmax 214 MPa"),
+    "cfd": ("Re 4.2×10⁴", "no-slip", "residual 10⁻⁶"),
+    "surface": ("DOE 5 × 5", "R² 0.94", "optimum"),
+    "cad": ("120.0 mm", "±0.05", "section A–A"),
+    "exploded": ("6 parts", "BOM IDs", "axis aligned"),
+    "apparatus": ("laser 532 nm", "sample stage", "PMT detect"),
+    "microfluidic": ("w 100 μm", "Q 8 μL min⁻¹", "3 inlets"),
+    "layers": ("substrate", "membrane", "chamber"),
+    "sensor": ("gain ×40", "1 kHz", "16-bit ADC"),
+    "device_panel": ("photo + labels", "scale 5 mm", "ports A–C"),
+    "composite": ("photo / scheme", "plot inset", "panel links"),
+    "process": ("4 stages", "mass flow", "yield 72%"),
+    "measurement": ("calibrated", "angle 35°", "±0.1 mm"),
+    "map": ("EPSG:4326", "3 layers", "scale 1:50k"),
+    "landcover": ("6 classes", "OA 92%", "30 m pixel"),
+    "dem": ("10 m DEM", "20 m contours", "hillshade"),
+    "geology": ("5 units", "fault traces", "dip / strike"),
+    "seismic": ("Mw 2.1–5.4", "18 stations", "depth 0–30 km"),
+    "section": ("A–A′", "depth 2 km", "VE ×2"),
+    "graticule": ("WGS84", "north arrow", "10 km scale"),
+    "map_legend": ("symbols", "color key", "provenance"),
+}
+
+
 def _id(prefix, name):
     return f"{prefix}.{name}"
 
@@ -89,12 +157,20 @@ def arrow(prefix, name, x1, y1, x2, y2, color=INK, width=1.4):
 
 
 def axes(prefix, x, y, w, h):
-    return [
+    items = [
         line(prefix, "axis.x", x, y + h, x + w, y + h, MUTED, 1.0),
         line(prefix, "axis.y", x, y, x, y + h, MUTED, 1.0),
         line(prefix, "grid.1", x, y + h * .33, x + w, y + h * .33, GRID, .7),
         line(prefix, "grid.2", x, y + h * .66, x + w, y + h * .66, GRID, .7),
     ]
+    for idx in range(5):
+        tx = x + idx * w / 4
+        items.append(line(prefix, f"tick.x.{idx}", tx, y+h, tx, y+h+5, MUTED, .8))
+        items.append(text(prefix, f"tick.x.label.{idx}", str(idx*2), tx, y+h+15, 5.8, MUTED, "middle"))
+    for idx in range(4):
+        ty = y + idx * h / 3
+        items.append(line(prefix, f"tick.y.{idx}", x-5, ty, x, ty, MUTED, .8))
+    return items
 
 
 def motif_pipeline(prefix, x, y, w, h, accent, variant):
@@ -324,6 +400,23 @@ def motif_map(prefix, x, y, w, h, accent, variant):
     return items
 
 
+def detail_strip(prefix, kind, x, y, w, accent):
+    """Add publication-like parameters and a workload footer to a card."""
+
+    labels = DETAILS.get(kind, ("editable", "evidence-bound", "QA required"))
+    items = [
+        line(prefix, "detail.rule", x, y, x+w, y, GRID, .8),
+        text(prefix, "detail.heading", "PANEL DETAILS", x, y+17, 5.8, MUTED, "start", "bold"),
+    ]
+    chip_gap = 7
+    chip_w = (w - chip_gap * 2) / 3
+    for idx, label in enumerate(labels):
+        chip_x = x + idx * (chip_w + chip_gap)
+        items.append(rect(prefix, f"detail.chip.{idx}", chip_x, y+25, chip_w, 25, PALE, GRID, .7))
+        items.append(text(prefix, f"detail.value.{idx}", label, chip_x+chip_w/2, y+41, 5.8, accent, "middle", "bold"))
+    return items
+
+
 def motif_for(kind, prefix, x, y, w, h, accent):
     if kind in {"pipeline","encoder","residual","attention","fusion","flow_chart","control","sensor","process","timeline","risk_table"}:
         return motif_pipeline(prefix,x,y,w,h,accent,kind)
@@ -340,12 +433,18 @@ def motif_for(kind, prefix, x, y, w, h, accent):
     return motif_pipeline(prefix,x,y,w,h,accent,"pipeline")
 
 
-def build_card(prefix, title_value, subtitle, kind, x, y, w, h, accent):
+def build_card(prefix, title_value, subtitle, kind, consumption, x, y, w, h, accent):
     children = [
         rect(prefix,"card",x,y,w,h,"#FFFFFF","#D9E0E8",1.0),
         rect(prefix,"accent",x,y,7,h,accent,"none",0),
         text(prefix,"title",title_value,x+22,y+31,10.5,INK,"start","bold"),
         text(prefix,"subtitle",subtitle,x+22,y+54,7.2,MUTED),
     ]
-    children.extend(motif_for(kind,prefix,x+18,y+69,w-36,h-84,accent))
+    children.extend(motif_for(kind,prefix,x+18,y+69,w-36,160,accent))
+    children.extend(detail_strip(prefix,kind,x+22,y+237,w-44,accent))
+    budget = (
+        f"REAL-TASK PLAN {consumption['tier']} · {consumption['token_range']} · "
+        f"{consumption['image_refs']}"
+    )
+    children.append(text(prefix,"consumption",budget,x+w/2,y+h-14,5.7,MUTED,"middle","bold"))
     return {"type":"group","id":prefix,"aria_label":f"{title_value}: {subtitle}","children":children}

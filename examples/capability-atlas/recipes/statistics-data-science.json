@@ -119,9 +119,9 @@
           "type": "line",
           "id": "card.01.line_plot.axis.x",
           "x1_px": 79,
-          "y1_px": 441,
+          "y1_px": 331,
           "x2_px": 363,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -132,7 +132,7 @@
           "x1_px": 79,
           "y1_px": 206,
           "x2_px": 79,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -141,9 +141,9 @@
           "type": "line",
           "id": "card.01.line_plot.grid.1",
           "x1_px": 79,
-          "y1_px": 283.55,
+          "y1_px": 247.25,
           "x2_px": 363,
-          "y2_px": 283.55,
+          "y2_px": 247.25,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
           "linecap": "round"
@@ -152,11 +152,165 @@
           "type": "line",
           "id": "card.01.line_plot.grid.2",
           "x1_px": 79,
-          "y1_px": 361.1,
+          "y1_px": 288.5,
           "x2_px": 363,
-          "y2_px": 361.1,
+          "y2_px": 288.5,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.tick.x.0",
+          "x1_px": 79.0,
+          "y1_px": 331,
+          "x2_px": 79.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.tick.x.label.0",
+          "text": "0",
+          "x_px": 79.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.tick.x.1",
+          "x1_px": 150.0,
+          "y1_px": 331,
+          "x2_px": 150.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.tick.x.label.1",
+          "text": "2",
+          "x_px": 150.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.tick.x.2",
+          "x1_px": 221.0,
+          "y1_px": 331,
+          "x2_px": 221.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.tick.x.label.2",
+          "text": "4",
+          "x_px": 221.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.tick.x.3",
+          "x1_px": 292.0,
+          "y1_px": 331,
+          "x2_px": 292.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.tick.x.label.3",
+          "text": "6",
+          "x_px": 292.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.tick.x.4",
+          "x1_px": 363.0,
+          "y1_px": 331,
+          "x2_px": 363.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.tick.x.label.4",
+          "text": "8",
+          "x_px": 363.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.tick.y.0",
+          "x1_px": 74,
+          "y1_px": 206.0,
+          "x2_px": 79,
+          "y2_px": 206.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.tick.y.1",
+          "x1_px": 74,
+          "y1_px": 247.66666666666666,
+          "x2_px": 79,
+          "y2_px": 247.66666666666666,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.tick.y.2",
+          "x1_px": 74,
+          "y1_px": 289.3333333333333,
+          "x2_px": 79,
+          "y2_px": 289.3333333333333,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.tick.y.3",
+          "x1_px": 74,
+          "y1_px": 331.0,
+          "x2_px": 79,
+          "y2_px": 331.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
           "linecap": "round"
         },
         {
@@ -165,23 +319,23 @@
           "points_px": [
             [
               79,
-              427
+              317
             ],
             [
               124,
-              396
+              286
             ],
             [
               165,
-              409
+              299
             ],
             [
               207,
-              359
+              249
             ],
             [
               253,
-              374
+              264
             ],
             [
               363,
@@ -198,23 +352,23 @@
           "points_px": [
             [
               79,
-              445
+              335
             ],
             [
               124,
-              414
+              304
             ],
             [
               165,
-              427
+              317
             ],
             [
               207,
-              377
+              267
             ],
             [
               253,
-              392
+              282
             ],
             [
               363,
@@ -224,6 +378,105 @@
           "stroke": "#D95F59",
           "stroke_width_pt": 1.6,
           "fill": "none"
+        },
+        {
+          "type": "line",
+          "id": "card.01.line_plot.detail.rule",
+          "x1_px": 59,
+          "y1_px": 364,
+          "x2_px": 377,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.line_plot.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.detail.value.0",
+          "text": "n = 128",
+          "x_px": 109.66666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.line_plot.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.detail.value.1",
+          "text": "fit ± CI",
+          "x_px": 217.99999999999997,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.line_plot.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.detail.value.2",
+          "text": "3 repeats",
+          "x_px": 326.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.line_plot.consumption",
+          "text": "REAL-TASK PLAN S/M · 15–75k tok · 0–2 img",
+          "x_px": 218.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -280,9 +533,9 @@
           "type": "line",
           "id": "card.02.error_plot.axis.x",
           "x1_px": 468,
-          "y1_px": 441,
+          "y1_px": 331,
           "x2_px": 752,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -293,7 +546,7 @@
           "x1_px": 468,
           "y1_px": 206,
           "x2_px": 468,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -302,9 +555,9 @@
           "type": "line",
           "id": "card.02.error_plot.grid.1",
           "x1_px": 468,
-          "y1_px": 283.55,
+          "y1_px": 247.25,
           "x2_px": 752,
-          "y2_px": 283.55,
+          "y2_px": 247.25,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
           "linecap": "round"
@@ -313,11 +566,165 @@
           "type": "line",
           "id": "card.02.error_plot.grid.2",
           "x1_px": 468,
-          "y1_px": 361.1,
+          "y1_px": 288.5,
           "x2_px": 752,
-          "y2_px": 361.1,
+          "y2_px": 288.5,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.tick.x.0",
+          "x1_px": 468.0,
+          "y1_px": 331,
+          "x2_px": 468.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.tick.x.label.0",
+          "text": "0",
+          "x_px": 468.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.tick.x.1",
+          "x1_px": 539.0,
+          "y1_px": 331,
+          "x2_px": 539.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.tick.x.label.1",
+          "text": "2",
+          "x_px": 539.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.tick.x.2",
+          "x1_px": 610.0,
+          "y1_px": 331,
+          "x2_px": 610.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.tick.x.label.2",
+          "text": "4",
+          "x_px": 610.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.tick.x.3",
+          "x1_px": 681.0,
+          "y1_px": 331,
+          "x2_px": 681.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.tick.x.label.3",
+          "text": "6",
+          "x_px": 681.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.tick.x.4",
+          "x1_px": 752.0,
+          "y1_px": 331,
+          "x2_px": 752.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.tick.x.label.4",
+          "text": "8",
+          "x_px": 752.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.tick.y.0",
+          "x1_px": 463,
+          "y1_px": 206.0,
+          "x2_px": 468,
+          "y2_px": 206.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.tick.y.1",
+          "x1_px": 463,
+          "y1_px": 247.66666666666666,
+          "x2_px": 468,
+          "y2_px": 247.66666666666666,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.tick.y.2",
+          "x1_px": 463,
+          "y1_px": 289.3333333333333,
+          "x2_px": 468,
+          "y2_px": 289.3333333333333,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.tick.y.3",
+          "x1_px": 463,
+          "y1_px": 331.0,
+          "x2_px": 468,
+          "y2_px": 331.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
           "linecap": "round"
         },
         {
@@ -326,23 +733,23 @@
           "points_px": [
             [
               468,
-              427
+              317
             ],
             [
               513,
-              396
+              286
             ],
             [
               554,
-              409
+              299
             ],
             [
               596,
-              359
+              249
             ],
             [
               642,
-              374
+              264
             ],
             [
               752,
@@ -359,23 +766,23 @@
           "points_px": [
             [
               468,
-              445
+              335
             ],
             [
               513,
-              414
+              304
             ],
             [
               554,
-              427
+              317
             ],
             [
               596,
-              377
+              267
             ],
             [
               642,
-              392
+              282
             ],
             [
               752,
@@ -390,9 +797,9 @@
           "type": "line",
           "id": "card.02.error_plot.error.0",
           "x1_px": 513,
-          "y1_px": 383,
+          "y1_px": 273,
           "x2_px": 513,
-          "y2_px": 409,
+          "y2_px": 299,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -401,9 +808,9 @@
           "type": "line",
           "id": "card.02.error_plot.cap.0.a",
           "x1_px": 508,
-          "y1_px": 383,
+          "y1_px": 273,
           "x2_px": 518,
-          "y2_px": 383,
+          "y2_px": 273,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -412,9 +819,9 @@
           "type": "line",
           "id": "card.02.error_plot.cap.0.b",
           "x1_px": 508,
-          "y1_px": 409,
+          "y1_px": 299,
           "x2_px": 518,
-          "y2_px": 409,
+          "y2_px": 299,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -423,9 +830,9 @@
           "type": "line",
           "id": "card.02.error_plot.error.1",
           "x1_px": 554,
-          "y1_px": 396,
+          "y1_px": 286,
           "x2_px": 554,
-          "y2_px": 422,
+          "y2_px": 312,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -434,9 +841,9 @@
           "type": "line",
           "id": "card.02.error_plot.cap.1.a",
           "x1_px": 549,
-          "y1_px": 396,
+          "y1_px": 286,
           "x2_px": 559,
-          "y2_px": 396,
+          "y2_px": 286,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -445,9 +852,9 @@
           "type": "line",
           "id": "card.02.error_plot.cap.1.b",
           "x1_px": 549,
-          "y1_px": 422,
+          "y1_px": 312,
           "x2_px": 559,
-          "y2_px": 422,
+          "y2_px": 312,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -456,9 +863,9 @@
           "type": "line",
           "id": "card.02.error_plot.error.2",
           "x1_px": 596,
-          "y1_px": 346,
+          "y1_px": 236,
           "x2_px": 596,
-          "y2_px": 372,
+          "y2_px": 262,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -467,9 +874,9 @@
           "type": "line",
           "id": "card.02.error_plot.cap.2.a",
           "x1_px": 591,
-          "y1_px": 346,
+          "y1_px": 236,
           "x2_px": 601,
-          "y2_px": 346,
+          "y2_px": 236,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -478,9 +885,9 @@
           "type": "line",
           "id": "card.02.error_plot.cap.2.b",
           "x1_px": 591,
-          "y1_px": 372,
+          "y1_px": 262,
           "x2_px": 601,
-          "y2_px": 372,
+          "y2_px": 262,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -489,9 +896,9 @@
           "type": "line",
           "id": "card.02.error_plot.error.3",
           "x1_px": 642,
-          "y1_px": 361,
+          "y1_px": 251,
           "x2_px": 642,
-          "y2_px": 387,
+          "y2_px": 277,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -500,9 +907,9 @@
           "type": "line",
           "id": "card.02.error_plot.cap.3.a",
           "x1_px": 637,
-          "y1_px": 361,
+          "y1_px": 251,
           "x2_px": 647,
-          "y2_px": 361,
+          "y2_px": 251,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -511,12 +918,111 @@
           "type": "line",
           "id": "card.02.error_plot.cap.3.b",
           "x1_px": 637,
-          "y1_px": 387,
+          "y1_px": 277,
           "x2_px": 647,
-          "y2_px": 387,
+          "y2_px": 277,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.02.error_plot.detail.rule",
+          "x1_px": 448,
+          "y1_px": 364,
+          "x2_px": 766,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.error_plot.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.detail.value.0",
+          "text": "mean ± SD",
+          "x_px": 498.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.error_plot.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.detail.value.1",
+          "text": "n = 24",
+          "x_px": 607.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.error_plot.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.detail.value.2",
+          "text": "p < 0.05",
+          "x_px": 715.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.error_plot.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 607.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -573,9 +1079,9 @@
           "type": "line",
           "id": "card.03.distribution.axis.x",
           "x1_px": 857,
-          "y1_px": 441,
+          "y1_px": 331,
           "x2_px": 1141,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -586,7 +1092,7 @@
           "x1_px": 857,
           "y1_px": 206,
           "x2_px": 857,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -595,9 +1101,9 @@
           "type": "line",
           "id": "card.03.distribution.grid.1",
           "x1_px": 857,
-          "y1_px": 283.55,
+          "y1_px": 247.25,
           "x2_px": 1141,
-          "y2_px": 283.55,
+          "y2_px": 247.25,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
           "linecap": "round"
@@ -606,18 +1112,172 @@
           "type": "line",
           "id": "card.03.distribution.grid.2",
           "x1_px": 857,
-          "y1_px": 361.1,
+          "y1_px": 288.5,
           "x2_px": 1141,
-          "y2_px": 361.1,
+          "y2_px": 288.5,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.tick.x.0",
+          "x1_px": 857.0,
+          "y1_px": 331,
+          "x2_px": 857.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.tick.x.label.0",
+          "text": "0",
+          "x_px": 857.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.tick.x.1",
+          "x1_px": 928.0,
+          "y1_px": 331,
+          "x2_px": 928.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.tick.x.label.1",
+          "text": "2",
+          "x_px": 928.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.tick.x.2",
+          "x1_px": 999.0,
+          "y1_px": 331,
+          "x2_px": 999.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.tick.x.label.2",
+          "text": "4",
+          "x_px": 999.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.tick.x.3",
+          "x1_px": 1070.0,
+          "y1_px": 331,
+          "x2_px": 1070.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.tick.x.label.3",
+          "text": "6",
+          "x_px": 1070.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.tick.x.4",
+          "x1_px": 1141.0,
+          "y1_px": 331,
+          "x2_px": 1141.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.tick.x.label.4",
+          "text": "8",
+          "x_px": 1141.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.tick.y.0",
+          "x1_px": 852,
+          "y1_px": 206.0,
+          "x2_px": 857,
+          "y2_px": 206.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.tick.y.1",
+          "x1_px": 852,
+          "y1_px": 247.66666666666666,
+          "x2_px": 857,
+          "y2_px": 247.66666666666666,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.tick.y.2",
+          "x1_px": 852,
+          "y1_px": 289.3333333333333,
+          "x2_px": 857,
+          "y2_px": 289.3333333333333,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.tick.y.3",
+          "x1_px": 852,
+          "y1_px": 331.0,
+          "x2_px": 857,
+          "y2_px": 331.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
           "linecap": "round"
         },
         {
           "type": "rect",
           "id": "card.03.distribution.bar.0",
           "x_px": 875,
-          "y_px": 396,
+          "y_px": 286,
           "width_px": 26,
           "height_px": 45,
           "fill": "#2B9C98",
@@ -628,7 +1288,7 @@
           "type": "rect",
           "id": "card.03.distribution.bar.1",
           "x_px": 918,
-          "y_px": 365,
+          "y_px": 255,
           "width_px": 26,
           "height_px": 76,
           "fill": "#2B9C98",
@@ -639,7 +1299,7 @@
           "type": "rect",
           "id": "card.03.distribution.bar.2",
           "x_px": 961,
-          "y_px": 337,
+          "y_px": 227,
           "width_px": 26,
           "height_px": 104,
           "fill": "#2B9C98",
@@ -650,7 +1310,7 @@
           "type": "rect",
           "id": "card.03.distribution.bar.3",
           "x_px": 1004,
-          "y_px": 371,
+          "y_px": 261,
           "width_px": 26,
           "height_px": 70,
           "fill": "#D95F59",
@@ -661,7 +1321,7 @@
           "type": "rect",
           "id": "card.03.distribution.bar.4",
           "x_px": 1047,
-          "y_px": 407,
+          "y_px": 297,
           "width_px": 26,
           "height_px": 34,
           "fill": "#2B9C98",
@@ -674,7 +1334,7 @@
           "x1_px": 1107,
           "y1_px": 231,
           "x2_px": 1107,
-          "y2_px": 426,
+          "y2_px": 316,
           "stroke": "#6B7788",
           "stroke_width_pt": 1,
           "linecap": "round"
@@ -689,6 +1349,105 @@
           "fill": "#FFFFFF",
           "stroke": "#2B9C98",
           "stroke_width_pt": 1.5
+        },
+        {
+          "type": "line",
+          "id": "card.03.distribution.detail.rule",
+          "x1_px": 837,
+          "y1_px": 364,
+          "x2_px": 1155,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.distribution.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.detail.value.0",
+          "text": "median + IQR",
+          "x_px": 887.6666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.distribution.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.detail.value.1",
+          "text": "n = 96",
+          "x_px": 996.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.distribution.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.detail.value.2",
+          "text": "outliers",
+          "x_px": 1104.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.distribution.consumption",
+          "text": "REAL-TASK PLAN S/M · 15–75k tok · 0–2 img",
+          "x_px": 996.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -745,9 +1504,9 @@
           "type": "line",
           "id": "card.04.survival.axis.x",
           "x1_px": 1246,
-          "y1_px": 441,
+          "y1_px": 331,
           "x2_px": 1530,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -758,7 +1517,7 @@
           "x1_px": 1246,
           "y1_px": 206,
           "x2_px": 1246,
-          "y2_px": 441,
+          "y2_px": 331,
           "stroke": "#6B7788",
           "stroke_width_pt": 1.0,
           "linecap": "round"
@@ -767,9 +1526,9 @@
           "type": "line",
           "id": "card.04.survival.grid.1",
           "x1_px": 1246,
-          "y1_px": 283.55,
+          "y1_px": 247.25,
           "x2_px": 1530,
-          "y2_px": 283.55,
+          "y2_px": 247.25,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
           "linecap": "round"
@@ -778,11 +1537,165 @@
           "type": "line",
           "id": "card.04.survival.grid.2",
           "x1_px": 1246,
-          "y1_px": 361.1,
+          "y1_px": 288.5,
           "x2_px": 1530,
-          "y2_px": 361.1,
+          "y2_px": 288.5,
           "stroke": "#D9E0E8",
           "stroke_width_pt": 0.7,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.tick.x.0",
+          "x1_px": 1246.0,
+          "y1_px": 331,
+          "x2_px": 1246.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.tick.x.label.0",
+          "text": "0",
+          "x_px": 1246.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.tick.x.1",
+          "x1_px": 1317.0,
+          "y1_px": 331,
+          "x2_px": 1317.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.tick.x.label.1",
+          "text": "2",
+          "x_px": 1317.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.tick.x.2",
+          "x1_px": 1388.0,
+          "y1_px": 331,
+          "x2_px": 1388.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.tick.x.label.2",
+          "text": "4",
+          "x_px": 1388.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.tick.x.3",
+          "x1_px": 1459.0,
+          "y1_px": 331,
+          "x2_px": 1459.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.tick.x.label.3",
+          "text": "6",
+          "x_px": 1459.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.tick.x.4",
+          "x1_px": 1530.0,
+          "y1_px": 331,
+          "x2_px": 1530.0,
+          "y2_px": 336,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.tick.x.label.4",
+          "text": "8",
+          "x_px": 1530.0,
+          "y_px": 346,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.tick.y.0",
+          "x1_px": 1241,
+          "y1_px": 206.0,
+          "x2_px": 1246,
+          "y2_px": 206.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.tick.y.1",
+          "x1_px": 1241,
+          "y1_px": 247.66666666666666,
+          "x2_px": 1246,
+          "y2_px": 247.66666666666666,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.tick.y.2",
+          "x1_px": 1241,
+          "y1_px": 289.3333333333333,
+          "x2_px": 1246,
+          "y2_px": 289.3333333333333,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.tick.y.3",
+          "x1_px": 1241,
+          "y1_px": 331.0,
+          "x2_px": 1246,
+          "y2_px": 331.0,
+          "stroke": "#6B7788",
+          "stroke_width_pt": 0.8,
           "linecap": "round"
         },
         {
@@ -825,6 +1738,105 @@
           "stroke": "#2B9C98",
           "stroke_width_pt": 2,
           "fill": "none"
+        },
+        {
+          "type": "line",
+          "id": "card.04.survival.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 364,
+          "x2_px": 1544,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.survival.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.detail.value.0",
+          "text": "KM estimate",
+          "x_px": 1276.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.survival.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.detail.value.1",
+          "text": "censored +",
+          "x_px": 1385.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.survival.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.detail.value.2",
+          "text": "log-rank",
+          "x_px": 1493.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.survival.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 1385.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1426,6 +2438,105 @@
           "fill": "#6B7788",
           "anchor": "end",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.05.heatmap.detail.rule",
+          "x1_px": 59,
+          "y1_px": 743,
+          "x2_px": 377,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.heatmap.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.heatmap.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.heatmap.detail.value.0",
+          "text": "z-score",
+          "x_px": 109.66666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.heatmap.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.heatmap.detail.value.1",
+          "text": "Ward linkage",
+          "x_px": 217.99999999999997,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.heatmap.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.heatmap.detail.value.2",
+          "text": "FDR < .05",
+          "x_px": 326.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.heatmap.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 218.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1484,7 +2595,7 @@
           "x_px": 469,
           "y_px": 583,
           "width_px": 276,
-          "height_px": 252,
+          "height_px": 142,
           "fill": "#17212B",
           "stroke": "#D9E0E8",
           "stroke_width_pt": 1
@@ -1979,6 +3090,105 @@
           "fill": "none",
           "stroke": "#F2B84B",
           "stroke_width_pt": 1.6
+        },
+        {
+          "type": "line",
+          "id": "card.06.embedding.detail.rule",
+          "x1_px": 448,
+          "y1_px": 743,
+          "x2_px": 766,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.embedding.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.embedding.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.embedding.detail.value.0",
+          "text": "PCA → t-SNE",
+          "x_px": 498.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.embedding.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.embedding.detail.value.1",
+          "text": "perplexity 30",
+          "x_px": 607.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.embedding.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.embedding.detail.value.2",
+          "text": "n = 420",
+          "x_px": 715.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.embedding.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 607.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -2173,6 +3383,105 @@
           "fill": "#FFFFFF",
           "stroke": "#2B9C98",
           "stroke_width_pt": 1.5
+        },
+        {
+          "type": "line",
+          "id": "card.07.tree.detail.rule",
+          "x1_px": 837,
+          "y1_px": 743,
+          "x2_px": 1155,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.07.tree.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.tree.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.tree.detail.value.0",
+          "text": "distance 0.1",
+          "x_px": 887.6666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.tree.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.tree.detail.value.1",
+          "text": "bootstrap",
+          "x_px": 996.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.tree.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.tree.detail.value.2",
+          "text": "clades 6",
+          "x_px": 1104.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.tree.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 996.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -2229,7 +3538,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.0",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 2,
@@ -2243,7 +3552,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.1",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 38,
@@ -2257,7 +3566,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.2",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 74,
@@ -2271,7 +3580,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.3",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 110,
@@ -2285,7 +3594,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.4",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 146,
@@ -2299,7 +3608,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.5",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 182,
@@ -2313,7 +3622,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.6",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 218,
@@ -2327,7 +3636,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.7",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 254,
@@ -2341,7 +3650,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.8",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 290,
@@ -2355,7 +3664,7 @@
           "type": "annular_sector",
           "id": "card.08.circos.sector.9",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "inner_radius_px": 58,
           "outer_radius_px": 76,
           "start_angle_deg": 326,
@@ -2369,7 +3678,7 @@
           "type": "arc",
           "id": "card.08.circos.link.0",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "radius_px": 40,
           "start_angle_deg": 210,
           "end_angle_deg": 25,
@@ -2381,7 +3690,7 @@
           "type": "arc",
           "id": "card.08.circos.link.1",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "radius_px": 43,
           "start_angle_deg": 222,
           "end_angle_deg": 43,
@@ -2393,7 +3702,7 @@
           "type": "arc",
           "id": "card.08.circos.link.2",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "radius_px": 46,
           "start_angle_deg": 234,
           "end_angle_deg": 61,
@@ -2405,7 +3714,7 @@
           "type": "arc",
           "id": "card.08.circos.link.3",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "radius_px": 49,
           "start_angle_deg": 246,
           "end_angle_deg": 79,
@@ -2417,20 +3726,119 @@
           "type": "arc",
           "id": "card.08.circos.link.4",
           "cx_px": 1385.0,
-          "cy_px": 710.0,
+          "cy_px": 655.0,
           "radius_px": 52,
           "start_angle_deg": 258,
           "end_angle_deg": 97,
           "clockwise": true,
           "stroke": "#6688AA",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.08.circos.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 743,
+          "x2_px": 1544,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.08.circos.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.circos.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.circos.detail.value.0",
+          "text": "10 sectors",
+          "x_px": 1276.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.circos.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.circos.detail.value.1",
+          "text": "5 links",
+          "x_px": 1385.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.circos.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.circos.detail.value.2",
+          "text": "3 tracks",
+          "x_px": 1493.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#2B9C98",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.circos.consumption",
+          "text": "REAL-TASK PLAN L · 75–150k tok · 1–4 img",
+          "x_px": 1385.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
     {
       "type": "text",
       "id": "atlas.footer",
-      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "text": "Atlas build: local deterministic Python · 0 model/API calls · live text · zero raster",
       "x_px": 800,
       "y_px": 884,
       "font_size_pt": 7.5,

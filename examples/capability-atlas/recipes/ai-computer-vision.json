@@ -298,6 +298,105 @@
           "fill": "#315C9D",
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.01.pipeline.detail.rule",
+          "x1_px": 59,
+          "y1_px": 364,
+          "x2_px": 377,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.pipeline.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.pipeline.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.pipeline.detail.value.0",
+          "text": "stages 12",
+          "x_px": 109.66666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.pipeline.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.pipeline.detail.value.1",
+          "text": "d_model 512",
+          "x_px": 217.99999999999997,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.pipeline.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.pipeline.detail.value.2",
+          "text": "heads 8",
+          "x_px": 326.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.pipeline.consumption",
+          "text": "REAL-TASK PLAN S · 15–35k tok · 0–1 img",
+          "x_px": 218.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -533,6 +632,105 @@
           "fill": "#315C9D",
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.02.encoder.detail.rule",
+          "x1_px": 448,
+          "y1_px": 364,
+          "x2_px": 766,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.encoder.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.encoder.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.encoder.detail.value.0",
+          "text": "levels 4",
+          "x_px": 498.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.encoder.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.encoder.detail.value.1",
+          "text": "skip ×4",
+          "x_px": 607.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.encoder.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.encoder.detail.value.2",
+          "text": "out 256²",
+          "x_px": 715.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.encoder.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 607.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -968,6 +1166,105 @@
           "fill": "#315C9D",
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.03.cuboids.detail.rule",
+          "x1_px": 837,
+          "y1_px": 364,
+          "x2_px": 1155,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.cuboids.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.cuboids.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.cuboids.detail.value.0",
+          "text": "B × C × H × W",
+          "x_px": 887.6666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.cuboids.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.cuboids.detail.value.1",
+          "text": "stride 2",
+          "x_px": 996.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.cuboids.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.cuboids.detail.value.2",
+          "text": "fp16",
+          "x_px": 1104.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.cuboids.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 996.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1214,11 +1511,11 @@
             ],
             [
               1519.0,
-              454
+              344
             ],
             [
               1251.0,
-              454
+              344
             ],
             [
               1251.0,
@@ -1239,6 +1536,105 @@
           "fill": "#FFFFFF",
           "stroke": "#315C9D",
           "stroke_width_pt": 1.2
+        },
+        {
+          "type": "line",
+          "id": "card.04.residual.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 364,
+          "x2_px": 1544,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.residual.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.residual.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.residual.detail.value.0",
+          "text": "identity",
+          "x_px": 1276.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.residual.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.residual.detail.value.1",
+          "text": "norm + act",
+          "x_px": 1385.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.residual.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.residual.detail.value.2",
+          "text": "drop 0.1",
+          "x_px": 1493.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.residual.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 1385.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1474,6 +1870,105 @@
           "fill": "#315C9D",
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.05.attention.detail.rule",
+          "x1_px": 59,
+          "y1_px": 743,
+          "x2_px": 377,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.attention.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.attention.detail.value.0",
+          "text": "QKᵀ / √d",
+          "x_px": 109.66666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.attention.detail.value.1",
+          "text": "softmax",
+          "x_px": 217.99999999999997,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.attention.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.attention.detail.value.2",
+          "text": "head ×8",
+          "x_px": 326.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.attention.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 218.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1709,6 +2204,105 @@
           "fill": "#315C9D",
           "stroke": "#315C9D",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.06.fusion.detail.rule",
+          "x1_px": 448,
+          "y1_px": 743,
+          "x2_px": 766,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.fusion.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.detail.value.0",
+          "text": "image 768",
+          "x_px": 498.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.fusion.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.detail.value.1",
+          "text": "text 512",
+          "x_px": 607.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.fusion.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.detail.value.2",
+          "text": "concat 1280",
+          "x_px": 715.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.fusion.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 607.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1767,7 +2361,7 @@
           "x_px": 855,
           "y_px": 583,
           "width_px": 282,
-          "height_px": 250,
+          "height_px": 140,
           "fill": "#E9EEF2",
           "stroke": "#D9E0E8",
           "stroke_width_pt": 1.2
@@ -1870,6 +2464,105 @@
           "fill": "#FFFFFF",
           "stroke": "#315C9D",
           "stroke_width_pt": 1.5
+        },
+        {
+          "type": "line",
+          "id": "card.07.detection.detail.rule",
+          "x1_px": 837,
+          "y1_px": 743,
+          "x2_px": 1155,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.07.detection.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.detection.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.detection.detail.value.0",
+          "text": "IoU 0.72",
+          "x_px": 887.6666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.detection.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.detection.detail.value.1",
+          "text": "NMS 0.50",
+          "x_px": 996.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.detection.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.detection.detail.value.2",
+          "text": "mAP 0.61",
+          "x_px": 1104.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.detection.consumption",
+          "text": "REAL-TASK PLAN M/L · 35–150k tok · 0–4 img",
+          "x_px": 996.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1928,7 +2621,7 @@
           "x_px": 1244,
           "y_px": 583,
           "width_px": 282,
-          "height_px": 250,
+          "height_px": 140,
           "fill": "#E9EEF2",
           "stroke": "#D9E0E8",
           "stroke_width_pt": 1.2
@@ -1992,7 +2685,7 @@
           "id": "card.08.segmentation.legend.a",
           "text": "class A",
           "x_px": 1280,
-          "y_px": 842,
+          "y_px": 732,
           "font_size_pt": 7,
           "fill": "#315C9D",
           "anchor": "start",
@@ -2003,18 +2696,117 @@
           "id": "card.08.segmentation.legend.b",
           "text": "class B",
           "x_px": 1412,
-          "y_px": 842,
+          "y_px": 732,
           "font_size_pt": 7,
           "fill": "#B87300",
           "anchor": "start",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.08.segmentation.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 743,
+          "x2_px": 1544,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.08.segmentation.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.segmentation.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.segmentation.detail.value.0",
+          "text": "Dice 0.89",
+          "x_px": 1276.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.segmentation.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.segmentation.detail.value.1",
+          "text": "3 classes",
+          "x_px": 1385.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.segmentation.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.segmentation.detail.value.2",
+          "text": "pixelwise",
+          "x_px": 1493.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#315C9D",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.segmentation.consumption",
+          "text": "REAL-TASK PLAN M/L · 35–150k tok · 0–4 img",
+          "x_px": 1385.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
     {
       "type": "text",
       "id": "atlas.footer",
-      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "text": "Atlas build: local deterministic Python · 0 model/API calls · live text · zero raster",
       "x_px": 800,
       "y_px": 884,
       "font_size_pt": 7.5,

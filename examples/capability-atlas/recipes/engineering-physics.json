@@ -235,6 +235,105 @@
           "fill": "#6B7788",
           "anchor": "start",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.01.circuit.detail.rule",
+          "x1_px": 59,
+          "y1_px": 364,
+          "x2_px": 377,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.circuit.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.circuit.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.circuit.detail.value.0",
+          "text": "Vin 5 V",
+          "x_px": 109.66666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.circuit.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.circuit.detail.value.1",
+          "text": "R1 10 kΩ",
+          "x_px": 217.99999999999997,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.circuit.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.circuit.detail.value.2",
+          "text": "C1 100 nF",
+          "x_px": 326.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.circuit.consumption",
+          "text": "REAL-TASK PLAN S · 15–35k tok · 0–1 img",
+          "x_px": 218.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -481,11 +580,11 @@
             ],
             [
               741.0,
-              454
+              344
             ],
             [
               473.0,
-              454
+              344
             ],
             [
               473.0,
@@ -506,6 +605,105 @@
           "fill": "#FFFFFF",
           "stroke": "#D28A2E",
           "stroke_width_pt": 1.2
+        },
+        {
+          "type": "line",
+          "id": "card.02.control.detail.rule",
+          "x1_px": 448,
+          "y1_px": 364,
+          "x2_px": 766,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.control.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.detail.value.0",
+          "text": "G(s)",
+          "x_px": 498.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.control.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.detail.value.1",
+          "text": "negative FB",
+          "x_px": 607.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.control.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.detail.value.2",
+          "text": "settle 0.8 s",
+          "x_px": 715.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.control.consumption",
+          "text": "REAL-TASK PLAN S · 15–35k tok · 0–1 img",
+          "x_px": 607.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -678,6 +876,105 @@
           "fill": "#6B7788",
           "anchor": "start",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.wiring.detail.rule",
+          "x1_px": 837,
+          "y1_px": 364,
+          "x2_px": 1155,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.wiring.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.wiring.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.wiring.detail.value.0",
+          "text": "24 VDC",
+          "x_px": 887.6666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.wiring.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.wiring.detail.value.1",
+          "text": "terminal IDs",
+          "x_px": 996.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.wiring.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.wiring.detail.value.2",
+          "text": "grounded",
+          "x_px": 1104.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.wiring.consumption",
+          "text": "REAL-TASK PLAN S · 15–35k tok · 0–1 img",
+          "x_px": 996.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -2240,6 +2537,105 @@
           "fill": "#D28A2E",
           "stroke": "#FFFFFF",
           "stroke_width_pt": 0.8
+        },
+        {
+          "type": "line",
+          "id": "card.04.fea.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 364,
+          "x2_px": 1544,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.fea.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.fea.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.fea.detail.value.0",
+          "text": "12,480 cells",
+          "x_px": 1276.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.fea.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.fea.detail.value.1",
+          "text": "fixed BC",
+          "x_px": 1385.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.fea.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.fea.detail.value.2",
+          "text": "σmax 214 MPa",
+          "x_px": 1493.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.fea.consumption",
+          "text": "REAL-TASK PLAN L · 75–150k tok · 1–4 img",
+          "x_px": 1385.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -3902,6 +4298,105 @@
           "fill": "#D28A2E",
           "stroke": "#FFFFFF",
           "stroke_width_pt": 0.8
+        },
+        {
+          "type": "line",
+          "id": "card.05.cfd.detail.rule",
+          "x1_px": 59,
+          "y1_px": 743,
+          "x2_px": 377,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.cfd.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.cfd.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.cfd.detail.value.0",
+          "text": "Re 4.2×10⁴",
+          "x_px": 109.66666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.cfd.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.cfd.detail.value.1",
+          "text": "no-slip",
+          "x_px": 217.99999999999997,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.cfd.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.cfd.detail.value.2",
+          "text": "residual 10⁻⁶",
+          "x_px": 326.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.cfd.consumption",
+          "text": "REAL-TASK PLAN L · 75–150k tok · 1–4 img",
+          "x_px": 218.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -5464,6 +5959,105 @@
           "fill": "#D28A2E",
           "stroke": "#FFFFFF",
           "stroke_width_pt": 0.8
+        },
+        {
+          "type": "line",
+          "id": "card.06.surface.detail.rule",
+          "x1_px": 448,
+          "y1_px": 743,
+          "x2_px": 766,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.surface.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.surface.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.surface.detail.value.0",
+          "text": "DOE 5 × 5",
+          "x_px": 498.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.surface.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.surface.detail.value.1",
+          "text": "R² 0.94",
+          "x_px": 607.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.surface.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.surface.detail.value.2",
+          "text": "optimum",
+          "x_px": 715.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.surface.consumption",
+          "text": "REAL-TASK PLAN M/L · 35–150k tok · 0–4 img",
+          "x_px": 607.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -5605,6 +6199,105 @@
           "fill": "#6B7788",
           "anchor": "middle",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.07.cad.detail.rule",
+          "x1_px": 837,
+          "y1_px": 743,
+          "x2_px": 1155,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.07.cad.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.cad.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.cad.detail.value.0",
+          "text": "120.0 mm",
+          "x_px": 887.6666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.cad.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.cad.detail.value.1",
+          "text": "±0.05",
+          "x_px": 996.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.cad.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.cad.detail.value.2",
+          "text": "section A–A",
+          "x_px": 1104.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.cad.consumption",
+          "text": "REAL-TASK PLAN L · 75–150k tok · 1–4 img",
+          "x_px": 996.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -5778,13 +6471,112 @@
           "fill": "#D28A2E",
           "stroke": "#D28A2E",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.08.exploded.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 743,
+          "x2_px": 1544,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.08.exploded.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.exploded.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.exploded.detail.value.0",
+          "text": "6 parts",
+          "x_px": 1276.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.exploded.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.exploded.detail.value.1",
+          "text": "BOM IDs",
+          "x_px": 1385.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.exploded.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.exploded.detail.value.2",
+          "text": "axis aligned",
+          "x_px": 1493.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#D28A2E",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.exploded.consumption",
+          "text": "REAL-TASK PLAN L · 75–150k tok · 1–4 img",
+          "x_px": 1385.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
     {
       "type": "text",
       "id": "atlas.footer",
-      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "text": "Atlas build: local deterministic Python · 0 model/API calls · live text · zero raster",
       "x_px": 800,
       "y_px": 884,
       "font_size_pt": 7.5,

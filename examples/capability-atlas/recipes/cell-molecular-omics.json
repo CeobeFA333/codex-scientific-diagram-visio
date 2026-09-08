@@ -121,7 +121,7 @@
           "x_px": 80,
           "y_px": 204,
           "width_px": 276,
-          "height_px": 252,
+          "height_px": 142,
           "fill": "#17212B",
           "stroke": "#D9E0E8",
           "stroke_width_pt": 1
@@ -130,7 +130,7 @@
           "type": "ellipse",
           "id": "card.01.microscopy.scan.outer",
           "cx_px": 218.0,
-          "cy_px": 331.0,
+          "cy_px": 276.0,
           "rx_px": 72,
           "ry_px": 62,
           "fill": "#606E7B",
@@ -141,7 +141,7 @@
           "type": "ellipse",
           "id": "card.01.microscopy.scan.inner",
           "cx_px": 218.0,
-          "cy_px": 331.0,
+          "cy_px": 276.0,
           "rx_px": 38,
           "ry_px": 45,
           "fill": "#253240",
@@ -152,7 +152,7 @@
           "type": "ellipse",
           "id": "card.01.microscopy.roi",
           "cx_px": 236.0,
-          "cy_px": 323.0,
+          "cy_px": 268.0,
           "rx_px": 18,
           "ry_px": 13,
           "fill": "none",
@@ -163,7 +163,7 @@
           "type": "line",
           "id": "card.01.microscopy.callout.shaft",
           "x1_px": 254.0,
-          "y1_px": 313.0,
+          "y1_px": 258.0,
           "x2_px": 346,
           "y2_px": 218,
           "stroke": "#6B8F44",
@@ -179,17 +179,116 @@
               218
             ],
             [
-              344.0415834356575,
-              226.7843385955067
+              340.8392590138763,
+              225.37338134604082
             ],
             [
-              337.2830026326913,
-              220.23918666000262
+              337.087896180881,
+              216.74524683015167
             ]
           ],
           "fill": "#6B8F44",
           "stroke": "#6B8F44",
           "stroke_width_pt": 1.4
+        },
+        {
+          "type": "line",
+          "id": "card.01.microscopy.detail.rule",
+          "x1_px": 59,
+          "y1_px": 364,
+          "x2_px": 377,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.01.microscopy.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.microscopy.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.microscopy.detail.value.0",
+          "text": "DAPI / FITC",
+          "x_px": 109.66666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.microscopy.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.microscopy.detail.value.1",
+          "text": "z-stack 18",
+          "x_px": 217.99999999999997,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.01.microscopy.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.01.microscopy.detail.value.2",
+          "text": "scale 20 μm",
+          "x_px": 326.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.01.microscopy.consumption",
+          "text": "REAL-TASK PLAN M · 35–75k tok · 0–2 img",
+          "x_px": 218.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -248,7 +347,7 @@
           "x_px": 466,
           "y_px": 204,
           "width_px": 282,
-          "height_px": 250,
+          "height_px": 140,
           "fill": "#E9EEF2",
           "stroke": "#D9E0E8",
           "stroke_width_pt": 1.2
@@ -312,7 +411,7 @@
           "id": "card.02.multiplex.legend.a",
           "text": "class A",
           "x_px": 502,
-          "y_px": 463,
+          "y_px": 353,
           "font_size_pt": 7,
           "fill": "#6B8F44",
           "anchor": "start",
@@ -323,11 +422,110 @@
           "id": "card.02.multiplex.legend.b",
           "text": "class B",
           "x_px": 634,
-          "y_px": 463,
+          "y_px": 353,
           "font_size_pt": 7,
           "fill": "#B87300",
           "anchor": "start",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.02.multiplex.detail.rule",
+          "x1_px": 448,
+          "y1_px": 364,
+          "x2_px": 766,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.02.multiplex.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.multiplex.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.multiplex.detail.value.0",
+          "text": "4 channels",
+          "x_px": 498.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.multiplex.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.multiplex.detail.value.1",
+          "text": "composite",
+          "x_px": 607.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.02.multiplex.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.02.multiplex.detail.value.2",
+          "text": "cell masks",
+          "x_px": 715.3333333333333,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.02.multiplex.consumption",
+          "text": "REAL-TASK PLAN L · 75–150k tok · 1–4 img",
+          "x_px": 607.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -386,7 +584,7 @@
           "x_px": 858,
           "y_px": 204,
           "width_px": 276,
-          "height_px": 252,
+          "height_px": 142,
           "fill": "#17212B",
           "stroke": "#D9E0E8",
           "stroke_width_pt": 1
@@ -599,6 +797,105 @@
           "fill": "#FFFFFF",
           "anchor": "start",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.03.blot.detail.rule",
+          "x1_px": 837,
+          "y1_px": 364,
+          "x2_px": 1155,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.03.blot.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.blot.detail.value.0",
+          "text": "target / actin",
+          "x_px": 887.6666666666666,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.blot.detail.value.1",
+          "text": "6 lanes",
+          "x_px": 996.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.03.blot.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.03.blot.detail.value.2",
+          "text": "densitometry",
+          "x_px": 1104.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.03.blot.consumption",
+          "text": "REAL-TASK PLAN S/M · 15–75k tok · 0–2 img",
+          "x_px": 996.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -657,7 +954,7 @@
           "x_px": 1247,
           "y_px": 204,
           "width_px": 276,
-          "height_px": 252,
+          "height_px": 142,
           "fill": "#17212B",
           "stroke": "#D9E0E8",
           "stroke_width_pt": 1
@@ -870,6 +1167,105 @@
           "fill": "#FFFFFF",
           "anchor": "start",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.04.gel.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 364,
+          "x2_px": 1544,
+          "y2_px": 364,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.04.gel.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 381,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.gel.detail.value.0",
+          "text": "100 bp ladder",
+          "x_px": 1276.6666666666667,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.gel.detail.value.1",
+          "text": "6 samples",
+          "x_px": 1385.0,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.04.gel.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 389,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.04.gel.detail.value.2",
+          "text": "2% agarose",
+          "x_px": 1493.3333333333335,
+          "y_px": 405,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.04.gel.consumption",
+          "text": "REAL-TASK PLAN S/M · 15–75k tok · 0–2 img",
+          "x_px": 1385.0,
+          "y_px": 467,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1493,6 +1889,105 @@
           "fill": "#6B7788",
           "anchor": "end",
           "font_weight": "normal"
+        },
+        {
+          "type": "line",
+          "id": "card.05.genomic_heatmap.detail.rule",
+          "x1_px": 59,
+          "y1_px": 743,
+          "x2_px": 377,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.05.genomic_heatmap.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 59,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.detail.chip.0",
+          "x_px": 59.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.genomic_heatmap.detail.value.0",
+          "text": "2k genes",
+          "x_px": 109.66666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.detail.chip.1",
+          "x_px": 167.33333333333331,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.genomic_heatmap.detail.value.1",
+          "text": "row z-score",
+          "x_px": 217.99999999999997,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.05.genomic_heatmap.detail.chip.2",
+          "x_px": 275.66666666666663,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.05.genomic_heatmap.detail.value.2",
+          "text": "3 cohorts",
+          "x_px": 326.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.05.genomic_heatmap.consumption",
+          "text": "REAL-TASK PLAN M/L · 35–150k tok · 0–4 img",
+          "x_px": 218.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1687,6 +2182,105 @@
           "fill": "#FFFFFF",
           "stroke": "#6B8F44",
           "stroke_width_pt": 1.5
+        },
+        {
+          "type": "line",
+          "id": "card.06.phylogeny.detail.rule",
+          "x1_px": 448,
+          "y1_px": 743,
+          "x2_px": 766,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.06.phylogeny.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 448,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.phylogeny.detail.chip.0",
+          "x_px": 448.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.phylogeny.detail.value.0",
+          "text": "ML tree",
+          "x_px": 498.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.phylogeny.detail.chip.1",
+          "x_px": 556.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.phylogeny.detail.value.1",
+          "text": "1k bootstrap",
+          "x_px": 607.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.06.phylogeny.detail.chip.2",
+          "x_px": 664.6666666666666,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.06.phylogeny.detail.value.2",
+          "text": "scale 0.1",
+          "x_px": 715.3333333333333,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.06.phylogeny.consumption",
+          "text": "REAL-TASK PLAN M/L · 35–150k tok · 0–4 img",
+          "x_px": 607.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -1881,6 +2475,105 @@
           "fill": "#FFFFFF",
           "stroke": "#6B8F44",
           "stroke_width_pt": 1.5
+        },
+        {
+          "type": "line",
+          "id": "card.07.protein.detail.rule",
+          "x1_px": 837,
+          "y1_px": 743,
+          "x2_px": 1155,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.07.protein.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 837,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.protein.detail.chip.0",
+          "x_px": 837.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.protein.detail.value.0",
+          "text": "chain A/B",
+          "x_px": 887.6666666666666,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.protein.detail.chip.1",
+          "x_px": 945.3333333333334,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.protein.detail.value.1",
+          "text": "domain 3",
+          "x_px": 996.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.07.protein.detail.chip.2",
+          "x_px": 1053.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.07.protein.detail.value.2",
+          "text": "ligand pocket",
+          "x_px": 1104.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.07.protein.consumption",
+          "text": "REAL-TASK PLAN M/L · 35–150k tok · 0–4 img",
+          "x_px": 996.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
@@ -2075,13 +2768,112 @@
           "fill": "#FFFFFF",
           "stroke": "#6B8F44",
           "stroke_width_pt": 1.5
+        },
+        {
+          "type": "line",
+          "id": "card.08.ligand.detail.rule",
+          "x1_px": 1226,
+          "y1_px": 743,
+          "x2_px": 1544,
+          "y2_px": 743,
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.8,
+          "linecap": "round"
+        },
+        {
+          "type": "text",
+          "id": "card.08.ligand.detail.heading",
+          "text": "PANEL DETAILS",
+          "x_px": 1226,
+          "y_px": 760,
+          "font_size_pt": 5.8,
+          "fill": "#6B7788",
+          "anchor": "start",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.ligand.detail.chip.0",
+          "x_px": 1226.0,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.ligand.detail.value.0",
+          "text": "H-bond 2.8 Å",
+          "x_px": 1276.6666666666667,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.ligand.detail.chip.1",
+          "x_px": 1334.3333333333333,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.ligand.detail.value.1",
+          "text": "π–π",
+          "x_px": 1385.0,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "rect",
+          "id": "card.08.ligand.detail.chip.2",
+          "x_px": 1442.6666666666667,
+          "y_px": 768,
+          "width_px": 101.33333333333333,
+          "height_px": 25,
+          "fill": "#F4F7FA",
+          "stroke": "#D9E0E8",
+          "stroke_width_pt": 0.7
+        },
+        {
+          "type": "text",
+          "id": "card.08.ligand.detail.value.2",
+          "text": "residue labels",
+          "x_px": 1493.3333333333335,
+          "y_px": 784,
+          "font_size_pt": 5.8,
+          "fill": "#6B8F44",
+          "anchor": "middle",
+          "font_weight": "bold"
+        },
+        {
+          "type": "text",
+          "id": "card.08.ligand.consumption",
+          "text": "REAL-TASK PLAN M/L · 35–150k tok · 0–4 img",
+          "x_px": 1385.0,
+          "y_px": 846,
+          "font_size_pt": 5.7,
+          "fill": "#6B7788",
+          "anchor": "middle",
+          "font_weight": "bold"
         }
       ]
     },
     {
       "type": "text",
       "id": "atlas.footer",
-      "text": "Synthetic capability demonstration · live text · semantic IDs · zero raster",
+      "text": "Atlas build: local deterministic Python · 0 model/API calls · live text · zero raster",
       "x_px": 800,
       "y_px": 884,
       "font_size_pt": 7.5,

@@ -20,7 +20,7 @@ SRC = MODULE / "src"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from atlas_catalog import CATEGORIES, all_cards  # noqa: E402
+from atlas_catalog import CATEGORIES, WORKLOAD_PROFILES, all_cards, consumption_for  # noqa: E402
 from atlas_elements import build_card, rect, text  # noqa: E402
 
 
@@ -52,8 +52,13 @@ def make_recipe(category):
         col, row = index % 4, index // 4
         x, y = 37 + col * 389, 127 + row * 379
         prefix = f"card.{index+1:02d}.{kind}"
-        elements.append(build_card(prefix, title_value, subtitle, kind, x, y, card_w, card_h, accent))
-    elements.append(text("atlas", "footer", "Synthetic capability demonstration · live text · semantic IDs · zero raster", 800, 884, 7.5, "#667384", "middle"))
+        elements.append(
+            build_card(
+                prefix, title_value, subtitle, kind, consumption_for(kind),
+                x, y, card_w, card_h, accent,
+            )
+        )
+    elements.append(text("atlas", "footer", "Atlas build: local deterministic Python · 0 model/API calls · live text · zero raster", 800, 884, 7.5, "#667384", "middle"))
     return {
         "title": f"Capability Atlas — {category['title']}",
         "source_image": "../source/blank.png",
@@ -72,11 +77,29 @@ def audit_svg(svg_path, category):
     ids = [node.attrib.get("id", "") for node in root.iter()]
     texts = list(root.iter(f"{SVG_NS}text"))
     images = list(root.iter(f"{SVG_NS}image"))
-    cards = [value for value in ids if value.startswith("card.") and value.count(".") == 2]
+    cards = [
+        node for node in root.iter()
+        if node.attrib.get("id", "").startswith("card.")
+        and node.attrib.get("id", "").count(".") == 2
+    ]
     missing = [kind for _, _, kind in category["cards"] if not any(f".{kind}" in value for value in ids)]
     if len(cards) != 8 or images or missing:
         raise RuntimeError(f"Audit failed for {svg_path.name}: cards={len(cards)}, rasters={len(images)}, missing={missing}")
-    return {"semantic_card_groups": len(cards), "live_text_nodes": len(texts), "raster_nodes": len(images), "missing_kinds": missing}
+    card_counts = {
+        card.attrib["id"]: sum(1 for _ in card.iter()) - 1
+        for card in cards
+    }
+    if min(card_counts.values()) < 15:
+        raise RuntimeError(f"Capability card is too sparse in {svg_path.name}: {card_counts}")
+    return {
+        "semantic_card_groups": len(cards),
+        "live_text_nodes": len(texts),
+        "raster_nodes": len(images),
+        "minimum_objects_per_card": min(card_counts.values()),
+        "maximum_objects_per_card": max(card_counts.values()),
+        "card_object_counts": card_counts,
+        "missing_kinds": missing,
+    }
 
 
 def gallery_html(records):
@@ -117,12 +140,25 @@ def main():
         records.append({
             "id": category["id"], "title": category["title"], "title_zh": category["title_zh"],
             "svg": svg_path.name, "recipe": recipe_path.name, "card_count": len(category["cards"]),
-            "figure_families": [{"title": title, "subtitle": subtitle, "kind": kind} for title, subtitle, kind in category["cards"]],
+            "figure_families": [
+                {
+                    "title": title,
+                    "subtitle": subtitle,
+                    "kind": kind,
+                    "real_task_planning_estimate": consumption_for(kind),
+                }
+                for title, subtitle, kind in category["cards"]
+            ],
             "audit": audit, "svg_sha256": sha256(svg_path), "recipe_sha256": sha256(recipe_path),
         })
     manifest = {
         "format_version": 1, "generator": "reconstruct-paper-figures/build_hybrid_svg.py",
         "demonstration_scope": "synthetic deterministic capability atlas; not a source-paper fidelity claim",
+        "consumption_model": {
+            "atlas_generation": "0 model/API calls; deterministic local Python",
+            "real_task_estimates": WORKLOAD_PROFILES,
+            "disclaimer": "Planning ranges are not measured usage, a billing quote, or a guarantee.",
+        },
         "category_count": len(CATEGORIES), "figure_family_count": len(list(all_cards())),
         "editable_svg_count": len(records), "records": records,
     }

@@ -17,6 +17,7 @@ class ManifestSmokeTest(unittest.TestCase):
         )
         self.assertEqual(manifest["category_count"], 8)
         self.assertEqual(manifest["figure_family_count"], 64)
+        self.assertIn("0 model/API calls", manifest["consumption_model"]["atlas_generation"])
 
 
 if __name__ == "__main__":

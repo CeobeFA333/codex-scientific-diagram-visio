@@ -2,6 +2,37 @@
   "format_version": 1,
   "generator": "reconstruct-paper-figures/build_hybrid_svg.py",
   "demonstration_scope": "synthetic deterministic capability atlas; not a source-paper fidelity claim",
+  "consumption_model": {
+    "atlas_generation": "0 model/API calls; deterministic local Python",
+    "real_task_estimates": {
+      "S": {
+        "token_range": "15–35k tok",
+        "image_refs": "0–1 img",
+        "description": "single-panel vector reconstruction with limited evidence reconciliation"
+      },
+      "M": {
+        "token_range": "35–75k tok",
+        "image_refs": "0–2 img",
+        "description": "multi-layer panel with source inspection and one editor QA pass"
+      },
+      "L": {
+        "token_range": "75–150k tok",
+        "image_refs": "1–4 img",
+        "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+      },
+      "S/M": {
+        "token_range": "15–75k tok",
+        "image_refs": "0–2 img",
+        "description": "small schematic at S; real data, statistics, or linked panels upgrade to M"
+      },
+      "M/L": {
+        "token_range": "35–150k tok",
+        "image_refs": "0–4 img",
+        "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+      }
+    },
+    "disclaimer": "Planning ranges are not measured usage, a billing quote, or a guarantee."
+  },
   "category_count": 8,
   "figure_family_count": 64,
   "editable_svg_count": 8,
@@ -17,52 +48,112 @@
         {
           "title": "Neural architectures",
           "subtitle": "Transformer · CNN · MLP",
-          "kind": "pipeline"
+          "kind": "pipeline",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         },
         {
           "title": "Encoder–decoder",
           "subtitle": "U-Net · multiscale flows",
-          "kind": "encoder"
+          "kind": "encoder",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Feature maps",
           "subtitle": "tensors · dimensions",
-          "kind": "cuboids"
+          "kind": "cuboids",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Residual paths",
           "subtitle": "skip · feedback · return",
-          "kind": "residual"
+          "kind": "residual",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Attention",
           "subtitle": "Q/K/V · projection",
-          "kind": "attention"
+          "kind": "attention",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Multimodal fusion",
           "subtitle": "sum · concat · weighted",
-          "kind": "fusion"
+          "kind": "fusion",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Detection",
           "subtitle": "boxes · classes · keypoints",
-          "kind": "detection"
+          "kind": "detection",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Dense prediction",
           "subtitle": "masks · depth · probability",
-          "kind": "segmentation"
+          "kind": "segmentation",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         }
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 48,
+        "live_text_nodes": 88,
         "raster_nodes": 0,
+        "minimum_objects_per_card": 18,
+        "maximum_objects_per_card": 35,
+        "card_object_counts": {
+          "card.01.pipeline": 27,
+          "card.02.encoder": 27,
+          "card.03.cuboids": 35,
+          "card.04.residual": 29,
+          "card.05.attention": 27,
+          "card.06.fusion": 27,
+          "card.07.detection": 23,
+          "card.08.segmentation": 18
+        },
         "missing_kinds": []
       },
-      "svg_sha256": "16a40672df7b8825db1d6d9117c7f04fec51cee76ef89f08d6628e7ae0afbecb",
-      "recipe_sha256": "945b492364f8949bfb19a3d56d6dfa5c172a9d9d14f4fb25a28bb5d258908129"
+      "svg_sha256": "05ac7accd8526d61868d0728ef62a209f4af569de3ce8b7314b5b50af6acaccf",
+      "recipe_sha256": "9e60ca2f776ef2a30d4a3d60b371d8606b8b76fb1942940ddc44b4fdf59992cf"
     },
     {
       "id": "statistics-data-science",
@@ -75,52 +166,112 @@
         {
           "title": "Curves and points",
           "subtitle": "line · scatter · fitted",
-          "kind": "line_plot"
+          "kind": "line_plot",
+          "real_task_planning_estimate": {
+            "tier": "S/M",
+            "token_range": "15–75k tok",
+            "image_refs": "0–2 img",
+            "description": "small schematic at S; real data, statistics, or linked panels upgrade to M"
+          }
         },
         {
           "title": "Uncertainty",
           "subtitle": "error bar · confidence interval",
-          "kind": "error_plot"
+          "kind": "error_plot",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Distributions",
           "subtitle": "bar · box · violin · ROC",
-          "kind": "distribution"
+          "kind": "distribution",
+          "real_task_planning_estimate": {
+            "tier": "S/M",
+            "token_range": "15–75k tok",
+            "image_refs": "0–2 img",
+            "description": "small schematic at S; real data, statistics, or linked panels upgrade to M"
+          }
         },
         {
           "title": "Clinical statistics",
           "subtitle": "Kaplan–Meier · forest · risk",
-          "kind": "survival"
+          "kind": "survival",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Matrices",
           "subtitle": "heatmap · confusion · correlation",
-          "kind": "heatmap"
+          "kind": "heatmap",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Embeddings",
           "subtitle": "PCA · t-SNE · clustered scatter",
-          "kind": "embedding"
+          "kind": "embedding",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Trees and graphs",
           "subtitle": "dendrogram · network · phylogeny",
-          "kind": "tree"
+          "kind": "tree",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Circular data",
           "subtitle": "Circos · rings · radial labels",
-          "kind": "circos"
+          "kind": "circos",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         }
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 22,
+        "live_text_nodes": 82,
         "raster_nodes": 0,
+        "minimum_objects_per_card": 26,
+        "maximum_objects_per_card": 63,
+        "card_object_counts": {
+          "card.01.line_plot": 33,
+          "card.02.error_plot": 45,
+          "card.03.distribution": 38,
+          "card.04.survival": 32,
+          "card.05.heatmap": 63,
+          "card.06.embedding": 57,
+          "card.07.tree": 26,
+          "card.08.circos": 28
+        },
         "missing_kinds": []
       },
-      "svg_sha256": "8c23c41d6cee78225d8aa2680e9fa2fc5f6826fa6d21ac6880d221a018f85c62",
-      "recipe_sha256": "0b41e87e7364e24070d623e118ec51ff27bb34f2931c560fde260f2900930830"
+      "svg_sha256": "1efd0566166bdc991a571b7fd1e2ea9718711fa5e57eac2cafa2db7da69deb94",
+      "recipe_sha256": "fb97fd381a32ce819e8750bc796a6dc194dadd49bf554c25653ecc22080fef60"
     },
     {
       "id": "clinical-biomedical",
@@ -133,52 +284,112 @@
         {
           "title": "Clinical flow",
           "subtitle": "cohort · randomization · outcome",
-          "kind": "flow_chart"
+          "kind": "flow_chart",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Forest plots",
           "subtitle": "effect · CI · reference",
-          "kind": "forest"
+          "kind": "forest",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Flow cytometry",
           "subtitle": "cloud · gate · quadrant",
-          "kind": "cytometry"
+          "kind": "cytometry",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Medical imaging",
           "subtitle": "CT · MRI · PET · ultrasound",
-          "kind": "medical_scan"
+          "kind": "medical_scan",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "Histology",
           "subtitle": "whole slide · tissue annotation",
-          "kind": "histology"
+          "kind": "histology",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "Segmentation",
           "subtitle": "ROI · contour · orientation",
-          "kind": "roi"
+          "kind": "roi",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Risk tables",
           "subtitle": "time points · at-risk counts",
-          "kind": "risk_table"
+          "kind": "risk_table",
+          "real_task_planning_estimate": {
+            "tier": "S/M",
+            "token_range": "15–75k tok",
+            "image_refs": "0–2 img",
+            "description": "small schematic at S; real data, statistics, or linked panels upgrade to M"
+          }
         },
         {
           "title": "Study timelines",
           "subtitle": "treatment · visit · follow-up",
-          "kind": "timeline"
+          "kind": "timeline",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         }
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 36,
+        "live_text_nodes": 81,
         "raster_nodes": 0,
+        "minimum_objects_per_card": 18,
+        "maximum_objects_per_card": 57,
+        "card_object_counts": {
+          "card.01.flow_chart": 27,
+          "card.02.forest": 45,
+          "card.03.cytometry": 57,
+          "card.04.medical_scan": 19,
+          "card.05.histology": 23,
+          "card.06.roi": 18,
+          "card.07.risk_table": 27,
+          "card.08.timeline": 27
+        },
         "missing_kinds": []
       },
-      "svg_sha256": "c19b5dd1ca2dcc042e65141cecd669772deed29bef16fb2445a97128fc8e89d2",
-      "recipe_sha256": "e6cd96ed5534110ef15242d833cc73323493ef2654816b54aa19659184e957e3"
+      "svg_sha256": "0a141150cb6cf4f1602ff215f6e74e5c331e8baccbfcfaed42629c8d68d7c5dd",
+      "recipe_sha256": "798c39fc8d1bbcae206c6a277d06502c70192eab6c177776e8c14fafd12ad09b"
     },
     {
       "id": "cell-molecular-omics",
@@ -191,52 +402,112 @@
         {
           "title": "Microscopy",
           "subtitle": "fluorescence · confocal · scale",
-          "kind": "microscopy"
+          "kind": "microscopy",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Multiplex imaging",
           "subtitle": "channels · composite · cells",
-          "kind": "multiplex"
+          "kind": "multiplex",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "Western blot",
           "subtitle": "bands · lanes · molecular weight",
-          "kind": "blot"
+          "kind": "blot",
+          "real_task_planning_estimate": {
+            "tier": "S/M",
+            "token_range": "15–75k tok",
+            "image_refs": "0–2 img",
+            "description": "small schematic at S; real data, statistics, or linked panels upgrade to M"
+          }
         },
         {
           "title": "Electrophoresis",
           "subtitle": "gel · ladder · sample lanes",
-          "kind": "gel"
+          "kind": "gel",
+          "real_task_planning_estimate": {
+            "tier": "S/M",
+            "token_range": "15–75k tok",
+            "image_refs": "0–2 img",
+            "description": "small schematic at S; real data, statistics, or linked panels upgrade to M"
+          }
         },
         {
           "title": "Genomic matrices",
           "subtitle": "heatmap · annotation tracks",
-          "kind": "genomic_heatmap"
+          "kind": "genomic_heatmap",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Phylogenetics",
           "subtitle": "tree · clade · branch scale",
-          "kind": "phylogeny"
+          "kind": "phylogeny",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Protein renders",
           "subtitle": "ribbon · residue · domain",
-          "kind": "protein"
+          "kind": "protein",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Ligand interactions",
           "subtitle": "ligand · residue · dashed bond",
-          "kind": "ligand"
+          "kind": "ligand",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         }
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 26,
+        "live_text_nodes": 66,
         "raster_nodes": 0,
+        "minimum_objects_per_card": 18,
+        "maximum_objects_per_card": 65,
+        "card_object_counts": {
+          "card.01.microscopy": 19,
+          "card.02.multiplex": 18,
+          "card.03.blot": 33,
+          "card.04.gel": 33,
+          "card.05.genomic_heatmap": 65,
+          "card.06.phylogeny": 26,
+          "card.07.protein": 26,
+          "card.08.ligand": 26
+        },
         "missing_kinds": []
       },
-      "svg_sha256": "0f09e5be210a70ac2f77f76fa132fa536560f429bbcad4dd1785eed9478e08c6",
-      "recipe_sha256": "43ac3562a8a010040e2e37000d3c35d8eb97b57d144337114a67324ddc8252a3"
+      "svg_sha256": "05111868136126fa2880ce868e074a204f4d1317c882396b1a5fa11b22c185a1",
+      "recipe_sha256": "90850b9cb8126da4a17e3060344fc150617b317f0c3d3aaf64a1334335aed6c1"
     },
     {
       "id": "chemistry-materials",
@@ -249,52 +520,112 @@
         {
           "title": "Chemical structure",
           "subtitle": "bonds · rings · stereochemistry",
-          "kind": "molecule"
+          "kind": "molecule",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         },
         {
           "title": "Reaction scheme",
           "subtitle": "arrow · conditions · yield",
-          "kind": "reaction"
+          "kind": "reaction",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         },
         {
           "title": "Spectroscopy",
           "subtitle": "XRD · Raman · FTIR · XPS",
-          "kind": "spectrum"
+          "kind": "spectrum",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Separation analysis",
           "subtitle": "MS · chromatography · peaks",
-          "kind": "chromatography"
+          "kind": "chromatography",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Thermal analysis",
           "subtitle": "DSC · TGA · DTA",
-          "kind": "thermal"
+          "kind": "thermal",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Electrochemistry",
           "subtitle": "CV · EIS · Nyquist",
-          "kind": "nyquist"
+          "kind": "nyquist",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Surface microscopy",
           "subtitle": "SEM · TEM · AFM",
-          "kind": "material_micro"
+          "kind": "material_micro",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Element mapping",
           "subtitle": "EDS · regions · color bar",
-          "kind": "eds"
+          "kind": "eds",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         }
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 27,
+        "live_text_nodes": 87,
         "raster_nodes": 0,
+        "minimum_objects_per_card": 19,
+        "maximum_objects_per_card": 63,
+        "card_object_counts": {
+          "card.01.molecule": 20,
+          "card.02.reaction": 26,
+          "card.03.spectrum": 32,
+          "card.04.chromatography": 32,
+          "card.05.thermal": 33,
+          "card.06.nyquist": 32,
+          "card.07.material_micro": 19,
+          "card.08.eds": 63
+        },
         "missing_kinds": []
       },
-      "svg_sha256": "e107cea0c740597256eb01306636f025ddf1cbdb035e8d4133636d864dd3716f",
-      "recipe_sha256": "6f2d6bdf063231c775141498aefae3031ce96af1d0da373b8cdc491bc57e86e7"
+      "svg_sha256": "6ba11e417dd131322e20e2538ad87f560d8bed6ad8342a76f69a574e14852543",
+      "recipe_sha256": "ffa507ac4e68b7a03483ca90f04dbdc84958a2e96f1915a55dd420556f6a054d"
     },
     {
       "id": "engineering-physics",
@@ -307,52 +638,112 @@
         {
           "title": "Circuit diagram",
           "subtitle": "symbols · wires · parameters",
-          "kind": "circuit"
+          "kind": "circuit",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         },
         {
           "title": "Control system",
           "subtitle": "blocks · feedback · transfer",
-          "kind": "control"
+          "kind": "control",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         },
         {
           "title": "Wiring",
           "subtitle": "junctions · terminals · IDs",
-          "kind": "wiring"
+          "kind": "wiring",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         },
         {
           "title": "FEA fields",
           "subtitle": "stress · strain · boundary loads",
-          "kind": "fea"
+          "kind": "fea",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "CFD fields",
           "subtitle": "velocity · pressure · streamlines",
-          "kind": "cfd"
+          "kind": "cfd",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "Response surface",
           "subtitle": "3D surface · contour · points",
-          "kind": "surface"
+          "kind": "surface",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "CAD drawing",
           "subtitle": "contours · dimensions · leaders",
-          "kind": "cad"
+          "kind": "cad",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "Exploded assembly",
           "subtitle": "parts · BOM · exploded leaders",
-          "kind": "exploded"
+          "kind": "exploded",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         }
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 28,
+        "live_text_nodes": 68,
         "raster_nodes": 0,
+        "minimum_objects_per_card": 19,
+        "maximum_objects_per_card": 78,
+        "card_object_counts": {
+          "card.01.circuit": 24,
+          "card.02.control": 29,
+          "card.03.wiring": 24,
+          "card.04.fea": 74,
+          "card.05.cfd": 78,
+          "card.06.surface": 74,
+          "card.07.cad": 19,
+          "card.08.exploded": 21
+        },
         "missing_kinds": []
       },
-      "svg_sha256": "2aa15eb36afb3a26678f349db8ec48d3dba35abc120fa6006722ca086f106826",
-      "recipe_sha256": "e63d849b1d0e79d982c020dd4354c294542e301e774005447360136071e6898e"
+      "svg_sha256": "57b219a2ebc896754403f65cd9883386fd06ac2f3e46829158cf95f1370c6056",
+      "recipe_sha256": "69ac770d0dcc8c2d84e4651127aa34cdfff90929520520286903b46e8adb5c54"
     },
     {
       "id": "experimental-systems",
@@ -365,52 +756,112 @@
         {
           "title": "Experimental setup",
           "subtitle": "source · sample · detector",
-          "kind": "apparatus"
+          "kind": "apparatus",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Microfluidics",
           "subtitle": "channels · junctions · flow",
-          "kind": "microfluidic"
+          "kind": "microfluidic",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Layered device",
           "subtitle": "substrate · membrane · chamber",
-          "kind": "layers"
+          "kind": "layers",
+          "real_task_planning_estimate": {
+            "tier": "M",
+            "token_range": "35–75k tok",
+            "image_refs": "0–2 img",
+            "description": "multi-layer panel with source inspection and one editor QA pass"
+          }
         },
         {
           "title": "Sensor chain",
           "subtitle": "sensor · amplifier · acquisition",
-          "kind": "sensor"
+          "kind": "sensor",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         },
         {
           "title": "Device photo panel",
           "subtitle": "atomic image · labels · scale",
-          "kind": "device_panel"
+          "kind": "device_panel",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Composite figure",
           "subtitle": "photo · schematic · plot",
-          "kind": "composite"
+          "kind": "composite",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Process principle",
           "subtitle": "stages · material flow",
-          "kind": "process"
+          "kind": "process",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         },
         {
           "title": "Measurement layout",
           "subtitle": "dimension · angle · calibration",
-          "kind": "measurement"
+          "kind": "measurement",
+          "real_task_planning_estimate": {
+            "tier": "S",
+            "token_range": "15–35k tok",
+            "image_refs": "0–1 img",
+            "description": "single-panel vector reconstruction with limited evidence reconciliation"
+          }
         }
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 36,
+        "live_text_nodes": 76,
         "raster_nodes": 0,
+        "minimum_objects_per_card": 17,
+        "maximum_objects_per_card": 27,
+        "card_object_counts": {
+          "card.01.apparatus": 23,
+          "card.02.microfluidic": 20,
+          "card.03.layers": 17,
+          "card.04.sensor": 27,
+          "card.05.device_panel": 23,
+          "card.06.composite": 23,
+          "card.07.process": 27,
+          "card.08.measurement": 19
+        },
         "missing_kinds": []
       },
-      "svg_sha256": "5d69cac18b791068500bf71c7679562bf6b1d801a7694b167fa6ddbf951ddb4b",
-      "recipe_sha256": "77c79cd8c65b5dfd91bc466f2be831004aa726e89bd259c99557c4e240b95294"
+      "svg_sha256": "2b3835b8f98d9c2bf91da4c43ff3b921dfb7367d8381dc55c4d116a26978fd56",
+      "recipe_sha256": "23ecf2c912bbf4a659bd0dc7d2bfa5c799e71e9bbe4964dbc1c552267726cc59"
     },
     {
       "id": "earth-geospatial",
@@ -423,52 +874,112 @@
         {
           "title": "GIS map",
           "subtitle": "boundaries · points · legend",
-          "kind": "map"
+          "kind": "map",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Remote sensing",
           "subtitle": "land cover · classification",
-          "kind": "landcover"
+          "kind": "landcover",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "Terrain",
           "subtitle": "DEM · contours · hillshade",
-          "kind": "dem"
+          "kind": "dem",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "Geology",
           "subtitle": "units · faults · contacts",
-          "kind": "geology"
+          "kind": "geology",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "Seismic map",
           "subtitle": "epicenters · stations · magnitude",
-          "kind": "seismic"
+          "kind": "seismic",
+          "real_task_planning_estimate": {
+            "tier": "L",
+            "token_range": "75–150k tok",
+            "image_refs": "1–4 img",
+            "description": "dense or image-bearing panel with scientific review and roundtrip QA"
+          }
         },
         {
           "title": "Cross-section",
           "subtitle": "layers · section line · depth",
-          "kind": "section"
+          "kind": "section",
+          "real_task_planning_estimate": {
+            "tier": "M/L",
+            "token_range": "35–150k tok",
+            "image_refs": "0–4 img",
+            "description": "generic vector example at M; real imagery, dense layers, or roundtrip QA upgrade to L"
+          }
         },
         {
           "title": "Map framework",
           "subtitle": "graticule · north arrow · scale",
-          "kind": "graticule"
+          "kind": "graticule",
+          "real_task_planning_estimate": {
+            "tier": "S/M",
+            "token_range": "15–75k tok",
+            "image_refs": "0–2 img",
+            "description": "small schematic at S; real data, statistics, or linked panels upgrade to M"
+          }
         },
         {
           "title": "Cartography",
           "subtitle": "symbols · color key · annotation",
-          "kind": "map_legend"
+          "kind": "map_legend",
+          "real_task_planning_estimate": {
+            "tier": "S/M",
+            "token_range": "15–75k tok",
+            "image_refs": "0–2 img",
+            "description": "small schematic at S; real data, statistics, or linked panels upgrade to M"
+          }
         }
       ],
       "audit": {
         "semantic_card_groups": 8,
-        "live_text_nodes": 29,
+        "live_text_nodes": 69,
         "raster_nodes": 0,
+        "minimum_objects_per_card": 24,
+        "maximum_objects_per_card": 63,
+        "card_object_counts": {
+          "card.01.map": 24,
+          "card.02.landcover": 63,
+          "card.03.dem": 24,
+          "card.04.geology": 24,
+          "card.05.seismic": 24,
+          "card.06.section": 24,
+          "card.07.graticule": 26,
+          "card.08.map_legend": 24
+        },
         "missing_kinds": []
       },
-      "svg_sha256": "5a5ad29f9573c89f1f18acbd330d3bc89431b93f572e63bc30417e991fcfdba3",
-      "recipe_sha256": "fddc00c15900b01c498b1a370f3e57a9edcf40fe92b098bc9c3259bdebe31228"
+      "svg_sha256": "bdee3ae77bd717af66ed83d35440237ad695487517e36567fb0416141e76c378",
+      "recipe_sha256": "311f1cb26d438f3cac81a6d6d306856f656ff429dc9ab1c44d9b4ca83ba0c059"
     }
   ]
 }

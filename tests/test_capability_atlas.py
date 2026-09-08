@@ -36,6 +36,17 @@ class CapabilityAtlasTests(unittest.TestCase):
             groups = [value for value in ids if value.startswith("card.") and value.count(".") == 2]
             self.assertEqual(len(groups), 8)
             self.assertGreater(len(list(root.iter(f"{SVG_NS}text"))), 15)
+            self.assertGreaterEqual(record["audit"]["minimum_objects_per_card"], 15)
+            self.assertEqual(len(record["audit"]["card_object_counts"]), 8)
+
+    def test_each_family_has_a_disclosed_planning_range(self):
+        self.assertIn("0 model/API calls", self.manifest["consumption_model"]["atlas_generation"])
+        for record in self.manifest["records"]:
+            for family in record["figure_families"]:
+                estimate = family["real_task_planning_estimate"]
+                self.assertIn(estimate["tier"], {"S", "M", "L", "S/M", "M/L"})
+                self.assertRegex(estimate["token_range"], r"\d+.*\d+k tok")
+                self.assertRegex(estimate["image_refs"], r"\d+.*img")
 
     def test_public_manifest_has_no_absolute_paths(self):
         payload = (ATLAS / "capability-manifest.json").read_text(encoding="utf-8")
