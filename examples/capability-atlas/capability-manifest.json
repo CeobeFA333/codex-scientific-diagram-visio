@@ -388,8 +388,8 @@
         },
         "missing_kinds": []
       },
-      "svg_sha256": "bdc7312059c061cf9cfdda5261222fed2aed87d1579b671de144c42e2a19eab6",
-      "recipe_sha256": "c5a6fc8814f2b219214c25401e2be4e9f7a6088b66b6a9a55e85a793d1ff1904"
+      "svg_sha256": "dd151b3a5efcaa959a6104b9e09b54dd20d931159d5bd28750c7aa45a79d0b73",
+      "recipe_sha256": "45579c3a71b6dffe5096148580f98edde1fbff74efc9fc8d91747e930d2927a5"
     },
     {
       "id": "cell-molecular-omics",

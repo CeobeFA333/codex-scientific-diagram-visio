@@ -129,7 +129,7 @@
         {
           "type": "text",
           "id": "card.01.flow_chart.label.0",
-          "text": "Input",
+          "text": "Screened",
           "x_px": 84.0,
           "y_px": 264,
           "font_size_pt": 7.2,
@@ -151,7 +151,7 @@
         {
           "type": "text",
           "id": "card.01.flow_chart.label.1",
-          "text": "Feature",
+          "text": "Eligible",
           "x_px": 173.33333333333331,
           "y_px": 264,
           "font_size_pt": 7.2,
@@ -205,7 +205,7 @@
         {
           "type": "text",
           "id": "card.01.flow_chart.label.2",
-          "text": "Transform",
+          "text": "Assigned",
           "x_px": 262.66666666666663,
           "y_px": 264,
           "font_size_pt": 7.2,
@@ -259,7 +259,7 @@
         {
           "type": "text",
           "id": "card.01.flow_chart.label.3",
-          "text": "Output",
+          "text": "Analyzed",
           "x_px": 352.0,
           "y_px": 264,
           "font_size_pt": 7.2,
@@ -2461,7 +2461,7 @@
         {
           "type": "text",
           "id": "card.07.risk_table.label.0",
-          "text": "Input",
+          "text": "0 mo",
           "x_px": 862.0,
           "y_px": 643,
           "font_size_pt": 7.2,
@@ -2483,7 +2483,7 @@
         {
           "type": "text",
           "id": "card.07.risk_table.label.1",
-          "text": "Feature",
+          "text": "6 mo",
           "x_px": 951.3333333333334,
           "y_px": 643,
           "font_size_pt": 7.2,
@@ -2537,7 +2537,7 @@
         {
           "type": "text",
           "id": "card.07.risk_table.label.2",
-          "text": "Transform",
+          "text": "12 mo",
           "x_px": 1040.6666666666665,
           "y_px": 643,
           "font_size_pt": 7.2,
@@ -2591,7 +2591,7 @@
         {
           "type": "text",
           "id": "card.07.risk_table.label.3",
-          "text": "Output",
+          "text": "18 mo",
           "x_px": 1130.0,
           "y_px": 643,
           "font_size_pt": 7.2,
@@ -2795,7 +2795,7 @@
         {
           "type": "text",
           "id": "card.08.timeline.label.0",
-          "text": "Input",
+          "text": "Baseline",
           "x_px": 1251.0,
           "y_px": 643,
           "font_size_pt": 7.2,
@@ -2817,7 +2817,7 @@
         {
           "type": "text",
           "id": "card.08.timeline.label.1",
-          "text": "Feature",
+          "text": "Dose",
           "x_px": 1340.3333333333333,
           "y_px": 643,
           "font_size_pt": 7.2,
@@ -2871,7 +2871,7 @@
         {
           "type": "text",
           "id": "card.08.timeline.label.2",
-          "text": "Transform",
+          "text": "Visit",
           "x_px": 1429.6666666666667,
           "y_px": 643,
           "font_size_pt": 7.2,
@@ -2925,7 +2925,7 @@
         {
           "type": "text",
           "id": "card.08.timeline.label.3",
-          "text": "Output",
+          "text": "Follow-up",
           "x_px": 1519.0,
           "y_px": 643,
           "font_size_pt": 7.2,
